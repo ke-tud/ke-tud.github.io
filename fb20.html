@@ -1,0 +1,1529 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<title>FB Informatik – Informatik – Technische Universität Darmstadt</title>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+<meta name="dcterms.language" content="de"/>
+<meta name="dcterms.title" content="FB Informatik"/>
+<meta property="og:title" content="FB Informatik"/>
+<meta property="og:site_name" content="Informatik – Technische Universität Darmstadt"/>
+<meta property="og:type" content="article"/>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="FB Informatik"/>
+<meta property="og:image" content="https://www.informatik.tu-darmstadt.de/media/informatik/medien/news_2/2021/03___21/muehlhaeuser_egert_1300x650_1180x0.jpg"/>
+<meta property="og:image:type" content="image/jpg"/>
+<meta property="og:image:width" content="1180"/>
+<meta property="og:image:height" content="590"/>
+<meta property="og:image:alt" content="Im Hintergrund unterhalten sich Prof. Max Mühlhäuser und Doktorand Rolf Egert. Im Vordergrund ein unscharfes Windrad."/>
+<meta name="twitter:image" content="https://www.informatik.tu-darmstadt.de/media/informatik/medien/news_2/2021/03___21/muehlhaeuser_egert_1300x650_1180x0.jpg"/>
+<meta name="twitter:image:alt" content="Im Hintergrund unterhalten sich Prof. Max Mühlhäuser und Doktorand Rolf Egert. Im Vordergrund ein unscharfes Windrad."/>
+<meta name="ZOOMIMAGE" content="https://www.informatik.tu-darmstadt.de/media/informatik/medien/news_2/2021/03___21/muehlhaeuser_egert_1300x650_285x0.jpg"/>
+<meta name="description" content="Fachbereich Informatik – Der Fachbereich Informatik wurde 1972 mit einem klaren Ziel vor Augen gegründet: Spitzenforscher*innen und exzellente Studierende zusammenzubringen, um die Zukunft der Informatik mitzugestalten. Heute bieten wir ein breites Spektrum an Themen in der grundlagen- und anwendungsorientierten Forschung sowie in der Lehre. Die Informatik prägt entscheidend das interdisziplinäre Profil der TU Darmstadt, eine der führenden forschungsorientierten Technischen Universitäten in Deutschland."/>
+<meta property="og:description" content="Fachbereich Informatik – Der Fachbereich Informatik wurde 1972 mit einem klaren Ziel vor Augen gegründet: Spitzenforscher*innen und exzellente Studierende zusammenzubringen, um die Zukunft der Informatik mitzugestalten. Heute bieten wir ein breites Spektrum an Themen in der grundlagen- und anwendungsorientierten Forschung sowie in der Lehre. Die Informatik prägt entscheidend das interdisziplinäre Profil der TU Darmstadt, eine der führenden forschungsorientierten Technischen Universitäten in Deutschland."/>
+<meta name="twitter:description" content="Fachbereich Informatik – Der Fachbereich Informatik wurde 1972 mit einem klaren Ziel vor Augen gegründet: Spitzenforscher*innen und exzellente Studierende zusammenzubringen, um die Zukunft der Informatik mitzugestalten. Heute bieten wir ein breites Spektrum an Themen in der grundlagen- und anwendungsorientierten Forschung sowie in der Lehre. Die Informatik prägt entscheidend das interdisziplinäre Profil der TU Darmstadt, eine der führenden forschungsorientierten Technischen Universitäten in Deutschland."/>
+<meta name="author" content="Grauenhorst, Anne"/>
+<meta name="dcterms.creator" content="Informatik"/>
+<meta name="robots" content="index,follow"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="generator" content="FirstSpirit 5.2.210809.79900"/>
+<link href="http://www.informatik.tu-darmstadt.de/media/resources/css_2/app_1.0.9.css" rel="stylesheet"/>
+<link href="http://www.informatik.tu-darmstadt.de/media/resources/css_2/themes_css/theme-2d.css" rel="stylesheet"/>
+<link rel="shortcut icon" type="image/x-icon" href="https://www.tu-darmstadt.de/media/resources/images_1/favicon_48x48.png">
+<link rel="icon" type="image/png" href="https://www.tu-darmstadt.de/media/resources/images_1/favicon_48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="https://www.tu-darmstadt.de/media/resources/images_1/favicon_80x80.png" sizes="80x80">
+<link rel="apple-touch-icon" sizes="80x80" href="https://www.tu-darmstadt.de/media/resources/images_1/favicon_80x80.png">
+</head>
+<body>
+<div id="app">
+<div id="site" class="clip wrap-xl">
+<header id="site-header">
+<desktop-menu :sitemap="sitemap" :fast-blocks="fastBlocks" :menu-path="menuPath" inline-template>
+<div id="desktop-menu" class="d-none d-lg-block" @keydown.esc="onEsc()" :style="modalOpenStyle">
+<a class="link skip-link show-on-focus" href="fb20.html#site-main">Menü Überspringen</a>
+<div class="hold" ref="liner">
+<div v-show="searchIsOpen" class="desktop-meta" id="desktop-search" :class="{active: searchIsOpen}" ref="searchArea" :aria-hidden="!searchIsOpen" aria-labelledby="#schnell-btn">
+<div class="wrap-xl">
+<div class="frame py-2 bg-white">
+<div class="search-frame d-flex sans-h5">
+<form class="search-form" action="http://www.informatik.tu-darmstadt.de/suche.de.jsp" method="GET">
+<input class="search-input" ref="searchInput" type="text" aria-label="Suche" placeholder="Suche nach …" name="q">
+<button type="submit" aria-label="submit"><span class="icon far fa-search"></span></button>
+</form>
+<button ref="searchClose" type="button" aria-label="Schliessen" aria-controls="desktop-search" aria-expanded="searchIsOpen" @click="toggleSearchArea"><span class="icon far fa-times"></span></button>
+</div>
+</div>
+</div>
+</div>
+<div v-show="fastIsOpen" class="desktop-meta" id="desktop-fast" ref="fastArea" :aria-hidden="!fastIsOpen" :class="{active: fastIsOpen}" aria-labelledby="desktop-fast-open">
+<div class="frame py-4 bg-white">
+<div class="stack-4">
+<div class="sans-h5 strong d-flex">
+<div class="flex-grow-1">Schnelleinstieg</div>
+<button type="button" ref="fastClose" id="desktop-fast-close" @click="toggleFastArea" @keydown.down="setFocus(itemRef('fast',0,0))" aria-controls="desktop-fast" :aria-expanded="fastIsOpen"><span class="icon far fa-times"></span></button></div>
+<div class="stop pb-1">
+<div class="grid-4 fast-outer">
+<div class="cell-1-2 outer-cell">
+<div class="grid-2 fast-inner">
+<div v-for="(group, i) in fastBlocks.slice(0,4)" class="fast-block cell-1-2 inner-cell" @mouseenter="fastBlocks[i].hover=true" @mouseleave="fastBlocks[i].hover=false" @focusin="fastBlocks[i].focus=true" @focusout="fastBlocks[i].focus=false">
+<div class="p-2 pb-4 h-100 hold" :class="fastBlockBgClass(group.code, group.hover||group.focus||isTouch)">
+<div v-if="!isTouch" class="block-overlay p-2 pb-4" :class="fastBlockOverClass(group.code, group.hover||group.focus)">
+<p class="block-heading sans-h5 strong" v-html="group.heading"></p>
+</div>
+<div class="block-content stack-2" :class="fastBlockTextClass(group.code, group.hover||group.focus||isTouch)">
+<p class="block-heading sans-h5 strong" v-html="group.heading"></p>
+<ul class="block-links list-unstyled stack-1">
+<li v-for="(child, j) in group.children" class="sans-small"><a class="link d-inline-flex" :href="child.href" :ref="itemRef('fast',i,j)" @keydown.up="setFocus(j==0 ? i==0 ? 'fastClose': itemRef('fast',i-1,0) : itemRef('fast',i,j-1))" @keydown.down="setFocus(j==(group.children.length - 1) ? itemRef('fast',i+1,0) : itemRef('fast',i,j+1))" @keydown.left="setFocus(itemRef('fast',i-1,0))" @keydown.right="setFocus(itemRef('fast',i+1,0))"><span class="d-inline-block"><span class="icon fas fa-long-arrow-right"></span></span><span class="d-inline-block">{{ child.heading }}</span></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell-1-2 outer-cell">
+<div class="grid-2 fast-inner">
+<div v-for="(group, i) in fastBlocks.slice(4)" class="fast-block cell-1-2 inner-cell" @mouseenter="fastBlocks[i+4].hover=true" @mouseleave="fastBlocks[i+4].hover=false" @focusin="fastBlocks[i+4].focus=true" @focusout="fastBlocks[i+4].focus=false">
+<div class="p-2 pb-4 h-100" :class="fastBlockBgClass(group.code, group.hover||group.focus||isTouch)">
+<div v-if="!isTouch" class="block-overlay p-2 pb-4" :class="fastBlockOverClass(group.code, group.hover||group.focus)">
+<p class="block-heading sans-h5 strong" v-html="group.heading"></p>
+</div>
+<div class="block-content stack-2" :class="fastBlockTextClass(group.code, group.hover||group.focus||isTouch)">
+<p class="block-heading sans-h5 strong" v-html="group.heading"></p>
+<ul class="block-links list-unstyled stack-1">
+<li v-for="(child, j) in group.children" class="sans-small"><a class="link d-inline-flex" :href="child.href" :ref="itemRef('fast',i+4,j)" @keydown.up="setFocus(j==0 ? itemRef('fast',i+4-1,0) : itemRef('fast',i+4,j-1))" @keydown.down="setFocus(j==(group.children.length - 1) ? itemRef('fast',i+4+1,0) : itemRef('fast',i+4,j+1))" @keydown.left="setFocus(itemRef('fast',i+3,0))" @keydown.right="setFocus(itemRef('fast',i+5,0))"><span class="d-inline-block"><span class="icon fas fa-long-arrow-right"></span></span><span class="d-inline-block">{{ child.heading }}</span></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="desktop-main" ref="mainArea">
+<div class="wrap-xl hold">
+<div class="menu-border border-key"></div>
+<div class="menu-logo frame bg-white">
+<div class="row">
+<div class="col-1-4 offset-9-12">
+<!-- noindex -->
+<div class="hold" style="margin-top:-14px;">
+<div class="menu-logo-area">
+<div class="logo bg-gr5"><a class="text-gr0" href="https://www.tu-darmstadt.de/" title="Zur Startseite"><img src="https://www.tu-darmstadt.de/media/resources/images_1/tu_logo_web.svg" alt="Logo der TU Darmstadt" /></a></div>
+<a href="https://www.informatik.tu-darmstadt.de/" accesskey="1" title="Zur Startseite der Institution [Alt(+Shift)+1]">
+<div id="institution-name-container" class="fach-label bg-key p-1 text-white overflow-hidden stack-1">
+<p class="sans-lead pre-line"><span id="institution-name" class="d-inline-block">Informatik</span></p>
+</div>
+</a>
+</div>
+</div>
+<!-- index -->
+</div>
+</div>
+</div>
+<div class="menu-frame frame bg-white">
+<div class="py-2">
+<div class="grid">
+<div class="cell-3-4 stack-2">
+<ul class="meta-headings list-unstyled sans-mini strong w-75">
+<li class="meta-heading mr-auto"><button class="link text-gr1" type="button" id="desktop-fast-open" :ref="refPath('meta',0)" @keydown.left.prevent="setFocus(refPath('meta',3))" @keydown.right.prevent="setFocus(refPath('meta',1))" @keydown.down.prevent="setFocus(refPath('main',0))" @click="toggleFastArea"><span class="icon far fa-external-link-square"></span>Schnelleinstieg</button></li>
+<li class="meta-item mr-auto">
+<a class="language-selector link text-gr1" href="http://www.informatik.tu-darmstadt.de/fb20/index.en.jsp" :ref="refPath(&quot;meta&quot;,1)" @keydown.left.prevent="setFocus(refPath(&quot;meta&quot;,0))" @keydown.right.prevent="setFocus(refPath(&quot;meta&quot;,2))" @keydown.down.prevent="setFocus(refPath(&quot;main&quot;,1))"><span class="icon fal fa-globe-europe"></span>English</a>
+</li>
+<li class="meta-item mr-auto"><button class="link text-gr1" type="button" accesskey="4" title="[Alt(+Shift)+4]" :ref="refPath('meta',2)" @keydown.left.prevent="setFocus(refPath('meta',1))" @keydown.right.prevent="setFocus(refPath('meta',3))" @keydown.down.prevent="setFocus(refPath('main',2))" @click="toggleSearchArea"><span class="icon far fa-search"></span>Suche</button></li>
+<li class="meta-item mr-auto">
+<!-- noindex -->
+<a class="text-gr1 link" accesskey="i" title="Mit TU-ID am Webauftritt anmelden [Alt(+Shift)+i]" href="https://sso.tu-darmstadt.de/login?service=https%3A%2F%2Fwww.informatik.tu-darmstadt.de%2Ffb20%2Findex.de.jsp" :ref="refPath(&quot;meta&quot;,3)" @keydown.left.prevent="setFocus(refPath(&quot;meta&quot;,2))" @keydown.right.prevent="setFocus(refPath(&quot;meta&quot;,0))" @keydown.down.prevent="setFocus(refPath(&quot;main&quot;,3))"><span class="icon far fa-user"></span>Anmelden</a>
+<!-- index -->
+</li>
+</ul>
+<ul class="main-headings list-unstyled sans-h4b strong" :class="{'in-focus': path.length&gt;0}">
+<li v-for="(level0, i) in sitemap.slice(0,4)" class="main-heading" :key="level0.heading" :class="{active: menuPathDesktop.indexOf(level0.uid)>=0}"><a v-if="!level0.children || level0.displaySeparateSubmenu==true" :href="level0.href" :accesskey="level0.accesskey" :title="level0.title" :id="level0.headID" :aria-controls="level0.bodyID" :aria-expanded="hasPath(i)" :ref="refPath('main',i)" :class="{proxied: isFocPath(i,-1), onpath: hasFocPath(i)}" @focus="setFocPath(i)" @keydown.left.prevent="setFocus(refPath('main',i-1))" @keydown.right.prevent="setFocus(refPath('main',i+1))" @keydown.up.prevent="setFocus(refPath('meta',i))"><span v-html="level0.heading"></span><span class="icon far fa-lock text-right" v-if="level0.internal" title="Anmeldung erforderlich (TU-ID)"></span></a><button v-else type="button" aria-haspopup="true" :id="level0.headID" :aria-controls="level0.bodyID" :aria-expanded="hasPath(i)" :ref="refPath('main',i)" :class="{proxied: isFocPath(i,-1), onpath: hasFocPath(i)}" @focus="setFocPath(i)" @click="setSubFocus(i)" @keydown.left.prevent="setFocus(refPath('main',i-1))" @keydown.right.prevent="setFocus(refPath('main',i+1))" @keydown.up.prevent="setFocus(refPath('meta',i))" v-html="level0.heading"></button></li>
+</ul>
+</div>
+<div class="cell-1-4">
+<div class="d-flex h-100 stack">
+<div class="sans-h5 align-self-end text-right w-100">
+<button type="button" @click="toggleSearchArea"><span class="icon far fa-search"></span></button>
+<a class="text-gr0 ml-1" href="https://www.informatik.tu-darmstadt.de/" title="Home"><span class="icon far fa-home"></span></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="menu-collapse" class="d-none hold">
+<nav>
+<ul class="main-panels list-unstyled">
+<li v-for="(level0, i) in sitemap" v-show="hasPath(i)" class="main-panel" :key="level0.heading" :ref="refPath('panel', i)">
+<div v-if="level0.hasIndexPage && level0.href" class="panel-heading" :class="{'in-focus': hasPath(i, -1)}">
+<p class="sans-h5"><a class="link-outer strong d-block w-100 text-left p-2" :href="level0.href" :accesskey="level0.accesskey" :title="level0.title" :ref="refPath('main',i,-1)" :class="{selected: menuPathDesktop.indexOf(level0.headID)>=0}" @focus="setFocPath(i,-1)" @mouseenter="hoverFocus" @keydown.exact.tab.shift.prevent="setParentFocus(i)" @keydown.up.prevent="setParentFocus(i)" @keydown.down.prevent="setFocus(refPath('main',i,0))" @keydown.exact.tab.prevent="setFocus(refPath('main',i,0))"><span class="link-inner">Übersicht</span><span class="icon far fa-lock text-right" v-if="level0.internal" title="Anmeldung erforderlich (TU-ID)"></span></a></p>
+</div>
+<ul v-show="hasPath(i)" class="panel-menu level-1 list-unstyled" :ref="refPath('panel-menu', i)" :id="level0.bodyID" :aria-hidden="!hasPath(i)" :aria-labelledby="level0.headID" :class="{ focusin: hasFocPath(i) }">
+<li v-for="(level1, j) in level0.children" class="menu-item sans-h5" :class="{'in-focus': hasPath(i,j)}"><a v-if="!level1.children || level1.displaySeparateSubmenu==true" class="strong d-block w-100 text-left px-2 py-1" :href="level1.href" :accesskey="level1.accesskey" :title="level1.title" :ref="itemRef('main',i,j)" :class="{onpath: hasFocPath(i,j), selected: menuPathDesktop.indexOf(level1.uid)>-1}" @focus="setFocPath(i,j)" @mouseenter="hoverFocus" @keydown.up.prevent="setFocus(refPath('main',i,j-1))" @keydown.down.prevent="setFocus(refPath('main',i,j+1))" @keydown.exact.tab.shift.prevent="setFocus(refPath('main',i,j-1))" @keydown.exact.tab.prevent="setFocus(refPath('main',i,j+1))"><span v-html="level1.heading"></span><span class="icon far fa-lock text-right" v-if="level1.internal" title="Anmeldung erforderlich (TU-ID)"></span></a>
+<button v-else class="strong d-block w-100 text-left px-2 py-1" type="button" aria-haspopup="true" :id="level1.headID" :aria-controls="level1.bodyID" :aria-expanded="hasPath(i,j)" :ref="itemRef('main',i,j)" :class="{onpath: hasFocPath(i,j), selected: menuPathDesktop.indexOf(level1.uid)>-1}" @focus="setFocPath(i,j)" @mouseenter="hoverFocus" @keydown.up.prevent="setFocus(refPath('main',i,j-1))" @keydown.down.prevent="setFocus(refPath('main',i,j+1))" @keydown.exact.tab.shift.prevent="setFocus(refPath('main',i,j-1))" @keydown.exact.tab.prevent="setFocus(refPath('main',i,j+1))" @keydown.right.prevent="clickSelf" @click="setSubFocus(i,j);removeMenuPath();"><span v-html="iconifyLastWord(level1.heading)"></span></button>
+<ul v-if="level1.children && level1.displaySeparateSubmenu!=true" v-show="hasPath(i,j) || menuPathDesktop.indexOf(level1.uid)>-1" class="panel-menu level-2 list-unstyled" :ref="refPath('panel-menu', i,j)" :id="level1.bodyID" :aria-labelledby="level1.headID" :aria-hidden="!hasPath(i,j)" :class="{ focusin: hasFocPath(i,j)}">
+<li v-if="level1.hasIndexPage && level1.href" class="menu-heading"><a class="strong d-block w-100 text-left px-2 py-1" :href="level1.href" :accesskey="level1.accesskey" :title="level1.title" :ref="refPath('main',i,j,-1)" :class="{selected: menuPathDesktop.indexOf(level1.uid)>-1 && isSelected(level1.children) > 0}" @focus="setFocPath(i,j,-1)" @mouseenter="hoverFocus" @keydown.exact.tab.shift.prevent="setParentFocus(i,j)" @keydown.left.prevent="setParentFocus(i,j)" @keydown.up.prevent="setParentFocus(i,j)" @keydown.down.prevent="setFocus(refPath('main',i,j,0))" @keydown.exact.tab.prevent="setFocus(refPath('main',i,j,0))">Übersicht<span class="icon far fa-lock text-right" v-if="level1.internal" title="Anmeldung erforderlich (TU-ID)"></span></a></li>
+<li v-for="(level2, k) in level1.children" class="menu-item sans-h5" :class="{'in-focus': hasPath(i,j,k)}"><a v-if="!level2.children || level2.displaySeparateSubmenu==true" class="strong d-block w-100 text-left px-2 py-1" :href="level2.href" :accesskey="level2.accesskey" :title="level2.title" :ref="itemRef('main',i,j,k)" :id="menuPath.indexOf(level2.uid)" :class="{onpath: hasFocPath(i,j,k), selected: menuPathDesktop.indexOf(level2.uid)>-1}" @focus="setFocPath(i,j,k)" @mouseenter="hoverFocus" @keydown.left.prevent="setFocus(refPath('main',i,j)); setPath(i)" @keydown.up.prevent="setFocus(refPath('main',i,j,k-1))" @keydown.down.prevent="setFocus(refPath('main',i,j,k+1))" @keydown.exact.tab.shift.prevent="setFocus(refPath('main',i,j,k-1))" @keydown.exact.tab.prevent="setFocus(refPath('main',i,j,k+1))"><span v-html="level2.heading"></span><span class="icon far fa-lock text-right" v-if="level2.internal" title="Anmeldung erforderlich (TU-ID)"></span></a><button v-else class="strong d-block w-100 text-left px-2 py-1" type="button" aria-haspopup="true" :id="level2.headID" :aria-controls="level2.bodyID" :aria-expanded="hasPath(i,j,k)" :ref="itemRef('main',i,j,k)" :class="{onpath: hasFocPath(i,j,k), selected: menuPathDesktop.indexOf(level2.uid)>-1}" @focus="setFocPath(i,j,k)" @mouseenter="hoverFocus" @keydown.left.prevent="setFocus(refPath('main',i,j)); setPath(i)" @keydown.up.prevent="setFocus(refPath('main',i,j,k-1))" @keydown.down.prevent="setFocus(refPath('main',i,j,k+1))" @keydown.exact.tab.shift.prevent="setFocus(refPath('main',i,j,k-1))" @keydown.exact.tab.prevent="setFocus(refPath('main',i,j,k+1))" @keydown.right.prevent="clickSelf" @click="setSubFocus(i,j,k);removeMenuPath();"><span v-html="iconifyLastWord(level2.heading)"></span></button>
+<ul v-if="level2.children && level2.displaySeparateSubmenu!=true" v-show="hasPath(i,j,k) || menuPathDesktop.indexOf(level2.uid)>-1" class="panel-menu level-3 list-unstyled" :ref="refPath('panel-menu', i,j,k)" :id="level2.bodyID" :aria-hidden="!hasPath(i,j,k)" :aria-labelledby="level2.headID" :class="{ focusin: hasFocPath(i,j,k)}">
+<li v-if="level2.hasIndexPage && level2.href" class="menu-heading"><a class="strong d-block w-100 text-left px-2 py-1" :href="level2.href" :accesskey="level2.accesskey" :title="level2.title" :ref="refPath('main',i,j,k,-1)" :class="{selected: menuPathDesktop.indexOf(level2.uid)>-1 && isSelected(level2.children) > 0}" @focus="setFocPath(i,j,k,-1)" @mouseenter="hoverFocus" @keydown.exact.tab.shift.prevent="setParentFocus(i,j,k)" @keydown.left.prevent="setParentFocus(i,j,k)" @keydown.up.prevent="setParentFocus(i,j,k)" @keydown.down.prevent="setFocus(refPath('main',i,j,k,0))" @keydown.exact.tab.prevent="setFocus(refPath('main',i,j,k,0))">Übersicht<span class="icon far fa-lock text-right" v-if="level2.internal" title="Anmeldung erforderlich (TU-ID)"></span></a></li>
+<li v-for="(level3, l) in level2.children" class="menu-item sans-h5" :class="{'in-focus': hasPath(i,j,k,l)}"><a class="strong d-block w-100 text-left px-2 py-1" :href="level3.href" :accesskey="level3.accesskey" :title="level3.title" :ref="itemRef('main',i,j,k,l)" :id="menuPath.indexOf(level3.uid)" :class="{selected: menuPathDesktop.indexOf(level3.uid)>-1}" @focus="setFocPath(i,j,k,l)" @mouseenter="hoverFocus" @keydown.left.prevent="setFocus(refPath('main',i,j,k)); setPath(i,j)" @keydown.up.prevent="setFocus(refPath('main',i,j,k,l-1))" @keydown.down.prevent="setFocus(refPath('main',i,j,k,l+1))" @keydown.exact.tab.shift.prevent="setFocus(refPath('main',i,j,k,l-1))" @keydown.exact.tab.prevent="setFocus(refPath('main',i,j,k,l+1))"><span v-html="level3.heading"></span><span class="icon far fa-lock text-right" v-if="level3.internal" title="Anmeldung erforderlich (TU-ID)"></span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="overlay" :class="{active: fastIsOpen||searchIsOpen}"></div>
+</div>
+</div>
+</div>
+</desktop-menu>
+<phablet-menu :sitemap="sitemap" :fast-blocks="fastBlocks" :menu-path="menuPath" inline-template>
+<div class="d-lg-none" id="phablet-menu" :style="modalOpenStyle">
+<div class="menu-border border-key"></div>
+<div class="menu-logo frame bg-white">
+<div class="row">
+<div class="col-5-12 col-sm-1-3 col-md-1-4 offset-7-12 offset-sm-2-3 offset-md-3-4">
+<div class="bleed-right mr-sm-0">
+<!-- noindex -->
+<div class="hold" style="margin-top:-14px;">
+<div class="menu-logo-area">
+<div class="logo bg-gr5"><a class="text-gr0" href="https://www.tu-darmstadt.de/" title="Zur Startseite"><img src="https://www.tu-darmstadt.de/media/resources/images_1/tu_logo_web.svg" alt="Logo der TU Darmstadt" /></a></div>
+</div>
+</div>
+<!-- index -->
+</div>
+</div>
+</div>
+</div>
+<div class="menu-frame frame bg-white border-key">
+<div class="row h-100">
+<div class="col-7-12 col-sm-2-3 d-flex align-content-center">
+<button type="button" id="phablet-overlay-toggle" :aria-label="menuOpen?'Close Menu':'Open Menu'" aria-controls="phablet-overlay" :aria-expanded="menuOpen" @click="toggleMenu(0);">
+<div class="bars"></div>
+</button>
+</div>
+</div>
+</div>
+<div id="phablet-overlay" :class="{active: menuOpen}" ref="overlay">
+<div class="py-4"></div>
+<div class="fast-pusher" :style="fastPusherStyle" ref="fastPusher">
+<div class="main-menu">
+<div class="main-pusher" :style="mainPusherStyle" ref="mainPusher">
+<div class="level level-0 frame" ref="top">
+<div class="stack-4 py-6 px-1">
+<div class="stack-5">
+<div class="sans-h3 strong" v-for="(lv0, k) in sitemap">
+<button type="button" class="next d-flex w-100" :class="{'text-key': menuPath.indexOf(lv0.uid)>=0}" @click="setPath(k)" v-if="lv0.children">
+<div class="text-left" v-html="lv0.heading"></div>
+<div class="ml-auto"><span class="icon fas fa-angle-right"></span></div>
+</button>
+<a class="next page" :href="lv0.href" :class="{'text-key': menuPath.indexOf(lv0.uid)>=0 && menuPath.indexOf(lv0.uid)==menuPath.length-1}" v-else><span v-html="lv0.heading"></span><span class="icon far fa-lock text-right" v-if="lv0.internal" title="Anmeldung erforderlich (TU-ID)"></span></a></div>
+</div>
+</div>
+</div>
+<div class="level level-1 frame" :id="lv0.headID" v-for="(lv0, k) in sitemap" v-if="validLevel(lv0)" v-show="hasPath(k)" :ref="genPath(k)">
+<div class="stack-4 py-6 px-1">
+<div class="sans-h3 strong">
+<button type="button" class="back d-flex text-gr1" @click="setPath()">
+<span class="d-inline-block icon fas fa-angle-left mr my-auto"></span>
+<span class="d-inline-block" v-html="lv0.heading"></span>
+</button>
+</div>
+<div class="border-bottom border-gr3"></div>
+<div class="stack-5">
+<div class="sans-h3 strong d-flex pb-1" v-if="lv0.hasIndexPage && lv0.href">
+<a class="page" :href="lv0.href" :class="{'text-key': menuPath.indexOf(lv0.uid)>=0 && menuPath.indexOf(lv0.uid)==menuPath.length-1}">Übersicht<span class="icon far fa-lock text-right" v-if="lv0.internal" title="Anmeldung erforderlich (TU-ID)"></span></a>
+</div>
+<div class="sans-h3 strong" v-for="(lv1, l) in lv0.children">
+<button type="button" class="next d-flex w-100" :class="{'text-key': menuPath.indexOf(lv1.uid)>=0}" @click="setPath(k,l)" v-if="validLevel(lv1)">
+<div class="text-left" v-html="lv1.heading"></div>
+<div class="ml-auto"><span class="icon fas fa-angle-right"></span></div>
+</button>
+<a class="next page" :href="lv1.href" :class="{'text-key': menuPath.indexOf(lv1.uid)>=0 && menuPath.indexOf(lv1.uid)==menuPath.length-1}" v-else><span v-html="lv1.heading"></span><span class="icon far fa-lock text-right" v-if="lv1.internal" title="Anmeldung erforderlich (TU-ID)"></span></a>
+</div>
+</div>
+</div>
+</div>
+<template v-for="(lv0, k) in sitemap" v-if="validLevel(lv0)">
+<div class="level level-2 frame" :id="lv1.headID" v-for="(lv1, l) in lv0.children" v-if="validLevel(lv1)" v-show="hasPath(k,l)" :ref="genPath(k,l)">
+<div class="stack-4 py-6 px-1">
+<div class="sans-h3 strong">
+<button type="button" class="back d-flex text-gr1" @click="setPath(k)">
+<span class="d-inline-block icon fas fa-angle-left mr my-auto"></span>
+<span class="d-inline-block" v-html="lv1.heading"></span>
+</button>
+</div>
+<div class="border-bottom border-gr3"></div>
+<div class="stack-5">
+<div class="sans-h3 strong d-flex pb-1" v-if="lv1.hasIndexPage && lv1.href">
+<a class="page" :href="lv1.href" :class="{'text-key': menuPath.indexOf(lv1.uid)>=0 && menuPath.indexOf(lv1.uid)==menuPath.length-1}">Übersicht<span class="icon far fa-lock text-right" v-if="lv1.internal" title="Anmeldung erforderlich (TU-ID)"></span></a>
+</div>
+<div class="sans-h3 strong" v-for="(lv2, m) in lv1.children">
+<button type="button" class="next d-flex w-100" :class="{'text-key': menuPath.indexOf(lv2.uid)>=0}" @click="setPath(k,l,m)" v-if="validLevel(lv2)">
+<div class="text-left" v-html="lv2.heading"></div>
+<div class="ml-auto"><span class="icon fas fa-angle-right"></span></div>
+</button>
+<a class="next page" :href="lv2.href" :class="{'text-key': menuPath.indexOf(lv2.uid)>=0 && menuPath.indexOf(lv2.uid)==menuPath.length-1}" v-else><span v-html="lv2.heading"></span><span class="icon far fa-lock text-right" v-if="lv2.internal" title="Anmeldung erforderlich (TU-ID)"></span></a>
+</div>
+</div>
+</div>
+</div>
+</template>
+<template v-for="(lv0, k) in sitemap" v-if="validLevel(lv0)">
+<template v-for="(lv1, l) in lv0.children" v-if="validLevel(lv1)">
+<div class="level level-3 frame" :id="lv2.headID" v-for="(lv2, m) in lv1.children" v-if="validLevel(lv2)" v-show="hasPath(k,l,m)" :ref="genPath(k,l,m)">
+<div class="stack-4 py-6 px-1">
+<div class="sans-h3 strong">
+<button type="button" class="back d-flex text-gr1" @click="setPath(k,l)">
+<span class="d-inline-block icon fas fa-angle-left mr my-auto"></span>
+<span class="d-inline-block" v-html="lv2.heading"></span>
+</button>
+</div>
+<div class="border-bottom border-gr3"></div>
+<div class="stack-5">
+<div class="sans-h3 strong d-flex pb-1" v-if="lv2.hasIndexPage && lv2.href">
+<a class="page" :href="lv2.href" :class="{'text-key': menuPath.indexOf(lv2.uid)>=0 && menuPath.indexOf(lv2.uid)==menuPath.length-1}">Übersicht<span class="icon far fa-lock text-right" v-if="lv2.internal" title="Anmeldung erforderlich (TU-ID)"></span></a>
+</div>
+<div class="sans-h3 strong" v-for="(lv3, n) in lv2.children">
+<button type="button" class="next d-flex w-100" :class="{'text-key': menuPath.indexOf(lv3.uid)>=0}" @click="setPath(k,l,m,n)" v-if="validLevel(lv3)">
+<div class="text-left" v-html="lv3.heading"></div>
+<div class="ml-auto"><span class="icon fas fa-angle-right"></span></div>
+</button>
+<a class="next page" :href="lv3.href" :class="{'text-key': menuPath.indexOf(lv3.uid)>=0 && menuPath.indexOf(lv3.uid)==menuPath.length-1}" v-else><span v-html="lv3.heading"></span><span class="icon far fa-lock text-right" v-if="lv3.internal" title="Anmeldung erforderlich (TU-ID)"></span></a>
+</div>
+</div>
+</div>
+</div>
+</template>
+</template>
+<template v-for="(lv0, k) in sitemap" v-if="validLevel(lv0)">
+<template v-for="(lv1, l) in lv0.children" v-if="validLevel(lv1)">
+<template v-for="(lv2, m) in lv1.children" v-if="validLevel(lv2)">
+<div class="level level-4 frame" :id="lv3.headID" v-for="(lv3, n) in lv2.children" v-if="validLevel(lv3)" v-show="hasPath(k,l,m,n)" :ref="genPath(k,l,m,n)">
+<div class="stack-4 py-6 px-1">
+<div class="sans-h3 strong">
+<button type="button" class="back d-flex text-gr1" @click="setPath(k,l,m)">
+<span class="d-inline-block icon fas fa-angle-left mr my-auto"></span>
+<span class="d-inline-block" v-html="lv3.heading"></span>
+</button>
+</div>
+<div class="border-bottom border-gr2"></div>
+<div class="stack-5">
+<div class="sans-h3 strong d-flex pb-1" v-if="lv3.hasIndexPage && lv3.href">
+<a class="page" :href="lv3.href" :class="{'text-key': menuPath.indexOf(lv3.uid)>=0 && menuPath.indexOf(lv3.uid)==menuPath.length-1}">Übersicht<span class="icon far fa-lock text-right" v-if="lv3.internal" title="Anmeldung erforderlich (TU-ID)"></span></a>
+</div>
+<div class="sans-h3 strong" v-for="(lv4, o) in lv3.children">
+<button type="button" class="next d-flex w-100" :class="{'text-key': menuPath.indexOf(lv4.uid)>=0}" @click="setPath(k,l,m,n,o)" v-if="validLevel(lv4)">
+<div class="text-left" v-html="lv4.heading"></div>
+<div class="ml-auto"><span class="icon fas fa-angle-right"></span></div>
+</button>
+<a class="next page" :href="lv4.href" :class="{'text-key': menuPath.indexOf(lv4.uid)>=0 && menuPath.indexOf(lv4.uid)==menuPath.length-1}" v-else><span v-html="lv4.heading"></span><span class="icon far fa-lock text-right" v-if="lv4.internal" title="Anmeldung erforderlich (TU-ID)"></span></a>
+</div>
+</div>
+</div>
+</div>
+</template>
+</template>
+</template>
+<template v-for="(lv0, k) in sitemap" v-if="validLevel(lv0)">
+<template v-for="(lv1, l) in lv0.children" v-if="validLevel(lv1)">
+<template v-for="(lv2, m) in lv1.children" v-if="validLevel(lv2)">
+<template v-for="(lv3, n) in lv2.children" v-if="validLevel(lv3)">
+<div class="level level-5 frame" :id="lv4.headID" v-for="(lv4, o) in lv3.children" v-if="validLevel(lv4)" v-show="hasPath(k,l,m,n,o)" :ref="genPath(k,l,m,n,o)">
+<div class="stack-4 py-6 px-1">
+<div class="sans-h3 strong">
+<button type="button" class="back d-flex text-gr1" @click="setPath(k,l,m,n)">
+<span class="d-inline-block icon fas fa-angle-left mr my-auto"></span>
+<span class="d-inline-block" v-html="lv4.heading"></span>
+</button>
+</div>
+<div class="border-bottom border-gr2"></div>
+<div class="stack-5">
+<div class="sans-h3 strong d-flex pb-1" v-if="lv4.hasIndexPage && lv4.href">
+<a class="page" :href="lv4.href" :class="{'text-key': menuPath.indexOf(lv4.uid)>=0 && menuPath.indexOf(lv4.uid)==menuPath.length-1}">Übersicht<span class="icon far fa-lock text-right" v-if="lv4.internal" title="Anmeldung erforderlich (TU-ID)"></span></a>
+</div>
+<div class="sans-h3 strong" v-for="(lv5, p) in lv4.children">
+<button type="button" class="next d-flex w-100" :class="{'text-key': menuPath.indexOf(lv5.uid)>=0}" @click="setPath(k,l,m,n,o,p)" v-if="validLevel(lv5)">
+<div class="text-left" v-html="lv5.heading"></div>
+<div class="ml-auto"><span class="icon fas fa-angle-right"></span></div>
+</button>
+<a class="next page" :href="lv5.href" :class="{'text-key': menuPath.indexOf(lv5.uid)>=0 && menuPath.indexOf(lv5.uid)==menuPath.length-1}" v-else><span v-html="lv5.heading"></span><span class="icon far fa-lock text-right" v-if="lv5.internal" title="Anmeldung erforderlich (TU-ID)"></span></a>
+</div>
+</div>
+</div>
+</div>
+</template>
+</template>
+</template>
+</template>
+<template v-for="(lv0, k) in sitemap" v-if="validLevel(lv0)">
+<template v-for="(lv1, l) in lv0.children" v-if="validLevel(lv1)">
+<template v-for="(lv2, m) in lv1.children" v-if="validLevel(lv2)">
+<template v-for="(lv3, n) in lv2.children" v-if="validLevel(lv3)">
+<template v-for="(lv4, o) in lv3.children" v-if="validLevel(lv4)">
+<div class="level level-5 frame" :id="lv5.headID" v-for="(lv5, p) in lv4.children" v-if="validLevel(lv5)" v-show="hasPath(k,l,m,n,o,p)" :ref="genPath(k,l,m,n,o,p)">
+<div class="stack-4 py-6 px-1">
+<div class="sans-h3 strong">
+<button type="button" class="back d-flex text-gr1" @click="setPath(k,l,m,n,o)">
+<span class="d-inline-block icon fas fa-angle-left mr my-auto"></span>
+<span class="d-inline-block" v-html="lv5.heading"></span>
+</button>
+</div>
+<div class="border-bottom border-gr2"></div>
+<div class="stack-5">
+<div class="sans-h3 strong d-flex pb-1" v-if="lv5.hasIndexPage && lv5.href">
+<a class="page" :href="lv5.href" :class="{'text-key': menuPath.indexOf(lv5.uid)>=0 && menuPath.indexOf(lv5.uid)==menuPath.length-1}">Übersicht<span class="icon far fa-lock text-right" v-if="lv5.internal" title="Anmeldung erforderlich (TU-ID)"></span></a>
+</div>
+<div class="sans-h3 strong" v-for="(lv6, q) in lv5.children">
+<a class="next page" :href="lv6.href" :class="{'text-key': menuPath.indexOf(lv6.uid)>=0 && menuPath.indexOf(lv6.uid)==menuPath.length-1}"><span v-html="lv6.heading"></span><span class="icon far fa-lock text-right" v-if="lv6.internal" title="Anmeldung erforderlich (TU-ID)"></span></a>
+</div>
+</div>
+</div>
+</div>
+</template>
+</template>
+</template>
+</template>
+</template>
+</div>
+<div class="hanger frame">
+<div class="stack-5 pt-2 pb-6 px-1">
+<form class="stack-2" action="http://www.informatik.tu-darmstadt.de/suche.de.jsp" method="get">
+<div class="form-group row">
+<label class="sr-only strong form-text" for="phabletSearch">Search</label>
+<div class="col col-11-12">
+<input class="form-control" id="phabletSearch" type="search" placeholder="Suche nach …" name="q">
+</div>
+<div class="col col-1-12 my-auto">
+<button type="submit" aria-label="submit"><span class="icon far fa-search text-gr1"></span></button>
+</div>
+</div>
+</form>
+<div class="sans-body">
+<button type="button" class="link d-block text-gr1" id="phablet-schnell-btn" aria-label="Schnelleinstieg" aria-controls="phablet-fast-menu" :aria-expanded="fastMenuOpen" @click="toggleFastMenu"><span class="icon far fa-external-link-square"></span>Schnelleinstieg
+</button>
+</div>
+<div class="sans-body">
+<a class="language-selector link text-gr1 d-block" href="http://www.informatik.tu-darmstadt.de/fb20/index.en.jsp"><span class="icon fal fa-globe-europe"></span>English</a>
+</div>
+<div class="sans-body">
+<!-- noindex -->
+<a class="text-gr1 link d-block text-gr1" accesskey="i" title="Mit TU-ID am Webauftritt anmelden [Alt(+Shift)+i]" href="https://sso.tu-darmstadt.de/login?service=https%3A%2F%2Fwww.informatik.tu-darmstadt.de%2Ffb20%2Findex.de.jsp"><span class="icon far fa-user"></span>Anmelden</a>
+<!-- index -->
+</div>
+<div class="sans-body">
+<a class="text-gr1 link d-block" href="https://www.informatik.tu-darmstadt.de/" title="Home">
+<span class="icon far fa-home"></span>Home
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="frame" id="phablet-fast-menu">
+<div class="stack-6 py-6 px-1">
+<div class="sans-h3 strong d-flex">
+<p>Schnelleinstieg</p>
+<button type="button" class="ml-auto" aria-controls="phablet-fast-menu" :aria-expanded="fastMenuOpen" @click="toggleFastMenu"><span class="icon far fa-times"></span></button>
+</div>
+<div class="stack-1">
+<div class="fast-block" v-for="(group, i) in fastBlocks">
+<phablet-fast-item @toggle="activeFastItem = fastBlocks[i]" :active="activeFastItem == fastBlocks[i]" :theme-key="group.code" :key="group.code">
+<span class="sans-h4" slot="tab">{{group.heading}}</span>
+<div class="stack-2 px-3 pt-3 pb-6 strong" slot="panel">
+<p v-for="(child, j) in group.children">
+<a class="link" :href="child.href">{{child.heading}}</a>
+</p>
+</div>
+</phablet-fast-item>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="phablet-fast-overlay" :class="{active: fastMenuOpen}" ref="fastOverlay"></div>
+</div>
+</phablet-menu>
+<page-header inline-template>
+<div id="page-header" class="wrap-xl">
+<!-- noindex -->
+<a href="https://www.informatik.tu-darmstadt.de/" title="Zur Startseite der Institution">
+<div class="fach-label bg-key text-white pt-3 pb-2 d-lg-none d-print-none">
+<div class="frame inner stack-1">
+<p class="sans-lead">
+Informatik
+</p>
+</div>
+</div>
+</a>
+<!-- index -->
+<div class="hold bg-gr2 illu-area">
+<div id="slider" class="carousel slide">
+<div class="carousel-inner"><div class="carousel-item active">
+<figure>
+<div class="position-relative w-100 h-0" style="padding-bottom:50%">
+<img class="lazy position-absolute w-100 h-100 cover" data-src="/media/informatik/medien/news_2/2021/03___21/muehlhaeuser_egert_1300x650.jpg" alt="Im Hintergrund unterhalten sich Prof. Max Mühlhäuser und Doktorand Rolf Egert. Im Vordergrund ein unscharfes Windrad."/>
+<div class="position-absolute sans-credits credits-overlay">Bild: Katrin Binner</div>
+</div>
+</figure>
+<a class="link link-outer" href="http://www.informatik.tu-darmstadt.de/fb20/aktuelles_fb20/fb20_neuigkeiten/neuigkeiten_fb20_details_242112.de.jsp">
+<div class="info-frame frame-md">
+<div class="row">
+<div class="info-leader col col-1-1 col-md-10 align-self-end">
+<div class="info-bg bg-gr5 p-2">
+<div class="liner stack-2">
+<p class="serif-h2 strong">Stromversorgung braucht eine engagierte Kundschaft </p>
+<p class="link-inner sans-mini"><span class="icon fas fa-long-arrow-right"></span>Forschung am Telecooperation Lab </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</a>
+</div><div class="carousel-item">
+<figure>
+<div class="position-relative w-100 h-0" style="padding-bottom:50%">
+<img class="lazy position-absolute w-100 h-100 cover" data-src="/media/informatik/symbolbilder/darmstadt_1300x0_1300x0.jpg" alt="Luftbild Darmstadt Herrngarten bis Woog"/>
+<div class="position-absolute sans-credits credits-overlay">Bild: Nikolaus Heiss</div>
+</div>
+</figure>
+<a class="link link-outer" href="http://www.informatik.tu-darmstadt.de/fb20/aktuelles_fb20/fb20_neuigkeiten/neuigkeiten_fb20_details_238400.de.jsp">
+<div class="info-frame frame-md">
+<div class="row">
+<div class="info-leader col col-1-1 col-md-10 align-self-end">
+<div class="info-bg bg-gr5 p-2">
+<div class="liner stack-2">
+<p class="serif-h2 strong">Forschungskooperation mit Merck gestartet</p>
+<p class="link-inner sans-mini"><span class="icon fas fa-long-arrow-right"></span>Mehr erfahren</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</a>
+</div><div class="carousel-item">
+<figure>
+<div class="position-relative w-100 h-0" style="padding-bottom:50%">
+<img class="lazy position-absolute w-100 h-100 cover" data-src="/media/informatik/medien/news_2/2021/02___21/2021_06_30_Doppelerfolg_fuer_Team_Hector_mit_Asterix_und_Telemax_1300x0.jpg" alt=""/>
+<div class="position-absolute sans-credits credits-overlay">Bild: Team Hector / TU Darmstadt</div>
+</div>
+</figure>
+<a class="link link-outer" href="http://www.informatik.tu-darmstadt.de/fb20/aktuelles_fb20/fb20_neuigkeiten/neuigkeiten_fb20_details_236160.de.jsp">
+<div class="info-frame frame-md">
+<div class="row">
+<div class="info-leader col col-1-1 col-md-10 align-self-end">
+<div class="info-bg bg-gr5 p-2">
+<div class="liner stack-2">
+<p class="serif-h2 strong">Doppelerfolg für Team Hector mit „Asterix“ und „Telemax“</p>
+<p class="link-inner sans-mini"><span class="icon fas fa-long-arrow-right"></span>Mehr erfahren</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</a>
+</div><div class="carousel-item">
+<figure>
+<div class="position-relative w-100 h-0" style="padding-bottom:50%">
+<img class="lazy position-absolute w-100 h-100 cover" data-src="/media/informatik/fb20_portraits/nachwuchs/janson_DSF7292_1300x0_1300x0.jpg" alt="Christian Jason "/>
+<div class="position-absolute sans-credits credits-overlay">Bild: Katrin Binner</div>
+</div>
+</figure>
+<a class="link link-outer" href="http://www.informatik.tu-darmstadt.de/fb20/aktuelles_fb20/fb20_neuigkeiten/neuigkeiten_fb20_details_232768.de.jsp">
+<div class="info-frame frame-md">
+<div class="row">
+<div class="info-leader col col-1-1 col-md-10 align-self-end">
+<div class="info-bg bg-gr5 p-2">
+<div class="liner stack-2">
+<p class="serif-h2 strong">Athene Young Investigator Christian Janson forscht zum sicheren Austausch von Nachrichten</p>
+<p class="link-inner sans-mini"><span class="icon fas fa-long-arrow-right"></span>Mehr erfahren</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</a>
+</div><div class="carousel-item">
+<figure>
+<div class="position-relative w-100 h-0" style="padding-bottom:50%">
+<img class="lazy position-absolute w-100 h-100 cover" data-src="/media/informatik/medien/news_2/2021/02___21/2021-04_ENCRYPTO_SEEMOO_Airdrop_1300x0.jpg" alt=""/>
+<div class="position-absolute sans-credits credits-overlay">Bild: Ann-Kathrin Braun</div>
+</div>
+</figure>
+<a class="link link-outer" href="http://www.informatik.tu-darmstadt.de/fb20/ueber_uns_details_231616.de.jsp">
+<div class="info-frame frame-md">
+<div class="row">
+<div class="info-leader col col-1-1 col-md-10 align-self-end">
+<div class="info-bg bg-gr5 p-2">
+<div class="liner stack-2">
+<p class="serif-h2 strong">Apple AirDrop teilt nicht nur Dateien</p>
+<p class="link-inner sans-mini"><span class="icon fas fa-long-arrow-right"></span>Informatiker der TU entdecken Datenschutzlücke bei Apple-Filesharing-Funktion </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</a>
+</div><div class="carousel-item">
+<figure>
+<div class="position-relative w-100 h-0" style="padding-bottom:50%">
+<img class="lazy position-absolute w-100 h-100 cover" data-src="/media/informatik/fb20_portraits/bilder_professoren/Mezini_1300x650.jpg" alt="Prof. Mira Mezini"/>
+<div class="position-absolute sans-credits credits-overlay">Bild: Frithjof Kjer</div>
+</div>
+</figure>
+<a class="link link-outer" href="http://www.informatik.tu-darmstadt.de/fb20/ueber_uns_details_229888.de.jsp">
+<div class="info-frame frame-md">
+<div class="row">
+<div class="info-leader col col-1-1 col-md-10 align-self-end">
+<div class="info-bg bg-gr5 p-2">
+<div class="liner stack-2">
+<p class="serif-h2 strong">Programmieransätze für die smarte vernetzte Welt </p>
+<p class="link-inner sans-mini"><span class="icon fas fa-long-arrow-right"></span>Das Forschungsprojekt "REScala"</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</a>
+</div><div class="carousel-item">
+<figure>
+<div class="position-relative w-100 h-0" style="padding-bottom:50%">
+<img class="lazy position-absolute w-100 h-100 cover" data-src="/media/informatik/medien/news_2/2020/03___20/Energy-Robotics_slider_1300x650.jpg" alt="Die kombinierten Funktionen von Spot- und Energy Robotics liefern jederzeit eine Vielzahl konsistenter Daten von hoher Qualität, die einen effizienteren und sichereren Betrieb ermöglichen und gleichzeitig Mitarbeiter von monotonen und unbequemen, körperlich belastenden Tätigkeiten entlasten. "/>
+<div class="position-absolute sans-credits credits-overlay">Bild: Stefan Daub | Energy Robotics GmbH</div>
+</div>
+</figure>
+<a class="link link-outer" href="http://www.informatik.tu-darmstadt.de/fb20/aktuelles_fb20/fb20_neuigkeiten/neuigkeiten_fb20_details_190336.de.jsp">
+<div class="info-frame frame-md">
+<div class="row">
+<div class="info-leader col col-1-1 col-md-10 align-self-end">
+<div class="info-bg bg-gr5 p-2">
+<div class="liner stack-2">
+<p class="serif-h2 strong">Autonome Aufpasser</p>
+<p class="link-inner sans-mini"><span class="icon fas fa-long-arrow-right"></span>TU-Absolventen und TU-Robotik-Experte gründen „Energy Robotics“ </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</a>
+</div><div class="carousel-item">
+<figure>
+<div class="position-relative w-100 h-0" style="padding-bottom:50%">
+<img class="lazy position-absolute w-100 h-100 cover" data-src="/media/informatik/fb20_forschung/roboter_1/ki_0749_1300x0.jpg" alt="Zwei Forscherinnen bedienen einen Roboterarm"/>
+<div class="position-absolute sans-credits credits-overlay">Bild: Katrin Binner</div>
+</div>
+</figure>
+<a class="link link-outer" href="http://www.informatik.tu-darmstadt.de/fb20/aktuelles_fb20/fb20_neuigkeiten/neuigkeiten_fb20_details_208704.de.jsp">
+<div class="info-frame frame-md">
+<div class="row">
+<div class="info-leader col col-1-1 col-md-10 align-self-end">
+<div class="info-bg bg-gr5 p-2">
+<div class="liner stack-2">
+<p class="serif-h2 strong">Nachwuchsforscherinnen am Start</p>
+<p class="link-inner sans-mini"><span class="icon fas fa-long-arrow-right"></span>Fokus auf Interaktion von Menschen und Künstlicher Intelligenz</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</a>
+</div></div>
+<a class="carousel-control carousel-control-prev" href="fb20.html#slider" role="button" data-slide="prev"><span class="icon fas fa-chevron-left fa-2x" aria-hidden="true"></span><span class="sr-only">Zurück</span></a>
+<a class="carousel-control carousel-control-next" href="fb20.html#slider" role="button" data-slide="next"><span class="icon fas fa-chevron-right fa-2x" aria-hidden="true"></span><span class="sr-only">Vor</span></a>
+</div>
+<div class="info-teaser frame-md d-print-none theme-light">
+<div class="row">
+<div class="col col-1-1 col-md-1-4 offset-md-3-4 mb-md-2 align-self-end">
+<div class="hold">
+<div class="info-teaser-box bg-key text-white p-2">
+<div class="stack-2">
+<p class="strong sans-h4">Jetzt ­bewerben!</p>
+<p class="sans-mini"><a class="link" href="http://www.informatik.tu-darmstadt.de/studium_fb20/vor_dem_studium/uebersicht_studiengaenge/index.de.jsp"><span class="icon"><span class="fas fa-long-arrow-right"></span></span>Zu den Studiengängen</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="overlay" :class="{active: overlay}" @click="overlayClick"></div>
+</div>
+</div>
+</page-header>
+</header>
+<main id="site-main" class="theme-light">
+<div class="frame">
+<div class="grid">
+<div class="cell-12 cell-md-9">
+<section class="pt-5 pb-5">
+<div class="grid">
+<div class="cell-12 cell-md-8-9 stack-3">
+<h1 class="serif-h1">Fachbereich Informatik</h1>
+<p class="sans-lead pre-line">Der Fachbereich Informatik wurde 1972 mit einem klaren Ziel vor Augen gegründet: Spitzenforscher*innen und exzellente Studierende zusammenzubringen, um die Zukunft der Informatik mitzugestalten. Heute bieten wir ein breites Spektrum an Themen in der grundlagen- und anwendungsorientierten Forschung sowie in der Lehre. Die Informatik prägt entscheidend das interdisziplinäre Profil der TU Darmstadt, eine der führenden forschungsorientierten Technischen Universitäten in Deutschland.</p>
+<p class="sans-body"><a class="link" href="http://www.informatik.tu-darmstadt.de/fb20/profil/index.de.jsp"><span class="icon"><span class="fas fa-long-arrow-right"></span></span>Mehr erfahren</a></p>
+</div>
+</div>
+</section>
+</div>
+<div class="cell-12 cell-md-3">
+<!-- noindex -->
+<div class="d-block pt-5 d-print-none">
+<button type="button" class="btn btn-block btn-outline-key btn-lg mb-4" data-toggle="modal" data-target="#contact-modal">
+Kontakt
+</button>
+</div>
+<!-- index -->
+<!-- noindex -->
+<div class="d-block cell-md-2-3 mb-4 mb-md-0 p-0 d-print-none">
+<figure class="sublogo">
+<img class="lazy" data-src="/media/informatik/fb20_logos/fb20/FB-Informatik-Logo_DE_written-out_rgb-blk_color.de.png" alt=""/>
+</figure>
+</div>
+<!-- index -->
+</div>
+</div>
+</div>
+<section class="frame mb-5" id="fb20absatz_studiumundforschung">
+<div class="grid-2">
+<div class="cell-12">
+<h2 class="serif-h2">
+Studium und Forschung
+</h2>
+</div>
+<div class="cell-12 cell-md-6 pb-4">
+<a class="link link-outer h-100 flex-column" href="http://www.informatik.tu-darmstadt.de/studium_fb20/index.de.jsp">
+<figure>
+<div class="position-relative w-100 h-0" style="padding-bottom:56.25%">
+<img class="lazy position-absolute w-100 h-100 cover" data-src="/media/informatik/fb20_studium/studienfotos/StudentenImPark_560x0.jpg" alt="Zwei Studierende mit Laptop auf Schoß Rücken an Rücken vor Piloty-Gebäude"/>
+<div class="position-absolute sans-credits credits-overlay">Bild: Natalie Wocko</div>
+</div>
+</figure>
+<div class="pt-2 d-flex flex-column flex-grow-1">
+<div class="stack-1">
+<h3 class="sans-h4">Studium am Fachbereich Informatik</h3>
+<p class="sans-small">Unser Bachelorstudiengang verbindet grundlegendes methodisches Fachwissen mit praktischen Fähigkeiten. Im Masterstudiengang können Studierende ihre Kenntnisse vertiefen und Expertise in mehreren wichtigen Informatikbereichen entwickeln. Fünf spezialisierte Masterstudiengänge ermöglichen einen besonderen Fokus auf hochrelevante Zukunftsbereiche.</p>
+<p class="sans-mini pt-1">
+<span class="link-inner"><span class="icon fas fa-long-arrow-right"></span>Mehr erfahren</span>
+</p>
+</div>
+</div>
+</a>
+</div>
+<div class="cell-12 cell-md-6 pb-4">
+<a class="link link-outer h-100 flex-column" href="http://www.informatik.tu-darmstadt.de/forschung_fb20/index.de.jsp">
+<figure>
+<div class="position-relative w-100 h-0" style="padding-bottom:56.25%">
+<img class="lazy position-absolute w-100 h-100 cover" data-src="/media/informatik/fb20_forschung/roboter_1/kuka16099-1300px_560x0.jpg" alt=""/>
+<div class="position-absolute sans-credits credits-overlay">Bild: Stefan Elges</div>
+</div>
+</figure>
+<div class="pt-2 d-flex flex-column flex-grow-1">
+<div class="stack-1">
+<h3 class="sans-h4">Forschung am Fachbereich Informatik</h3>
+<p class="sans-small">Im Bereich Informatik gehört die TU Darmstadt europaweit zu den führenden Universitäten &#8211; gemessen an den Veröffentlichungen in angesehenen wissenschaftlichen Medien.</p>
+<p class="sans-mini pt-1">
+<span class="link-inner"><span class="icon fas fa-long-arrow-right"></span>Mehr erfahren</span>
+</p>
+</div>
+</div>
+</a>
+</div>
+</div>
+</section>
+<section class="frame mb-5 content-section" id="banner" >
+<div class="grid-2">
+<div class="cell-12">
+<figure class="stack-1">
+<a class="hover-group" href="http://www.informatik.tu-darmstadt.de/studium_fb20/im_studium/erstsemester.de.jsp">
+<img class="lazy" data-src="/media/informatik/medien/banner_startseite/Banner_Erstsemester_1180x0.jpg" alt=""/>
+<div class="bg-gr1 group-hover-bg-gr2 d-inline-block icon-overlay position-absolute sans-mini">
+<span class="d-block icon fal fa-link fa-2x text-center text-gr5 group-hover-text-white"></span>
+</div>
+</a>
+</figure>
+</div>
+</div>
+</section>
+<section class="frame mb-5" id="linksammlung_in_kacheldarstellung_nur_responsive_design">
+<div class="grid-2">
+<div class="cell-12">
+<h2 class="serif-h2">
+Schnelleinstieg
+</h2>
+</div>
+<div class="cell-12 cell-sm-6 cell-md-4 cell-lg-3">
+<button class="flip-tile link link-outer w-100">
+<div class="position-relative text-left">
+<div class="bg-key w-100 pb-100 position-relative">
+<div class="tile-image d-block position-absolute w-100 h-100">
+<figure>
+<div class="position-relative w-100 h-0" style="padding-bottom:100%">
+<img class="lazy position-absolute w-100 h-100 cover" data-src="/media/informatik/fb20_studium/buehnenbilder/0225_2017-11-17_TU_Darmstadt_475x475.jpg" alt="Foto von Absolvent:innen von Hand vor blauem Anzug gehalten"/>
+<div class="position-absolute sans-credits credits-overlay">Bild: Patrick Reymann</div>
+</div>
+</figure>
+</div>
+<div class="tile-text d-none position-absolute w-100 h-100 overflow-hidden">
+<ul class="list-unstyled d-flex flex-column h-100 p-1 sans-mini stack-1 text-white">
+<li><a class="link" href="http://www.informatik.tu-darmstadt.de/studium_fb20/vor_dem_studium/index.de.jsp" title="Offers prospective students"><span class="icon"><span class="fas fa-long-arrow-right"></span></span>Für Studieninteressierte</a></li>
+<li><a class="link" href="http://www.informatik.tu-darmstadt.de/studium_fb20/im_studium/studiengaenge_liste/index.de.jsp"><span class="icon"><span class="fas fa-long-arrow-right"></span></span>Studiengänge</a></li>
+<li><a class="link" href="http://www.informatik.tu-darmstadt.de/studium_fb20/im_studium/studienbuero/index.de.jsp"><span class="icon"><span class="fas fa-long-arrow-right"></span></span>Studienbüro</a></li>
+<li><a class="link" href="http://www.informatik.tu-darmstadt.de/studium_fb20/im_studium/beratung_und_unterstuetzung/fachstudienberatung/index.de.jsp"><span class="icon"><span class="fas fa-long-arrow-right"></span></span>Fachstudienberatung</a></li>
+<li><a class="link" href="https://www.tu-darmstadt.de/studieren/studieninteressierte/bewerbung_zulassung_tu/index.de.jsp"><span class="icon"><span class="fas fa-long-arrow-right"></span></span>Bewerbung und Zulassung</a></li>
+<li><a class="link" href="http://www.informatik.tu-darmstadt.de/studium_fb20/im_studium/formulare_und_dokumente/ordnungen/index.de.jsp"><span class="icon"><span class="fas fa-long-arrow-right"></span></span>Formulare und Dokumente</a></li>
+<li><a class="link" href="http://www.informatik.tu-darmstadt.de/forschung_fb20/wissenschaftliche_karriere/index.de.jsp#faktenbox_mit_bild_nur_responsive_design_1"><span class="icon"><span class="fas fa-long-arrow-right"></span></span>Offene Stellen am Fachbereich</a></li>
+</ul>
+</div>
+</div>
+<div class="w-100">
+<h3 class="sans-h6 pt-1">Studieninteressierte und Studierende</h3>
+</div>
+</div>
+</button>
+</div>
+<div class="cell-12 cell-sm-6 cell-md-4 cell-lg-3">
+<button class="flip-tile link link-outer w-100">
+<div class="position-relative text-left">
+<div class="bg-key w-100 pb-100 position-relative">
+<div class="tile-image d-block position-absolute w-100 h-100">
+<figure>
+<div class="position-relative w-100 h-0" style="padding-bottom:100%">
+<img class="lazy position-absolute w-100 h-100 cover" data-src="/media/informatik/fb20_forschung/roboter_1/kuka16180-1300px_0x475.jpg" alt=""/>
+<div class="position-absolute sans-credits credits-overlay">Bild: Stefan Elges</div>
+</div>
+</figure>
+</div>
+<div class="tile-text d-none position-absolute w-100 h-100 overflow-hidden">
+<ul class="list-unstyled d-flex flex-column h-100 p-1 sans-mini stack-1 text-white">
+<li><a class="link" href="http://www.informatik.tu-darmstadt.de/forschung_fb20/forschungsschwerpunkte/index.de.jsp"><span class="icon"><span class="fas fa-long-arrow-right"></span></span>Forschungsschwerpunkte</a></li>
+<li><a class="link" href="http://www.informatik.tu-darmstadt.de/fb20/organisation_fb20/professuren_und_gruppenleitungen/index.de.jsp"><span class="icon"><span class="fas fa-long-arrow-right"></span></span>Professuren und Gruppenleitungen</a></li>
+<li><a class="link" href="http://www.informatik.tu-darmstadt.de/forschung_fb20/publikationen_fb20/index.de.jsp"><span class="icon"><span class="fas fa-long-arrow-right"></span></span>Publikationen</a></li>
+<li><a class="link" href="http://www.informatik.tu-darmstadt.de/forschung_fb20/wissenschaftliche_karriere/promotion/index.de.jsp"><span class="icon"><span class="fas fa-long-arrow-right"></span></span>Promotion</a></li>
+<li><a class="link" href="http://www.informatik.tu-darmstadt.de/forschung_fb20/wissenschaftliche_karriere/karriereprogramme/index.de.jsp"><span class="icon"><span class="fas fa-long-arrow-right"></span></span>Postdoc</a></li>
+<li><a class="link" href="http://www.informatik.tu-darmstadt.de/forschung_fb20/wissenschaftliche_karriere/habilitation/index.de.jsp"><span class="icon"><span class="fas fa-long-arrow-right"></span></span>Habilitation</a></li>
+<li><a class="link" href="http://www.informatik.tu-darmstadt.de/forschung_fb20/wissenschaftliche_karriere/index.de.jsp"><span class="icon"><span class="fas fa-long-arrow-right"></span></span>Offene Stellen am Fachbereich</a></li>
+</ul>
+</div>
+</div>
+<div class="w-100">
+<h3 class="sans-h6 pt-1">Forschende</h3>
+</div>
+</div>
+</button>
+</div>
+<div class="cell-12 cell-sm-6 cell-md-4 cell-lg-3">
+<button class="flip-tile link link-outer w-100">
+<div class="position-relative text-left">
+<div class="bg-key w-100 pb-100 position-relative">
+<div class="tile-image d-block position-absolute w-100 h-100">
+<figure>
+<div class="position-relative w-100 h-0" style="padding-bottom:100%">
+<img class="lazy position-absolute w-100 h-100 cover" data-src="/media/informatik/fb20_studium/studium_index/TU_INFORMATIK-50_bearbeitet_475x475.jpg" alt=""/>
+</div>
+</figure>
+</div>
+<div class="tile-text d-none position-absolute w-100 h-100 overflow-hidden">
+<ul class="list-unstyled d-flex flex-column h-100 p-1 sans-mini stack-1 text-white">
+<li><a class="link" href="http://www.informatik.tu-darmstadt.de/fb20/intern_1/fuer_interne_mitarbeiter/index.en.jsp"><span class="icon"><span class="fas fa-long-arrow-right"></span></span>A-Z</a></li>
+<li><a class="link" href="http://www.informatik.tu-darmstadt.de/fb20/organisation_fb20/professuren_und_gruppenleitungen/index.en.jsp"><span class="icon"><span class="fas fa-long-arrow-right"></span></span>Fachgebiete</a></li>
+<li><a class="link" href="https://mrbs.informatik.tu-darmstadt.de/day.php"><span class="icon"><span class="fas fa-long-arrow-right"></span></span>Raumbuchungssystem</a></li>
+<li><a class="link" href="https://sso.tu-darmstadt.de/login?service=http&#37;3a&#37;2f&#37;2fwww.dekanat.informatik.tu-darmstadt.de&#37;2fpersonen&#37;2fstaffmgn.php"><span class="icon"><span class="fas fa-long-arrow-right"></span></span>Staff Management</a></li>
+<li><a class="link" href="https://www.dekanat.informatik.tu-darmstadt.de/personen/liste.php"><span class="icon"><span class="fas fa-long-arrow-right"></span></span>Personen am Fachbereich</a></li>
+<li><a class="link" href="https://www.dekanat.informatik.tu-darmstadt.de/personen/staffmgn.php?todo=140"><span class="icon"><span class="fas fa-long-arrow-right"></span></span>E-Mail-Aliases und -Verteiler </a></li>
+<li><a class="link" href="http://www.informatik.tu-darmstadt.de/fb20/intern_1/fuer_interne_mitarbeiter/sekretarianet_startbegleiterinnen.de.jsp"><span class="icon"><span class="fas fa-long-arrow-right"></span></span>Startbegleitung für Assistenzen</a></li>
+</ul>
+</div>
+</div>
+<div class="w-100">
+<h3 class="sans-h6 pt-1">Beschäftigte</h3>
+</div>
+</div>
+</button>
+</div>
+<div class="cell-12 cell-sm-6 cell-md-4 cell-lg-3">
+<button class="flip-tile link link-outer w-100">
+<div class="position-relative text-left">
+<div class="bg-key w-100 pb-100 position-relative">
+<div class="tile-image d-block position-absolute w-100 h-100">
+<figure>
+<div class="position-relative w-100 h-0" style="padding-bottom:100%">
+<img class="lazy position-absolute w-100 h-100 cover" data-src="/media/informatik/symbolbilder/black-background-close-up-colors-1356300_daria_shevtsova_475x475.jpg" alt=""/>
+<div class="position-absolute sans-credits credits-overlay">Bild: Daria Shevtsova</div>
+</div>
+</figure>
+</div>
+<div class="tile-text d-none position-absolute w-100 h-100 overflow-hidden">
+<ul class="list-unstyled d-flex flex-column h-100 p-1 sans-mini stack-1 text-white">
+<li><a class="link" href="http://www.informatik.tu-darmstadt.de/transfer/index.en.jsp"><span class="icon"><span class="fas fa-long-arrow-right"></span></span>Kooperationen und Start-ups</a></li>
+<li><a class="link" href="https://www.fif.tu-darmstadt.de/"><span class="icon"><span class="fas fa-long-arrow-right"></span></span>Interdisziplinäre Forschung</a></li>
+<li><a class="link" href="http://www.informatik.tu-darmstadt.de/forschung_fb20/forschungsprofil/index.de.jsp"><span class="icon"><span class="fas fa-long-arrow-right"></span></span>Wissenschaftliches Netzwerk</a></li>
+<li><a class="link" href="https://www.tu-darmstadt.de/universitaet/karriere_an_der_tu/stellenangebote/aktuelle_stellenangebote/index.de.jsp&#35;unterrubrik_582"><span class="icon"><span class="fas fa-long-arrow-right"></span></span>Offene Stellen für Wissenschaftler*innen</a></li>
+<li><a class="link" href="https://www.stellenwerk-darmstadt.de/jobboerse?keywords=Informatik&#38;offer_type=All&#38;job_category=168&#38;employment_type=All"><span class="icon"><span class="fas fa-long-arrow-right"></span></span>Offene Stellen für Studentische Hilfskräfte </a></li>
+</ul>
+</div>
+</div>
+<div class="w-100">
+<h3 class="sans-h6 pt-1">Wissenstransfer</h3>
+</div>
+</div>
+</button>
+</div>
+</div>
+</section>
+<section class="frame mb-5 bg-gr5 py-md-4" id="news_teaser_responsive">
+<div class="grid-3">
+<div class="cell-12">
+<div class="d-flex align-items-center">
+<div class="flex-grow-1">
+<h2 class="serif-h2">
+Aktuelles
+</h2>
+</div>
+<div class="flex-grow-0 d-sm-none text-right">
+<button class="text-gr0 hover-text-gr1" onclick="$(this).closest('section').find('.carousel').carousel('prev');"><span class="icon far fa-angle-left fa-2x" aria-hidden="true"></span><span class="sr-only">Zurück</span></button>
+<button class="text-gr0 hover-text-gr1" onclick="$(this).closest('section').find('.carousel').carousel('next');"><span class="icon far fa-angle-right fa-2x" aria-hidden="true"></span><span class="sr-only">Vor</span></button>
+</div>
+</div>
+</div>
+<div class="d-none d-sm-block cell-12 cell-sm-6 cell-md-4">
+<a class="link link-outer h-100 flex-column bg-white hover-bg-key hover-group hover-text-white" href="http://www.informatik.tu-darmstadt.de/fb20/ueber_uns_details_242112.de.jsp">
+<div class="flex-grow-0">
+<figure class="d-none d-sm-block">
+<div class="position-relative w-100 h-0" style="padding-bottom:75%">
+<img class="lazy position-absolute w-100 h-100 cover" data-src="/media/informatik/medien/news_2/2021/03___21/muehlhaeuser_egert_1300x650_376x282.jpg" alt="Im Hintergrund unterhalten sich Prof. Max Mühlhäuser und Doktorand Rolf Egert. Im Vordergrund ein unscharfes Windrad."/>
+<div class="position-absolute sans-credits credits-overlay">Bild: Katrin Binner</div>
+</div>
+</figure>
+<figure class="d-sm-none">
+<div class="position-relative w-100 h-0" style="padding-bottom:56.21%">
+<img class="lazy position-absolute w-100 h-100 cover" data-src="/media/informatik/medien/news_2/2021/03___21/muehlhaeuser_egert_1300x650_475x267.jpg" alt="Im Hintergrund unterhalten sich Prof. Max Mühlhäuser und Doktorand Rolf Egert. Im Vordergrund ein unscharfes Windrad."/>
+<div class="position-absolute sans-credits credits-overlay">Bild: Katrin Binner</div>
+</div>
+</figure>
+</div>
+<div class="teaser-body pt-2 px-2 d-flex flex-column flex-grow-1 hyphens">
+<div class="stack-1">
+<p class="sans-small">
+21. September 2021
+</p>
+<h3 class="sans-h4 pb-1">
+Stromversorgung braucht eine engagierte Kundschaft
+</h3>
+<p class="sans-small mb-0">
+Forschung am Telecooperation Lab
+</p>
+</div>
+</div>
+<div class="group-hover-visible text-right d-flex align-items-center mt-0 pr-2 pb-1">
+<div class="link-inner sans-h2 strong ml-auto text-white group-hover-text-white"><span class="icon fas fa-arrow-right"></span></div>
+</div>
+</a>
+</div>
+<div class="d-none d-sm-block cell-12 cell-sm-6 cell-md-4">
+<a class="link link-outer h-100 flex-column bg-white hover-bg-key hover-group hover-text-white" href="https://datenaffaire.com/2021/09/16/episode-33-fake-news/">
+<div class="flex-grow-0">
+<figure class="d-none d-sm-block">
+<div class="position-relative w-100 h-0" style="padding-bottom:75%">
+<img class="lazy position-absolute w-100 h-100 cover" data-src="/media/informatik/medien/news_2/in_den_medien_logos/In_den_Medien_376x0.jpg" alt="Zeitschriften mit Kaffeetasse"/>
+<div class="position-absolute sans-credits credits-overlay">Bild: Natalie Wocko</div>
+</div>
+</figure>
+<figure class="d-sm-none">
+<div class="position-relative w-100 h-0" style="padding-bottom:56.21%">
+<img class="lazy position-absolute w-100 h-100 cover" data-src="/media/informatik/medien/news_2/in_den_medien_logos/In_den_Medien_475x0.jpg" alt="Zeitschriften mit Kaffeetasse"/>
+<div class="position-absolute sans-credits credits-overlay">Bild: Natalie Wocko</div>
+</div>
+</figure>
+</div>
+<div class="teaser-body pt-2 px-2 d-flex flex-column flex-grow-1 hyphens">
+<div class="stack-1">
+<p class="sans-small">
+16. September 2021
+</p>
+<h3 class="sans-h4 pb-1">
+Datenaffaire (Podcast): Fake News
+</h3>
+<p class="sans-small mb-0">
+Professor Matthias Hollick im Interview
+</p>
+</div>
+</div>
+<div class="group-hover-visible text-right d-flex align-items-center mt-0 pr-2 pb-1">
+<div class="link-inner sans-h2 strong ml-auto text-white group-hover-text-white"><span class="icon fas fa-arrow-right"></span></div>
+</div>
+</a>
+</div>
+<div class="d-none d-sm-block cell-12 cell-sm-6 cell-md-4">
+<a class="link link-outer h-100 flex-column bg-white hover-bg-key hover-group hover-text-white" href="http://www.informatik.tu-darmstadt.de/fb20/ueber_uns_details_241728.de.jsp">
+<div class="flex-grow-0">
+<figure class="d-none d-sm-block">
+<div class="position-relative w-100 h-0" style="padding-bottom:75%">
+<img class="lazy position-absolute w-100 h-100 cover" data-src="/media/informatik/medien/news_2/2021/03___21/IoT_Bild_376x282.png" alt=""/>
+<div class="position-absolute sans-credits credits-overlay">Bild: System Security Lab</div>
+</div>
+</figure>
+<figure class="d-sm-none">
+<div class="position-relative w-100 h-0" style="padding-bottom:56.21%">
+<img class="lazy position-absolute w-100 h-100 cover" data-src="/media/informatik/medien/news_2/2021/03___21/IoT_Bild_0x267.png" alt=""/>
+<div class="position-absolute sans-credits credits-overlay">Bild: System Security Lab</div>
+</div>
+</figure>
+</div>
+<div class="teaser-body pt-2 px-2 d-flex flex-column flex-grow-1 hyphens">
+<div class="stack-1">
+<p class="sans-small">
+16. September 2021
+</p>
+<h3 class="sans-h4 pb-1">
+Neuartige Sicherheit für das Internet der Dinge
+</h3>
+<p class="sans-small mb-0">
+Transferprojekt des System Security Lab erhält Förderung durch den Pioneer Fund
+</p>
+</div>
+</div>
+<div class="group-hover-visible text-right d-flex align-items-center mt-0 pr-2 pb-1">
+<div class="link-inner sans-h2 strong ml-auto text-white group-hover-text-white"><span class="icon fas fa-arrow-right"></span></div>
+</div>
+</a>
+</div>
+<div class="d-block d-sm-none carousel slide tiles-carousel cell-12 px-0 mr-2 mr-sm-0" id="newsteaser_12053454">
+<div class="carousel-inner" role="listbox">
+<div class="carousel-item cell-12 active">
+<a class="link link-outer h-100 flex-column bg-white hover-bg-key hover-group hover-text-white" href="http://www.informatik.tu-darmstadt.de/fb20/ueber_uns_details_242112.de.jsp">
+<div class="flex-grow-0">
+<figure class="d-none d-sm-block">
+<div class="position-relative w-100 h-0" style="padding-bottom:75%">
+<img class="lazy position-absolute w-100 h-100 cover" data-src="/media/informatik/medien/news_2/2021/03___21/muehlhaeuser_egert_1300x650_376x282.jpg" alt="Im Hintergrund unterhalten sich Prof. Max Mühlhäuser und Doktorand Rolf Egert. Im Vordergrund ein unscharfes Windrad."/>
+<div class="position-absolute sans-credits credits-overlay">Bild: Katrin Binner</div>
+</div>
+</figure>
+<figure class="d-sm-none">
+<div class="position-relative w-100 h-0" style="padding-bottom:56.21%">
+<img class="lazy position-absolute w-100 h-100 cover" data-src="/media/informatik/medien/news_2/2021/03___21/muehlhaeuser_egert_1300x650_475x267.jpg" alt="Im Hintergrund unterhalten sich Prof. Max Mühlhäuser und Doktorand Rolf Egert. Im Vordergrund ein unscharfes Windrad."/>
+<div class="position-absolute sans-credits credits-overlay">Bild: Katrin Binner</div>
+</div>
+</figure>
+</div>
+<div class="teaser-body pt-2 px-2 d-flex flex-column flex-grow-1 hyphens">
+<div class="stack-1">
+<p class="sans-small">
+21. September 2021
+</p>
+<h3 class="sans-h4 pb-1">
+Stromversorgung braucht eine engagierte Kundschaft
+</h3>
+<p class="sans-small mb-0">
+Forschung am Telecooperation Lab
+</p>
+</div>
+</div>
+<div class="group-hover-visible text-right d-flex align-items-center mt-0 pr-2 pb-1">
+<div class="link-inner sans-h2 strong ml-auto text-white group-hover-text-white"><span class="icon fas fa-arrow-right"></span></div>
+</div>
+</a>
+</div>
+<div class="carousel-item cell-12">
+<a class="link link-outer h-100 flex-column bg-white hover-bg-key hover-group hover-text-white" href="https://datenaffaire.com/2021/09/16/episode-33-fake-news/">
+<div class="flex-grow-0">
+<figure class="d-none d-sm-block">
+<div class="position-relative w-100 h-0" style="padding-bottom:75%">
+<img class="lazy position-absolute w-100 h-100 cover" data-src="/media/informatik/medien/news_2/in_den_medien_logos/In_den_Medien_376x0.jpg" alt="Zeitschriften mit Kaffeetasse"/>
+<div class="position-absolute sans-credits credits-overlay">Bild: Natalie Wocko</div>
+</div>
+</figure>
+<figure class="d-sm-none">
+<div class="position-relative w-100 h-0" style="padding-bottom:56.21%">
+<img class="lazy position-absolute w-100 h-100 cover" data-src="/media/informatik/medien/news_2/in_den_medien_logos/In_den_Medien_475x0.jpg" alt="Zeitschriften mit Kaffeetasse"/>
+<div class="position-absolute sans-credits credits-overlay">Bild: Natalie Wocko</div>
+</div>
+</figure>
+</div>
+<div class="teaser-body pt-2 px-2 d-flex flex-column flex-grow-1 hyphens">
+<div class="stack-1">
+<p class="sans-small">
+16. September 2021
+</p>
+<h3 class="sans-h4 pb-1">
+Datenaffaire (Podcast): Fake News
+</h3>
+<p class="sans-small mb-0">
+Professor Matthias Hollick im Interview
+</p>
+</div>
+</div>
+<div class="group-hover-visible text-right d-flex align-items-center mt-0 pr-2 pb-1">
+<div class="link-inner sans-h2 strong ml-auto text-white group-hover-text-white"><span class="icon fas fa-arrow-right"></span></div>
+</div>
+</a>
+</div>
+<div class="carousel-item cell-12">
+<a class="link link-outer h-100 flex-column bg-white hover-bg-key hover-group hover-text-white" href="http://www.informatik.tu-darmstadt.de/fb20/ueber_uns_details_241728.de.jsp">
+<div class="flex-grow-0">
+<figure class="d-none d-sm-block">
+<div class="position-relative w-100 h-0" style="padding-bottom:75%">
+<img class="lazy position-absolute w-100 h-100 cover" data-src="/media/informatik/medien/news_2/2021/03___21/IoT_Bild_376x282.png" alt=""/>
+<div class="position-absolute sans-credits credits-overlay">Bild: System Security Lab</div>
+</div>
+</figure>
+<figure class="d-sm-none">
+<div class="position-relative w-100 h-0" style="padding-bottom:56.21%">
+<img class="lazy position-absolute w-100 h-100 cover" data-src="/media/informatik/medien/news_2/2021/03___21/IoT_Bild_0x267.png" alt=""/>
+<div class="position-absolute sans-credits credits-overlay">Bild: System Security Lab</div>
+</div>
+</figure>
+</div>
+<div class="teaser-body pt-2 px-2 d-flex flex-column flex-grow-1 hyphens">
+<div class="stack-1">
+<p class="sans-small">
+16. September 2021
+</p>
+<h3 class="sans-h4 pb-1">
+Neuartige Sicherheit für das Internet der Dinge
+</h3>
+<p class="sans-small mb-0">
+Transferprojekt des System Security Lab erhält Förderung durch den Pioneer Fund
+</p>
+</div>
+</div>
+<div class="group-hover-visible text-right d-flex align-items-center mt-0 pr-2 pb-1">
+<div class="link-inner sans-h2 strong ml-auto text-white group-hover-text-white"><span class="icon fas fa-arrow-right"></span></div>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="frame mb-5 mt-reduced bg-gr5 pb-4" id="weitere_news">
+<div class="grid">
+<div class="cell-12 stack-1 text-center">
+<a class="btn btn-key btn-sm-lg" href="http://www.informatik.tu-darmstadt.de/fb20/aktuelles_fb20/fb20_neuigkeiten/index.de.jsp" role="button">
+Weitere Neuigkeiten
+</a>
+</div>
+</div>
+</section><section class="frame mb-5" id="veranstaltungsliste_reduziert">
+<div class="grid-2">
+<div class="cell-10">
+<h2 class="serif-h2">
+Veranstaltungen
+</h2>
+</div>
+<div class="cell-2 pt-2 text-right">
+<a class="link text-gr1 hover-text-key px-1" title="Veranstaltungen im iCalendar-Format abonnieren" href="http://www.informatik.tu-darmstadt.de/fb20/aktuelles_fb20/veranstaltungen_fb20/ics_events.de.jsp"><span class="fal fa-calendar fa-lg"></span></a>
+</div>
+<div class="cell-12">
+<ul class="list-unstyled">
+<div class="grid-2">
+<li class="article-list-item cell-12 cell-sm-6 cell-md-12">
+<a class="link link-outer h-100 flex-column bg-key text-white" href="http://www.informatik.tu-darmstadt.de/fb20/aktuelles_fb20/veranstaltungen_fb20/veranstaltung_details_148480.de.jsp">
+<div class="stop">
+<div class="grid-1">
+<div class="cell-12 cell-md-2 pt-2 pb-md-2 pr-md-0">
+<p class="sans-body pl-1">
+<strong>
+22.09.2021</strong><span class="d-md-none">,</span>
+<br class="d-none d-md-block"/>
+18:00-21:30
+</p>
+</div>
+<div class="cell-12 cell-md-8 pl-1 pt-md-2 pr-md-0">
+<p class="sans-h5 strong px-1 pb-1">
+Wissenschaft im Dialog: Kritische Infrastruktur: Was tun gegen neue Cyberrisiken?
+</p>
+</div>
+<div class="cell-md-2 d-none d-md-flex flex-column">
+<div class="sans-h2 strong align-self-end mr-2 my-auto text-gr4 group-hover-text-white"><span class="icon fas fa-arrow-right"></span></div>
+</div>
+</div>
+</div>
+</a>
+</li>
+<li class="article-list-item cell-12 cell-sm-6 cell-md-12">
+<a class="link link-outer h-100 flex-column bg-gr4 hover-bg-key hover-group hover-text-white" href="http://www.informatik.tu-darmstadt.de/fb20/aktuelles_fb20/veranstaltungen_fb20/veranstaltung_details_148288.de.jsp">
+<div class="stop">
+<div class="grid-1">
+<div class="cell-12 cell-md-2 pt-2 pb-md-2 pr-md-0">
+<p class="sans-body pl-1">
+<strong>
+28.09.2021</strong><span class="d-md-none">,</span>
+<br class="d-none d-md-block"/>
+17:00-18:00
+</p>
+</div>
+<div class="cell-12 cell-md-8 pl-1 pt-md-2 pr-md-0">
+<p class="sans-h5 strong px-1 pb-1">
+Disputation von Fabio Muratore, M.Sc.
+</p>
+<p class="sans-mini strong px-1 pb-2">
+Randomizing Physics Simulations for Robot Learning
+</p>
+</div>
+<div class="cell-md-2 d-none d-md-flex flex-column">
+<div class="sans-h2 strong align-self-end mr-2 my-auto text-gr4 group-hover-text-white"><span class="icon fas fa-arrow-right"></span></div>
+</div>
+</div>
+</div>
+</a>
+</li>
+<li class="article-list-item cell-12 cell-sm-6 cell-md-12">
+<a class="link link-outer h-100 flex-column bg-gr4 hover-bg-key hover-group hover-text-white" href="http://www.informatik.tu-darmstadt.de/fb20/aktuelles_fb20/veranstaltungen_fb20/veranstaltung_details_147008.de.jsp">
+<div class="stop">
+<div class="grid-1">
+<div class="cell-12 cell-md-2 pt-2 pb-md-2 pr-md-0">
+<p class="sans-body pl-1">
+<strong>
+29.09.2021</strong><span class="d-md-none">,</span>
+<br class="d-none d-md-block"/>
+11:15-12:00
+</p>
+</div>
+<div class="cell-12 cell-md-8 pl-1 pt-md-2 pr-md-0">
+<p class="sans-h5 strong px-1 pb-1">
+Keynote + Q&A: The Third Wave of AI (Prof. Dr. Kristian Kersting)
+</p>
+<p class="sans-mini strong px-1 pb-2">
+51. Jahrestagung der Gesellschaft für Informatik
+</p>
+</div>
+<div class="cell-md-2 d-none d-md-flex flex-column">
+<div class="sans-h2 strong align-self-end mr-2 my-auto text-gr4 group-hover-text-white"><span class="icon fas fa-arrow-right"></span></div>
+</div>
+</div>
+</div>
+</a>
+</li>
+<li class="article-list-item cell-12 cell-sm-6 cell-md-12">
+<a class="link link-outer h-100 flex-column bg-gr4 hover-bg-key hover-group hover-text-white" href="http://www.informatik.tu-darmstadt.de/fb20/aktuelles_fb20/veranstaltungen_fb20/veranstaltung_details_146435.de.jsp">
+<div class="stop">
+<div class="grid-1">
+<div class="cell-12 cell-md-2 pt-2 pb-md-2 pr-md-0">
+<p class="sans-body pl-1">
+<strong>
+30.09.
+bis
+01.10.2021
+</strong>
+</p>
+</div>
+<div class="cell-12 cell-md-8 pl-1 pt-md-2 pr-md-0">
+<p class="sans-h5 strong px-1 pb-1">
+CROSSING Conference 2021
+</p>
+<p class="sans-mini strong px-1 pb-2">
+Hot Topics in Security & Privacy: From Contact Tracing to Quantum Secure Internet
+</p>
+</div>
+<div class="cell-md-2 d-none d-md-flex flex-column">
+<div class="sans-h2 strong align-self-end mr-2 my-auto text-gr4 group-hover-text-white"><span class="icon fas fa-arrow-right"></span></div>
+</div>
+</div>
+</div>
+</a>
+</li>
+</div>
+</ul>
+</div>
+</div>
+</section>
+<section class="frame mb-5" id="weitere_va">
+<div class="grid">
+<div class="cell-12 stack-1 text-center">
+<a class="btn btn-key btn-sm-lg" href="http://www.informatik.tu-darmstadt.de/fb20/aktuelles_fb20/veranstaltungen_fb20/index.de.jsp" role="button">
+Weitere Veranstaltungen
+</a>
+</div>
+</div>
+</section>
+</main>
+<footer id="site-footer">
+<div class="frame hold bg-key text-white py-5 d-print-none">
+<!-- noindex -->
+<div class="grid">
+<div class="col-sm-9 col-md-7 col-lg-5 mx-auto pb-5 stack-5">
+<nav class="d-flex justify-content-around">
+<a class="social rounded-circle border border-transparent hover-border-white bg-white hover-bg-key text-key sans-h4" href="https://twitter.com/CS_TUDarmstadt" aria-label="Twitter-Kanal des Fachbereichs Informatik der TU Darmstadt" title="Twitter-Kanal des Fachbereichs Informatik der TU Darmstadt">
+<span class="fab fa-twitter"></span>
+</a>
+<a class="social rounded-circle border border-transparent hover-border-white bg-white hover-bg-key text-key sans-h4" href="https://www.linkedin.com/company/cs-tudarmstadt/" aria-label="LinkedIn-Seite des Fachbereichs Informatik der TU Darmstadt" title="LinkedIn-Seite des Fachbereichs Informatik der TU Darmstadt">
+<span class="fab fa-linkedin-in"></span>
+</a>
+<a class="social rounded-circle border border-transparent hover-border-white bg-white hover-bg-key text-key sans-h4" href="https://www.youtube.com/channel/UCd3p4dQ61g_7FpLNp1dE0sA" aria-label="YouTube" title="YouTube">
+<span class="fab fa-youtube"></span>
+</a>
+</nav>
+</div>
+</div>
+<!-- index -->
+<div class="grid">
+<div class="col-12 stack-2">
+<nav>
+<div class="d-block d-lg-flex justify-content-center align-items-center sans-small strong text-center">
+<div class="mx-2 mb-2">
+<a class="link" accesskey="9" href="http://www.informatik.tu-darmstadt.de/fb20/kontakt_und_anreise/index.de.jsp" title="[Alt(+Shift)+9]">Kontakt</a>
+</div>
+<div class="mx-2 mb-2">
+<a class="link" href="http://www.informatik.tu-darmstadt.de/fb20/kontakt_und_anreise/index.de.jsp">Anfahrt</a>
+</div>
+<div class="mx-2 mb-2">
+<a class="link" accesskey="3" href="http://www.informatik.tu-darmstadt.de/sitemap.de.jsp" title="[Alt(+Shift)+3]">Sitemap</a>
+</div>
+<div class="mx-2 mb-2">
+<a class="link" accesskey="8" href="http://www.informatik.tu-darmstadt.de/impressum.de.jsp" title="[Alt(+Shift)+8]">Impressum</a>
+</div>
+<div class="mx-2 mb-2">
+<a class="link" href="https://www.tu-darmstadt.de/barrierefreiheit">Barrierefreiheit</a>
+</div>
+<div class="mx-2 mb-2">
+<a class="link" accesskey="7" href="https://www.tu-darmstadt.de/datenschutzerklaerung" title="[Alt(+Shift)+7]">Datenschutzerklärung</a>
+</div>
+<div class="mx-2 mb-2">
+<a class="link" href="http://www.informatik.tu-darmstadt.de/datenschutz_globale_seiten.de.jsp">Webseitenanalyse</a>
+</div>
+</div>
+</nav>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<!-- noindex -->
+<div id="btn-top" class="invisible position-fixed w-100 theme-light">
+<div id="btn-top_wrapper" class="clip wrap-xl px-4 postion-relative">
+<a id="btn-top_link" accesskey="t" title="[Alt(+Shift)+t]" class="d-inline-block border-white bg-key position-absolute text-white text-center" href="fb20.html#top"><span class="sr-only">zum Seitenanfang</span><span class="icon far fa-arrow-up"></span></a>
+</div>
+</div>
+<!-- index -->
+<div id="contact-modal" class="modal" tabindex="-1" role="dialog" aria-labelledby="contact-modal" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+<div class="modal-content position-relative py-3 px-4">
+<button class="link text-gr0 ml-auto position-absolute sans-h5" data-dismiss="modal" aria-label="Close" aria-hidden="true" style="right:0; top:0"><span class="icon far fa-times mt-1 mr-1"></span></button>
+<div class="stack-1 pb-2 vcard" itemscope itemtype="https://schema.org/Person">
+<h1 class="serif-h3">
+<span itemprop="honorificPrefix">Prof. Dr. rer. nat.</span>
+<span itemprop="name" class="fn">Felix
+Wolf</span>
+</h1>
+<h2 class="sans-h6" itemprop="jobTitle">
+Dekan
+</h2>
+<div class="grid-2">
+<div class="cell-3 d-print-none">
+<figure class="w-100 mb-0 pb-100">
+<img class="contact-img d-flex position-absolute h-100 w-100 cover" src="http://www.informatik.tu-darmstadt.de/media/informatik/fb20_logos/fb20/favicon.png" alt="" itemprop="image"/>
+</figure>
+</div>
+<div class="cell-9">
+<div class="stack-1 pb-1 sans-mini">
+<p>
+<span class="email">dekanat&#064;informatik.tu-...</span>
+</p>
+<p>
+<span class="tel" itemprop="telephone"><span class="type d-none">work </span>+49 6151 16-25500</span><br/>
+</p>
+<p itemprop="address" itemscope itemtype="https://schema.org/PostalAddress" class="adr">
+<span class="type d-none">Work</span>
+<span class="icon far fa-building mr"></span>
+S2|02 A304<br/>
+<span itemprop="streetAddress" class="street-address">Hochschulstraße 10</span><br/>
+<span itemprop="postalCode" class="postal-code">64289</span>
+<span itemprop="addressLocality" class="locality">Darmstadt</span>
+<meta itemprop="addressCountry" content="DE"/>
+</p>
+</div>
+</div>
+</div>
+</div>
+<div class="stack-1 pb-2 vcard" itemscope itemtype="https://schema.org/Organization">
+<h1 class="serif-h3">
+<span itemprop="name" class="fn">
+Kontakt Studienangelegenheiten</span>
+</h1>
+<h2 class="sans-h6" itemprop="jobTitle">
+Fragen zu Prüfungen
+</h2>
+<div class="grid-2">
+<div class="cell-3 d-print-none">
+<figure class="w-100 mb-0 pb-100">
+<img class="contact-img d-flex position-absolute h-100 w-100 cover" src="http://www.informatik.tu-darmstadt.de/media/informatik/fb20_logos/fb20/favicon.png" alt="" itemprop="image"/>
+</figure>
+</div>
+<div class="cell-9">
+<div class="stack-1 pb-1 sans-mini">
+<p>
+<span class="email">studienbuero&#064;informatik.tu-...</span>
+</p>
+</div>
+</div>
+</div>
+</div>
+<div class="stack-1 vcard" itemscope itemtype="https://schema.org/Organization">
+<h1 class="serif-h3">
+<span itemprop="name" class="fn">
+</span>
+</h1>
+<h2 class="sans-h6" itemprop="jobTitle">
+Sonstige Anfragen
+</h2>
+<div class="grid-2">
+<div class="cell-3 d-print-none">
+<figure class="w-100 mb-0 pb-100">
+<img class="contact-img d-flex position-absolute h-100 w-100 cover" src="http://www.informatik.tu-darmstadt.de/media/informatik/fb20_logos/fb20/favicon.png" alt="" itemprop="image"/>
+</figure>
+</div>
+<div class="cell-9">
+<div class="stack-1 pb-1 sans-mini">
+<p>
+<span class="email">beratung&#064;informatik.tu-...</span>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<cookie-modal inline-template>
+<div id="cookie-modal" class="modal fade reveal" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="cookie-modal" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered modal-md" role="document">
+<div class="modal-content position-relative p-4">
+<div class="grid-2">
+<div class="cell-12 stack-1">
+<p class="running-text sans-mini">
+Wir möchten die Informationen und das Nutzungserlebnis auf dieser Webseite an Ihre Bedürfnisse anpassen.
+Deswegen verwenden wir sog. Cookies. Sie können selbst entscheiden, welche Cookies genau bei Ihrem Besuch unserer Webseiten gesetzt werden sollen.<br/>
+Einige Cookies sind für den Abruf der Website notwendig, damit diese auf Ihrem Endgerät richtig anzeigen werden kann.
+Diese essentiellen Cookies können nicht abgewählt werden.<br/>
+Der Komfort-Cookie speichert Ihre Spracheinstellung, während „Statistik“ die Auswertung durch die Open-Source-Statistik-Software „Matomo“ regelt.<br/>
+Weitere Informationen zum Einsatz von Cookies erhalten Sie in unserer
+<a class="link text-gr1" href="https://www.tu-darmstadt.de/datenschutzerklaerung"><span class="icon fas fa-long-arrow-right"></span>Datenschutzerklärung</a>.
+</p>
+<form class="my-1 sans-mini">
+<label class="d-block"><input type="checkbox" v-model="acceptedCookies" value="essential" checked="checked" disabled="disabled"/> Nur essentielle</label>
+<label class="d-block"><input type="checkbox" v-model="acceptedCookies" value="usability"/> Komfort</label>
+<label class="d-block"><input type="checkbox" v-model="acceptedCookies" value="statistics"/> Statistiken</label>
+<button type="button" class="btn btn-key mr-1 mt-1" aria-label="Alle akzeptieren" @click="acceptCookies(true)">
+Alle akzeptieren
+</button>
+<button type="button" class="btn btn-key mt-1" aria-label="Speichern & schließen" @click="acceptCookies(false)">
+Speichern & schließen
+</button>
+</form>
+<p class="sans-mini">
+<a class="link text-nowrap text-gr1" href="http://www.informatik.tu-darmstadt.de/impressum.de.jsp"><span class="icon fas fa-long-arrow-right"></span>Impressum</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</cookie-modal>
+</div>
+<script src="https://www.tu-darmstadt.de/media/resources/scripts/lib_js/jquery-3.3.1.min.js"></script>
+<script src="https://www.tu-darmstadt.de/media/resources/scripts/lib_js/bootstrap-4.4.1.min.js"></script>
+<script src="https://www.tu-darmstadt.de/media/resources/scripts/lib_js/vue-2.6.11.min.js"></script>
+<script src="https://www.tu-darmstadt.de/media/resources/scripts/lib_1.0.0.js"></script>
+<script>
+const pageId = "9251702";
+var sitemapUrl = '../hauptmenue.de.json';
+var fastBlocksUrl = '/globalcontent/schnelleinstieg.de.json';
+var menuPath = ["fb20"];
+var level = 0;
+var currentIndex = menuPath.indexOf("fb20");
+</script>
+<script src="https://www.tu-darmstadt.de/media/resources/scripts/app_1.1.2.de.js"></script>
+<script type="text/x-template" id="phablet-fast-item">
+<div class="phablet-fast-item" :class="bgClass">
+<button type="button" class="collapse-tab p-3" ref="source" :class="textClass" :aria-controls="targetID" :aria-expanded="String(isOpen)" :id="sourceID" @click="toggle"><slot name="tab"></slot><span class="icon fas fa-chevron-down fa-fw"></span></button>
+<transition :css="false" @enter="enter" @leave="leave" @after-enter="afterEnter" @before-leave="beforeLeave">
+<div class="collapse-panel" role="region" v-show="isOpen" ref="target" :id="targetID" :class="textClass" :aria-labelledby="sourceID" :aria-hidden="String(!isOpen)">
+<slot name="panel"></slot>
+</div>
+</transition>
+</div>
+</script>
+<script>
+$(function(){
+$('.flip-tile').click(function(){
+$(this).find('.tile-image').toggleClass("d-block").toggleClass("d-none");
+$(this).find('.tile-text').toggleClass("d-block").toggleClass("d-none");
+});
+$('.tile-text a.link').each(function(){
+$(this).addClass("d-inline-flex");
+$(this).find(".icon").wrap('<span class="d-inline-block"></span>');
+});
+});
+</script>
+<script>
+function normalizeBodyHeights(teaser) {
+var bodies = $(teaser).find('.teaser-body');
+var maxHeight = Math.max(...bodies.map(function(){ return $(this).height() }).get());
+bodies.height(maxHeight);
+}
+$(function(){
+normalizeBodyHeights('#newsteaser_12053454');
+$(window).resize(normalizeBodyHeights('#newsteaser_12053454'));
+$('#newsteaser_12053454').carousel({
+pause: "hover",
+interval: false
+});
+});
+</script>
+<script>
+function adjustCarouselItems(){
+if($(window).width() < 800){
+$('.carousel-control').height($("#slider").find(".active img:first").height());
+var carouselItems = $('#slider').find('.carousel-item');
+carouselItems
+.addClass("bg-gr5")
+.css("backface-visibility", "visible")
+.height(
+Math.max(...carouselItems.map(function(){ return $(this).height() }).get())
+)
+.css("backface-visibility", "hidden");
+}
+else{
+$('.carousel-item, .carousel-control').height("auto");
+if(!isMobile()){
+$('#slider').carousel('cycle');
+}
+}
+}
+$(function(){
+adjustCarouselItems();
+$(window).resize(function(){
+adjustCarouselItems();
+});
+});
+</script>
+<!-- Matomo -->
+<script>
+var _paq = _paq || [];
+if(Cookies.get("tu_cookies") && Cookies.get("tu_cookies")!="*" && !Cookies.get("tu_cookies").includes("statistics")){
+_paq.push(['disableCookies']);
+}
+_paq.push(["setDoNotTrack", true]);
+_paq.push(['trackPageView']);
+_paq.push(['enableLinkTracking']);
+(function() {
+var u="https://statistics.tu-darmstadt.de/matomo/";
+_paq.push(['setTrackerUrl', u+'matomo.php']);
+_paq.push(['setSiteId', 121]);
+var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+})();
+</script>
+<noscript><p><img src="https://statistics.tu-darmstadt.de/matomo/matomo.php?idsite=121" style="border:0;" alt="" /></p></noscript>
+<!-- End Matomo Tracking Code -->
+</body>
+</html>

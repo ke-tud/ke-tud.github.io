@@ -1,0 +1,22 @@
+
+/* - JabRef.css - */
+@media screen {
+/* http://www.ke.tu-darmstadt.de/portal_css/JabRef.css?original=1 */
+#pubs { width: 524px; }
+div.pubs th, td { border-width: 0px 0px; border-color: gray; border-style: solid; padding: 0px; vertical-align: top;  }
+div.pubs td { text-align: justify; vertical-align: top; }
+div.pubs tr.noshow { display: none;}
+div.pubs tr.highlight td { background-color: #F1F1F1; border-top: 2px black solid; }
+div.pubs tr.abstract td, tr.review td, tr.bibtex td { background-color: #F1F1F1; border-bottom: 2px black solid; text-align: justify; }
+div.pubs tr.nextshow td { border-bottom: none; }
+div.pubs tr.bibtex pre { width: 489px; overflow: auto; line-height:1em; background: black; color: white; }
+div.pubs p.infolinks { margin: 0em 0em 0em 0em; padding-bottom: 0.5em; }
+div.pubs tr.bibtex td, tr.abstract td{ padding : 0.5em; }
+div.pubs tr.entry td {padding-top: 0.5em; }
+@media print {
+p.infolinks, #qssettings, #qs { display: none !important; }
+tr { page-break-inside: avoid; }
+}
+
+}
+

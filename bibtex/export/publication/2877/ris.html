@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  </head>        
+  <body>
+    <pre>
+TY  - CONF
+ID  - kauschke2016aet
+T1  - Improving Cargo Train Availability with Predictive Maintenance: An Overview and Prototype Implementation
+A1  - Kauschke, Sebastian
+TI  - AET Papers Repository
+Y1  - 2016
+PB  - Association for European Transport
+SN  - 2313-1853
+UR  - http://abstracts.aetransport.org/paper/index/id/4857/confid/21
+KW  - Predictive Maintenance
+N2  - In cargo transportation, reliability is a crucial issue. In the case of railway
+traffic, the consequences of locomotive failure are not limited to the affected
+machine. Beside the cost of the machine itself, delays are caused and ultimately
+propagated through the railway network, rendering the accumulated cost of a
+single incident unpredictable. In order to avoid failures, Predictive Maintenance
+(PM) can be used. Predictive Maintenance targets the substitution of existing
+maintenance processes (e.g. time-based preventive maintenance) by conveniently
+scheduled corrective maintenance through exploitation of the underlying deterioration
+processes. In an ideal PM scenario, constant monitoring of the machine
+is available, measuring all relevant variables, e.g., temperatures or vibrations on
+a regular basis. However, in the real world, this assumption is limited: The hardware
+often does not deliver the required amount of data in the necessary precision.
+Often the machines record only a log-file which provides all activities—useful or
+not—that the various systems in the machine keep track of.
+In this paper, we give a short overview on PM in general and on the various types
+of systems that can be considered for PM.We elaborate on the differences in data
+as well as the nature of the systems it is possible to predict failures upon.
+In a prototypical example, we make use of machine learning methods to construct
+a failure prediction model for cargo trains. This data-driven approach focuses on
+a specific failure problem which is important to improve upon and aims at an easy
+prototype implementation for the currently available system.
+We train a classification model which uses the pattern structure of the diagnosticmessages
+of the locomotive to recognize abnormal activities in the locomotives
+behaviour. A meta-classification layer on top of this anomaly detection allows us
+to build a predictor with little false positives.We evaluate our findings on the data
+of 180 locomotive tours and elaborate on possible improvements of the method.
+ER  -
+    </pre>
+  </body>
+</html>

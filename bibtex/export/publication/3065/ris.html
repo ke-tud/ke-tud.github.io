@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  </head>        
+  <body>
+    <pre>
+TY  - RPRT
+T1  - Verbesserung des Patching Algorithmus durch Adaptive Windowing Techniken
+A1  - Burbach, Raphael
+Y1  - 2018
+M1  - Bachelor Thesis
+T2  - TU Darmstadt
+KW  - Concept Drift Adaptation
+KW  - Patching
+N2  - Diese Arbeit beschäftigt sich mit der Verbesserung des Patching-Algorithmus, um den Klassifizierer an auftretende
+Veränderungen durch einen Concept Drift in den Daten schneller anpassen zu können. Ein Concept Drift ist eine signifikante
+Veränderung in der Verteilung oder Beschaffenheit der ankommenden Daten. Gewöhnliche Klassifizierer
+verlieren unter dem Einfluss eines Concept Drifts in den Daten an Performance. Daher muss bei Datenströmen, die
+einen Concept Drift enthalten bei diesen Klassifizierern ein Modell neu gelernt werden.
+Bei Klassifizierungsproblemen mit einem kontinuierlichen Strom an Daten kann es zu einem Concept Drift kommen.
+Der Patching-Algorithmus löst dieses Problem, in dem das zuvor gelernte Modell bei Auftreten eines Concept
+Drifts nicht verworfen wird. Nach einem Concept Drift werden Regionen im Instance Space erkannt, in denen sich
+die Performance des Basisklassifizierers verschlechtert hat. Auf diesen Fehlerregionen wird ein neuer Klassifizierer
+trainiert. Der neue Klassifizierer wird mit dem Basisklassifizierer kombiniert, in dem der Basisklassifizierer nur die
+Instanzen klassifiziert, die nicht in den Fehlerregionen liegen. Alle anderen Instanzen werden durch den neu gelernten
+Klassifizierer klassifiziert, der Patch genannt wird. Dadurch können die Informationen aus dem ursprünglich
+gelernten Klassifizierer weiter genutzt werden. Zur Erkennung der Concept Drifts wird der ADWIN-Algorithmus
+verwendet.
+Man kommt zu dem Ergebnis, dass die Klassifizierungsgenauigkeit des Patching-Algorithmus durch die oben
+vorgestellten Erweiterungen erhöht werden kann. Parallel dazu kann zudem häufig die Laufzeit reduziert werden.
+ER  -
+    </pre>
+  </body>
+</html>

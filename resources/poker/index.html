@@ -1,0 +1,1515 @@
+
+
+
+<!DOCTYPE html PUBLIC
+  "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+  
+    
+    
+    
+    
+
+
+  <head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <meta name="generator" content="Plone - http://plone.org" />
+
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    
+      <base href="" /><!--[if lt IE 7]></base><![endif]-->
+    
+
+    
+        
+
+  
+    <link rel="stylesheet" type="text/css" media="screen" href="../../portal_css/KE-Design/reset-cachekey-925e503538eefe397b99ef02d65af339.css" />
+    <style type="text/css" media="screen">@import url(../../portal_css/KE-Design/base-cachekey-03153797b47b0a3cc7f99250afe8cedd.css);</style>
+    <link rel="stylesheet" type="text/css" media="screen" href="../../portal_css/KE-Design/resourcetinymce.stylesheetstinymce-cachekey-5af329a435a47b3692ec346792a15c82.css" />
+    <style type="text/css">@import url(../../portal_css/KE-Design/print-cachekey-121643ccca6586bc2ccc938612dbcdbe.css);</style>
+    <link rel="stylesheet" type="text/css" media="screen" href="../../portal_css/KE-Design/resourceplone.app.discussion.stylesheetsdiscussion-cachekey-a142adb07f80a3c80d0ffe3bd11c391d.css" />
+    <style type="text/css" media="screen">@import url(../../portal_css/KE-Design/kedesign-cachekey-abe6dfb415b2c424ca38859c1cfa69ee.css);</style>
+    <style type="text/css" media="screen">@import url(../../portal_css/KE-Design/JabRef.css);</style>
+    <style type="text/css" media="all">@import url(../../portal_css/KE-Design/ploneCustom-cachekey-aba490f43e054b2e05eaab28d192fa09.css);</style>
+
+  
+  
+    <script type="text/javascript" src="../../portal_javascripts/KE-Design/resourceplone.app.jquery-cachekey-0778f482fb7d0bbb4d2ec9c3b82f9e81.js"></script>
+    <script type="text/javascript" src="../../portal_javascripts/KE-Design/cookie_manager-cachekey-4a290db816043754c78ba3a906f4556e.js"></script>
+    <script type="text/javascript" src="../../portal_javascripts/KE-Design/Hyphenator-cachekey-671ea5ad93b7c7d3d115abde3ce0b6bb.js"></script>
+    <script type="text/javascript" src="../../portal_javascripts/KE-Design/JabRef-cachekey-0a9b33f3f54aff6df349afab5dcd9f03.js"></script>
+
+
+<title>Computer Poker Bots &mdash; </title>
+
+        
+    <link rel="canonical" href="../poker.html" />
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../favicon.ico" />
+    <link rel="apple-touch-icon" href="../../touch_icon.png" />
+
+
+
+
+
+
+    <link rel="search" href="http://www.ke.tu-darmstadt.de/@@search" title="Search this site" />
+
+
+
+        <!-- Disable IE6 image toolbar -->
+        <meta http-equiv="imagetoolbar" content="no" />
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+    
+
+  </head>
+
+  <body onload="setzeInitialeFontgroesse();" class="template-document_view portaltype-document site-Plone section-resources subsection-poker subsection-poker-computer-poker-bots userrole-anonymous" dir="ltr">
+    <div id="seiten_container">
+    <div id="visual-portal-wrapper">
+
+      <div id="header">
+        <a name="top"></a>
+        <div id="topnavigation">
+
+         
+   
+
+    
+        
+            <a href="http://www.ke.tu-darmstadt.de/login" class="visualIconPadding">
+               Log in
+            </a>
+        
+    
+
+
+</div>
+
+<p class="hiddenStructure">
+  <a accesskey="2" href="index.html#content">Skip to content.</a> |
+
+  <a accesskey="6" href="index.html#portal-globalnav">Skip to navigation</a>
+</p>
+
+<div id="portal-header">
+    <div id="portal-searchbox">
+    <form name="searDDchform" action="../../search.html">
+
+        <label for="searchGadget" class="hiddenStructure">Search Site</label>
+        <div class="LSBox">
+        <input name="SearchableText" type="text" title="Search Site" class="inputLabel" id="searchGadget" />
+        <input class="searchButton" type="submit" value="»" />
+       <div class="LSResult" id="LSResult" style=""><div class="LSShadow" id="LSShadow"></div></div>
+        </div>
+    </form>
+</div>
+
+
+  <div id="hauptnavigation">
+    <ul>
+      
+        <li>
+          <a href="../../index.html" class="" title="">Home</a> | 
+        </li>
+      
+      
+        <li>
+          <a href="../../staff.html" class="" title="Knowledge Engineering Group Members and Jobs">Staff</a> | 
+        </li>
+      
+      
+        <li>
+          <a href="../../jobs.html" class="" title="">Jobs</a> | 
+        </li>
+      
+      
+        <li>
+          <a href="../../news.html" class="" title="Latest news from the Knowledge Engineering Group">News</a> | 
+        </li>
+      
+      
+        <li>
+          <a href="../../termine.html" class="" title="Upcoming events from the Knowledge Engineering Group">Termine</a> | 
+        </li>
+      
+      
+        <li>
+          <a href="../../publications.html" class="" title="">Publications</a> | 
+        </li>
+      
+      
+        <li>
+          <a href="../../projects.html" class="" title="Projects with participation of our group">Projects</a> | 
+        </li>
+      
+      
+        <li>
+          <a href="../../research.html" class="" title="">Research</a> | 
+        </li>
+      
+      
+        <li>
+          <a href="../../resources.html" class="aktiv" title="Datasets, applications, tools and other resources publicly provided by the KE Group.">Resources</a> | 
+        </li>
+      
+      
+        <li>
+          <a href="../../lehre.html" class="" title="Lehrveranstaltungen und studentische Arbeiten">Lehre</a> | 
+        </li>
+      
+      
+        <li>
+          <a href="lehre/arbeiten.html" class="" title="Link auf https://www.ke.tu-darmstadt.de/lehre/arbeiten">Thesis Topics</a> | 
+        </li>
+      
+      
+        <li>
+          <a href="http://www.informatik.tu-darmstadt.de" class="" title="Fachbereich Informatik, TU Darmstadt">FB20</a> | 
+        </li>
+      
+    </ul>
+  </div>    
+  <div class="clear"></div>
+
+
+
+
+</div>
+
+
+<div id="headerbild_container">	
+	<div id="logo">
+		<div id="bildschirm">
+			<a href="http://www.tu-darmstadt.de" title="Zur TU Darmstadt Startseite">
+                              <img src="../../tu_darmstadt_web.png" alt="Logo der TU Darmstadt" />
+                        </a>
+		</div>	
+	</div>
+		<div id="headerbild"> <img src="../../ke_site_header.jpg" alt="" /> </div>
+</div>
+
+
+<div id="portal-breadcrumbs">
+    <a href="../../index.html">Home
+    </a>
+    
+      <span class="breadcrumbSeparator navi_pfeil">&raquo;</span>
+        
+            <a href="../../resources.html">Resources</a>
+            
+         
+    
+    
+      <span class="breadcrumbSeparator navi_pfeil">&raquo;</span>
+        
+            
+            <span class="aktiv">Computer Poker</span>
+         
+    
+
+</div>
+
+      </div>
+
+      <div id="portal-columns">
+            
+                
+                <div id="portal-column-one">
+                    
+                      
+<div class="portletWrapper" data-portlethash="706c6f6e652e6c656674636f6c756d6e0a636f6e746578740a2f506c6f6e650a6e617669676174696f6e" id="portletwrapper-706c6f6e652e6c656674636f6c756d6e0a636f6e746578740a2f506c6f6e650a6e617669676174696f6e">
+<div id="navigationsspalte" class="portlet portletNavigationTree">    
+    <dl style="margin-bottom:0em">
+    <dt class="portletHeader">
+    <!--<span class="portletHeader">-->
+    <span class="portletTopLeft"></span>
+        
+        <span class="portletTopRight"></span>
+   <!-- </span> -->
+    </dt>
+    </dl>
+    <ul>
+      
+            
+
+
+
+<li>
+
+    
+
+      
+
+        <a href="../../staff.html" class=" ebene1" title="Knowledge Engineering Group Members and Jobs">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="../../untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            Staff
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../../jobs.html" class=" ebene1" title="">
+            
+
+            
+
+            
+           
+            Jobs
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../../news.html" class=" ebene1" title="Latest news from the Knowledge Engineering Group">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="../../untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            News
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../../termine.html" class=" ebene1" title="Upcoming events from the Knowledge Engineering Group">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="../../untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            Termine
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../../publications.html" class=" ebene1" title="">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="../../untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            Publications
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../../projects.html" class=" ebene1" title="Projects with participation of our group">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="../../untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            Projects
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../../research.html" class=" ebene1" title="">
+            
+
+            
+
+            
+           
+            Research
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../../resources.html" class=" aktiv ebene1" title="Datasets, applications, tools and other resources publicly provided by the KE Group.">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="../../untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            Resources
+        </a>
+        
+    
+
+    <ul>  
+        
+
+
+
+<li>
+
+    
+
+      
+
+        <a href="../eurlex.html" class=" ebene2" title="The EUR-Lex multilabel text collection.">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="../../untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            EUR-Lex
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../ui2-ontology.html" class=" ebene2" title="">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="../../untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            UI² Ontology
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../poker.html" class=" aktiv ebene2" title="">
+            
+
+            <span class="navi_pfeil">
+                  &raquo;
+            </span>
+
+            
+           
+            Computer Poker
+        </a>
+        
+    
+
+    <ul>  
+        
+
+
+
+<li>
+
+    
+
+      
+
+        <a href="faq-poker-als-ki-domane.html" class=" ebene3" title="">
+            
+
+            
+
+            
+           
+            FAQ - Poker als KI Domäne
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="pokerframework19.html" class=" ebene3" title="Version 1.91">
+            
+
+            
+
+            
+           
+            TUD Poker Framework
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+
+
+    </ul>
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../pool.html" class=" ebene2" title="Informationen für Gäste und Studenten des Fachgebiets Knowledge Engineering">
+            
+
+            
+
+            
+           
+            Students Computer Pool
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../ComputingCluster.html" class=" ebene2" title="">
+            
+
+            
+
+            
+           
+            Students Computing Infrastructure
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="http://www.ke.tu-darmstadt.de/resources/peewit" class=" ebene2" title="">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="../../untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            Peewit
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../classificationgui.html" class=" ebene2" title="">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="../../untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            Classification GUI
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../fegelod.html" class=" ebene2" title="">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="../../untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            FeGeLOD
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../explain-a-lod.html" class=" ebene2" title="">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="../../untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            Explain-a-LOD
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../SeCo.html" class=" ebene2" title="">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="../../untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            SeCo
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../perceptrovement.html" class=" ebene2" title="Percepton algorithms collection">
+            
+
+            
+
+            
+           
+            Perceptrovement
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../mob4lod.html" class=" ebene2" title="">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="../../untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            MoB4LOD
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../ontology-matching.html" class=" ebene2" title="">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="../../untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            Ontology Matching
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../jfreewebsearch.html" class=" ebene2" title="">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="../../untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            JFreeWebSearch
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../multilabellibsvm.html" class=" ebene2" title="">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="../../untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            Multilabel LibSVM modifications
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../GMLC.html" class=" ebene2" title="">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="../../untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            Code and Data for Graded Multilabel Classification
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../conferences.html" class=" ebene2" title="">
+            
+
+            
+
+            
+           
+            Conferences
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../copy_of_conferences.html" class=" ebene2" title="">
+            
+
+            
+
+            
+           
+            Workshops
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../medsim.html" class=" ebene2" title="">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="../../untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            Medical Concept Embeddings via Labeled Background Corpora
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../poogle.html" class=" ebene2" title="Poodle: Personalized privacy-protecting web search">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="../../untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            Poodle
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+
+
+    </ul>
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../../lehre.html" class=" ebene1" title="Lehrveranstaltungen und studentische Arbeiten">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="../../untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            Lehre
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="lehre/arbeiten.html" class=" ebene1" title="Link auf https://www.ke.tu-darmstadt.de/lehre/arbeiten">
+            
+
+            
+
+            
+           
+            Thesis Topics
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="http://www.informatik.tu-darmstadt.de" class=" ebene1" title="Fachbereich Informatik, TU Darmstadt">
+            
+
+            
+
+            
+           
+            FB20
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+
+
+        </ul>
+
+</div>
+
+</div>
+
+<div class="portletWrapper" data-portlethash="706c6f6e652e6c656674636f6c756d6e0a636f6e746578740a2f506c6f6e650a6e657773" id="portletwrapper-706c6f6e652e6c656674636f6c756d6e0a636f6e746578740a2f506c6f6e650a6e657773">
+<dl class="portlet portletNews">
+
+    <dt class="portletHeader">
+        <span class="portletTopLeft"></span>
+        <a href="../../news.html" class="tile">News</a>
+        <span class="portletTopRight"></span>
+    </dt>
+
+    
+    <dd class="portletItem odd">
+
+        <a href="../../news/thesis-dang.html" class="tile" title="">
+            
+            The­sis on adaptive driver assistance systems de­fend­ed 
+         </a>
+            <span class="portletItemDetails">Feb 21, 2020</span>
+
+    </dd>
+    
+    
+    <dd class="portletItem even">
+
+        <a href="../../news/DS2019.html" class="tile" title="">
+            
+            Best paper award at Discovery Science 2019
+         </a>
+            <span class="portletItemDetails">Oct 28, 2019</span>
+
+    </dd>
+    
+    
+    <dd class="portletItem odd">
+
+        <a href="../../news/leaving.html" class="tile" title="">
+            
+            Leaving
+         </a>
+            <span class="portletItemDetails">Sep 23, 2019</span>
+
+    </dd>
+    
+    
+    <dd class="portletItem even">
+
+        <a href="../../news/eseg-in-tv.html" class="tile" title="">
+            
+            Our project ESEG in the TV news
+         </a>
+            <span class="portletItemDetails">Jan 14, 2019</span>
+
+    </dd>
+    
+    
+    <dd class="portletItem odd">
+
+        <a href="../../news/student-bot-beats-crazyhouse-champion.html" class="tile" title="">
+            
+            Student Bot beats Crazyhouse World Champion
+         </a>
+            <span class="portletItemDetails">Dec 27, 2018</span>
+
+    </dd>
+    
+
+    <dd class="portletFooter">
+        <span class="portletBottomLeft"></span>
+        <a href="../../news.html">
+          More news&hellip;
+        </a>
+        <span class="portletBottomRight"></span>
+    </dd>
+    
+</dl>
+
+</div>
+
+
+
+
+                    
+                    &nbsp;
+                </div>
+                
+            
+
+            
+            <div id="portal-column-content" class="hyphenate">
+
+              <div id="viewlet-above-content3"></div>
+	      <div class="eine_spalte">
+              
+                <div class="">
+
+                    
+
+                    <span id="contentTopLeft3"></span>
+                    <span id="contentTopRight3"></span>
+
+                    
+
+    <dl class="portalMessage info" id="kssPortalMessage" style="display:none">
+        <dt>Info</dt>
+        <dd></dd>
+    </dl>
+
+
+
+                    
+                    <div id="content">
+                      
+                      
+
+                        
+                            
+                            
+                                
+                                
+            
+                <h1 id="parent-fieldname-title" class="documentFirstHeading">
+                    Computer Poker Bots
+                </h1>
+            
+            
+        
+                            
+                            
+
+
+                            
+                                
+                                
+            
+                
+            
+            
+        
+                            
+
+                            
+<dl id="document-toc" class="portlet toc" style="display: none">
+  <dt class="portletHeader">Contents</dt>
+  <dd class="portletItem">
+  </dd>
+</dl>
+
+                            <div id="content-core">
+                                
+    
+        
+        <div class="" id="parent-fieldname-text-7acd21bca0a95e3833d86e621f503eec">
+            
+<p>This page contains several automatically playing poker agents, which were created during past practical courses (<a href="http://www.ke.tu-darmstadt.de/lehre/archiv/ss08/challenge" class="internal-link" title="Computer Poker Challenge SS 08">Computer Poker Challenge SS 08</a> and <a href="http://www.ke.tu-darmstadt.de/lehre/archiv/ss09/challenge" class="internal-link" title="Computer Poker Challenge SS 09">Computer Poker Challenge SS 09</a>) held at our group. They are all based on the <a class="external-link" href="http://www.cs.ualberta.ca/%7Epokert/2009/code.php">Pokerserver</a> framework by the <a class="external-link" href="http://poker.cs.ualberta.ca/">Computer Poker Research Group of Alberta</a>, which is also the official framework for the annual <a class="external-link" href="http://www.cs.ualberta.ca/%7Epokert/">Computer Poker Competitions</a>.</p>
+<p>Some selected (ro)bots in the following list participated in the annual Computer Poker Competitions and
+achieved in total the <a class="external-link" href="http://www.cs.ualberta.ca/%7Epokert/2008/results/">2<sup>nd</sup> place</a> in the 2008 6-Player Limit
+Competition and the <a class="external-link" href="http://www.cs.ualberta.ca/%7Epokert/2009/results/">3<sup>rd</sup> place</a> in the 2009 3-Player Limit
+Competition.</p>
+<p><a href="faq-poker-als-ki-domane.html" class="internal-link" title="FAQ - Poker als KI Domäne">FAQ - Poker in AI research (in German)</a></p>
+<h2>Requirements <br /></h2>
+All bots are programmed in <a class="external-link" href="http://java.sun.com/">Java</a> and require the Pokerserver Framework (version <a class="external-link" href="http://www.cs.ualberta.ca/%7Epokert/2009/code.php">until 2009</a> or <a class="external-link" href="http://www.computerpokercompetition.org/downloads/code/">newer versions</a>), .
+<p>If you are unfamiliar with the framework, you should have a look at it, first.</p>
+<h2>Remarks</h2>
+<p>Below you can find various different bots. For each bot, two packages are provided. Besides the full source code,
+the "Bot Package" contains only the executable for the bot, which can
+be simply put in the bots directory of the Pokerserver Framework.&nbsp;
+Furthermore, a short description of the used approach is stated.</p>
+<p>Please note that for some bots the documentation  may be incomplete or missing. In addition,  some bots are somewhat premature due time constraints in the past for the competition and especially bots which rely on an offline learned model could have been significantly improved with a longer training phase and greater computational power. However, the bots might be still useful for benchmark purposes.</p>
+<h2>6-Player Limit Texas Hold'em (2008)<br /></h2>
+<p>In our first practical course <a href="http://www.ke.tu-darmstadt.de/lehre/archiv/ss08/challenge" class="internal-link" title="Computer Poker Challenge">Computer Poker Challenge SS 08</a> in 2008, we focused on the newly introduced 6-Player Limit Competition, such that following bots are only tested and optimized for this format.</p>
+<table class="plain">
+<thead>
+<tr>
+<th>Bot name<br /></th>
+<th>Bot Package</th>
+<th>Source Code</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HokusPokus</td>
+<td><a href="HokusPokus.tar">HokusPokus.tar</a></td>
+<td><a href="HokusPokus.zip">HokusPokus.zip</a></td>
+<td>Pre-flop play is determined by a starting Hand-Chart combined with a learner.<br />Post-flop play uses Opponent-Modelling by estimated Hand-Ranges and action frequencies combined with Monte-Carlo Simulation.<br /></td>
+</tr>
+<tr>
+<td>aethon</td>
+<td><a href="aethon.tar">aethon.tar</a></td>
+<td><a href="aethon.zip">aethon.zip</a></td>
+<td>uses various adaptions of the UCT-algorithm to Poker<br /></td>
+</tr>
+<tr>
+<td>mcBotUltra</td>
+<td><a href="mcBotUltra.tar">mcBotUltra.tar</a></td>
+<td><a href="mcBotUltra.zip">mcBotUltra.zip</a></td>
+<td>uses various adaptions of the UCT-algorithm to Poker</td>
+</tr>
+<tr>
+<td>bbhardbot</td>
+<td><a href="bbhardbot.tar">bbhardbot.tar</a></td>
+<td><a href="bbhardbot.zip">bbhardbot.zip</a></td>
+<td>based on reinforcement learning<br /></td>
+</tr>
+<tr>
+<td>BrainBot</td>
+<td><a href="BrainBot_pkg.tar">BrainBot_pkg.tar</a></td>
+<td><a href="BrainBot_pkg.zip">BrainBot_pkg.zip</a></td>
+<td>Monte-carlo simulation with opponent-modelling by regression and neuronal networks<br /></td>
+</tr>
+<tr>
+<td>AKI-Realbot</td>
+<td><a href="AKI-RealBot.tar">AKI-RealBot.tar</a></td>
+<td><a href="AKI-RealBot.zip">AKI-RealBot.zip</a></td>
+<td>Monte-carlo simulation with opponent-modelling by action frequencies. Explicit focus on dynamic exploiting adaptions <br /></td>
+</tr>
+</tbody>
+</table>
+<p class="donthyphenate">Credits go to: Timo Bozsolik, Bastian Christoph, Thomas Görge, Benjamin Herbert, Michael Herrmann, Stefan Lück, Alexander Marinc, Lars Meyer, Arno Mittelbach, Kamill Panitzek, Immanuel Schweizer, Michael Wächter, Claudio Weck and Marian Wieczorek.</p>
+<h2>3-Player Limit Texas Hold'em (2009)<br /></h2>
+<p>In our <a href="http://www.ke.tu-darmstadt.de/lehre/archiv/ss09/challenge" class="internal-link" title="Computer Poker Challenge">second practical course</a> in 2009, the game of choice was 3-Player Limit Texas Hold'em. This time, each group implemented two bots. The first one was to implement a simple mathematical fair bot, i.e. to play according to some known concepts like pot-odds without any opponent modelling, in order to get used to the framework. For the second bot, every group could follow own directions, though we restricted ourselves to simulation-based approaches.</p>
+<table class="plain">
+<thead>
+<tr>
+<th>Bot name<br /></th>
+<th>Bot Package</th>
+<th>Source Code</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>flapyourwings</td>
+<td><a href="flapyourwings.jar">flapyourwings.jar</a></td>
+<td rowspan="2"><a href="flap_and_allin.zip">flap_and_allin.zip</a></td>
+<td>Monte-carlo simulation with opponent modelling using "effective hand ranks" <br /></td>
+</tr>
+<tr>
+<td>allineq</td>
+<td><a href="allineq_player.jar" class="internal-link" title="allineq_player.jar">allineq_player.jar</a></td>
+<td>"mathematical fair bot"</td>
+</tr>
+<tr>
+<td>akuma</td>
+<td><a href="akuma.jar">akuma.jar</a></td>
+<td rowspan="2"><a href="akuma_and_dpp.zip">akuma_and_dpp.zip</a></td>
+<td>Monte-carlo simulation with opponent-modelling by hand-ranges and action frequencies.<br /></td>
+</tr>
+<tr>
+<td>dpp</td>
+<td><a href="dpp.jar">dpp.jar</a></td>
+<td>"mathematical fair bot"<br /></td>
+</tr>
+<tr>
+<td>mabuse_sim</td>
+<td><a href="mabuse_sim.tar">mabuse_sim.tar</a></td>
+<td rowspan="2"><a href="mabuse_and_rebot.zip">mabuse_and_rebot.zip</a></td>
+<td>hybrid system: monte-carlo simulation and mathematical fair actions guided by a strategy switcher<br /></td>
+</tr>
+<tr>
+<td>rebot_player</td>
+<td><a href="rebot_player.tar">rebot_player.tar</a></td>
+<td>"mathematical fair bot"</td>
+</tr>
+</tbody>
+</table>
+<p class="donthyphenate">Credits go to: Damian Czarny, Thomas Hartmann, Sebastian Kasten, Steffen Remus, Daniel Schumann and Markus Zopf.</p>
+<h2>Terms of Use</h2>
+<p>All software on this site is freely available.​ Neverthe­less, we would be
+glad if you
+would cite this site (<span class="fixedWidth">http://www.ke.tu-darmstadt.de/resources/poker/</span>) if you use in some way the provided bots. Since all bots are based on the pokerserver framework, please notice also their copyright statements.</p>
+<h2>Further Material and Links<br /></h2>
+<ul><li>Annual Poker Competition Homepage&nbsp; <a class="external-link" href="http://webdocs.cs.ualberta.ca/~pokert/index.html">until 2010</a> and <a class="external-link" href="http://www.computerpokercompetition.org/">from 2011 on</a><br /></li><li><a class="external-link" href="http://poker.cs.ualberta.ca/">Computer Poker Resarch at University at Alberta</a></li><li>You can find some relevant literature regarding Computer Poker on the pages of the practical courses (<a href="http://www.ke.tu-darmstadt.de/lehre/archiv/ss08/challenge" class="internal-link" title="Computer Poker Challenge">2008</a> &amp; <a href="http://www.ke.tu-darmstadt.de/lehre/archiv/ss09/challenge" class="internal-link" title="Computer Poker Challenge">2009</a>).</li><li>A description of the 2nd Place Bot from 2008 AKI-Realbot: <br />Immanuel Schweizer, Kamill Panitzek, Sang-Hyeun Park and Johannes Fürnkranz, An Exploitative Monte-Carlo Poker Agent, in: Proceedings of the 32nd Annual German Conference on Artificial Intelligence (KI-09), pages 65--72, Springer-Verlag, 2009 <br />A Technical Report Version can be downloaded <a href="../../publications/reports/tud-ke-2009-02.pdf" class="internal-link" title="tud-ke-2009-02.pdf">here</a>.&nbsp;</li></ul>
+<h2>Contact</h2>
+<ul><li><a class="external-link" href="mailto:juffi@ke.tu-darmstadt.de">Johannes Fürnkranz</a></li><li><a class="external-link" href="mailto:park@ke.tu-darmstadt.de">Sang-Hyeun Park</a><br /></li></ul>
+
+            
+        </div>
+    
+    
+
+                            </div>
+                            
+
+
+
+    <div class="visualClear"><!-- --></div>
+
+    <div class="documentActions">
+        
+
+        
+
+    </div>
+
+
+                        
+
+                      
+                    </div>
+                    
+
+                    
+
+                    <span id="contentBottomLeft3"></span>
+                    <span id="contentBottomRight3"></span>
+
+                </div>
+              
+	      
+              <div id="viewlet-below-content">
+
+
+
+
+
+</div>
+
+            </div>
+            </div>
+            
+
+            
+                
+                <div id="portal-column-two">
+                  <div class="visualPadding">
+                    
+                      
+<div class="portletWrapper" data-portlethash="706c6f6e652e7269676874636f6c756d6e0a636f6e746578740a2f506c6f6e650a6b6f6e7461636b74" id="portletwrapper-706c6f6e652e7269676874636f6c756d6e0a636f6e746578740a2f506c6f6e650a6b6f6e7461636b74">
+<dl class="portlet portletStaticText portlet-static-kontakt">
+
+    <dt class="portletHeader">
+        <span class="portletTopLeft"></span>
+        <span>
+           Kontakt
+        </span>
+        <span class="portletTopRight"></span>
+    </dt>
+
+    <dd class="portletItem odd">
+        
+<dl class="portlet portletStaticText portlet-static-kontakt"><dd class="portletItem odd">
+<p><img src="../../images/keicon.png" alt="small ke-icon" class="image-inline" title="keicon.png" /></p>
+<p>
+  Knowledge Engineering Group</p>
+<p>
+  <a class="external-link" href="http://www.informatik.tu-darmstadt.de">Fachbereich
+  Informatik</a><br />
+  <a class="external-link" href="http://www.tu-darmstadt.de">TU Darmstadt</a></p>
+<p>
+  <a href="../../anfahrt.html">S2|02 D203<br />
+  Hochschulstrasse 10</a><br />
+  D-64289 Darmstadt</p>
+<p>
+  Sekretariat:<br />
+<img src="../../images/telefon.png" alt="Telefon-Symbol" class="image-inline" title="telefon.png" />+49 6151 16-21811<br />
+
+  <img src="../../images/fax.png" alt="Fax-Symbol" class="image-inline" title="fax.png" /> +49 6151 16-<span style="text-align: justify;">21812</span><br />
+
+  <img src="../../images/email.png" alt="E-Mail-Symbol" class="image-inline" title="email.png" /> <a href="mailto:info@ke.tu-darmstadt.de">info@ke.tu-darmstadt.de</a></p>
+</dd></dl>
+
+        
+            <span class="portletBottomLeft"></span>
+            <span class="portletBottomRight"></span>
+        
+    </dd>
+    
+    
+
+</dl>
+</div>
+
+<div class="portletWrapper" data-portlethash="706c6f6e652e7269676874636f6c756d6e0a636f6e746578740a2f506c6f6e650a6b652d7075626c69632d6b616c656e646572" id="portletwrapper-706c6f6e652e7269676874636f6c756d6e0a636f6e746578740a2f506c6f6e650a6b652d7075626c69632d6b616c656e646572">
+<dl class="portlet portletStaticText portlet-static-ke-public-kalender">
+
+    <dt class="portletHeader">
+        <span class="portletTopLeft"></span>
+        <span>
+           KE Public Kalender
+        </span>
+        <span class="portletTopRight"></span>
+    </dt>
+
+    <dd class="portletItem odd">
+        <a href="../../termine.html" class="external-link">Click here to see upcoming appointments.</a>
+<p>&nbsp;</p>
+
+        
+            <span class="portletBottomLeft"></span>
+            <span class="portletBottomRight"></span>
+        
+    </dd>
+    
+    
+
+</dl>
+</div>
+
+
+
+
+                    
+                    &nbsp;
+                  </div>
+                </div>
+                
+            
+          </div>
+      
+
+      <div class="visualClear" id="clear-space-before-footer"><!-- --></div>
+
+    </div>
+   </div>
+<div id="kss-spinner"><img alt="" src="http://www.ke.tu-darmstadt.de/spinner.png" /></div>
+<div id="fussbereich_container">
+<div id="schatten_unten"></div>
+
+<div id="fussbereich">
+<a id="schrift_kleiner" href="javascript:fontsize('dekrement')" title="Schrift verkleinern">A</a>
+<a id="schrift_normal" href="javascript:fontsize('reset')" title="Schriftgröße zurücksetzen">A</a>
+<a id="schrift_groesser" href="javascript:fontsize('inkrement')" title="Schrift vergrößern">A</a> |
+<a href="javascript:this.print()"><img src="../../drucken1.png" alt="" /> Drucken</a>
+| <a accesskey="8" title="Alt(+Shift)+8" href="../../impressum.html"><img src="../../impressum.png" alt="" /> Impressum</a>
+| <a accesskey="3" title="Alt(+Shift)+3" href="../../sitemap.html"><img src="../../sitemap2.png" alt="" /> Sitemap</a>
+| <a href="../../search.html"><img src="../../suche.png" alt="" /> Suche</a>
+| <a href="http://www.ke.tu-darmstadt.de/m/">Mobile Version</a>
+</div><!-- fussbereich -->
+<div id="nach_oben"><div class="nach_oben"><a href="computer-poker-bots.html#top" title="zum Seitenanfang"><img id="png" src="../../zum_seitenanfang.png" alt="zum Seitenanfang" /><img id="gif" src="../../zum_seitenanfang_ie6.gif" alt="zum Seitenanfang" /></a></div></div><!-- nach_oben -->
+</div><!-- fussbereich_container -->
+</body>
+</html>
+
+

@@ -1,0 +1,185 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Advanced search - Knowledge Engineering Publications - Aigaion 2.0</title>
+    <link href="aigaionengine/themes/default/css/positioning.css" rel="stylesheet" type="text/css" media="screen,projection,tv" />
+    <link href="aigaionengine/themes/default/css/styling.css"     rel="stylesheet" type="text/css" media="screen,projection,tv" />
+    <link href="aigaionengine/themes/kedesign/css/positioning.css" rel="stylesheet" type="text/css" media="screen,projection,tv" />
+    <link href="aigaionengine/themes/kedesign/css/styling.css"     rel="stylesheet" type="text/css" media="screen,projection,tv" />
+  </head>
+  <body>
+    <script type="text/javascript" src="aigaionengine/javascript/tree.js"></script>
+    <script type="text/javascript" src="aigaionengine/javascript/prototype.js"></script>
+    <script type="text/javascript" src="aigaionengine/javascript/scriptaculous.js"></script>
+    <script type="text/javascript" src="aigaionengine/javascript/builder.js"></script>
+    <script type="text/javascript">
+      //<![CDATA[
+      base_url = 'http://www.ke.tu-darmstadt.de/bibtex/index.php/';
+      //]]>
+    </script>
+
+    <div id="main_holder">
+      <!-- Aigaion header: Logo, simple search form -->
+      <div id="header_holder">
+        <div id='quicksearch'>
+          <form action="http://www.ke.tu-darmstadt.de/bibtex/search/quicksearch" method="post" accept-charset="utf-8">
+<div>
+
+<input type="hidden" name="formname" value="simplesearch" />
+<input type="text" name="searchstring" value="" size="25"  /><input type="submit" name="submit_search" value="Search"  /></div>
+</form>        </div>
+                &nbsp;<a href='../index.html'><img border=0 src='aigaionengine/themes/kedesign/img/ke_logo.png' style='padding-left:20px; padding-top:8px'/></a>        
+      </div>
+      <!-- End of header -->
+
+      <!-- Aigaion menu -->
+<div id="menu_holder">
+  <ul class="mainmenu">
+    <li class="mainmenu-header">BROWSE</li>
+    <li><ul class="mainmenu">
+            <li class="mainmenu"><a href="authors/show/711.html">Topics</a></li>
+    <li class="mainmenu"><a href="publications.html">All Publications</a></li>
+        <li class="mainmenu"><a href="publications/showlist/type.html">All Journal Articles</a></li>
+    <li class="mainmenu"><a href="publications/showlist/type.html#Book">All Books</a></li>
+    <li class="mainmenu"><a href="publications/showlist/type.html#Incollection">All Book Chapters</a></li>
+    <li class="mainmenu"><a href="publications/showlist/type.html#Proceedings">All Proceedings</a></li>
+    <li class="mainmenu"><a href="publications/showlist/type.html#Inproceedings">All Articles in Proceedings</a></li>
+    <li class="mainmenu"><a href="topics/single/77.html">All Technical Reports</a></li>
+    <li class="mainmenu"><a href="http://www.ke.tu-darmstadt.de/bibtex/topics/single/33">All Student Theses</a></li>
+    <? } ?>
+        <li class="mainmenu"><a href="publications/showlist/recent.html">Recent</a></li>
+    <li class="mainmenu"><a href="search.html">Search</a></li>
+
+    </ul></li>
+    <li class="mainmenu-spacer"></li>
+    <li class="mainmenu-header">EXPORT</li>
+    <li><ul class="mainmenu">
+    <li class="mainmenu"><a href="export.html">Export all publications</a></li>
+        </ul></li>
+
+                </ul></li>
+      </ul>
+<br/><br/>
+</div>
+<!-- End of menu -->
+      <!-- Aigaion main content -->
+      <div id="content_holder">
+      
+      
+      <!-- I think that here we want to have the (error) messages: -->
+              <!---->
+
+  <div class=editform>    
+    <p class=header>Advanced Search</p>
+<form action="http://www.ke.tu-darmstadt.de/bibtex/search/advancedresults" method="post" accept-charset="utf-8">
+<input type="hidden" name="formname" value="advancedsearch" />
+
+
+
+    <p class=header2>Search terms</p>
+    <div>
+<input type="text" name="searchstring" value="" size="50"  />
+    </div>
+<p/>
+    <p class=header2>Result types</p>
+    Choose which types of results you want returned
+    <div>
+<input type="checkbox" name="return_authors" value="return_authors" checked="checked"  /> Return authors<br/>
+<input type="checkbox" name="return_publications" value="return_publications" checked="checked"  /> Return publications<br/>
+<input type="checkbox" name="return_topics" value="return_topics" checked="checked"  /> Return topics<br/>
+<input type="checkbox" name="return_keywords" value="return_keywords" checked="checked"  /> Return keywords<br/>
+
+    </div>
+<p/>
+    <p class=header2>Publication search</p>
+    Choose, if you are searching for publications (see above!), which fields are searched
+    <div>
+<input type="checkbox" name="search_publications_titles" value="search_publications_titles" checked="checked"  /> Search publication titles<br/>
+<input type="checkbox" name="search_publications_notes" value="search_publications_notes" checked="checked"  /> Search publication notes<br/>
+<input type="checkbox" name="search_publications_bibtex_id" value="search_publications_bibtex_id" checked="checked"  /> Search publication Citation<br/>
+<input type="checkbox" name="search_publications_abstracts" value="search_publications_abstracts" checked="checked"  /> Search publication abstract<br/>
+
+    </div>
+<p/>
+<input type="submit" name="submit_search" value="Search"  /></form>
+  </div>
+
+  <div class=editform>    
+    <p class=header>Advanced Search: Publications on topic restriction</p>
+<form action="http://www.ke.tu-darmstadt.de/bibtex/search/advancedresults" method="post" accept-charset="utf-8">
+<input type="hidden" name="formname" value="advancedsearch" />
+
+
+
+    <p class=header2>Search terms</p>
+    Leave empty if you want to search all publications
+    <div>
+<input type="text" name="searchstring" value="" size="50"  />
+    </div>
+
+<input type="hidden" name="return_publications" value="return_publications" />
+
+
+<p/>
+    Search publications with these terms in the following fields:
+    <div>
+<input type="checkbox" name="search_publications_titles" value="search_publications_titles" checked="checked"  /> Search publication titles<br/>
+<input type="checkbox" name="search_publications_notes" value="search_publications_notes" checked="checked"  /> Search publication notes<br/>
+<input type="checkbox" name="search_publications_bibtex_id" value="search_publications_bibtex_id" checked="checked"  /> Search publication Citation id<br/>
+<input type="checkbox" name="search_publications_abstracts" value="search_publications_abstracts" checked="checked"  /> Search publication abstract<br/>
+
+    </div>
+<p/><div style="border:1px solid #990000;padding-left:20px;margin:0 0 10px 0;">
+
+<h4>A PHP Error was encountered</h4>
+
+<p>Severity: Notice</p>
+<p>Message:  Trying to get property of non-object</p>
+<p>Filename: libraries/topic_db.php</p>
+<p>Line Number: 106</p>
+
+</div><div style="border:1px solid #990000;padding-left:20px;margin:0 0 10px 0;">
+
+<h4>A PHP Error was encountered</h4>
+
+<p>Severity: Notice</p>
+<p>Message:  Trying to get property of non-object</p>
+<p>Filename: libraries/topic_db.php</p>
+<p>Line Number: 111</p>
+
+</div>
+    <p class=header2>Choose the topic restrictions that apply.</p>
+    Return all publications that satisfy <br/>
+                <input type=radio name="anyAll" value="All" CHECKED/>All<br/>
+                <input type=radio name="anyAll" value="Any"/>Any
+                <br/> of the following conditions:<br/><br/>
+    <div>
+    <script language='javascript'>
+    var n = 0;
+    function more() {
+        n++;
+                var newCondition = '<b>Condition '+n+'</b>:<br/><input type=radio name="doOrNot'+n+'" value="True" CHECKED/>Do<br/><input type=radio name="doOrNot'+n+'" value="False"/>Do not&nbsp;&nbsp;&nbsp; appear in '+decodeURIComponent('%3C!--%20topic%20browse%20displays%20--%3E%0D%0A%3Cselect%20name%3D%22dropdownname%22%3E%0A%3Coption%20value%3D%22header%22%3ESelect%20topic%20to%20include%20or%20exclude...%3C%2Foption%3E%0A%3C%2Fselect%3E%3C!--%20End%20of%20topic%20%20browse%20displays%20--%3E%0D%0A');
+                                             
+        newCondition = newCondition.replace('dropdownname','topicSelection'+n);
+        Element.replace('moreconditions',newCondition+'<br/><div id="moreconditions" name="moreconditions"><input type="hidden" name="numberoftopicconditions" value="'+n+'"/><input type="button" value="More..." onclick="more();" /></div>');
+    }
+    </script>
+    
+<div id='moreconditions' name='moreconditions'><input type="hidden" name="numberoftopicconditions" value="0"/><input type="button" value="More..." onclick="more();" /></div>
+    <script language='javascript'>more();</script></div><br/>
+<input type="submit" name="submit_search" value="Search"  /></form>
+  </div>
+      <div style='clear:both;'></div>
+      </div>
+      <!-- End of content_holder -->
+
+    	<div id="footer_holder">
+    		processing time: 0.0328 seconds.
+    	</div>
+
+    </div>
+    <!-- End of main_holder -->
+    
+  </body>
+</html>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+<ShortName>Poodle</ShortName>
+<Description>a personalized and privacy-preserving web search</Description>
+<InputEncoding>UTF-8</InputEncoding>
+<Url type="text/html" method="get" template="https://www.ke.tu-darmstadt.de/resources/Poodle/do">
+<Param name="q" value="{searchTerms}"/>
+</Url>
+<Url type="application/x-moz-keywordsearch" method="get" template="https://www.ke.tu-darmstadt.de/resources/Poodle/do?q={searchTerms}"/>
+<Image height="48" width="48" type="image/x-icon">https://www.ke.tu-darmstadt.de/resources/Poodle/favicon.ico</Image>
+</OpenSearchDescription>

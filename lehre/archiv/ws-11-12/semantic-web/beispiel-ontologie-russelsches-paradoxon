@@ -1,0 +1,158 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY Ontology1317973899340 "http://www.semanticweb.org/ontologies/2011/9/Ontology1317973899340.owl#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/ontologies/2011/9/Ontology1317973899340.owl#"
+     xml:base="http://www.semanticweb.org/ontologies/2011/9/Ontology1317973899340.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:Ontology1317973899340="http://www.semanticweb.org/ontologies/2011/9/Ontology1317973899340.owl#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ontologies/2011/9/Ontology1317973899340.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1317973899340.owl#shavedBy -->
+
+    <owl:ObjectProperty rdf:about="&Ontology1317973899340;shavedBy">
+        <rdfs:domain rdf:resource="&Ontology1317973899340;People"/>
+        <rdfs:range rdf:resource="&Ontology1317973899340;People"/>
+        <owl:inverseOf rdf:resource="&Ontology1317973899340;shaves"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1317973899340.owl#shaves -->
+
+    <owl:ObjectProperty rdf:about="&Ontology1317973899340;shaves">
+        <rdfs:domain rdf:resource="&Ontology1317973899340;People"/>
+        <rdfs:range rdf:resource="&Ontology1317973899340;People"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1317973899340.owl#Barbers -->
+
+    <owl:Class rdf:about="&Ontology1317973899340;Barbers">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&Ontology1317973899340;theBarber"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&Ontology1317973899340;People"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1317973899340.owl#People -->
+
+    <owl:Class rdf:about="&Ontology1317973899340;People">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Ontology1317973899340;shavedBy"/>
+                <owl:onClass rdf:resource="&Ontology1317973899340;People"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointUnionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="&Ontology1317973899340;PeopleWhoDoNotShaveThemselves"/>
+            <rdf:Description rdf:about="&Ontology1317973899340;PeopleWhoShaveThemselves"/>
+        </owl:disjointUnionOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1317973899340.owl#PeopleWhoDoNotShaveThemselves -->
+
+    <owl:Class rdf:about="&Ontology1317973899340;PeopleWhoDoNotShaveThemselves">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&Ontology1317973899340;People"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&Ontology1317973899340;shavedBy"/>
+                        <owl:allValuesFrom rdf:resource="&Ontology1317973899340;Barbers"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&Ontology1317973899340;People"/>
+        <owl:disjointWith rdf:resource="&Ontology1317973899340;PeopleWhoShaveThemselves"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1317973899340.owl#PeopleWhoShaveThemselves -->
+
+    <owl:Class rdf:about="&Ontology1317973899340;PeopleWhoShaveThemselves">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&Ontology1317973899340;People"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&Ontology1317973899340;shavedBy"/>
+                        <owl:hasSelf rdf:datatype="&xsd;boolean">true</owl:hasSelf>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&Ontology1317973899340;People"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/9/Ontology1317973899340.owl#theBarber -->
+
+    <owl:NamedIndividual rdf:about="&Ontology1317973899340;theBarber">
+        <rdf:type rdf:resource="&Ontology1317973899340;Barbers"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.22702) http://owlapi.sourceforge.net -->
+

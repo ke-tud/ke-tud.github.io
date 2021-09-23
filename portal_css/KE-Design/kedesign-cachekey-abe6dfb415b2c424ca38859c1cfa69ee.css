@@ -1,0 +1,961 @@
+
+/* - kedesign.css - */
+@media screen {
+/* http://www.ke.tu-darmstadt.de/portal_css/kedesign.css?original=1 */
+/* */
+/* */
+body {
+margin: 0;
+background-color: #F1F1F1;
+font-family: Tahoma, Arial, Helvetica, sans-serif;
+font-size: 11px;
+color: #333333;
+line-height: 1.6em;
+}
+h1, h2, h3 {
+margin-top: 0;
+margin-bottom: 0.5em;
+}
+h1{
+font-size: 136%;
+}
+h2{
+font-size: 109%;
+}
+h3{
+font-size: 100%;
+}
+h1, h2, h3, h4, h5, h6 {
+font-family: Tahoma, Arial, Helvetica, sans-serif;
+}
+p, table, ul, ol, dl{
+margin-top: 0;
+margin-bottom: 1.6em;
+}
+/* */
+ul, ol{
+margin-left: 0;
+padding-left: 0;
+list-style-position: inside;
+}
+ul{
+list-style-type: disc;
+line-height:11px;
+}
+li{
+margin-left: 0;
+padding-left: 0;
+margin-top:0;
+margin-bottom:0.2em;
+}
+li ul{
+margin-top: 0;
+margin-bottom: 0;
+}
+dt{
+font-weight: bold;
+padding: 0;
+}
+dd{
+margin: 0 0 0.8em 0;
+padding: 0;
+}
+dd p{
+margin-bottom: 0em;
+}
+dl.tabelle{
+width:100%;
+border-bottom: 1px solid #cccccc;
+}
+dl.tabelle dt{
+float: left;
+width: 145px;
+padding: 3px 10px 3px 0;
+border-top: 1px solid #cccccc;
+text-align: left;
+}
+dl.tabelle dd{
+float: left;
+width: 374px;
+padding: 3px 0;
+margin: 0;
+border-top: 1px solid #cccccc;
+}
+/* */
+strong {
+font-weight: bold;
+}
+em {
+font-style: italic;
+}
+a{
+text-decoration: underline;
+}
+a.nicht_unterstrichen, a.nie_unterstrichen{
+text-decoration: none;
+}
+a.nicht_unterstrichen:hover, a.nicht_unterstrichen:focus, a.nicht_unterstrichen:active{
+text-decoration: underline;
+}
+a:link{
+color: #333333;
+}
+a:visited{
+color: #666666;
+}
+a:focus, a:hover, a:active{
+color: #E6001A;
+}
+span.aktiv, a.aktiv, div.aktiv{
+color: #E6001A !important;
+}
+img {
+border: 0;
+}
+abbr, acronym {
+cursor: help ;
+}
+/* */
+table{
+border:0;
+border-spacing:0;
+}
+tr{
+vertical-align:top;
+}
+tr.gerade{
+background-color: #FDEBED;
+}
+tr.ungerade{
+background-color: #ffffff;
+}
+tr.zwischenueberschrift{
+background-color: #e8e8e8;
+}
+tr.zwischenueberschrift_2, tr.zwischenueberschrift_3 {
+background-color: #ffffff;
+}
+td, th{
+border:0;
+text-align:left;
+}
+th {
+padding: 3px 10px 3px 5px;
+font-weight: bold;
+background-color: #e8e8e8;
+}
+td {
+padding: 3px 10px 3px 5px;
+}
+td p, th p{
+margin-bottom:0;
+}
+tr.zwischenueberschrift td{
+padding: 7px 5px 3px 5px;
+font-weight: bold;
+}
+tr.zwischenueberschrift_2 td {
+padding: 7px 5px 3px 5px;
+color: #E6001A;
+font-weight:bold;
+}
+tr.zwischenueberschrift_3 td {
+padding: 7px 5px 3px 5px;
+color: #E6001A;
+font-weight:bold;
+}
+td.ohne_umbruch{
+white-space:nowrap;
+}
+/* */
+form{
+margin:0;
+padding:0;
+}
+label {
+cursor: pointer;
+}
+input[type=text], input[type=password] {
+border-width: 1px;
+border-style: solid;
+border-color: #666666 #cccccc #cccccc #666666;
+font-size: 100%;
+padding: 1px 2px;
+}
+input[type=submit] {
+font-size: 100%;
+padding: 1px 2px;
+}
+select {
+border-width: 1px;
+border-style: solid;
+border-color: #666666 #cccccc #cccccc #666666;
+font-size: 100%;
+padding: 1px 2px;
+}
+/* */
+span.gehe_zu{
+font-size: 15px;
+font-family: Arial, Helvetica;
+font-weight: bold;
+color: #E6001A;
+margin: 0 1px;
+}
+div.hervorgehoben {
+border: 1px solid #E5E5E5;
+margin-left: -5px;
+margin-right: -5px;
+padding-left: 4px;
+padding-right: 4px;
+background: #FDEBED url(http://www.ke.tu-darmstadt.de/portal_css/KE-Design/uploads/tf/schleier_40.png);
+}
+div.code {
+margin-bottom:1.6em;
+}
+div.code > pre {
+width: 517px !important;
+}
+div#seiten_container {
+position: relative;
+top: 0;
+width: 977px;
+margin-left:20px;
+background: #FFFFFF url('../../hintergrund.png') repeat-y;
+}
+/* */
+div#visual-portal-wrapper {
+position: relative;
+top: 0;
+width: 931px;
+min-height:520px;
+margin-left: 23px;
+padding-top: 5px;
+padding-bottom: 15px;
+background-color: #FFFFFF;
+z-index:1;
+}
+div#portal-top {
+position: relative;
+top: 0;
+width: 100%;
+z-index:2;
+line-height: 100%;
+}
+div#topnavigation {
+position: relative;
+top: 0;
+text-align: right;
+padding-top : 0px;
+padding-bottom: 8px;
+border-bottom: 14px solid #E6001A;
+font-size: 100%;
+}
+div#topnavigation a:link, div#topnavigation a:visited {
+color: #333333;
+text-decoration: none;
+}
+div#topnavigation a:focus, div#topnavigation a:hover, div#topnavigation a:active{
+text-decoration: underline;
+}
+div#topnavigation span.inaktiv {
+color:#999999;
+}
+#portal-siteactions {
+text-align: right;
+margin: 33px 0 0 0;
+padding: 0;
+}
+ul#portal-siteactions li {
+padding: 10px 0 0 0;
+}
+#portal-siteactions li a {
+color: #ccc;
+border: none;
+border-right: 1px solid #4D5760;
+font-family:arial,sans-serif;
+font-size:1.1em;
+font-size-adjust:none;
+font-stretch:normal;
+font-style:normal;
+font-variant:normal;
+font-weight:400;
+letter-spacing:0.1em;
+line-height:0.8em !important;
+padding:0 1em;
+}
+#portal-siteactions li a:hover {
+border: none;
+border-right: 1px solid #4D5760;
+}
+li#siteaction-contact a, li#siteaction-plone_setup a, li#siteaction-contact a:hover, li#siteaction-plone_setup a:hover {
+border: none;
+}
+/* */
+div#portal-header {
+position: relative;
+top: 0;
+width: 100%;
+border-top: 1px solid #333333;
+margin-top: 2px;
+z-index: 5;
+line-height: 100%;
+}
+div#header {
+position: relative;
+top: 0;
+width: 100%;
+z-index:2;
+line-height: 100%;
+}
+div#portal-searchbox {
+float: right;
+width: 122px;
+text-align: right;
+margin-top:1px;
+padding : 0 0 0 0;
+z-index:9;
+}
+div#portal-searchbox label{
+display: none;
+}
+div#portal-searchbox input#SearchableText {
+border-width: 1px;
+border-style: solid;
+border-color: #666666 #cccccc #cccccc #666666;
+font-size: 100%;
+width: 100px;
+padding:0 2px !important;
+}
+div#portal-searchbox input#searchGadget {
+border-width: 1px;
+border-style: solid;
+border-color: #666666 #cccccc #cccccc #666666;
+font-size: 100%;
+width: 100px;
+padding:0 2px !important;
+font-family : Tahoma, Arial, Helvetica, sans-serif;
+}
+div#portal-searchbox input.searchButton {
+border: 0;
+background-color: #FFFFFF;
+height: 15px;
+width:12px;
+font-size: 15px;
+font-family: Arial, Helvetica;
+font-weight: bold;
+color: #E6001A;
+margin: 0;
+padding: 0;
+cursor:pointer;
+}
+div#hauptnavigation{
+position: relative;
+top: 0;
+width:801px;
+font-size: 118%;
+font-weight: bold;
+padding-top: 5px;
+padding-bottom:8px;
+z-index: 6;
+}
+div#hauptnavigation ul {
+position: relative;
+top: 0;
+margin: 0;
+padding: 0;
+z-index: 7;
+list-style-type: none;
+list-style-image: none;
+}
+div#hauptnavigation ul li {
+position: relative;
+top: 0;
+left: 0;
+display: inline;
+margin: 0;
+padding: 0;
+}
+div#hauptnavigation a{
+white-space:nowrap;
+}
+div#hauptnavigation a:link, div#hauptnavigation a:visited {
+text-decoration: none;
+color: #333333;
+}
+div#hauptnavigation a:focus, div#hauptnavigation a:hover, div#hauptnavigation a:active {
+text-decoration: none;
+color: #E6001A;
+}
+.clear{
+clear: both;
+}
+/* */
+#portal-personaltools {
+background-color: #4A5C6A;
+border-top: none;
+}
+#portal-personaltools li a {
+color: white;
+}
+div#headerbild_container {
+position: relative;
+top: 0;
+width: 100%;
+height: 145px;
+overflow:hidden;
+background-color: #F5A300;
+z-index: 2;
+}
+div#headerbild_container div#logo {
+position: absolute;
+left: 749px;
+top: 23px;
+z-index: 4;
+background-color: #FFFFFF;
+}
+div#headerbild_container div#logo div#druck{
+display:none;
+}
+div#headerbild_container div#headerbild{
+position: relative;
+top: 0;
+z-index: 3;
+}
+div#headerbild_container div.halbes_bild{
+width: 466px;
+overflow: hidden;
+}
+/* */
+div#portal-breadcrumbs {
+position: relative;
+top: 0;
+width: 100%;
+margin-top: 7px;
+padding-bottom: 10px;
+padding-left : 0px;
+font-size: 100%;
+z-index:2;
+/* */
+border-bottom: 0px solid #8CACBB;
+line-height:100%;
+padding-right:0em;
+}
+#portal-breadcrumbs {
+border-bottom: 0px solid #8CACBB;
+}
+div#portal-breadcrumbs a:link, div#portal-breadcrumbs a:visited {
+color:#666666;
+text-decoration: none;
+}
+div#portal-breadcrumbs a:focus, div#portal-breadcrumbs a:hover, div#portal-breadcrumbs a:active {
+color: #E6001A;
+text-decoration: none;
+}
+/* */
+div.eine_spalte {
+width: 529px;
+}
+#portal-column-content{
+float: left;
+width: 548px;
+margin: 0;
+padding: 0;
+text-align: justify;
+}
+div#portal-column-content .folge_absatz, div.extrabreite_spalte .folge_absatz {
+margin-top: -0.8em;
+}
+div#portal-column-one {
+float: left;
+width: 182px;
+margin-right: 19px;
+margin-bottom: 20px;
+line-height:120%;
+}
+div#portal-column-two {
+float: left;
+width: 182px;
+line-height:1.4em;
+}
+div#portal-column-two #institutionslogo {
+margin-top: 5px;
+margin-bottom: 5px;
+}
+div#portal-column-two h1 {
+font-size: 109%;
+padding-top: 10px;
+padding-bottom: 3px;
+margin-top: 0;
+margin-bottom: 0.2em;
+border-bottom: 1px solid #E5E5E5;
+line-height:100%;
+}
+div#portal-column-two h2 {
+font-size: 100%;
+color: #333333;
+font-weight:bold;
+margin-top: 1em;
+margin-bottom: 0.3em;
+}
+div#portal-column-two h3 {
+font-size: 100%;
+color: #333333;
+font-weight:normal;
+margin-bottom: 0.2em;
+}
+div#portal-column-two h1 + h2 {
+margin-top: 0;
+}
+div#portal-column-two p {
+margin-bottom: 0.7em;
+}
+div#portal-column-two p.folge_absatz {
+margin-top: -0.3em;
+}
+div#portal-column-two div.bild_rechts{
+float: right;
+margin-left: 5px;
+margin-bottom: 0.5em;
+}
+div#rportal-column-two div.bild_links{
+float: left;
+margin-right: 5px;
+margin-bottom: 0.5em;
+}
+div#portal-column-two div.rss_icon{
+padding-top: 8px;
+}
+#parent-fieldname-text {
+margin-bottom: 1.6em;
+}
+/* */
+/* */
+.portlet {
+background-color: transparent;
+/* */
+border-top:2px solid #F5A300;
+border-bottom: 0px;
+float : left;
+width : 182px;
+margin: 0;
+}
+.portletItem {
+border: 0;
+padding-left: 0px;
+padding-top: 0.5em;
+padding-right: 0px;
+}
+.portletHeader {
+border: 0;
+background-color: transparent;
+font-size: 1.1em;
+color: #7A6135;
+font-weight: 600;
+padding : 6px 0 0;
+border-bottom: 1px solid #E5E5E5;
+}
+.portletHeader a:link, .portletHeader a:visited {
+color: #7A6135;
+}
+.portletFooter {
+border: 0 none;
+}
+/* */
+div#portal-column-one h1 {
+margin-bottom: 1px;
+margin-top: 10px;
+padding-bottom: 3px;
+border-bottom: 1px solid #E5E5E5;
+font-size: 109% !important;
+line-height:100%;
+}
+div#portal-column-one h1  a{
+margin:0;
+padding:0;
+text-decoration:none;
+color: #E6001A;
+}
+div#navigationsspalte ul {
+margin: 0;
+padding: 0;
+list-style-type: none;
+list-style-image: none;
+}
+div#navigationsspalte > ul {
+border-bottom: 1px solid #E5E5E5;
+}
+div#navigationsspalte h1,h2,h3, h1 a, h2 a, h3 a{
+color: #7a6135 !important;
+}
+div#portal-column-one li {
+margin: 0;
+padding: 0;
+clear: both;
+}
+div#portal-column-one span.navi_pfeil {
+float: right;
+width:8px;
+margin-right:-8px;
+font-size: 15px;
+font-family: Arial, Helvetica;
+color: #E6001A !important;
+text-align:right;
+}
+div#portal-column-one span.neues_fenster, div#portal-column-one span.hat_untermenue {
+float: right;
+visibility: hidden;
+text-align:right;
+}
+div#portal-column-one span.neues_fenster {
+float: right;
+width:14px;
+margin: 3px -6px 0 2px;
+visibility: hidden;
+text-align:right;
+}
+div#portal-column-one span.hat_untermenue {
+width:6px;
+margin: 3px -6px 0 2px;
+}
+div#portal-column-one a:hover span.neues_fenster, div#portal-column-one a:hover span.hat_untermenue {
+visibility: visible;
+}
+div#portal-column-one li a {
+display: block;
+width: 100%;
+padding: 5px 8px;
+margin: 0;
+color: #333333;
+text-decoration: none;
+border-bottom: 1px solid #FFFFFF;
+}
+div#portal-column-one li > a {	/* */
+width: 166px !important;
+}
+div#portal-column-one li a:link, div#portal-column-one li a:visited {
+background-color: #FDEBED;
+}
+div#portal-column-one li a:focus, div#portal-column-one li a:hover, div#portal-column-one li a:active {
+background-color: #FFFFFF !important;
+color: #333333;
+}
+div#portal-column-one li a.ebene1 {
+font-weight: bold;
+}
+div#portal-column-one li a.ebene2{
+padding: 4px 8px 4px 8px;
+}
+div#portal-column-one li > a.ebene2 {
+background: url('../../schleier_25.png') repeat-y;
+}
+div#portal-column-one li a.ebene3{
+padding: 3px 8px 3px 18px;
+}
+div#portal-column-one li > a.ebene3 {
+background: url('../../schleier_45.png') repeat-y;
+width: 156px !important;
+}
+div#portal-column-one a.ebene4 {
+padding: 2px 8px 2px 28px;
+}
+div#portal-column-one li > a.ebene4 {
+width: 146px !important;
+background: url('../../schleier_60.png') repeat-y;
+}
+div#portal-column-one a.ebene5 {
+padding: 1px 8px 2px 38px;
+}
+div#portal-column-one li > a.ebene5 {
+width: 136px !important;
+background: url('../../schleier_70.png') repeat-y;
+}
+div#portal-column-one li a.aktiv {
+background-color: #ffffff;
+}
+}
+/* */
+.documentContent {
+padding:0em 0em 2em 0em !important;
+}
+/* */
+#portal-footer {
+background:#6287A0;
+border: none;
+color: white;
+font-size: 0.8em;
+}
+#portal-footer a {
+color: #ffc;
+}
+#portal-colophon {
+margin: 0;
+}
+a:focus, a:hover, a:active{
+color: #7A6135;
+}
+h1, h2, h3, h1 a, h2 a, h3 a{
+color: #7a6135 !important;
+}
+div#portal-column-one {
+border-top-color: #F5A300;
+}
+div#portal-column-one li a:link, div#portal-column-one li a:visited {
+background-color: #FFF7D9;
+}
+div.aktiv, span.aktiv, a.aktiv, div#portal-column-one span.navi_pfeil {
+background-color: #FFFFFF !important;
+color: #7a6135 !important;
+}
+div#portal-column-one h1 a {
+font-weight : bold;
+}
+div#portal-column-one a.aktiv {
+background-color: #FFFFFF !important;
+}
+div#portal-breadcrumbs a:focus, div#portal-breadcrumbs a:hover, div#portal-breadcrumbs a:active {
+color: #7a6135 !important;
+}
+div#hauptnavigation a:focus, div#hauptnavigation a:hover, div#hauptnavigation a:active {
+color: #7A6135 !important;
+}
+div#hauptnavigation ul.klappbox a:link, div#hauptnavigation ul.klappbox a:visited {
+background-color: #E5F3F1;
+}
+div#portal-column-two {
+border-top-color: #F5A300;
+}
+div#portal-column-two h2, div#portal-column-two h3{
+color: #7a6135;
+}
+div#navigationsspalte li {
+line-height: 120%;
+}
+div#topnavigation {
+border-bottom-color: #F5A300;
+}
+div#portal-global-nav a:focus, div#portal-global-nav a:hover, div#portal-global-nav a:active {
+color: #7A6135 !important;
+}
+div#portal-global-nav ul.klappbox a:link, div#portal-global-nav ul.klappbox a:visited {
+background-color: #FFF7D9;
+}
+div#seiten_container {
+border-top-color: #008877 !important;
+}
+div#portal-searchbox .searchButton {
+color: #7a6135 !important;
+}
+input {
+vertical-align : baseline;
+background : white;
+}
+input.searchButton {
+background : white;
+}
+.inputLabelActive {
+color : black;
+}
+h1 a {
+color : #7a6135 !important
+}
+.documentFirstHeading {
+font-weight : bold;
+}
+div#parent-fieldname-text h1,h2,h3{
+font-weight : bold;
+}
+/* */
+#content a[href ^="http:"],
+#content a[href ^="https:"],
+#content a[href ^="mailto:"],
+#content a.link-external {
+background: none;
+padding : 0;
+}
+/* */
+#content ul,
+#content ol,
+#content dl{
+line-height: 1.6em;
+}
+#content ul, #content ol {
+list-style-position: outside;
+margin-left: 17px;
+}
+/* */
+/* */
+div#fussbereich_container {
+position:relative;
+top:0;
+width:100%;
+z-index:2;
+}
+div#schatten_unten {
+background:transparent url(schatten_unten.png) no-repeat scroll 0 0;
+height:3px;
+margin-left:20px;
+position:relative;
+top:0;
+}
+div#fussbereich {
+font-size:100%;
+line-height:100%;
+margin:0 23px 10px 43px;
+position:relative;
+top:0;
+}
+div#nach_oben {
+left:43px;
+position:absolute;
+top:-20px;
+width:931px;
+}
+div.nach_oben {
+text-align:right;
+width:100%;
+}
+div#fussbereich_container > div#fussbereich {
+margin-top:5px !important;
+}
+div#fussbereich a:link, div#fussbereich a:visited {
+color:#333333;
+text-decoration:none;
+}
+a#schrift_kleiner {
+font-size:91%;
+}
+a#schrift_normal {
+font-size:109%;
+}
+a#schrift_groesser {
+font-size:127%;
+}
+.newsImageContainer {
+text-align: center;
+}
+#parent-fieldname-text {
+clear: none;
+}
+#document-toc {
+background-color: white;
+float: right;
+border-left: 1px solid #F5A300;
+border-top: 1px solid #F5A300;
+border-bottom: 1px solid #F5A300;
+margin-left: 1em;
+margin-bottom: 1em;
+}
+#document-toc .portletHeader {
+padding: 6px 1em 0;
+border: 0 none;
+}
+#document-toc .TOC1Digit {
+margin-left: 30px;
+}
+#document-toc .TOC2Digit {
+margin-left: 30px;
+}
+#document-toc .TOC3Digit {
+margin-left: 30px;
+}
+.listingBar {
+background-color: #FFF7D9;
+}
+th {
+background-color: #FFF7D9;
+}
+.livesearchContainer {
+width: 19em;
+}
+.LSRow {
+margin: 0.5em;
+}
+.fixedWidth {
+font-family: monospace;
+}
+p.news {
+border-left:5px solid orange;
+font-weight:normal;
+padding:5px;
+font-style: italic;
+background: beige none;
+}
+.portletNavigationTree {
+padding-bottom: 10px;
+/* */
+/* */
+/* */
+
+}
+
+
+/* - ++resource++gomobile.mobile/simulator.css - */
+@media screen {
+/* http://www.ke.tu-darmstadt.de/portal_css/++resource++gomobile.mobile/simulator.css?original=1 */
+#mobile-preview-wrapper
+{
+position: absolute;
+top:0%;
+left:0%;
+width:400px;
+height:800px;
+text-align: left;
+display: none;
+z-index: 100;
+}
+#mobile-preview-url { display:none; }
+#mobile-preview {
+position: fixed;
+background: url(++resource++gomobile.mobile/phone_back.png) no-repeat top left;
+width: 400px;
+height: 750px;
+margin:0;
+padding:0;
+left: 20%;
+top: 10%;
+z-index: 100;
+}
+#mobile-preview iframe {
+margin-left: 34px;
+margin-top: 155px;
+width: 320px;
+height: 460px;
+border:0;
+padding:0;
+background: white;
+}
+#preview-info {
+border: 1px solid black;
+padding: 4px;
+background: #555;
+color:white;
+width: 250px;
+z-index:102;
+position: absolute;
+left: 465px;
+top: 30px;
+}
+#preview-info a {
+font-weight: bold;
+color: #ffa;
+}
+.darkClass
+{
+background-color: black;
+filter:alpha(opacity=80); /* */
+opacity: 0.8; /* */
+-moz-opacity:0.80; /* */
+z-index: 20;
+min-height: 1000px;
+max-height: 100%;
+width: 100%;
+background-repeat:no-repeat;
+background-position:center;
+position:fixed;
+top: 0px;
+left: 0px;
+display:none;
+}
+
+}
+

@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  </head>        
+  <body>
+    <pre>
+TY  - RPRT
+ID  - TUD-KE-2010-06
+T1  - Exploiting Code-Redundancies in {ECOC} for Reducing its Training Complexity using Incremental and {SVM} Learners
+A1  - Park, Sang-Hyeun
+A1  - Weizsäcker, Lorenz
+A1  - Fürnkranz, Johannes
+Y1  - 2010
+IS  - TUD-KE-2010-06
+T2  - TU Darmstadt
+UR  - http://www.ke.tu-darmstadt.de/publications/reports/tud-ke-2010-06.pdf
+N2  - We study an approach for speeding up the training of error-correcting output codes (ECOC) classifiers. 
+The key idea is to avoid unnecessary computations by exploiting the overlap of the different training sets in the ECOC ensemble. Instead of re-training each classifier from scratch, classifiers that have been trained for one task can be adapted to related tasks in the ensemble. The crucial issue is the identification of a schedule for training the classifiers, which maximizes the exploitation of the overlap. For solving this problem, we construct a classifier graph in which the nodes correspond to the classifiers, and the edges represent the training complexity for moving from one classifier to the next in terms of the number of added training examples. The solution of the Steiner Tree problem is an arborescence in this graph, which describes the learning scheme with the minimal total training complexity. We experimentally evaluate the algorithm with Hoeffding trees, as an example for incremental learners, where the classifier adaptation is trivial, and with SVMs, where we employ an adaptation strategy based on adapted caching and weight re-use, which guarantees that the learned model is the same as per batch learning.
+ER  -
+    </pre>
+  </body>
+</html>

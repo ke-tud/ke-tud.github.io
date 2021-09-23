@@ -1,0 +1,1995 @@
+
+
+
+<!DOCTYPE html PUBLIC
+  "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+  
+    
+    
+    
+    
+
+
+  <head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <meta name="generator" content="Plone - http://plone.org" />
+
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    
+      <base href="" /><!--[if lt IE 7]></base><![endif]-->
+    
+
+    
+        <meta content="Entwicklung eines Intelligenten Blokus-Spielers" name="description" />
+
+  
+    <link rel="stylesheet" type="text/css" media="screen" href="https://www.ke.tu-darmstadt.de/portal_css/KE-Design/reset-cachekey-925e503538eefe397b99ef02d65af339.css" />
+    <style type="text/css" media="screen">@import url(https://www.ke.tu-darmstadt.de/portal_css/KE-Design/base-cachekey-03153797b47b0a3cc7f99250afe8cedd.css);</style>
+    <link rel="stylesheet" type="text/css" media="screen" href="https://www.ke.tu-darmstadt.de/portal_css/KE-Design/resourcetinymce.stylesheetstinymce-cachekey-5af329a435a47b3692ec346792a15c82.css" />
+    <style type="text/css">@import url(https://www.ke.tu-darmstadt.de/portal_css/KE-Design/print-cachekey-121643ccca6586bc2ccc938612dbcdbe.css);</style>
+    <link rel="stylesheet" type="text/css" media="screen" href="https://www.ke.tu-darmstadt.de/portal_css/KE-Design/resourceplone.app.discussion.stylesheetsdiscussion-cachekey-a142adb07f80a3c80d0ffe3bd11c391d.css" />
+    <style type="text/css" media="screen">@import url(https://www.ke.tu-darmstadt.de/portal_css/KE-Design/kedesign-cachekey-abe6dfb415b2c424ca38859c1cfa69ee.css);</style>
+    <style type="text/css" media="screen">@import url(https://www.ke.tu-darmstadt.de/portal_css/KE-Design/JabRef.css);</style>
+    <style type="text/css" media="all">@import url(https://www.ke.tu-darmstadt.de/portal_css/KE-Design/ploneCustom-cachekey-aba490f43e054b2e05eaab28d192fa09.css);</style>
+
+  
+  
+    <script type="text/javascript" src="https://www.ke.tu-darmstadt.de/portal_javascripts/KE-Design/resourceplone.app.jquery-cachekey-0778f482fb7d0bbb4d2ec9c3b82f9e81.js"></script>
+    <script type="text/javascript" src="https://www.ke.tu-darmstadt.de/portal_javascripts/KE-Design/cookie_manager-cachekey-4a290db816043754c78ba3a906f4556e.js"></script>
+    <script type="text/javascript" src="https://www.ke.tu-darmstadt.de/portal_javascripts/KE-Design/Hyphenator-cachekey-671ea5ad93b7c7d3d115abde3ce0b6bb.js"></script>
+    <script type="text/javascript" src="https://www.ke.tu-darmstadt.de/portal_javascripts/KE-Design/JabRef-cachekey-0a9b33f3f54aff6df349afab5dcd9f03.js"></script>
+
+
+<title>Bachelorpraktikum Knowledge Engineering - WS 09/10 &mdash; </title>
+
+        
+    <link rel="canonical" href="../bp.html" />
+
+    <link rel="shortcut icon" type="image/x-icon" href="https://www.ke.tu-darmstadt.de/favicon.ico" />
+    <link rel="apple-touch-icon" href="https://www.ke.tu-darmstadt.de/touch_icon.png" />
+
+
+
+
+
+
+    <link rel="search" href="https://www.ke.tu-darmstadt.de/@@search" title="Search this site" />
+
+
+
+        <!-- Disable IE6 image toolbar -->
+        <meta http-equiv="imagetoolbar" content="no" />
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+    
+
+  </head>
+
+  <body onload="setzeInitialeFontgroesse();" class="template-document_view portaltype-document site-Plone section-lehre subsection-archiv subsection-archiv-ws0910 subsection-archiv-ws0910-bp userrole-anonymous" dir="ltr">
+    <div id="seiten_container">
+    <div id="visual-portal-wrapper">
+
+      <div id="header">
+        <a name="top"></a>
+        <div id="topnavigation">
+
+         
+   
+
+    
+        
+            <a href="https://www.ke.tu-darmstadt.de/login" class="visualIconPadding">
+               Log in
+            </a>
+        
+    
+
+
+</div>
+
+<p class="hiddenStructure">
+  <a accesskey="2" href="bp_index.html#content">Skip to content.</a> |
+
+  <a accesskey="6" href="bp_index.html#portal-globalnav">Skip to navigation</a>
+</p>
+
+<div id="portal-header">
+    <div id="portal-searchbox">
+    <form name="searDDchform" action="https://www.ke.tu-darmstadt.de/search">
+
+        <label for="searchGadget" class="hiddenStructure">Search Site</label>
+        <div class="LSBox">
+        <input name="SearchableText" type="text" title="Search Site" class="inputLabel" id="searchGadget" />
+        <input class="searchButton" type="submit" value="»" />
+       <div class="LSResult" id="LSResult" style=""><div class="LSShadow" id="LSShadow"></div></div>
+        </div>
+    </form>
+</div>
+
+
+  <div id="hauptnavigation">
+    <ul>
+      
+        <li>
+          <a href="https://www.ke.tu-darmstadt.de/" class="" title="">Home</a> | 
+        </li>
+      
+      
+        <li>
+          <a href="https://www.ke.tu-darmstadt.de/staff" class="" title="Knowledge Engineering Group Members and Jobs">Staff</a> | 
+        </li>
+      
+      
+        <li>
+          <a href="../../../../jobs.html" class="" title="">Jobs</a> | 
+        </li>
+      
+      
+        <li>
+          <a href="https://www.ke.tu-darmstadt.de/news" class="" title="Latest news from the Knowledge Engineering Group">News</a> | 
+        </li>
+      
+      
+        <li>
+          <a href="https://www.ke.tu-darmstadt.de/termine" class="" title="Upcoming events from the Knowledge Engineering Group">Termine</a> | 
+        </li>
+      
+      
+        <li>
+          <a href="../../../../publications.html" class="" title="">Publications</a> | 
+        </li>
+      
+      
+        <li>
+          <a href="https://www.ke.tu-darmstadt.de/projects" class="" title="Projects with participation of our group">Projects</a> | 
+        </li>
+      
+      
+        <li>
+          <a href="https://www.ke.tu-darmstadt.de/research" class="" title="">Research</a> | 
+        </li>
+      
+      
+        <li>
+          <a href="https://www.ke.tu-darmstadt.de/resources" class="" title="Datasets, applications, tools and other resources publicly provided by the KE Group.">Resources</a> | 
+        </li>
+      
+      
+        <li>
+          <a href="https://www.ke.tu-darmstadt.de/lehre" class="aktiv" title="Lehrveranstaltungen und studentische Arbeiten">Lehre</a> | 
+        </li>
+      
+      
+        <li>
+          <a href="lehre/arbeiten.html" class="" title="Link auf https://www.ke.tu-darmstadt.de/lehre/arbeiten">Thesis Topics</a> | 
+        </li>
+      
+      
+        <li>
+          <a href="http://www.informatik.tu-darmstadt.de" class="" title="Fachbereich Informatik, TU Darmstadt">FB20</a> | 
+        </li>
+      
+    </ul>
+  </div>    
+  <div class="clear"></div>
+
+
+
+
+</div>
+
+
+<div id="headerbild_container">	
+	<div id="logo">
+		<div id="bildschirm">
+			<a href="http://www.tu-darmstadt.de" title="Zur TU Darmstadt Startseite">
+                              <img src="https://www.ke.tu-darmstadt.de/tu_darmstadt_web.png" alt="Logo der TU Darmstadt" />
+                        </a>
+		</div>	
+	</div>
+		<div id="headerbild"> <img src="https://www.ke.tu-darmstadt.de/ke_site_header.jpg" alt="" /> </div>
+</div>
+
+
+<div id="portal-breadcrumbs">
+    <a href="https://www.ke.tu-darmstadt.de">Home
+    </a>
+    
+      <span class="breadcrumbSeparator navi_pfeil">&raquo;</span>
+        
+            <a href="https://www.ke.tu-darmstadt.de/lehre">Lehre</a>
+            
+         
+    
+    
+      <span class="breadcrumbSeparator navi_pfeil">&raquo;</span>
+        
+            <a href="https://www.ke.tu-darmstadt.de/lehre/archiv">Vergangene Semester</a>
+            
+         
+    
+    
+      <span class="breadcrumbSeparator navi_pfeil">&raquo;</span>
+        
+            <a href="https://www.ke.tu-darmstadt.de/lehre/archiv/ws0910">WS 09/10</a>
+            
+         
+    
+    
+      <span class="breadcrumbSeparator navi_pfeil">&raquo;</span>
+        
+            
+            <span class="aktiv">Bachelorpraktikum Knowledge Engineering</span>
+         
+    
+
+</div>
+
+      </div>
+
+      <div id="portal-columns">
+            
+                
+                <div id="portal-column-one">
+                    
+                      
+<div class="portletWrapper" data-portlethash="706c6f6e652e6c656674636f6c756d6e0a636f6e746578740a2f506c6f6e650a6e617669676174696f6e" id="portletwrapper-706c6f6e652e6c656674636f6c756d6e0a636f6e746578740a2f506c6f6e650a6e617669676174696f6e">
+<div id="navigationsspalte" class="portlet portletNavigationTree">    
+    <dl style="margin-bottom:0em">
+    <dt class="portletHeader">
+    <!--<span class="portletHeader">-->
+    <span class="portletTopLeft"></span>
+        
+        <span class="portletTopRight"></span>
+   <!-- </span> -->
+    </dt>
+    </dl>
+    <ul>
+      
+            
+
+
+
+<li>
+
+    
+
+      
+
+        <a href="https://www.ke.tu-darmstadt.de/staff" class=" ebene1" title="Knowledge Engineering Group Members and Jobs">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="https://www.ke.tu-darmstadt.de/untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            Staff
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../../../../jobs.html" class=" ebene1" title="">
+            
+
+            
+
+            
+           
+            Jobs
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="https://www.ke.tu-darmstadt.de/news" class=" ebene1" title="Latest news from the Knowledge Engineering Group">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="https://www.ke.tu-darmstadt.de/untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            News
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="https://www.ke.tu-darmstadt.de/termine" class=" ebene1" title="Upcoming events from the Knowledge Engineering Group">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="https://www.ke.tu-darmstadt.de/untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            Termine
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../../../../publications.html" class=" ebene1" title="">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="https://www.ke.tu-darmstadt.de/untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            Publications
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="https://www.ke.tu-darmstadt.de/projects" class=" ebene1" title="Projects with participation of our group">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="https://www.ke.tu-darmstadt.de/untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            Projects
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="https://www.ke.tu-darmstadt.de/research" class=" ebene1" title="">
+            
+
+            
+
+            
+           
+            Research
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="https://www.ke.tu-darmstadt.de/resources" class=" ebene1" title="Datasets, applications, tools and other resources publicly provided by the KE Group.">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="https://www.ke.tu-darmstadt.de/untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            Resources
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="https://www.ke.tu-darmstadt.de/lehre" class=" aktiv ebene1" title="Lehrveranstaltungen und studentische Arbeiten">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="https://www.ke.tu-darmstadt.de/untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            Lehre
+        </a>
+        
+    
+
+    <ul>  
+        
+
+
+
+<li>
+
+    
+
+      
+
+        <a href="https://www.ke.tu-darmstadt.de/lehre/Klausuren" class=" ebene2" title="Im Rahmen jeder Vorlesung findet am Ende des Semesters eine schriftliche Klausur statt. Die folgenden Informationen gelten im wesentlichen für alle Klasuuren, die Sie bei der KE-Gruppe schreiben.">
+            
+
+            
+
+            
+           
+            Klausuren
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="https://www.ke.tu-darmstadt.de/lehre/arbeiten" class=" ebene2" title="">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="https://www.ke.tu-darmstadt.de/untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            Studentische Arbeiten
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="https://www.ke.tu-darmstadt.de/lehre/oberseminar" class=" ebene2" title="">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="https://www.ke.tu-darmstadt.de/untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            Oberseminar
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="https://www.ke.tu-darmstadt.de/lehre/archiv" class=" aktiv ebene2" title="Archiv">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="https://www.ke.tu-darmstadt.de/untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            Vergangene Semester
+        </a>
+        
+    
+
+    <ul>  
+        
+
+
+
+<li>
+
+    
+
+      
+
+        <a href="../../ws-18-19.html" class=" ebene3" title="">
+            
+
+            
+
+            
+           
+            WS 18/19
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../../ss18.html" class=" ebene3" title="Lehrangebot Sommersemester 2018">
+            
+
+            
+
+            
+           
+            SS 18
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../../ws-17-18.html" class=" ebene3" title="Lehrangebot Wintersemester 2017/18">
+            
+
+            
+
+            
+           
+            WS 17/18
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../../../ss17.html" class=" ebene3" title="">
+            
+
+            
+
+            
+           
+            SS 17
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../../../ws-16-17.html" class=" ebene3" title="">
+            
+
+            
+
+            
+           
+            WS 16/17
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../../ss16.html" class=" ebene3" title="Lehrangebot Sommersemester 2016">
+            
+
+            
+
+            
+           
+            SS 16
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="https://www.ke.tu-darmstadt.de/lehre/archiv/ws-15-16" class=" ebene3" title="">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="https://www.ke.tu-darmstadt.de/untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            WS 15/16
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="https://www.ke.tu-darmstadt.de/lehre/archiv/ss15" class=" ebene3" title="Lehre Sommersemester 2015">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="https://www.ke.tu-darmstadt.de/untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            SS 15
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="https://www.ke.tu-darmstadt.de/lehre/archiv/ws-14-15" class=" ebene3" title="Lehrangebot WS 2014/15 ">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="https://www.ke.tu-darmstadt.de/untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            WS 14/15
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="https://www.ke.tu-darmstadt.de/lehre/archiv/ss14" class=" ebene3" title="Lehre Sommersemester 2014">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="https://www.ke.tu-darmstadt.de/untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            SS 14
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="https://www.ke.tu-darmstadt.de/lehre/archiv/ws-13-14" class=" ebene3" title="WS 13/14">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="https://www.ke.tu-darmstadt.de/untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            WS 13/14
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="https://www.ke.tu-darmstadt.de/lehre/archiv/ss13" class=" ebene3" title="Sommersemester 2013">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="https://www.ke.tu-darmstadt.de/untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            SS 13
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="https://www.ke.tu-darmstadt.de/lehre/archiv/ws-12-13" class=" ebene3" title="WS 12/13">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="https://www.ke.tu-darmstadt.de/untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            WS 12/13
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="https://www.ke.tu-darmstadt.de/lehre/archiv/ss12" class=" ebene3" title="">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="https://www.ke.tu-darmstadt.de/untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            SS 12
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="https://www.ke.tu-darmstadt.de/lehre/archiv/ws-11-12" class=" ebene3" title="WS 11/12">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="https://www.ke.tu-darmstadt.de/untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            WS 11/12
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="https://www.ke.tu-darmstadt.de/lehre/archiv/ss11" class=" ebene3" title="">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="https://www.ke.tu-darmstadt.de/untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            SS 11
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="https://www.ke.tu-darmstadt.de/lehre/archiv/ws1011" class=" ebene3" title="Veranstaltungen im Wintersemester 2010/11">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="https://www.ke.tu-darmstadt.de/untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            WS 10/11
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="https://www.ke.tu-darmstadt.de/lehre/archiv/ss10" class=" ebene3" title="Sommersemester 2010">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="https://www.ke.tu-darmstadt.de/untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            SS 10
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="https://www.ke.tu-darmstadt.de/lehre/archiv/ws0910" class=" aktiv ebene3" title="">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="https://www.ke.tu-darmstadt.de/untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            WS 09/10
+        </a>
+        
+    
+
+    <ul>  
+        
+
+
+
+<li>
+
+    
+
+      
+
+        <a href="https://www.ke.tu-darmstadt.de/lehre/archiv/ws0910/mldm" class=" ebene4" title="Einführung in maschinelles Lernen und Data Mining mit Schwerpunkt auf Lernen in logisch/symbolischen Repräsentationssprachen. ">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="https://www.ke.tu-darmstadt.de/untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            Maschinelles Lernen: Symbolische Ansätze
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../bp.html" class=" aktiv ebene4" title="">
+            
+
+            <span class="navi_pfeil">
+                  &raquo;
+            </span>
+
+            
+           
+            Bachelorpraktikum Knowledge Engineering
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="https://www.ke.tu-darmstadt.de/lehre/archiv/ws0910/ml-sem" class=" ebene4" title="">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="https://www.ke.tu-darmstadt.de/untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            Seminar aus maschinellem Lernen
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+
+
+    </ul>
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="https://www.ke.tu-darmstadt.de/lehre/archiv/ss09" class=" ebene3" title="">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="https://www.ke.tu-darmstadt.de/untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            SS 09
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="https://www.ke.tu-darmstadt.de/lehre/archiv/ws0809" class=" ebene3" title="">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="https://www.ke.tu-darmstadt.de/untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            WS 08/09
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="https://www.ke.tu-darmstadt.de/lehre/archiv/ss08" class=" ebene3" title="">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="https://www.ke.tu-darmstadt.de/untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            SS 08
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="https://www.ke.tu-darmstadt.de/lehre/archiv/ws0708" class=" ebene3" title="">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="https://www.ke.tu-darmstadt.de/untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            WS 07/08
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="https://www.ke.tu-darmstadt.de/lehre/archiv/ss07" class=" ebene3" title="">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="https://www.ke.tu-darmstadt.de/untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            SS 07
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="https://www.ke.tu-darmstadt.de/lehre/archiv/ws0607" class=" ebene3" title="">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="https://www.ke.tu-darmstadt.de/untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            WS 06/07
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="https://www.ke.tu-darmstadt.de/lehre/archiv/ss06" class=" ebene3" title="">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="https://www.ke.tu-darmstadt.de/untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            SS 06
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="https://www.ke.tu-darmstadt.de/lehre/archiv/ws0506" class=" ebene3" title="">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="https://www.ke.tu-darmstadt.de/untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            WS 05/06
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="https://www.ke.tu-darmstadt.de/lehre/archiv/ss05" class=" ebene3" title="">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="https://www.ke.tu-darmstadt.de/untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            SS 05
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="https://www.ke.tu-darmstadt.de/lehre/archiv/ws0405" class=" ebene3" title="">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="https://www.ke.tu-darmstadt.de/untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            WS 04/05
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="https://www.ke.tu-darmstadt.de/lehre/archiv/ss04" class=" ebene3" title="">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="https://www.ke.tu-darmstadt.de/untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            SS 04
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="https://www.ke.tu-darmstadt.de/lehre/archiv/ws0304" class=" ebene3" title="">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="https://www.ke.tu-darmstadt.de/untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            WS 03/04
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+
+
+    </ul>
+    
+</li>
+
+
+
+
+    </ul>
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="lehre/arbeiten.html" class=" ebene1" title="Link auf https://www.ke.tu-darmstadt.de/lehre/arbeiten">
+            
+
+            
+
+            
+           
+            Thesis Topics
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="http://www.informatik.tu-darmstadt.de" class=" ebene1" title="Fachbereich Informatik, TU Darmstadt">
+            
+
+            
+
+            
+           
+            FB20
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+
+
+        </ul>
+
+</div>
+
+</div>
+
+<div class="portletWrapper" data-portlethash="706c6f6e652e6c656674636f6c756d6e0a636f6e746578740a2f506c6f6e650a6e657773" id="portletwrapper-706c6f6e652e6c656674636f6c756d6e0a636f6e746578740a2f506c6f6e650a6e657773">
+<dl class="portlet portletNews">
+
+    <dt class="portletHeader">
+        <span class="portletTopLeft"></span>
+        <a href="https://www.ke.tu-darmstadt.de/news" class="tile">News</a>
+        <span class="portletTopRight"></span>
+    </dt>
+
+    
+    <dd class="portletItem odd">
+
+        <a href="https://www.ke.tu-darmstadt.de/news/thesis-dang" class="tile" title="">
+            
+            The­sis on adaptive driver assistance systems de­fend­ed 
+         </a>
+            <span class="portletItemDetails">Feb 21, 2020</span>
+
+    </dd>
+    
+    
+    <dd class="portletItem even">
+
+        <a href="https://www.ke.tu-darmstadt.de/news/DS2019" class="tile" title="">
+            
+            Best paper award at Discovery Science 2019
+         </a>
+            <span class="portletItemDetails">Oct 28, 2019</span>
+
+    </dd>
+    
+    
+    <dd class="portletItem odd">
+
+        <a href="https://www.ke.tu-darmstadt.de/news/leaving" class="tile" title="">
+            
+            Leaving
+         </a>
+            <span class="portletItemDetails">Sep 23, 2019</span>
+
+    </dd>
+    
+    
+    <dd class="portletItem even">
+
+        <a href="https://www.ke.tu-darmstadt.de/news/eseg-in-tv" class="tile" title="">
+            
+            Our project ESEG in the TV news
+         </a>
+            <span class="portletItemDetails">Jan 14, 2019</span>
+
+    </dd>
+    
+    
+    <dd class="portletItem odd">
+
+        <a href="https://www.ke.tu-darmstadt.de/news/student-bot-beats-crazyhouse-champion" class="tile" title="">
+            
+            Student Bot beats Crazyhouse World Champion
+         </a>
+            <span class="portletItemDetails">Dec 27, 2018</span>
+
+    </dd>
+    
+
+    <dd class="portletFooter">
+        <span class="portletBottomLeft"></span>
+        <a href="https://www.ke.tu-darmstadt.de/news">
+          More news&hellip;
+        </a>
+        <span class="portletBottomRight"></span>
+    </dd>
+    
+</dl>
+
+</div>
+
+
+
+
+                    
+                    &nbsp;
+                </div>
+                
+            
+
+            
+            <div id="portal-column-content" class="hyphenate">
+
+              <div id="viewlet-above-content3"></div>
+	      <div class="eine_spalte">
+              
+                <div class="">
+
+                    
+
+                    <span id="contentTopLeft3"></span>
+                    <span id="contentTopRight3"></span>
+
+                    
+
+    <dl class="portalMessage info" id="kssPortalMessage" style="display:none">
+        <dt>Info</dt>
+        <dd></dd>
+    </dl>
+
+
+
+                    
+                    <div id="content">
+                      
+                      
+
+                        
+                            
+                            
+                                
+                                
+            
+                <h1 id="parent-fieldname-title" class="documentFirstHeading">
+                    Bachelorpraktikum Knowledge Engineering - WS 09/10
+                </h1>
+            
+            
+        
+                            
+                            
+
+
+                            
+                                
+                                
+            
+                <div id="parent-fieldname-description" class="documentDescription">
+                   Entwicklung eines Intelligenten Blokus-Spielers
+                </div>
+            
+            
+        
+                            
+
+                            
+<dl id="document-toc" class="portlet toc" style="display: none">
+  <dt class="portletHeader">Contents</dt>
+  <dd class="portletItem">
+  </dd>
+</dl>
+
+                            <div id="content-core">
+                                
+    
+        
+        <div class="" id="parent-fieldname-text-a492da31b2cb69a6e6ae7b0587eeae7b">
+            
+<h2>
+  Blokus</h2>
+<p><a href="http://www.blokus.com/">Blokus</a> ist ein
+Brettspiel für 4 Spieler (gelb, rot, grün und
+blau). Aufgabe jedes Spielers ist es, 21 aus Quadraten
+bestehende Plättchen (die aus Tetris bekannten 12
+Pentaminos, 5 Quadraminos, 2 Triminos, und je ein Domino und
+ein einzelnes Quadrat) auf einem quadratischen Spielfeld (20
+x 20 Felder) abzulegen, wobei jedes neue Plättchen eines
+der eigenen an einer Ecke berühren muß, allerdings
+keins der eigenen an einer Kante berühren darf. Begonnen
+wird in den 4 Ecken des Spielfelds, die Spieler dürfen
+reihum je ein Plättchen ablegen. Gezogen wird so lange,
+bis kein Spieler mehr ablegen kann. Sieger ist, wer am
+meisten Quadrate abgelegt hat. Gelingt es einem Spieler, alle
+Plättchen abzulegen, gibt es 15 Bonuspunkte, wird das
+einzelne Quadrat im letzten Zug abgelegt, erhält man
+nochmals 5 Bonuspunkte.<br /></p>
+<h2>
+  Aufgabenstellung</h2>
+<p>
+  Aufgabe jeder Gruppe ist es, einen intelligenten Spieler
+  für dieses Spiel in Java zu implementieren. Die
+  implementierten Spieler sollen dann am Ende in einem
+  Turnier miteinander verglichen werden, sodaß auch ein
+  entsprechendes Kommunikationsprotokoll gemeinsam erarbeitet
+  und von allen Gruppen realisiert werden muß. Für
+  die zu implementierende KI (Künstliche Intelligenz)
+  gibt es zwei mögliche Ansätze, die realisiert
+  werden sollen (jedoch von unterschiedlichen Gruppen):</p>
+<dl>
+  <dt>
+    Multi-Player Minimax
+  </dt>
+  <dd>
+    Der Minimax-Algorithmus ist der verbreiteste
+    Such-Algorithmus für 2-Personen Spiele wie z.B.
+    Schach. Eine Erweiterung auf 4 Spieler, wie hier
+    erforderlich, ist relativ einfach. Ein Problem ist hier,
+    daß er eine Bewertungsfunktion voraussetzt, die die
+    Qualität einer Stellung für jede Seite
+    einschätzt. Eine derartige Funktion muß von
+    jeder Gruppe, die dieses Verfahren realisiert, erarbeitet
+    werden.
+  </dd>
+  <dt>
+    Monte-Carlo Suche und UCT
+  </dt>
+  <dd>
+    Monte-Carlo Suche spielt eine große Anzahl von
+    Spielen zu Ende, und wählt am Ende den Zug aus, der
+    am öftesten gewonnen hat (bzw. die im Durchschnitt
+    größte Punkte-Anzahl erreicht hat). Dazu ist
+    es wichtig, daß eine große Anzahl von Spielen
+    durchgeführt werden kann, d.h. die Zugauswahl
+    für jeden Spieler muß sehr schnell erfolgen
+    können. Am einfachsten ist es, die Spieler
+    zufällig ziehen zu lassen, jedoch sind auch andere
+    Varianten denkbar.
+<p>
+      UCT stellt eine Mischung zwischen den obigen beiden
+      Verfahren dar. Es wird einerseits zufällig
+      gesucht, wie in der Monte-Carlo Suche, jedoch wird auf
+      den oberen Ebenen parallel dazu ein Spielbaum
+      aufgebaut, der dafür sorgt, daß nicht alle
+      Varianten gleich wahrscheinlich sind, und
+      vielversprechendere Varianten öfter durchsucht
+      werden.</p>
+</dd></dl>
+<p>Ziel des Praktikums ist es letztendlich, festzustellen,
+welches Suchverfahren sich am besten für dieses Spiel
+eignet.</p>
+<p>&nbsp;</p>
+<h2>
+  Anforderungen</h2>
+<h3>
+  Muss</h3>
+<ul>
+  <li>korrekter Zuggenerator (Generieren aller möglichen
+  Züge in einer Stellung und Möglichkeit zur
+  überprüfung der Korrektheit anderer Züge)
+  </li>
+  <li>eines der beiden obigen Suchverfahren (nach Absprache
+  mit den Betreuern, sodaß jedes Verfahren von
+  zumindest einer Gruppe realisiert wird)
+  </li>
+  <li>Kommunikationsschnittstelle zur übertragung der
+  eigenen und Entgegennahme gegnerischer Züge (das
+  Protokoll wird von allen Gruppen gemeinsam erarbeitet)
+  </li>
+  <li>gute Skriptbarkeit des Spielers für das Turnier,
+  d.h. idealerweise sollten alle nötigen Parameter, wie
+  Algorithmus, Serveradresse usw. per Kommandozeile
+  übergebbar sein und keine weiteren Aktionen nötig
+  sein
+  </li>
+  <li>beschränkte Laufzeit pro Zug
+  </li></ul>
+<h3>
+  Soll</h3>
+<ul>
+  <li>effizienter Zuggenerator (z.B. durch Verwendung von
+  Bitboards)
+  </li>
+  <li>GUI zur Visualisierung und manueller Zugeingabe (z.B.
+  für das Spiel Mensch gegen KI)
+  </li>
+  <li>Variable Zeitkontrolle (Möglichkeit zur Vorgabe
+  einer bestimmten Bedenkzeit)
+  </li></ul>
+<h3>
+  Kann</h3>
+<ul>
+  <li>mehrere der angegeben KIs
+  </li>
+  <li>völlig eigene KI (nur zusätzlich zu einer
+  angegeben)
+  </li>
+  <li>Verschiedene Schwierigkeitsstufen
+  </li>
+  <li>Schnittstelle zu einem On-line Spiele-Server
+  </li>
+  <li>Eröffnungsbibliothek
+  </li>
+  <li>... (seien Sie kreativ)<br />
+  </li></ul>
+<h2>
+  Vorkenntnisse</h2>
+Die in der Aufgabenstellung zu implementierenden
+KI-Algorithmen werden in der Vorlesung <a href="../../archiv/ss09/ki.html" class="internal-link" title="Einführung in die Künstliche Intelligenz">Einführung
+in die Künstliche Intelligenz</a>
+<p> besprochen. Es ist
+daher von Vorteil, wenn Sie diese Vorlesung besucht haben.
+Andererseits sind die Algorithmen auch nicht so komplex,
+daß die entsprechenden Kenntnisse nicht im
+Selbststudium erworben werden können. Darüberhinaus
+sind Vorkenntnisse in Java vom Vorteil.</p>
+<p>&nbsp;</p>
+<h2>
+  Materialien</h2>
+<ul>
+  <li>
+    <a href="http://www.ke.informatik.tu-darmstadt.de/lehre/ws0910/bp/blokus.pdf">
+    Aufgabenstellung in PDF</a> (nicht mehr ganz aktuell)
+  </li>
+  <li>
+    <a href="http://www.ke.informatik.tu-darmstadt.de/lehre/ws0910/bp/Kickoff.pdf">
+    Folien des Kick-off Meetings</a>
+  </li>
+  <li>
+    <a href="http://blokus.com/en/regles_plateau.html">Offizielle
+    Regeln</a>
+  </li>
+  <li>
+    <a href="http://www.blokus.com/online-game/">Play
+    online<br /></a>
+  </li></ul>
+<h2>
+  Relvante Papers</h2>
+<ul>
+  <li>Nathan Sturtevant, <a href="http://www.cs.ualberta.ca/%7Enathanst/papers/comparison_algorithms.pdf">
+    A Comparison of Algorithms for Multi-Player Games</a>,
+    Proceedings Computers and Games 2002.
+  </li>
+  <li>Nathan Sturtevant, <a href="http://www.cs.ualberta.ca/%7Enathanst/papers/multi-player_UCT.pdf">
+    An Analysis of UCT in Multi-Player Games</a>, Computers
+    and Games 2008, Beijing, China.<br />
+  </li></ul>
+<h2>
+  Ansprechpartner</h2>
+<ul>
+  <li>
+    <a href="mailto:juffi@ke.tu-darmstadt.de">Johannes
+    Fürnkranz</a>
+  </li>
+  <li>
+    <a href="mailto:park@ke.tu-darmstadt.de">Sang-Hyeun
+    Park</a>
+  </li></ul>
+
+            
+        </div>
+    
+    
+
+                            </div>
+                            
+
+
+
+    <div class="visualClear"><!-- --></div>
+
+    <div class="documentActions">
+        
+
+        
+
+    </div>
+
+
+                        
+
+                      
+                    </div>
+                    
+
+                    
+
+                    <span id="contentBottomLeft3"></span>
+                    <span id="contentBottomRight3"></span>
+
+                </div>
+              
+	      
+              <div id="viewlet-below-content">
+
+
+
+
+
+</div>
+
+            </div>
+            </div>
+            
+
+            
+                
+                <div id="portal-column-two">
+                  <div class="visualPadding">
+                    
+                      
+<div class="portletWrapper" data-portlethash="706c6f6e652e7269676874636f6c756d6e0a636f6e746578740a2f506c6f6e650a6b6f6e7461636b74" id="portletwrapper-706c6f6e652e7269676874636f6c756d6e0a636f6e746578740a2f506c6f6e650a6b6f6e7461636b74">
+<dl class="portlet portletStaticText portlet-static-kontakt">
+
+    <dt class="portletHeader">
+        <span class="portletTopLeft"></span>
+        <span>
+           Kontakt
+        </span>
+        <span class="portletTopRight"></span>
+    </dt>
+
+    <dd class="portletItem odd">
+        
+<dl class="portlet portletStaticText portlet-static-kontakt"><dd class="portletItem odd">
+<p><img src="https://www.ke.tu-darmstadt.de/images/keicon.png" alt="small ke-icon" class="image-inline" title="keicon.png" /></p>
+<p>
+  Knowledge Engineering Group</p>
+<p>
+  <a class="external-link" href="http://www.informatik.tu-darmstadt.de">Fachbereich
+  Informatik</a><br />
+  <a class="external-link" href="http://www.tu-darmstadt.de">TU Darmstadt</a></p>
+<p>
+  <a href="https://www.ke.tu-darmstadt.de/anfahrt">S2|02 D203<br />
+  Hochschulstrasse 10</a><br />
+  D-64289 Darmstadt</p>
+<p>
+  Sekretariat:<br />
+<img src="https://www.ke.tu-darmstadt.de/images/telefon.png" alt="Telefon-Symbol" class="image-inline" title="telefon.png" />+49 6151 16-21811<br />
+
+  <img src="https://www.ke.tu-darmstadt.de/images/fax.png" alt="Fax-Symbol" class="image-inline" title="fax.png" /> +49 6151 16-<span style="text-align: justify;">21812</span><br />
+
+  <img src="https://www.ke.tu-darmstadt.de/images/email.png" alt="E-Mail-Symbol" class="image-inline" title="email.png" /> <a href="mailto:info@ke.tu-darmstadt.de">info@ke.tu-darmstadt.de</a></p>
+</dd></dl>
+
+        
+            <span class="portletBottomLeft"></span>
+            <span class="portletBottomRight"></span>
+        
+    </dd>
+    
+    
+
+</dl>
+</div>
+
+<div class="portletWrapper" data-portlethash="706c6f6e652e7269676874636f6c756d6e0a636f6e746578740a2f506c6f6e650a6b652d7075626c69632d6b616c656e646572" id="portletwrapper-706c6f6e652e7269676874636f6c756d6e0a636f6e746578740a2f506c6f6e650a6b652d7075626c69632d6b616c656e646572">
+<dl class="portlet portletStaticText portlet-static-ke-public-kalender">
+
+    <dt class="portletHeader">
+        <span class="portletTopLeft"></span>
+        <span>
+           KE Public Kalender
+        </span>
+        <span class="portletTopRight"></span>
+    </dt>
+
+    <dd class="portletItem odd">
+        <a href="https://www.ke.tu-darmstadt.de/termine" class="external-link">Click here to see upcoming appointments.</a>
+<p>&nbsp;</p>
+
+        
+            <span class="portletBottomLeft"></span>
+            <span class="portletBottomRight"></span>
+        
+    </dd>
+    
+    
+
+</dl>
+</div>
+
+
+
+
+                    
+                    &nbsp;
+                  </div>
+                </div>
+                
+            
+          </div>
+      
+
+      <div class="visualClear" id="clear-space-before-footer"><!-- --></div>
+
+    </div>
+   </div>
+<div id="kss-spinner"><img alt="" src="https://www.ke.tu-darmstadt.de/spinner.png" /></div>
+<div id="fussbereich_container">
+<div id="schatten_unten"></div>
+
+<div id="fussbereich">
+<a id="schrift_kleiner" href="javascript:fontsize('dekrement')" title="Schrift verkleinern">A</a>
+<a id="schrift_normal" href="javascript:fontsize('reset')" title="Schriftgröße zurücksetzen">A</a>
+<a id="schrift_groesser" href="javascript:fontsize('inkrement')" title="Schrift vergrößern">A</a> |
+<a href="javascript:this.print()"><img src="https://www.ke.tu-darmstadt.de/drucken1.png" alt="" /> Drucken</a>
+| <a accesskey="8" title="Alt(+Shift)+8" href="https://www.ke.tu-darmstadt.de/impressum"><img src="https://www.ke.tu-darmstadt.de/impressum.png" alt="" /> Impressum</a>
+| <a accesskey="3" title="Alt(+Shift)+3" href="https://www.ke.tu-darmstadt.de/sitemap"><img src="https://www.ke.tu-darmstadt.de/sitemap2.png" alt="" /> Sitemap</a>
+| <a href="https://www.ke.tu-darmstadt.de/search"><img src="https://www.ke.tu-darmstadt.de/suche.png" alt="" /> Suche</a>
+| <a href="https://www.ke.tu-darmstadt.de/m/">Mobile Version</a>
+</div><!-- fussbereich -->
+<div id="nach_oben"><div class="nach_oben"><a href="bp_index.html#top" title="zum Seitenanfang"><img id="png" src="https://www.ke.tu-darmstadt.de/zum_seitenanfang.png" alt="zum Seitenanfang" /><img id="gif" src="https://www.ke.tu-darmstadt.de/zum_seitenanfang_ie6.gif" alt="zum Seitenanfang" /></a></div></div><!-- nach_oben -->
+</div><!-- fussbereich_container -->
+</body>
+</html>
+
+

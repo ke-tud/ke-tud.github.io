@@ -1,0 +1,89 @@
+Review Form for Extended Watson Seminar, SS 2013
+========================================================
+(To be filled in English or German, English encouraged)
+
+Paper Title
+-----------
+Please fill in paper title here: 
+
+
+Article content reflection
+--------------------------
+Please rate the summary on a scale from 1 to 5
+1 = original article has not been understood and reflected
+2 = some of the main points of the article were summarized, but crucial parts are missing or flawed
+3 = main points have been correctly summarized and put into perspective
+4 = very comprehensive summary, all important points in the article were addressed
+5 = substantial amount of reflection and original ideas, beyond article content 
+
+Your Score: [ ]
+
+
+Related work
+-------------------------
+Please judge the extent to which this paper recognizes and summarizes related work in this area beyond the article. 
+1 = no related work mentioned
+2 = very little amount of pointers to related work, or very unclear relevance
+3 = some pointers to related work, but important references are missing
+4 = mostly complete overview of related work
+5 = very good summary of related work, given the space constraints
+
+Your Score: [ ]
+
+Style and Organization
+----------------------
+Please judge the writing style of the paper. Is the writing style scientific? Is the language used correctly? Is the outline and overall organisation suitable? 
+1 = this is not a scientific paper
+2 = there are a lot of style problems, organization is unclear
+3 = there are some style problems, but it is ok overall 
+4 = only minor style or organizational problems
+5 = great style, language, and overall organization
+
+Your Score: [ ]
+
+Formatting 
+-------------
+Please judge how well the formatting guidelines were followed. Does the paper contain an unnumbered abstract? Are authors and their affiliation given properly? Was the ACM style used? Does the paper contain a reference section? 
+1 = this does not follow the formatting guidelines at all 
+2 = some part of guidelines are followed, but overall the formatting is very remote from the guidelines
+3 = formatting is ok, but needs improvements
+4 = only minor details do not follow the formatting guidelines 
+5 = ready to print! formatting guidelines were followed entirely.
+
+Your Score: [ ]
+
+
+Overall Rating
+--------------
+Please give an overall rating for this paper. If a lot of papers compete for a limited amount of slots, this would be the main score for deciding on paper acceptance.
+1 = this paper is not worth presenting
+2 = I would rather not see this paper in the workshop
+3 = the paper is ok for the workshop, if enough slots are available
+4 = I would rather like to see the paper in the workshop
+5 = the paper will be great for the workshop
+
+Your Score: [ ]
+
+Reviewer Confidence
+-------------------
+Please state how confident are in you decisions
+1 = I have no idea about the topic of this paper, so please don't trust my judgments
+2 = I have very little idea about the topic, so my judgments should be taken with a grain of salt
+3 = I have some idea about the topic, but I am not an expert and I could have missed some things
+4 = I am pretty confident that my judgments are correct, since I know the topic well
+5 = I am an expert and thus very confident that my judgments are correct
+
+Your Score: [ ]
+
+Comments to the authors
+-----------------------
+Please provide detailed comments for the authors and justify your ratings:
+
+
+
+Confidential comments to the committee
+--------------------------------------
+In case you have comments you would not want to tell the authors:
+
+
+

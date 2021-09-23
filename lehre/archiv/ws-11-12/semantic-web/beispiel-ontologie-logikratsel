@@ -1,0 +1,403 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY Ontology1305274734392 "http://www.semanticweb.org/ontologies/2011/4/Ontology1305274734392.owl#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/ontologies/2011/4/Ontology1305274734392.owl#"
+     xml:base="http://www.semanticweb.org/ontologies/2011/4/Ontology1305274734392.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:Ontology1305274734392="http://www.semanticweb.org/ontologies/2011/4/Ontology1305274734392.owl#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ontologies/2011/4/Ontology1305274734392.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1305274734392.owl#doesSports -->
+
+    <owl:ObjectProperty rdf:about="&Ontology1305274734392;doesSports">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="&Ontology1305274734392;Person"/>
+        <rdfs:range rdf:resource="&Ontology1305274734392;Sports"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1305274734392.owl#eats -->
+
+    <owl:ObjectProperty rdf:about="&Ontology1305274734392;eats">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;InverseFunctionalProperty"/>
+        <rdfs:range rdf:resource="&Ontology1305274734392;Food"/>
+        <rdfs:domain rdf:resource="&Ontology1305274734392;Person"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1305274734392.owl#livesInHouse -->
+
+    <owl:ObjectProperty rdf:about="&Ontology1305274734392;livesInHouse">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;InverseFunctionalProperty"/>
+        <rdfs:range rdf:resource="&Ontology1305274734392;House"/>
+        <rdfs:domain rdf:resource="&Ontology1305274734392;Person"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1305274734392.owl#nextTo -->
+
+    <owl:ObjectProperty rdf:about="&Ontology1305274734392;nextTo">
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <rdfs:domain rdf:resource="&Ontology1305274734392;House"/>
+        <rdfs:range rdf:resource="&Ontology1305274734392;House"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+    <owl:ObjectProperty rdf:about="&owl;topObjectProperty"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1305274734392.owl#Food -->
+
+    <owl:Class rdf:about="&Ontology1305274734392;Food">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&Ontology1305274734392;ice"/>
+                    <rdf:Description rdf:about="&Ontology1305274734392;pancakes"/>
+                    <rdf:Description rdf:about="&Ontology1305274734392;waffles"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1305274734392.owl#House -->
+
+    <owl:Class rdf:about="&Ontology1305274734392;House">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&Ontology1305274734392;brownHouse"/>
+                    <rdf:Description rdf:about="&Ontology1305274734392;blueHouse"/>
+                    <rdf:Description rdf:about="&Ontology1305274734392;yellowHouse"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&Ontology1305274734392;middleHouse"/>
+                    <rdf:Description rdf:about="&Ontology1305274734392;leftHouse"/>
+                    <rdf:Description rdf:about="&Ontology1305274734392;rightHouse"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1305274734392.owl#Person -->
+
+    <owl:Class rdf:about="&Ontology1305274734392;Person">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Ontology1305274734392;doesSports"/>
+                <owl:onClass rdf:resource="&Ontology1305274734392;Sports"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Ontology1305274734392;livesInHouse"/>
+                <owl:onClass rdf:resource="&Ontology1305274734392;House"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Ontology1305274734392;eats"/>
+                <owl:onClass rdf:resource="&Ontology1305274734392;Food"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1305274734392.owl#Sports -->
+
+    <owl:Class rdf:about="&Ontology1305274734392;Sports">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&Ontology1305274734392;rugby"/>
+                    <rdf:Description rdf:about="&Ontology1305274734392;soccer"/>
+                    <rdf:Description rdf:about="&Ontology1305274734392;icehockey"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1305274734392.owl#blueHouse -->
+
+    <owl:NamedIndividual rdf:about="&Ontology1305274734392;blueHouse">
+        <rdf:type rdf:resource="&Ontology1305274734392;House"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1305274734392.owl#brownHouse -->
+
+    <owl:NamedIndividual rdf:about="&Ontology1305274734392;brownHouse">
+        <rdf:type rdf:resource="&Ontology1305274734392;House"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1305274734392.owl#ice -->
+
+    <owl:NamedIndividual rdf:about="&Ontology1305274734392;ice">
+        <rdf:type rdf:resource="&Ontology1305274734392;Food"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1305274734392.owl#icehockey -->
+
+    <owl:NamedIndividual rdf:about="&Ontology1305274734392;icehockey">
+        <rdf:type rdf:resource="&Ontology1305274734392;Sports"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1305274734392.owl#leftHouse -->
+
+    <owl:NamedIndividual rdf:about="&Ontology1305274734392;leftHouse">
+        <rdf:type rdf:resource="&Ontology1305274734392;House"/>
+        <nextTo rdf:resource="&Ontology1305274734392;middleHouse"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1305274734392.owl#middleHouse -->
+
+    <owl:NamedIndividual rdf:about="&Ontology1305274734392;middleHouse">
+        <rdf:type rdf:resource="&Ontology1305274734392;House"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1305274734392.owl#p0 -->
+
+    <owl:NamedIndividual rdf:about="&Ontology1305274734392;p0">
+        <rdf:type rdf:resource="&Ontology1305274734392;Person"/>
+        <livesInHouse rdf:resource="&Ontology1305274734392;middleHouse"/>
+        <eats rdf:resource="&Ontology1305274734392;pancakes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1305274734392.owl#p1 -->
+
+    <owl:NamedIndividual rdf:about="&Ontology1305274734392;p1">
+        <rdf:type rdf:resource="&Ontology1305274734392;Person"/>
+        <livesInHouse rdf:resource="&Ontology1305274734392;rightHouse"/>
+    </owl:NamedIndividual>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;NegativePropertyAssertion"/>
+        <owl:assertionProperty rdf:resource="&Ontology1305274734392;doesSports"/>
+        <owl:sourceIndividual rdf:resource="&Ontology1305274734392;p1"/>
+        <owl:targetIndividual rdf:resource="&Ontology1305274734392;rugby"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1305274734392.owl#p2 -->
+
+    <owl:NamedIndividual rdf:about="&Ontology1305274734392;p2">
+        <rdf:type rdf:resource="&Ontology1305274734392;Person"/>
+        <eats rdf:resource="&Ontology1305274734392;waffles"/>
+        <livesInHouse rdf:resource="&Ontology1305274734392;yellowHouse"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1305274734392.owl#p3 -->
+
+    <owl:NamedIndividual rdf:about="&Ontology1305274734392;p3">
+        <rdf:type rdf:resource="&Ontology1305274734392;Person"/>
+        <livesInHouse rdf:resource="&Ontology1305274734392;middleHouse"/>
+        <doesSports rdf:resource="&Ontology1305274734392;soccer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1305274734392.owl#pancakes -->
+
+    <owl:NamedIndividual rdf:about="&Ontology1305274734392;pancakes">
+        <rdf:type rdf:resource="&Ontology1305274734392;Food"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1305274734392.owl#pep -->
+
+    <owl:NamedIndividual rdf:about="&Ontology1305274734392;pep"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1305274734392.owl#rightHouse -->
+
+    <owl:NamedIndividual rdf:about="&Ontology1305274734392;rightHouse">
+        <rdf:type rdf:resource="&Ontology1305274734392;House"/>
+        <nextTo rdf:resource="&Ontology1305274734392;middleHouse"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1305274734392.owl#rugby -->
+
+    <owl:NamedIndividual rdf:about="&Ontology1305274734392;rugby">
+        <rdf:type rdf:resource="&Ontology1305274734392;Sports"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1305274734392.owl#soccer -->
+
+    <owl:NamedIndividual rdf:about="&Ontology1305274734392;soccer">
+        <rdf:type rdf:resource="&Ontology1305274734392;Sports"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1305274734392.owl#waffles -->
+
+    <owl:NamedIndividual rdf:about="&Ontology1305274734392;waffles">
+        <rdf:type rdf:resource="&Ontology1305274734392;Food"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1305274734392.owl#yellowHouse -->
+
+    <owl:NamedIndividual rdf:about="&Ontology1305274734392;yellowHouse">
+        <rdf:type rdf:resource="&Ontology1305274734392;House"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&Ontology1305274734392;leftHouse"/>
+            <rdf:Description rdf:about="&Ontology1305274734392;middleHouse"/>
+            <rdf:Description rdf:about="&Ontology1305274734392;rightHouse"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&Ontology1305274734392;blueHouse"/>
+            <rdf:Description rdf:about="&Ontology1305274734392;brownHouse"/>
+            <rdf:Description rdf:about="&Ontology1305274734392;yellowHouse"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&Ontology1305274734392;icehockey"/>
+            <rdf:Description rdf:about="&Ontology1305274734392;rugby"/>
+            <rdf:Description rdf:about="&Ontology1305274734392;soccer"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&Ontology1305274734392;ice"/>
+            <rdf:Description rdf:about="&Ontology1305274734392;pancakes"/>
+            <rdf:Description rdf:about="&Ontology1305274734392;waffles"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&Ontology1305274734392;rightHouse"/>
+            <rdf:Description rdf:about="&Ontology1305274734392;yellowHouse"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&Ontology1305274734392;brownHouse"/>
+            <rdf:Description rdf:about="&Ontology1305274734392;rightHouse"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.22702) http://owlapi.sourceforge.net -->
+

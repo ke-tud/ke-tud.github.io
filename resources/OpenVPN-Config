@@ -1,0 +1,26 @@
+# if disabled only traffic to/from TU-Darmstadt is sent through the VPN
+redirect-gateway
+
+client
+dev tap
+proto udp
+remote login.ke.informatik.tu-darmstadt.de 1194
+resolv-retry infinite
+
+# Most clients don't need to bind to
+# a specific local port number.
+nobind
+
+mute-replay-warnings
+comp-lzo
+# Set log file verbosity.
+verb 4
+# Silence repeating messages
+mute 20
+
+ca KE-CA.crt
+cipher AES-128-CBC
+
+auth-user-pass
+
+pull dhcp-options

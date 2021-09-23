@@ -1,0 +1,110 @@
+player(barbara,red).
+player(george,white).
+
+color(w1,white).
+color(w2,white).
+color(w3,white).
+color(w4,white).
+color(w5,white).
+color(w6,white).
+color(w7,white).
+color(w8,white).
+color(w9,white).
+color(w10,white).
+color(w11,white).
+color(w12,white).
+color(w13,white).
+color(w14,white).
+color(w15,white).
+
+color(r1,red).
+color(r2,red).
+color(r3,red).
+color(r4,red).
+color(r5,red).
+color(r6,red).
+color(r7,red).
+color(r8,red).
+color(r9,red).
+color(r10,red).
+color(r11,red).
+color(r12,red).
+color(r13,red).
+color(r14,red).
+color(r15,red).
+
+
+point(r1,6).
+point(r2,6).
+point(r3,8).
+point(r4,8).
+point(r5,9).
+point(r6,10).
+point(r7,14).
+point(r8,15).
+point(r9,15).
+point(r10,17).
+point(r11,17).
+point(r12,19).
+point(r13,19).
+point(r14,19).
+point(r15,19).
+point(w1,13).
+point(w2,13).
+point(w3,13).
+point(w4,7).
+point(w5,7).
+point(w6,11).
+point(w7,11).
+point(w8,18).
+point(w9,18).
+point(w10,18).
+point(w11,18).
+point(w12,20).
+point(w13,20).
+point(w14,21).
+point(w15,21).
+
+
+
+home(S) :-  point(S,P), color(S,red), P = 19.
+home(S) :-  point(S,P), color(S,red), P = 20.
+home(S) :-  point(S,P), color(S,red), P = 21.
+home(S) :-  point(S,P), color(S,red), P = 22.
+home(S) :-  point(S,P), color(S,red), P = 23.
+home(S) :-  point(S,P), color(S,red), P = 24.
+
+home(S) :-  point(S,P), color(S,white), P = 1.
+home(S) :-  point(S,P), color(S,white), P = 2.
+home(S) :-  point(S,P), color(S,white), P = 3.
+home(S) :-  point(S,P), color(S,white), P = 4.
+home(S) :-  point(S,P), color(S,white), P = 5.
+home(S) :-  point(S,P), color(S,white), P = 6.
+
+
+
+player_stone(P,S) :- player(P,C), color(S,C).
+can_beaten(S) :- not(cannot_beaten(S)).
+cannot_beaten(S) :-  point(S,F), point(T,F),player_stone(P,S),player_stone(P,T), S\= T .
+
+can_move(A,P) :- one_opponent(A,P).
+can_move(A,P) :- no_opponent(A,P).
+
+one_opponent(A,P) :- can_beaten(S), color(S,C),
+player(A,D), C\= D.
+
+aux_pred(A,P) :- point(S,P), not(player_stone(A,S)).
+no_opponent(A,P) :- not(aux_pred(A,P)).
+
+cannot_start_move_out(P) :- not(home(S)), player_stone(P,S).
+start_move_out(P) :- not(cannot_start_move_out(P)).
+
+
+player_win(P) :- player_stone(P,S), not(point(S,Z)).
+
+
+
+
+
+
+

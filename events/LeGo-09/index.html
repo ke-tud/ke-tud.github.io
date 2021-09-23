@@ -1,0 +1,375 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://gmpg.org/xfn/11">
+  <title>LeGo-09 | From Local Patterns To Global Models | ECML/PKDD-09 Workshop</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="generator" content="WordPress 2.7" /> <!-- leave this for stats -->
+	<link rel="stylesheet" href="http://www.ecmlpkdd2009.net/wp-content/themes/mountain/style.css" type="text/css" media="screen" />
+	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://www.ecmlpkdd2009.net/feed/" />
+	<link rel="alternate" type="text/xml" title="RSS .92" href="http://www.ecmlpkdd2009.net/feed/rss/" />
+	<link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="http://www.ecmlpkdd2009.net/feed/atom/" />
+	<link rel="pingback" href="http://www.ecmlpkdd2009.net/xmlrpc.php" />
+		<link rel='archives' title='April 2009' href='http://www.ecmlpkdd2009.net/2009/04/' />
+	<link rel='archives' title='March 2009' href='http://www.ecmlpkdd2009.net/2009/03/' />
+	<link rel='archives' title='February 2009' href='http://www.ecmlpkdd2009.net/2009/02/' />
+	<link rel='archives' title='December 2008' href='http://www.ecmlpkdd2009.net/2008/12/' />
+	<link rel='archives' title='September 2008' href='http://www.ecmlpkdd2009.net/2008/09/' />
+		<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.ecmlpkdd2009.net/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.ecmlpkdd2009.net/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 2.7" />
+
+<style type="text/css">
+#header 
+{	
+	width: 777px;
+	margin: 5px auto;
+	padding:0;
+	height: 190px;
+	background: url(http://www.ecmlpkdd2009.net/wp-content/themes/mountain/img/head.png) no-repeat top;
+	border:2px solid #fff;
+	text-align:right;
+}
+
+#header h1 
+{
+	font-size:2.2em;
+	padding: 5px 10px 0 0;
+}
+#header .description 
+{
+	margin:0;
+	padding:0 10px;
+	letter-spacing: 1px;
+}
+#header * 
+{
+	color:#000;/* eee; */
+	background:transparent;
+}</style>
+</head>
+<body>
+	<!--ul id="navigation">
+		<li class="current_page_item"><a href="http://www.ecmlpkdd2009.net">Home</a></li>
+		<li class="page_item page-item-125"><a href="http://www.ecmlpkdd2009.net/information/" title="Information">Information</a></li>
+<li class="page_item page-item-132"><a href="http://www.ecmlpkdd2009.net/attending/" title="Attending">Attending</a></li>
+<li class="page_item page-item-112"><a href="http://www.ecmlpkdd2009.net/calls/" title="Calls">Calls</a></li>
+	</ul-->
+	<br style="clear:both;" />
+	<div id="header">
+		<!--div style="background: #fff; opacity: 0.6;">
+			<h1><a href="http://www.ecmlpkdd2009.net">ECML PKDD 2009</a></h1>
+			<p class="description">European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases</p>
+		</div-->
+	</div>
+	<div id="container" >
+	<div id="content">
+
+<center>
+<h1>From Local Patterns to Global Models (LeGo-09)</h1>
+<h2>ECML/PKDD-09 Workshop</h2>
+<p>7 September 2009, Bled, Slovenia</p>
+</center>
+
+<br>
+<p></p>
+
+<h2><a name="background">Background</a></h2>
+
+<p>
+Over the last decade, the field of local pattern discovery has grown rapidly, and a range of techniques is
+available for producing extensive collections of patterns.
+Because of the exhaustive nature of most such techniques, the pattern
+collections provide a fairly complete picture of the information
+content of the database. However, in many cases this is where the
+process stops. The so-called local patterns represent fragmented
+knowledge, and often it is not clear how the pieces of the puzzle can
+be combined into a global model.  Because a useful global model, such
+as a classifier or regression model, is often the expected result of a
+Data Mining process, the question of how to turn large collections of
+patterns into global models deserves attention.
+</p>
+<p>
+In this workshop, we will deal with the question of how to convert
+local patterns
+into an actionable global model, for example a classifier or
+regression model. Global modeling in this setting entails combining
+patterns effectively and dealing with possible redundancy or conflicts
+between the reported patterns. In our view, a common ground
+of all the local pattern mining techniques is that they can be
+considered to be feature construction techniques that follow different
+objectives (or constraints). 
+</p>
+
+<h2><a name="goals">Workshop Goals</a></h2>
+
+<p>
+This workshop is a follow-up to the <a href="http://www.ke.informatik.tu-darmstadt.de/events/LeGo-08/">LeGo-08</a> workshop 
+that was held at last year's ECML/PKDD conference.
+Its is to bring people that work on various
+aspects of this subject into a fruitful dicussion about the
+state-of-the-art and the remaining open problems, about commonalities
+and differences in their respective works. Some research questions,
+which we consider to be particularly relevant are:
+</p>
+
+<dl>
+<dt><strong>Metrics for Pattern Set Selection:</strong></dt>
+<dd>Evaluation metrics for local
+  and global models have been investigated in quite some depth.
+  However, for the Pattern Set Discovery task, which does not evaluate
+  isolated patterns but pattern sets, it is still quite unclear what
+  types of metrics and constraints can be defined and what effects they will have.
+  </dd>
+
+<dt><strong>Efficient Pattern Set Discovery:</strong></dt> 
+<dd>As an exponential number of
+  subsets exist, exhaustive methods will only work for small pattern
+  collections. How can this process be sped up, and how can good approximations 
+  be achieved?</dd>
+
+<dt><strong>Propagation of Constraints:</strong></dt> 
+<dd>How can global constraints be propagated
+  back to local constraints? What type of local patterns must be found in
+  order to guarantee a high performance on the global modeling task? Which
+  local constraints optimize which global constraints?</dd>
+
+<dt><strong>General-Purpose Constraints:</strong></dt>
+<dd> A key advantage of the modular approach
+  could be that local patterns may be mined independently and can be re-used
+  for several Global Modeling tasks. Are there general local constraints, such as
+  on frequency or entropy, that give a reasonable performance on a wide variety of 
+  Global Modeling tasks?</dd>
+  </dl>
+<br>
+
+<h2><a name="format">Workshop Format</a></h2>
+
+<p>
+The workshop will be held as a one-day session with paper
+presentations. Submitted papers will be reviewed by the programme
+committee. We will also admit position statements or interesting
+incomplete or immature work into the program, which will hopefully
+stimulate discussions, in order to further the main goal of the
+workshop, namely to increase the awareness of different approaches to
+this general problem.
+</p>
+<p>
+Presentation times for the individual papers will be alloted based on
+the reviews, the length, significance and the expected interest of the
+contribution (we foresee 10, 20, and 30 minutes presentations). 
+Papers will be arranged into a hopefully coherent program, putting
+papers that address the same or similar type of problems into the same
+sessions. Each session is planned to end with a discussion on
+all presented papers (in addition to the usual question periods after
+each presentation). Discussions will be stimulated by designated
+session chairs whose expertise is in the session area. 
+</p>
+
+
+<h2><a name="topics">Topics of Interest</a></h2>
+
+<p>
+The workshop calls for papers related to global modeling using local
+patterns. The following is an (incomplete) list of suitable topics.
+We would like to stress that these topics should be considered in the
+context of the theme of the workshop.  Particularly, papers concerning
+either global modeling or local pattern discovery in isolation cannot
+be accepted for inclusion into the workshop program.
+</p>
+
+<ul>
+<li>Associative Classification</li>
+<li>Combination Strategies</li>
+<li>Compression-based Pattern Selection</li>
+<li>Constraint-based Pattern Set Mining</li>
+<li>Ensembles of Patterns</li>
+<li>Feature Construction and Selection</li>
+<li>Global Modeling with Patterns</li>
+<li>Iterative Local Pattern Discovery</li>
+<li>KDD Process-models for Building Global Models from Local Patterns}</li>
+<li>Parallel Universes </li>
+<li>Pattern Ordering </li>
+<li>Patterns and Information Theory </li>
+<li>Pattern Set Selection </li>
+<li>Pattern Teams </li>
+<li>Propositionalisation </li>
+<li>Quality Measures for Pattern Sets </li>
+<li>Resolution of Conflicting Predictions </li>
+<li>Subgroup Discovery </li>
+		  </ul>
+
+
+<h2><a name="program">Program</a></h2>
+
+<p>
+The program below contains download-links to individual papers. You can also download theentire <a href="http://www.ecmlpkdd2009.net/wp-content/uploads/2008/09/from-local-patterns-to-global-models.pdf">workshop proceedings</a> in one PDF-File.
+	</p>
+
+<p>
+<table>
+<tr>
+<td width="17%" align="center"></td><td />
+</tr>
+<tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+<p></p>
+<tr>
+<td><em>09:00 - 09:15</em></td><td><em>Welcome and overview</em></td>
+</tr>
+<p></p>
+<tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr>
+
+<td><em>09:15 - 10:00</em></td><td><em>Invited Presentation:</em><br><a href="10-Bringmann.pdf">Pattern-Based Classification: A Unifying Perspective</a> (B. Bringmann, S. Nijssen, and A. Zimmermann) [<a href="10-Bringmann-Slides.pdf">Slides</a>]</td>
+</tr><tr>
+
+<td><em>10:00 - 10:30</em></td><td><a href="06-Khiari.pdf">Local Constraint-Based Mining and Set Constraint Programming for Pattern Discovery</a> (M. Khiari, P. Boizumault, B. Cremilleux) [<a href="06-Khiari-Slides.pdf">Slides</a>]</td>
+</tr>
+
+<tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr>
+<td><em>10:30 - 11:00</em></td><td><em>Coffee break</em></td>
+</tr>
+<tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr>
+
+<td><em>11:00 - 11:30</em></td><td><em>Invited Presentation:</em><br>Scoring Pattern Sets Using Statistical Models. (N. Tatti, H. Heikinheimo)</td>
+</tr>
+<tr>
+<tr>
+<td><em>11:30 - 12:00</em></td><td><a href="03-Lemmerich.pdf">Incorporating Exceptions: Efficient Mining of e-Relevant Subgroup Patterns</a> (F. Lemmerich, M. Atzm&uuml;ller)</td>
+</tr>
+<tr>
+<td><em>12:00 - 12.20</em></td><td><a href="04-Atzmueller.pdf">Towards Understanding Spammers - Discovering Local Patterns for Concept Description</a> (M. Atzm&uuml;ller, F. Lemmerich, Beate Krause, Andreas Hotho)</td>
+</tr>
+<tr>
+<td><em>12:20 - 12:40</em></td><td><a href="01-Ye.pdf">An Enhanced Incremental Prototype Classifier using Subspace Representation Scheme</a> (Y. Xu, F. Shen, J. Zhao, O. Hasegawa)</td>
+</tr>
+
+<tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr>
+<td><em>12:40 - 13:40</em></td><td><em>Lunch</em></td>
+</tr>
+<tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr>
+
+<td><em>13:40 - 14:10</em></td><td><em>Invited Presentation:</em><br> Subgroup Discovery (N. Lavrac, P. Kralj Novak) </td>
+<tr>
+<td><em>14:10 - 14:30</em></td><td><a href="05-Missura.pdf">Player Modeling for Intelligent Difficulty Adjustment</a> (O. Missura, T. G&auml;rtner)</td>
+</tr>
+<tr>
+<td><em>14:30 - 15:00</em></td><td><a href="02-Blaszczynski.pdf">Feature Set-based Consistency Sampling in Bagging Ensembles</a> (J. Blaszczynski, R. Slowinski, J. Stefanowski)</td>
+</tr>
+
+
+
+</tr>
+<tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr>
+<td><em>15:00 - 15:20</em></td><td><em>Coffee break</em></td>
+</tr>
+<tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr>
+
+
+</tr>
+<td><em>15:20 - 15:40</em></td><td><a href="08-Knobbe.pdf">Building Classifiers from Pattern Teams</a> (A. Knobbe, J. Valkonet) [<a href="08-Knobbe-Slides.ppt">Slides</a>]</td>
+</tr>
+<tr>
+<td><em>15:40 - 16:00</em></td><td><a href="07-Sulzmann.pdf">A Study of Probability Estimation Techniques for Rule Learning</a> (J. Sulzmann, J. F&uuml;rnkranz) [<a href="07-Sulzmann-Slides.pdf">Slides</a>]</td>
+</tr>
+<tr>
+<td><em>16:00 - 16:20</em></td><td><a href="09-deKnijf.pdf">Levelwise Cluster Mining under a Maximum SSE Constraint</a> (J. De Knijf, B. Goethals, A. Prado) [<a href="09-deKnijf-Slides.pdf">Slides</a>]</td>
+</tr>
+
+<tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr>
+<td><em>16:50 - 17:00</em></td><td><em>LeGo Discussion</em></td>
+</tr>
+<tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+</table>
+
+	</p>
+
+<h2><a name="organizers">Organizers</a></h2>
+
+<ul>
+<li>Arno Knobbe (LIACS, Leiden University, and Kiminkii)</li>
+<li>Johannes F&uuml;rnkranz (TU Darmstadt)</li>
+		  </ul>
+
+<h2><a name="pc">Programme Committee</a></h2>
+
+<p>(may still be expanded)
+
+<ul>
+<li>Bruno Cr&eacute;milleux (Universit&eacute; de Caen)</li>
+<li>Ad Feelders (Universiteit Utrecht)</li>
+<li>Henrik Grosskreutz (Fraunhofer IAIS, Bonn)</li>
+<li>Szymon Jaroszewicz (National Institute of Telecommunications, Warsaw)</li>
+<li>Alipio Jorge (University of Porto)</li>
+<li>Arne Koopman (Universiteit Utrecht)</li>
+<li>Petra Kralj Novak (Joszef Stefan Institute)
+<li>Siegfried Nijssen  (K.U. Leuven)</li>
+<li>Sang-Hyeun Park (TU Darmstadt)</li>
+<li>Martin Scholz (HP Research)</li>
+<li>Jan-Nikolas Sulzmann (TU Darmstadt)</li>
+<li>Celine Vens (Katholieke Universiteit Leuven)</li>
+<li>Jilles Vreeken (Universiteit Utrecht)</li>
+<li>Bernd Wiswedel (Universit&auml;t Konstanz)</li>
+<li>Stefan Wrobel (Fraunhofer IAIS)</li>
+		  </ul>
+		</div>
+
+<!-- end main content -->
+	<div id="sidebar">
+<ul>
+  <li>
+	<ul>
+		<li><a name="info">Information</a>
+<ul>
+<li><a href="index.html#background" title="Background">Background</a></li>
+<li><a href="index.html#topics" title="Topics of Interest">Topics of Interest</a></li>
+<li><a href="index.html#format" title="Workshop Format">Workshop Format</a></li>
+<li><a href="index.html#program" title="Program">Program</a></li>
+<li><a href="index.html#organizers" title="Organizers">Organizers</a></li>
+</ul>
+<li><a name="links">Links</a>
+<ul>
+<li><a href="http://www.ecmlpkdd2009.net">ECML/PKDD-09</a></li>
+<li><a href="http://www.ke.informatik.tu-darmstadt.de/events/LeGo-08">LeGo-08 Workshop</a></li>
+</ul>
+</li>
+    </ul>
+</li>
+    </ul>
+</div>
+<!-- CLOSE sidebar-->
+	<div id="footer">
+<p> © 2008 ECML PKDD | Implemented by <a href="http://perro.si/">perro</a> - Recommendations by <a href="http://aliiike.com/">aliiike.com</a></p>
+</div>
+	<!-- Google Analytics for WordPress | http://yoast.com/wordpress/google-analytics/ -->
+	<script type="text/javascript">
+		var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+		document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<script type="text/javascript">
+		var pageTracker = _gat._getTracker("UA-4082260-6");
+	</script>
+	<script type="text/javascript">
+		pageTracker._initData();
+		
+		pageTracker._trackPageview();
+	</script>
+	<!-- End of Google Analytics code -->
+	<script src="http://stats.wordpress.com/e-200917.js" type="text/javascript"></script>
+<script type="text/javascript">
+st_go({blog:'5795789',v:'ext',post:'0'});
+var load_cmc = function(){linktracker_init(5795789,0,2);};
+if ( typeof addLoadEvent != 'undefined' ) addLoadEvent(load_cmc);
+else load_cmc();
+</script>
+</body>
+</html>
+<!-- Dynamic Page Served (once) in 0.275 seconds -->
+<!-- Cached page generated by WP-Super-Cache on 2009-04-21 10:09:54 -->
+<!-- super cache -->

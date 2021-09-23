@@ -1,0 +1,2949 @@
+/* INICI DEFINIM estils generics html */
+IMG
+{
+	border:0px;
+}
+
+/* estil linia horitzontal */
+hr
+{
+	color:#a5bc00;
+	height:1px;
+	margin:0;
+	padding:0;
+	border:1px solid #a5bc00;
+}
+/* usat en titols de mòduls  i seccions */
+
+h1
+ {
+	font-family: Verdana, Tahoma, Arial, Serif;
+	font-size: 1.4em;
+	color:#0099cd;	
+	text-decoration:none;
+	font-weight: bold;
+	padding: 10px 0px 0px 0px;
+	margin: 0px;	
+}
+h2
+{
+	font-family: Verdana, Tahoma, Arial, Serif;
+	font-size: 1.2em;
+	color: #78c7eb;
+	text-decoration:none;
+	font-weight: bold;
+	padding: 0px;
+	margin: 0px;	
+}
+
+
+h3 {
+	font-family:Verdana, Tahoma, Arial, Serif;
+	font-size: 1.2em;
+	color: #a5bc00;
+	text-decoration: none;
+	font-weight: normal;
+	padding: 0px 0px 0px 0px;
+	margin: 0px;	
+
+}
+
+h4 {
+	font-family: Verdana, Tahoma, Arial, Serif;
+	font-size: 1.1em;
+	color: #a5bc00;
+	text-decoration: none;
+	font-weight: normal;
+	padding: 0px 0px 0px 0px;
+	margin:0px 0px 5px 0px;
+}
+
+h5 {
+	font-family: Verdana, Tahoma, Arial, Serif;
+	color: #a5bc00;
+	font-size: 1.0em;
+	text-decoration: none;
+	font-weight: normal;
+	padding: 0px 0px 0px 0px;
+	margin: 0px;	
+
+}
+
+h6 {
+	font-family: Verdana, Tahoma, Arial, Serif;
+	font-size: 1.0em;
+	color: #a5bc00;
+	text-decoration: none;
+	font-weight: normal;
+	padding: 0px 0px 0px 0px;
+	margin: 0px;	
+
+}
+
+
+/* redefinim llistes no ordenades */
+ul li
+{
+	list-style-image: url(http://www.ke.tu-darmstadt.de/events/PL-10/img/comu/punt_llistes_generals.gif); 
+}
+
+ul li li
+{
+	list-style-image: url(http://www.ke.tu-darmstadt.de/events/PL-10/img/comu/punt_llistes_generals2.gif); 
+}
+
+ul li li li
+{
+	list-style-image: url(http://www.ke.tu-darmstadt.de/events/PL-10/img/comu/punt_llistes_generals3.gif); 
+}
+	
+/* fi redefinim llistes no ordenades */
+
+.no_visible {
+	DISPLAY: none
+}
+
+
+/* estil per enllaç */
+a {
+	
+	color:#000000;
+	text-decoration: none;
+}
+
+a:hover 
+{
+	color: #0099cd;	
+	text-decoration: underline;
+}
+
+
+a.altres_informacions 
+{
+	color: #000000;
+	text-decoration: underline;
+}
+
+a.altres_informacions:hover 
+{
+	color:#0099cd;	
+	text-decoration: underline;
+}
+
+/* FINAL DEFINIM ENTITATS HTML */
+
+
+/* estil per defecte d'una cel·la d'una taula (coincidirà amb txt) */
+td {
+	font-family: Verdana, Tahoma, Arial, Serif;
+	text-decoration: none;
+}
+
+
+
+/* Maquetació per fila de formulari generica  */
+/* està en %, per tant tindra un marge de maniobra , pobablement sols haurem de redefinir els més petits */
+div.fila_form
+{
+  clear: both;
+  padding-top: 5px;
+  width:100%;
+  /*border:1px solid black;*/
+}
+
+div.fila_form .etiqueta 
+{
+  float: left;
+  width: 32%;
+  text-align: right;
+  padding-top:2px;
+ 
+}
+
+div.fila_form .informacio 
+{
+  float: right;
+  width: 68%;
+  text-align: left;
+} 
+
+div.fila_form .itemample 
+{
+  width: 100%;
+  padding-top:2px;
+  text-align:left;
+  clear:both;
+} 
+
+/* estil per a formularis */
+.txt_form {
+	font-family: Verdana, Tahoma, Arial, Serif;
+	/*font-size: 1.0em;*/
+	color: #000000;
+	background-color: #ffffff;
+	border: 1px solid #CBCBD7;
+	padding: 1px;
+	margin: 1px;
+
+}
+
+.txt_submit {
+	font-family: Verdana, Tahoma, Arial, Serif;
+	font-size: 1.0em;
+	background: #0099cd;
+	color:#ffffff;
+	padding: 0px;
+	margin: 0px;
+	
+}
+
+
+/* FI Maquetació per formulari generica  */
+
+
+
+
+/* estil de text normal*/
+.txt {
+	font-family: Verdana, Tahoma, Arial, Serif;
+	color: #000000;
+	text-decoration: none;
+	/*text-align: justify;*/
+}
+
+
+
+
+/* estil per al text contingut amb fotos */
+.txt_clavar_fotos {
+	font-family: Verdana, Tahoma, Arial, Serif;
+	/*font-size: 7pt;*/
+	/*font-size: 0.7em;*/
+	color: #000000;
+	text-decoration: none;
+	/*text-align: justify;*/
+}
+
+
+
+.txt_form_p {
+	font-family: Verdana, Tahoma, Arial, Serif;
+	font-size: 0.9em;
+	color: #000000;
+	background-color: #ffffff;
+	border: 1px solid #DDDDE5;
+	padding: 0px;
+	margin: 0px;
+
+}
+
+
+
+
+/* estil per al peu de foto (clavar_fotos.cfm) */
+.txt_peu_foto {
+	font-family: Verdana, Tahoma, Arial, Serif;
+	font-size: 0.9em;
+	color: #000000;
+	text-decoration: none;
+	line-height: 1em;
+}
+
+
+
+
+.titol {
+	font-family: Verdana, Tahoma, Arial, Serif;
+	font-size: 0.9em;
+	color: #000000;
+	text-decoration: none;
+	/*text-align: justify;	*/
+}
+
+.peu {
+	font-family: Verdana, Tahoma, Arial, Serif;
+	color: #ffffff;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+.peu:hover {
+	font-family:Verdana, Tahoma, Arial, Serif;
+	color: #000000;
+	font-weight: normal;
+	text-decoration: underline;
+}
+
+.txt_foto {
+	font-family: Verdana, Tahoma, Arial, Serif;
+	/*font-size: 7pt;*/
+	font-size: 0.7em;
+	color: #000000;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+
+
+.requadrat_fitxers {
+	border-top: 1px solid #77777B;
+	border-left: 1px solid #77777B;
+	border-bottom: 1px solid #77777B;
+	border-right: 1px solid #77777B;
+	
+}
+
+
+
+/* LLISTA NO ORDENADA MULTICOLUMNA (PER DUES COLUMNES) */
+/* si es volem més columnes, sols cal tocar l'amplada del li i deixar suficient espai 
+	al div que la contingui */
+
+/* separate the list from subsequent markup */
+div.wrapper
+{
+    margin-bottom: 1em;
+}
+
+
+div.wrapper br
+{
+    clear: left;
+}
+
+
+.llista_multi_columna
+  {
+    width: 99%;
+    margin:0;
+    padding:6px;
+  }
+
+/* float & allow room for the widest item */
+.llista_multi_columna li
+  {
+    float: left;
+    /*width: 10em;*/
+    width:50%;
+	list-style: none;
+	list-style-image: none; 
+}
+/* FINAL  LLISTA MULTICOLUMNA */
+
+
+
+
+/* estil per a mapa */
+#mapa
+{
+	
+ margin-left:20px;	
+	
+}
+
+#mapa li
+{
+	list-style-image: url(http://www.ke.tu-darmstadt.de/events/PL-10/img/comu/punt_contingut_mapa.gif); 
+	padding:1px;
+}
+.invisible {
+/*	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 3pt;
+	color: #DDDDE5;
+	background-color : #DDDDE5;
+	border : 0px;
+	margin: 0px;
+	padding: 0px;*/
+	display:none;
+}
+.invisible_fals {
+	font-family: Verdana, Tahoma, Arial, Serif;
+	color: #ffffff;
+	background-color : #ffffff;
+	border : 0px;
+	margin: 0px;
+	padding: 0px;
+}
+/* maquetació general de la pàgina */
+
+
+
+/* menu icones contacte,home ... */
+#menu_icones
+{
+	margin:0;
+	padding:0;
+	
+	letter-spacing:1px;
+}
+
+#menu_icones li
+{
+	list-style: none;
+	list-style-image: none; 
+	margin:0;
+	padding:0;
+	display:inline;	
+	
+	padding-top:1px;
+	
+}
+
+
+/* ############################################################## */
+/* ### estils que defineixen l'estructura general de la index ### */
+/* ############################################################## */
+
+/*BODY {
+	padding:0px;
+	margin:0px;
+	margin-top:0px;
+	text-align: left;	
+	font-family: Trebuchet MS,Verdana, Arial, Helvetica, sans-serif;
+	background:#ffffff;
+	text-decoration: none;
+	font-size:0.75em;	
+	color: #000000;
+	background:url(../img/comu/fons.gif);
+	
+
+}*/
+
+
+
+
+.body_normal {
+	padding:0px;
+	margin:0px;
+	margin-top:0px;
+	text-align: left;	
+	font-family: Verdana, Tahoma, Arial, Serif;
+	background:#ffffff;
+	text-decoration: none;
+	font-size:0.8em;	
+	color: #666666;
+	background:#e1f1fa;
+}
+
+
+
+.body_mail{
+	padding:0px;
+	margin:0px;
+	margin-top:0px;
+	text-align: left;
+	font-family: Verdana, Tahoma, Arial, Serif;
+	background:#ffffff;
+	text-decoration: none;
+	font-size:0.75em;	
+	color: #000000;
+	background:url(http://www.ke.tu-darmstadt.de/events/PL-10/img/comu/fons_imprimir.gif);
+}
+
+
+
+
+FORM {
+
+	margin-top:5px;
+	margin-bottom:5px;
+}
+#idiomes_cap
+{
+	text-align:right;	
+	padding-top:3px;
+}
+#idiomes_cap a
+{
+	color:#000000;
+}
+
+#ic_icones_opcions
+{
+	float:left;
+	text-align:right;	
+	width:745px;
+}
+
+#ic_cerca
+{
+	float:right;
+	width:125px;
+	
+}
+
+
+
+#contenidor
+{
+	padding-left:10px;
+	padding-right:10px;
+	background:#ffffff;	
+}
+
+
+#idiomes_superior
+{
+	text-align:right;
+	margin-right:15px;
+
+}
+
+#contenidor_interior
+{
+	padding-top:0px;
+	padding-left:10px;
+	padding-right:10px;
+	background:#ffffff;	
+	
+}
+
+
+#contenidor_pagina
+{
+	margin: 0 auto;
+	width:939px;
+	text-align:left;
+	background:#ffffff;
+}
+
+
+
+#contenidor_breadcrumbs
+{
+	width:100%;
+	text-align:left;
+}
+
+#contenidor_cap
+{
+	background:url(http://www.ke.tu-darmstadt.de/events/PL-10/img/caps/fons_cap.jpg) left;
+}
+
+#cap
+{
+	margin:0 auto;
+	width:1003px;
+	height:200px;
+}
+
+#logo
+{
+	padding-top:30px;
+	text-align:left;
+}
+
+#contenidor_flash
+{
+	width:100px;
+	
+}
+
+/* maquetació general de la pàgina */
+
+
+
+
+#breadcrumbs_interior
+{
+	float:right;
+	text-align:left;
+	width:500px;
+}
+#breadcrumbs
+{
+	font-size:0.8em;
+	color: #cccccb;
+}
+
+#breadcrumbs_espai
+{
+	padding-top:9px;
+}
+
+#breadcrumbs a
+{
+	color: #cccccb;
+}
+#breadcrumbs a:hover
+{
+	color: #cccccb;
+	text-decoration:underline;
+}
+
+
+#cercador_interior
+{
+	text-align:left;
+}
+
+#cercador_interior_portada
+{
+	text-align:left;
+	float:right;
+}
+
+#contenidor_informacio
+{
+	width:766px;
+	float:right;
+}
+
+
+
+#cos_dret
+{
+	width: 120px;
+	float:right;
+}
+
+
+#interior_portada
+{
+	
+	width:100%;	
+	border:1px solid #ff0000;
+	
+}
+
+
+#noticies
+{
+	float: left;
+	width:213px;
+	text-align:left;
+}
+
+#portada_dreta
+{
+	float:right;
+	widht:702px;
+	text-align:left;
+}
+
+/************************************
+	Estils portada 
+************************************/
+
+#contenidor_portada
+{
+	float:right;
+	width:766px;
+}
+
+#contenidor_portada_esquerre
+{
+    float:left;
+    width:476px;
+    text-align:left;   
+}
+
+#contenidor_portada_esquerre_espai
+{
+	padding:46px 30px 0px 30px;
+}
+
+#contenidor_portada_esquerre_info
+{
+	padding-top:0px;
+}
+
+#contenidor_portada_dret
+{
+	float:right;
+    width:290px;
+}
+
+#contenidor_portada_dret_espai
+{
+	padding-top:14px;
+}
+
+.portada_titol
+{
+	margin-left:49px;
+	text-align:left;
+}
+
+#info_portada
+{
+	width:100%;
+	clear:both;	
+}
+
+#portada_llistat_items
+{
+	padding-top:28px;
+	padding-bottom:40px;
+}
+
+.portada_item_data
+{
+	float:left;
+	width:43px;
+	height:43px;
+	margin-top:5px;
+	background:url(http://www.ke.tu-darmstadt.de/events/PL-10/img/comu/fons_full_llibreta.gif);
+	font-size:0.9em;
+}
+
+.portada_item_data_espai_dia
+{
+	font-weight:bold;
+	font-size:1.2em;
+}
+
+.portada_item_data_espai
+{
+	padding-top:5px;
+}
+
+.portada_item_titol_info
+{
+	float:right;
+	width:240px;
+	text-align:left;
+}
+
+.portada_item_titol
+{
+	font-size:1.1em;
+}
+
+.portada_item_titol a
+{
+	color:#25b1dc;
+}
+
+.portada_item_info a
+{
+	color:#666666;
+}
+
+.portada_item_info a:hover
+{
+	color:#666666;
+	text-decoration:underline;
+}
+
+a.titol_portada
+{
+	color:#999999;
+	font-size:1.1em;
+	font-weight:bold;
+}
+
+a.titol_portada:hover
+{
+	color:#a5bc00;
+	font-size:1.1em;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+.portada_enllas
+{
+	text-align:right;
+}
+
+.portada_enllas a
+{
+	color:#25b1dc;
+}
+
+/************************************
+	Fi estils portada
+************************************/
+
+#cos_interior
+{
+	padding-bottom:30px;
+	width:100%;
+}
+
+#cos_interior_dret
+{
+	width:766px;
+	float:right;	
+}
+
+#interior_esquerre
+{
+	float: left;
+	width:476px;
+	text-align:left;	
+}
+
+#interior_esquerre_espai
+{
+	padding-left:30px;
+	padding-right:30px;
+}
+
+#interior_dreta
+{
+	float:right;
+	width:290px;
+}
+
+#interior_dreta_espai
+{
+	padding-top:20px;
+}
+
+#peu
+{	
+	clear:both;
+	text-align:left;	
+	width:100%;	
+	height:53px;
+	background:url(http://www.ke.tu-darmstadt.de/events/PL-10/img/comu/fons_peu.jpg);
+	font-size:0.9em;
+	color:#ffffff;
+}
+
+#peu_espai
+{
+	padding-top:17px;		
+}
+
+#peu a
+{
+	color:#ffffff;	
+}
+#peu a:hover
+{
+	color:#000000;
+}
+
+.fi_float 
+{
+	clear:both;
+}
+
+
+
+
+#debug_info
+{
+	width: 100%;
+	margin-top:3px;
+	clear:both;
+	height:30px;
+	text-align:left;
+	border:1px solid #CCCCCC;
+	padding:8px;
+	background-color:#EFEFDE;	
+}
+
+
+
+/******************************/
+/* menu principal de la web */
+#menu_principal
+{
+	text-align:left;
+	width:153px;
+	float:left;
+	padding-top:26px;
+	padding-bottom:40px;
+}
+/*
+.taula_menu_principal
+{
+	border:0px;
+	height:40px;	
+	text-align:left;	
+}
+.taula_menu_principal td
+{
+	text-align:left;
+	padding-left:20px;	
+	padding-right:30px;
+	
+}
+*/
+
+.h1_menu
+ {
+	text-decoration:none;
+	padding: 0px;	
+	margin:0px;
+	font-size:1.2em;
+	font-weight:normal;
+	padding-top:5px;
+	
+}
+
+.h1_menu_seleccionat
+{
+	text-decoration:none;
+	padding: 0px;	
+	margin:0px;
+	font-size:1.2em;
+	font-weight:normal;
+	padding-top:5px;
+}
+
+
+.h1_menu_seleccionat  a
+{
+	
+	display:block;
+	color:#0099cd;
+	font-weight:bold;
+	padding:1px 8px 0px 8px;
+	background:url(http://www.ke.tu-darmstadt.de/events/PL-10/img/comu/fons_cos_boto_menu_seleccionat.gif);
+}
+
+.h1_menu_seleccionat  a:hover
+{
+	
+	display:block;
+	color:#0099cd;
+	text-decoration:none;
+}
+
+.h1_menu  a
+{
+	display:block;
+	color:#ffffff;	
+	font-weight:bold;
+	background:url(http://www.ke.tu-darmstadt.de/events/PL-10/img/comu/fons_cos_boto_menu.gif);
+	padding:1px 8px 0px 8px;
+}
+
+.h1_menu a:hover 
+{
+	display:block;
+	color:#0099cd;
+	text-decoration:none;
+}
+
+.peu_boto_menu
+{
+	background:url(http://www.ke.tu-darmstadt.de/events/PL-10/img/comu/fons_peu_boto_menu.gif);
+	height:7px;
+}
+
+.peu_boto_menu_seleccionat
+{
+	background:url(http://www.ke.tu-darmstadt.de/events/PL-10/img/comu/fons_peu_boto_menu_seleccionat.gif);
+	height:7px;
+}
+
+.item_menu_principal:hover .peu_boto_menu
+{
+	background:url(http://www.ke.tu-darmstadt.de/events/PL-10/img/comu/fons_peu_boto_menu_seleccionat.gif);
+	height:7px;
+}
+
+.item_menu_principal:hover .h1_menu  a
+{
+	background:url(http://www.ke.tu-darmstadt.de/events/PL-10/img/comu/fons_cos_boto_menu_seleccionat.gif);
+	color:#0099cd;
+}
+
+/* fi menu principal de la web */
+/******************************/
+
+
+/********************************
+** Estils menu securndari
+********************************/
+#menu_secundari
+{
+	width:145px;
+	margin:0px 4px 0px 4px;
+	background:#f0f0f0;
+	padding-bottom:13px;
+	padding-top:3px;
+}
+
+.submenu
+{
+	text-align:left;	
+	padding:5px 4px 0px 4px;	
+	font-size:1.0em;
+}
+
+
+.submenu a
+{
+	color:#999999;
+	font-weight:bold;
+}
+
+.submenu a:hover
+{
+	color:#999999;
+	text-decoration:underline;
+}
+
+.submenu_seleccionat
+{
+	text-align:left;	
+	padding:5px 4px 0px 4px;	
+	font-size:1.0em;	
+}
+.submenu_seleccionat a
+{
+	color:#0099cd;
+	font-weight:bold;
+}
+
+.submenu_seleccionat a:hover
+{
+	color:#0099cd;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+/********************************
+** FI estils menu securndari
+********************************/
+
+/* FI titols de pastilles de portada  i lateral dret*/
+
+.etiqueta_form_obligatori
+{
+	color:#ff0000;
+}
+
+.credits
+{
+  	width:100%;
+  	background-color:white;
+  	text-align:left;
+}
+  
+.form_fila
+{
+	/*border:black solid 1px;*/
+
+}
+
+.form_fila label
+{
+ 	width:50px;
+ 	text-align:right;
+}
+
+
+
+
+/* breadcrumbs */
+
+.c_breadcrumbs{
+
+	height:20px;
+	background-color:#CCCCCC;
+	width:100%;
+	text-align:left;
+	
+}
+
+.c_breadcrumbs p
+{
+	margin:0;
+	padding-left:12px;
+	padding-top:7px;
+	height:24px;
+}
+
+
+
+/* presentació continguts */
+
+
+.contenidor_contingut
+{
+	text-align:left; 
+	padding-bottom:30px;
+}
+
+.contenidor_contingut_sense_espai
+{
+	text-align:left; 
+}
+
+.contenidor_fills_espai
+{
+	padding-top:22px;
+	padding-bottom:20px;
+}
+
+.contenidor_contingut_formacions_programades
+{
+	margin-top:20px;
+	text-align:left;
+	width:510px;
+	border-top:1px solid #c9c9c9;
+}
+
+.contenidor_contingut_sense_linia{
+	text-align:left;
+	margin:0;
+	padding:0;
+	padding-bottom:10px;
+	margin-bottom:8px;
+	width:100%;	
+}
+
+.c_cap
+{	
+	clear:both;
+	width:100%;
+	
+}
+
+.c_titol 
+{
+	text-align:left;
+	margin-bottom:0px;
+	width:80%;		
+}
+
+.c_enviar_imprimir
+{
+	text-align:right;	
+	padding-top:3px;
+	padding-bottom:3px;	
+}
+
+.c_enviar_imprimir a
+{
+	color:#989898;
+	text-decoration:none;
+	font-size:0.8em;
+}
+
+.c_enviar_imprimir a:hover
+{
+	color:#989898;
+	text-decoration:none;
+	font-size:0.8em;
+}
+
+.c_enviar_imprimir_espai
+{
+	padding-bottom:2px;
+}
+
+.c_enviar_imprimir img
+{
+	padding-left:10px;
+}
+.c_contenidor_interior
+{
+	text-align:left;	
+}
+.c_contenidor_interior_no_centrat
+{
+	text-align:left;
+	width:100%;	
+}
+#form_contacte .informacio
+{
+	font-size:1.0em;
+}
+.entradeta
+{
+	color:#7f7704;
+	margin-bottom:15px;
+	text-align:left;
+	font-weight:bold;
+}
+
+/* Vista previa */
+.vista_previa
+{
+	
+}
+.c_vista_previa_titol
+{
+	text-align:left;
+	padding-bottom:0px;
+	padding-top:0px;	
+}
+
+.c_vista_previa_titol_estret
+{
+	text-align:left;
+	padding-bottom:0px;
+	padding-top:0px;	
+}
+
+.c_vista_previa
+{
+	text-align:left;
+	clear:both;
+	padding-bottom:30px;
+}
+
+.c_vista_previa_dret
+{
+	margin-left:120px;
+	height:100px;
+}
+
+.c_vista_previa_dret a
+{
+	color:#78c7eb;
+	text-decoration:none;
+}
+
+.c_vista_previa_dret a:hover
+{
+	color:#666666;
+	text-decoration:underline;
+}
+
+.informacio_vista_previa a
+{
+	font-size:0.9em;
+	color:#666666;
+}
+
+.informacio_vista_previa a:hover
+{
+	text-decoration:underline;
+	color:#666666;
+}
+
+.c_vista_previa_esquerre
+{
+	float:left;
+	width:100px;
+	height:100px;
+}
+
+.c_info_estadistica
+{
+	text-align:left;
+
+}
+
+
+/* fi vista previa */
+.c_info_estadistica
+{
+	text-align:left;
+
+}
+.c_links
+{
+	margin:0 auto;
+	width:100%;	
+	padding-top:20px;
+}
+
+.c_documents
+{	
+	margin:0 auto;
+	width:100%;	
+	padding-top:25px;
+	
+}
+.c_tramits
+{
+	text-align:left;
+}
+.c_informacio
+{
+	/*text-align:justify;	*/
+	text-color:#000000;	
+	padding-bottom:20px;
+}
+/*************************************
+**Estils per al paginador
+*************************************/
+.c_paginador
+{
+	clear:both;
+	text-align:right;
+	padding:5px;
+}
+
+.paginador_css
+{
+	float:right;
+	text-align:right;	
+	margin-bottom:30px;	
+}
+
+.paginador_pagines
+{
+	float:left;	
+	background:#F3F8D0;	
+}
+
+
+.paginador_pagines a
+{
+	width:25px;
+	text-align:left;
+	display:block;
+	color:#a5bc00;
+	font-size:1.1em;	
+}
+
+.paginador_pagines a:hover
+{
+	width:25px;
+	background:#a5bc00;
+	color:#ffffff;
+	display:block;
+	font-size:1.1em;	
+}
+
+
+.paginador_pagina_actual
+{
+	float:left;
+	width:25px;
+	text-align:left;
+	background:#a5bc00;
+	color:#ffffff;	
+	font-size:1.1em;	
+	
+}
+
+.paginador_fletxa
+{
+	float:left;
+}
+
+/*******************************************
+**	Fi estils paginador
+*******************************************/
+.c_llista_continguts_fills
+{
+	margin:0 auto;
+	text-align:left;
+	font-size:1.2em;
+	width:100%;	
+	padding-bottom:30px;
+	margin-top:20px;
+}
+.llista_fills
+{		
+	font-weight:bold;
+}
+.img_llista_fills
+{
+	float:left;
+	color:#78c7eb;
+}
+.titol_llista_fills
+{
+	float:left;
+	padding:0px 10px 0px 5px;
+}
+.titol_llista_fills a
+{	
+	text-align:left;	
+	display:block;
+	color:#78c7eb;
+	text-decoration:none;
+}
+.titol_llista_fills a:hover
+{	
+	display:block;
+	color:#666666;
+	text-decoration:underline;
+}
+
+div.fila_form_petit 
+{
+  clear: both;
+  padding-top: 0px;
+  width:100%;
+  color:#676664;
+}
+div.fila_form_petit .etiqueta 
+{
+  float: left;
+  width: 33%;
+  text-align: right;
+  padding-top:5px;
+  padding-right:2px;
+}
+
+div.fila_form_petit .informacio 
+{
+  float: right;
+  width: 65%;
+  text-align: left;
+}   
+.form_submit
+{
+	clear:both;
+	text-align:right;
+	padding-right:23px;
+	padding-top:3px;
+}
+
+
+
+div.fila_form_entitats 
+{
+  clear: both;
+  padding-top: 1px;
+}
+
+div.fila_form_entitats .etiqueta 
+{
+  float: left;
+  width: 50%;
+  text-align: right;
+  padding-top:3px;
+}
+
+div.fila_form_entitats .informacio 
+{
+  /*float: right;*/
+  text-align: left;
+	
+}   
+.mes_informacio
+{
+	color:#ffffff;
+	font-size:1.7em;
+	padding:12px 7px 2px 0px;
+	font-weight:bold;
+}
+
+.form_mes_info
+{
+	text-align:left;
+	padding-left:5px;	
+	font-size:1.2em;			
+}
+.form_mes_info .fila_form
+{
+	padding:0px 0px 0px 0px;
+}
+.form_mes_info .txt_submit
+{
+	background:#e6e7e8;
+	font-weight:bold;
+}
+.form_mes_info .informacio
+{
+	font-size:1.4em;
+}
+.form_mes_info .txt_submit
+{
+	text-align:right;
+}
+.form_mes_info .txt_form
+{
+	border:0px;	
+}
+.form_petit_cos
+{
+	width:100%;
+	text-align:left;
+	border-bottom:1px solid white;
+
+}
+
+.form_petit_cos form
+{
+	padding:0px 0  0px 0;
+	margin:0;
+}
+
+/* estils per pàgina impresió i mail */
+
+#imp_contenidor {
+	text-align: left;
+	margin: 0 auto;
+	width:75%;
+	background:#ffffff;		
+}
+
+
+
+#imp_cap
+{
+	text-align: left;	
+	height:90px;
+	width:95%;
+}
+#imp_logo
+{
+	padding-top:28px;
+	padding-left:70px;
+}
+
+#imp_breadcrumbs
+{
+	width:95%;
+	text-align:left;
+	font-size:0.8em;
+	padding-top:9px;
+	padding-bottom:5px;
+}
+
+#imp_breadcrumbs a
+{
+	color:#CCCCCB;
+}
+
+#imp_titol
+{
+	width:100%;
+	padding-bottom:30px;
+}
+
+.imp_espai_esquerre
+{
+	padding-left:70px;	
+}
+
+#imp_cap_see_photo
+{
+	text-align: left;
+	padding:4px;
+	background-color: #ffffff;
+}
+
+#imp_cos_seephoto
+{
+	clear:both;
+	text-align: left;
+	padding-bottom:4px;
+	padding-left:4px;
+	padding-right:4px;
+	background-color: #ffffff;
+}
+
+
+
+#imp_cos
+{
+	clear:both;
+	text-align: left;
+	padding-top:17px;
+	padding-bottom:20px;
+	width:95%;
+}
+
+#imp_peu
+{
+	clear:both;
+	text-align:left;
+	font-size:1.0em;
+	width:100%;
+	height:43px;
+	background:#9bd1eb;
+	color:#ffffff;
+}
+
+#imp_peu_espai
+{
+	padding-top:15px;
+}
+
+#imp_peu a
+{
+	color:#ffffff;
+
+}
+#imp_peu a:hover
+{
+	color:#000000;
+	text-decoration:underline;
+}
+
+#imp_peu_foto
+{
+	text-align:left;
+
+}
+
+#imp_cos_mail
+{
+	margin-bottom:10px;
+	text-align:left;
+	
+}
+
+#imp_cos_mail_int
+{
+	margin:0 auto;
+	text-align: left;
+	width:95%;
+	padding-top:20px;
+
+}
+
+/* fi estils per pàgina impresio i mail */
+
+
+
+.espaiat
+{
+	padding:10px;
+
+}
+
+
+/* cercador de portada */
+
+#contenidor_cercador_esquerre
+{
+	float:left;
+	background:url(http://www.ke.tu-darmstadt.de/events/PL-10/img/comu/fons_cercador_esquerre.gif);
+	width:13px;
+	height:32px;
+}
+
+#contenidor_cercador_dret
+{
+	float:left;
+	background:url(http://www.ke.tu-darmstadt.de/events/PL-10/img/comu/fons_cercador_dret.gif);
+	width:13px;
+	height:32px;
+}
+
+#contenidor_cercador
+{	
+	padding-top:0px;
+	text-align:left;
+	float:left;
+	height:32px;
+	background:url(http://www.ke.tu-darmstadt.de/events/PL-10/img/comu/fons_cercador_centre.gif);
+}
+
+.contenidor_cercador form
+{
+	margin:0px;
+	padding:0px;
+	
+}
+
+.input_cercador
+{
+	float:left;
+}
+
+.txt_form_cerca {
+	font-family: Trebuchet MS,Verdana, Arial, Helvetica, sans-serif;
+	color: #000000;
+	background-color: #ffffff;
+	border: 0px;
+	margin:0px;
+	padding: 0px;
+}
+
+.txt_form_gris_cerca {
+	font-family: Trebuchet MS,Verdana, Arial, Helvetica, sans-serif;
+	font-size: 0.85em;
+	color: #cccccc;
+	background-color: #ffffff;
+	border: 1px solid #008dd2;
+	/*margin-right:3px;*/
+	padding: 0px 0px 0px 2px;
+
+}
+
+.txt_submit_cercador {
+	font-family: Trebuchet MS,Verdana, Arial, Helvetica, sans-serif;
+	font-size: 0.85em;
+	color:#ffffff;
+	padding: 1px;
+	margin-left: 7px;
+	border:0px;
+	
+}
+
+.submit_cercador
+{
+	float:left;
+}
+.input_cercador
+{
+	float:left;
+}
+
+
+
+
+
+/* cercador de porata*/
+
+
+/* estil per a formularis */
+.txt_form {
+	font-family: Verdana, Tahoma, Arial, Serif;
+	font-size:1.0em;
+	color: #000000;
+	background-color: #ffffff;
+	border: 1px solid #CBCBD7;
+	padding: 1px;
+	margin: 1px;
+
+}
+
+.txt_form_gris {
+	font-family: Verdana, Tahoma, Arial, Serif;
+	font-size: 0.9em;
+	color: #cccccc;
+	background-color: #ffffff;
+	border: 1px solid #CBCBD7;
+	padding: 1px;
+	margin: 1px;
+
+}
+
+/* taula per documents */
+.taula_documents 
+{
+	border:0;	
+	width:100%;
+}
+
+.taula_documents td
+{
+	color:#666666;
+	border-bottom:1px solid #ffffff;
+	font-size:0.85em;
+}
+
+.tr_linia
+{	
+	background:#f0efef;
+}
+.tr_iluminat
+{
+	background:#f0efef;
+}
+
+.td_mida
+{
+	width:100px;
+	text-align:right;
+	padding-right:10px;
+	/*valign:top;*/
+}
+
+.td_nom_fitxer
+{
+	text-align:left;
+}
+.td_nom_fitxer a
+{
+	padding-top:6px;
+	padding-bottom:4px;	
+	padding-left:3px;
+	display:block;
+}
+
+.td_icona
+{
+	width:25px;
+	text-align:left;
+	padding-left:5px;
+}
+
+
+a.txt_documents {
+	
+	color:#666666;	
+	text-decoration: none;
+}
+
+a.txt_documents:hover 
+{
+	color: #666666;
+	text-decoration: underline;
+}
+
+
+/* fi taula per documents */
+
+.banner
+{
+	text-align:left;
+	padding-bottom:24px;	
+}
+
+.contenidor_banner
+{
+	text-align:left;
+}
+.titol_banner
+{
+	color:#76c7ec;
+	padding-bottom:5px;
+	margin-bottom:7px;	
+	font-weight:bold;
+	font-size:1.2em;
+}
+
+.peu_banner
+{
+	
+}
+
+/************************************/
+/* taules 							*/
+
+/* aquest estil es el que dona format al text interior de continguts */
+.td_justificat
+{
+	font-size:0.9em;	
+	border:0px;
+}
+
+
+/*table
+{
+	border-color:#E5E5E5;
+	border-style:solid;
+	border-collapse: collapse;	
+	border-spacing: 0;
+	
+	
+	
+	
+}
+
+
+td {
+	font-family: Trebuchet MS,Verdana, Arial, Helvetica, sans-serif;
+	color: #000000;
+	text-decoration: none;
+	border-color:#EBEBEB;	
+	
+}
+
+
+th 
+{
+	font-family: Trebuchet MS,Verdana, Arial, Helvetica, sans-serif;
+	color:#a5bc00 ;
+	text-decoration: none;
+	border-color:#EBEBEB;
+	background:#EBEBEB;
+}
+
+
+
+
+
+caption 
+{
+	font-family: Trebuchet MS,Verdana, Arial, Helvetica, sans-serif;
+	color:#a5bc00 ;
+	text-decoration: none;
+	border-color:#EBEBEB;
+	background:#EBEBEB;
+}*/
+
+
+table
+{ 
+	border:0px;
+	border-collapse: collapse;	
+	border-spacing: 0;
+	border-top:0px solid #cccccb;
+}
+td
+{ 
+	text-align:left;
+	border:0px;
+	border-bottom:0px solid #bababa;
+}
+th {
+	
+	background:#ffffff;
+	color:#000000;
+	text-align:left;	
+	border:0px;
+	border-bottom:1px solid #ababab;
+}
+caption {
+	
+	background:#ffffff;
+	color:#000000;
+	text-align:left;	
+
+}
+
+
+
+/* DIFERENTS ESTILS TAULES MAQUETES */
+
+table.taula_titol_verd
+{ 
+		border: 1px solid #ffffff;
+		border-collapse: separate ;
+		border-spacing: 3px;
+
+}
+table.taula_titol_verd td
+{ 
+	border: 1px solid #ebebeb;
+	padding: 5px; 
+	color:#000000;
+	text-align:left;
+
+	
+}
+table.taula_titol_verd th {
+
+	border: 1px solid #ebebeb;
+	padding: 5px; 
+	background:#EBEBEB;
+	color:#a5bc00;
+	text-align:left;
+	
+	
+}
+
+
+table.taula_titol_blanc
+{ 
+	
+	border: 1px solid #E5E5E5;
+	border-collapse: collapse;	
+	border-spacing: 0;
+}
+table.taula_titol_blanc td
+{ 
+	border: 1px solid #E5E5E5;
+	padding-left: 19px; 
+	padding-top:5px;
+	padding-bottom:5px;
+	color:#000000;
+	text-align:left;
+	
+	
+}
+table.taula_titol_blanc th {
+
+	border: 1px solid #E5E5E5;
+	padding-left: 19px; 
+	padding-top:5px;
+	padding-bottom:5px;
+	background:#cccccc;
+	color:#ffffff;
+	text-align:left;
+	
+	
+	
+}
+
+
+
+/* FI DIFERENTS ESTILS TAULES MAQUETES */
+
+
+/* estil per defecte d'una cel·la d'una taula (coincidirà amb txt) */
+
+.taula_continguts
+{
+	border:0;	
+	width: 100%;
+	padding:0;
+	border:0;
+}
+.taula_continguts a
+{
+	color:#000000;
+	text-decoration:underline;
+	font-weight:bold;
+}
+
+.taula_continguts a:hover
+{
+	color:#0099cd;
+}
+
+.taula_foto_left
+{
+	width: 1%;
+	padding:4px;
+	border: 0;
+	float:left;
+}
+
+.taula_foto_left td
+{
+	border:0px;
+}
+
+.taula_foto_right
+{
+	width: 1%;
+	padding:4px;
+	border: 0;
+	float:right;
+}
+
+
+.taula_foto_right td
+{
+	border:0px;
+}
+
+.taula_foto_left
+{
+	width: 1%;
+	padding:4px;
+	border: 0;
+	margin:0 auto;
+}
+
+.taula_foto_left td
+{
+	border:0px;
+}
+
+.foto_centrada
+{
+	text-align:left;
+	width:100%;
+}
+
+
+.taula_fotos_horitzontals
+{
+	width: 100%;
+	border: 0;
+	margin:0 auto;
+}
+
+.taula_continguts
+{
+	border:0;	
+}
+
+.taula_no_fil
+{
+	border:0;	
+	width:100%;
+}
+
+.taula_continguts p
+{
+	margin-top:6px;
+}
+
+
+
+/* butlletí formulari */
+.butlleti_cos_form
+{
+	padding:5px;
+	
+	margin-bottom:10px;
+}
+
+
+
+.titol_butlleti
+{
+	text-align:left;
+	padding-left:15px;
+	padding-top:15px;
+
+}
+
+/************************/
+/* menu icones */
+
+
+#menu_icones
+{
+	margin:0;
+	padding:0;
+	font-size:0.9em;
+	letter-spacing:1px;
+	padding-left:20px;
+	text-align:right;
+	
+
+}
+
+
+#menu_icones li
+{
+	list-style: none;
+	list-style-image: none; 
+	margin:0;
+	display:inline;	
+	padding-top:1px;
+	text-align:right;		
+}
+
+#menu_icones li a
+{
+	padding:3px 0px 3px 6px;
+	color:#000000;
+
+}
+
+#menu_icones li a:hover
+{
+	padding:3px 0px 3px 6px;
+	color:#ffffff;
+
+}
+
+
+.idioma_actiu
+{
+	color:#a5bc00;
+}
+
+.idioma_no_actiu
+{
+	color:#000000;
+}
+
+/* FINAL selector d'idiomes */
+/************************/
+
+
+/************************/
+/* menu icones */
+
+
+#selector_idiomes
+{
+	margin:0;
+	padding:0;
+	font-size:1.0em;
+	padding-left:0px;
+	text-align:left;	
+	
+}
+
+
+#selector_idiomes li
+{
+	list-style: none;
+	list-style-image: none; 
+	margin:0;
+	display:inline;	
+	padding-top:0px;
+	text-align:right;		
+}
+
+#selector_idiomes li a
+{
+	padding:0px 0px 0px 0px;
+	color:#000000;	
+
+}
+
+#selector_idiomes li a:hover
+{
+	padding:0px 0px 0px 0px;
+	color:#a5bc00;	
+}
+
+#selector_idiomes li a.idioma_actiu
+{
+	padding:0px 0px 0px 0px;
+	color:#a5bc00;
+
+
+}
+
+
+
+/* FINAL selector d'idiomes */
+/************************/
+
+/* estils pels llistats de la administracio */
+.llistat_administracio
+{
+	border:1px solid #ebebeb;
+	/*border-collapse: collapse;*/
+	width:99%;
+}
+
+.llistat_administracio tr
+{
+	background:#ffffff;
+
+}
+
+.llistat_administracio tr:hover, .llistat_administracio tr.iluminat
+{
+	background:#F0F1F1;
+}
+
+.llistat_administracio td
+{
+	border:1px solid #ebebeb;
+	margin:0px;
+	padding:2px;
+}
+
+.llistat_administracio th
+{
+	/*ackground-color : #E6E7E8;*/
+	margin:0px;
+	padding:2px;
+	height:20px;
+	border:1px solid #ebebeb;
+	background: url(http://www.ke.tu-darmstadt.de/events/PL-10/img/admin/general/fons_taules_titol.gif) bottom right no-repeat;			
+}
+
+.llistat_administracio_final_dret
+{
+	text-align:right;
+	width:98%;
+	padding-top:4px;
+	/*background-color:#F2F2F5;*/
+	
+}
+
+
+
+.missatges_web
+{
+	text-align:left;
+	padding-bottom:50px;
+	
+}
+
+/***************************
+	Estils per a la vista previa en mosaic
+***************************/
+.c_mosaic_item
+{
+	width:145px;	
+	margin-bottom:20px;
+}
+
+.c_mosaic_item_foto
+{
+	width:145px;
+	height:145px;
+}
+
+.c_mosaic_item_titol
+{
+	text-align:left;
+}
+.c_mosaic_item_titol a
+{
+	display:block;	
+	padding-top:2px;
+	padding-bottom:10px;
+	padding-left:5px;
+	padding-right:3px;
+	color:#78c7eb;
+	text-decoration:none;
+}
+
+.c_mosaic_item_titol a:hover
+{
+	display:block;	
+	padding-bottom:10px;
+	padding-left:5px;
+	padding-right:3px;	
+	color:#666666;
+}
+.taula_previa_mosaic
+{
+	width:100%;
+	border:0px;
+	cellpadding:0px;
+	cellspacing:0px;
+}
+.taula_previa_mosaic td
+{
+	
+	vertical-align:top;
+}
+
+
+/***************************
+	FI estils per a la vista previa en mosaic
+***************************/
+
+
+
+.missatge_error
+{
+	color:#ff0000;
+	padding:5px 0px 20px 0px;
+}
+
+/**********************************
+	Estils per a la capçalera
+**********************************/
+
+
+#data_avui
+{
+	float:right;
+	background:#e6e7e8;
+	width:699px;
+	color:#ffffff;
+	text-align:right;
+	font-size:2.5em;
+	height:42px;
+	/*border:1px solid #e6e7e8;*/
+}
+
+
+#data_avui_espai
+{
+	padding-top:4px;
+	padding-right:23px;
+
+}
+/**********************************
+	FI estils per a la capçalera
+**********************************/
+
+.verd_aladetres
+{
+	color:#a5bc00;	
+	
+}
+
+
+
+/*************************************
+	Estils per a la fitxa d'experiencies
+*************************************/
+.informacio_experiencia
+{
+	margin-bottom:25px;
+
+}
+
+.experiencies_titol
+{
+	padding:5px 0px 5px 10px;
+}
+
+.experiencies_caracteristica
+{
+
+}
+
+.experiencies_carac_etiqueta
+{
+	color:#999999;
+}
+
+
+.experiencies_dades_projecte
+{
+	border-top:1px solid #cccccc;
+	border-bottom:1px solid #cccccc;
+	padding:5px 0px 5px 10px;
+
+}
+
+.informacio_experiencia_esquerre
+{
+	float:left;
+	width:135px;
+	text-align:left;
+	
+}
+.informacio_experiencia_dreta
+{
+	float:right;
+	width:330px;		
+}
+
+.informacio_experiencia_dreta_contingut
+{
+	padding:5px 0px 10px 10px;	
+}
+
+.informacio_experiencia_data
+{
+	color:#999999;
+}
+
+
+/* taula per documents d'experiencies*/
+.taula_documents_experiencies
+{
+	border:0;	
+	width:100%;
+	border-top:1px solid #cccccc;
+}
+
+.taula_documents_experiencies td
+{	
+	
+	border-bottom:1px solid #cccccc;
+	color:#666666;
+}
+
+
+
+/* fi taula per documents */
+
+/*************************************
+	FI estils per a la fitxa d'experiencies
+*************************************/
+
+
+
+/******************************/
+/*   titols parcials editor   */
+/******************************/
+.titol_nivell_1
+{
+	color:#666666;
+	font-size: 1.6em;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 5px 0px 5px 0px;
+	margin: 0px 0px 0px 0px;
+}
+
+
+.titol_nivell_2
+{
+	color:#0099ce;
+	font-size: 1.3em;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 5px 0px 5px 0px;
+	margin: 0px 0px 0px 0px;
+}
+
+.titol_nivell_3
+{
+	color:#666666;
+	font-size: 1.3em;
+	font-weight: bold;
+	text-decoration: none;	
+	padding: 5px 0px 5px 0px;
+	margin: 0px 0px 0px 0px;
+}
+
+.resaltat_nivell_1
+{
+	color:#000000;
+	font-size: 1.2em;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 0px 0px 0px 0px;
+	margin: 0px;
+}
+
+
+.resaltat_nivell_2
+{
+	color:#0099cd;
+	font-size: 1.0em;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 0px 0px 0px 0px;
+	margin: 0px;
+}
+
+.resaltat_nivell_3
+{
+	color:#666666;
+	font-size: 0.9em;
+	text-decoration: none;	
+	padding: 0px 0px 0px 0px;
+	margin: 0px;
+	font-weight: bold;
+}
+ /*****************************************************/
+ /*****************************************************/
+ 
+ 
+ 
+ 
+/************ VISTA SOLAPES **********************/ 
+/*************************************************/
+/*--------------------------------------------------
+  REQUIRED to hide the non-active tab content.
+  But do not hide them in the print stylesheet!
+  --------------------------------------------------*/
+  
+  
+  
+.tabberlive .tabbertabhide {
+ 
+ display:none;
+}
+
+/*--------------------------------------------------
+  .tabber = before the tabber interface is set up
+  .tabberlive = after the tabber interface is set up
+  --------------------------------------------------*/
+.tabber 
+{
+
+}
+.tabberlive {
+ /*margin-top:1em;*/
+}
+
+/*--------------------------------------------------
+  ul.tabbernav = the tab navigation list
+  li.tabberactive = the active tab
+  --------------------------------------------------*/
+ul.tabbernav
+{
+ margin:0;
+ padding: 3px 0;
+ border-bottom: 1px solid #E5E5E5;
+ font-size: 1.2em;
+}
+
+
+ul.tabbernav li
+{
+ list-style: none;
+ margin: 0;
+ display: inline; 
+}
+
+ul.tabbernav li a
+{
+ padding: 3px 20px 3px 20px; 
+ margin-right: 2px;
+ border: 1px solid #E5E5E5;
+ border-bottom: none;
+ background: #ffffff;
+ text-decoration: none;
+}
+
+ul.tabbernav li a:link { 
+color: #999999;background: url(http://www.ke.tu-darmstadt.de/events/PL-10/img/comu/fons_pestanyes.gif);font-weight:bold;	 }
+ul.tabbernav li a:visited { color: #a5bc00; }
+
+ul.tabbernav li a:hover
+{
+ color: #a5bc00;
+ background: #FFFFFF;
+ border-color: #E5E5E5;
+  
+}
+
+ul.tabbernav li.tabberactive a
+{
+ background: #FFFFFF;
+ color:#a5bc00;
+ border-bottom: 1px solid #ffffff;
+ font-weight:bold;	
+}
+
+ul.tabbernav li.tabberactive a:hover
+{
+ background:#FFFFFF;
+ color:#a5bc00;
+}
+
+/*--------------------------------------------------
+  .tabbertab = the tab content
+  Add style only after the tabber interface is set up (.tabberlive)
+  --------------------------------------------------*/
+.tabberlive .tabbertab {
+ padding:10px;
+ border:1px solid #e5e5e5;
+ border-top:0;
+
+ /* If you don't want the tab size changing whenever a tab is changed
+    you can set a fixed height */
+
+ /* height:200px; */
+
+ /* If you set a fix height set overflow to auto and you will get a
+    scrollbar when necessary */
+
+ /* overflow:auto; */
+}
+
+/* If desired, hide the heading since a heading is provided by the tab */
+.tabberlive .tabbertab h2 {
+ display:none; 
+}
+.tabberlive .tabbertab h3 {
+ display:none;
+}
+
+/* Example of using an ID to set different styles for the tabs on the page */
+.tabberlive#tab1 {
+}
+.tabberlive#tab2 {
+}
+.tabberlive#tab2 .tabbertab {
+ height:200px;
+ overflow:auto;
+}
+
+/************ FI VISTA SOLAPES **********************/ 
+/****************************************************/
+
+
+
+/*****/
+
+
+.mobilitat
+{
+	color:#9F1560;
+	background-color: #E7DEE3;
+	padding:6px;
+	margin-bottom:10px;
+}
+
+/**** CONTINGUTS EXTESOS ***********************/
+
+
+.contingut_extes_titol
+{
+	clear:both;
+	margin-top:6px;
+	margin-bottom:4px;
+	text-align:left;
+
+}
+
+.contingut_extes_fila
+{
+	clear:both;
+	margin-bottom:4px;
+	text-align:left;
+
+}
+
+.contingut_extes_fila_etiqueta
+{
+	float:left;
+	color: #A2165F;
+	font-weight:bold;	
+	text-align:left;
+}
+
+.contingut_extes_etiqueta_span
+{
+	color: #A2165F;
+	font-weight:bold;	
+	text-align:left;
+}
+
+
+.contingut_extes_fila_info
+{
+	margin-left: 150px;
+	text-align:left;
+}
+
+/**** CONTINGUTS EXTESOS ***********************/
+
+
+
+/**************************************************/
+/*    USUARI CONTINGUTS PRIVATS                   */
+/************************************************/
+
+
+.usuari_continguts_privats
+{
+	width:100%;	
+	padding-bottom:10px;	
+}
+
+
+.missatge_error
+{
+	color:#ff0000;
+	padding-bottom:10px;
+}
+
+
+.text_interior_error
+{
+	color:#ff0000;
+	padding-bottom:10px;
+}
+/**************************************************/
+/*    FI USUARI CONTINGUTS PRIVATS                   */
+/************************************************/
+
+.etiqueta_seccio {
+	font-family: Verdana, Tahoma, Arial, Serif;
+	font-size: 1.2em;
+	color: #a5bc00;
+	text-decoration: none;
+	font-weight: normal;
+	padding: 0px 0px 0px 0px;
+	margin: 0px;	
+
+}
+
+/******************************************************************************************
+***
+*** Estils web 2.0
+***
+******************************************************************************************/
+
+/* Llista RSS */
+#llista_rss
+{
+	margin-bottom:30px;
+	margin-top:30px;
+}
+
+.item_rss
+{
+	text-align:left;	
+	clear:both;	
+	margin-bottom:10px;
+}
+.item_rss .dreta
+{
+	margin-left:28px;	
+	
+}
+
+
+.item_rss .dreta a
+{
+	color:#a5bc00;	
+	
+}
+
+.item_rss .dreta a:hover
+{
+	text-decoration:underline;	
+	color:#003399;
+}
+
+.rss_intro
+{
+	color:#666666;
+	font-size:0.95em;
+}
+
+
+.item_rss .esquerra
+{
+	float:left;
+	width:10px;	
+	margin-left:0px;
+	margin-top:2px;
+}
+
+.rss_minim
+{
+	font-size:0.8em;
+	color:#666666;
+
+}
+
+.text_rss img
+{
+	float:right;
+	margin-left:10px;
+}
+
+/* llista de comentaris */
+
+.llista_comentaris
+{
+}
+
+.comentari
+{
+	background:url(http://www.ke.tu-darmstadt.de/events/PL-10/img/comu/web2.0/fons_opinions_sup.gif) no-repeat;	
+	padding:5px 20px 0px 20px;
+	width:640px;
+}
+
+.comentari_top
+{
+	margin-bottom:15px;
+
+}
+
+.comentari_nom
+{
+	color: #a5bc00;
+	font-size:0.9em;
+
+}
+
+.comentari_data
+{
+	color: #999999;
+	font-size:0.8em;
+}
+
+.comentari_cos
+{
+	color: #333333;
+	font-size:0.85em;
+}
+
+
+
+.comentari_fi
+{
+	background:url(http://www.ke.tu-darmstadt.de/events/PL-10/img/comu/web2.0/fons_opinions_inf.gif) left bottom no-repeat;	
+	height:10px;
+	margin-bottom: 10px;
+}
+
+
+/* formulari de comentaris */
+
+#form_comentaris
+{
+	background-color: #efefef;
+	padding:10px 0px 10px 0px;
+	margin-bottom:10px;
+}
+
+.error_comentaris
+{
+	color:#ff0000;
+	padding:5px 5px 5px 20px;
+	
+}
+
+/* barra de funcions web 2.0 */
+.barra_web_20
+{	
+	margin-bottom:15px;
+	background-color: #efefef;
+}
+
+
+.barra_web_20 .esquerre
+{
+	float:left;
+	padding: 10px 0px 5px 38px;	
+	background:url(http://www.ke.tu-darmstadt.de/events/PL-10/img/comu/web2.0/globus_comentaris.gif) no-repeat;	
+	font-size:0.8em;
+	color:#666666;	
+}
+
+.barra_web_20 .dreta
+{
+	float:right;
+	padding: 5px 10px 5px 0px;
+	text-align:right;
+	font-size:0.8em;
+	color:#666666;
+}
+
+
+.barra_web_20 .dreta img
+{
+	margin-left: 8px;		
+}
+
+
+.imprimir_compartir
+{
+	width:350px;
+
+}
+
+.imprimir_compartir .i_esquerre
+{
+	float:left;	
+	margin-top:3px;
+	text-align:right;
+}
+
+
+
+.imprimir_compartir .i_dreta
+{
+	float:right;
+	margin-top:5px;
+	margin-right:10px;
+	
+}
+
+
+.titols_web20
+{
+	margin-top:15px;
+	margin-bottom:5px;
+	color: #999999;
+	font-weight: bold;
+	font-size:1.3em;
+}
+
+/* formulari de comentaris */
+
+/* Maquetació per fila de formulari generica  */
+/* està en %, per tant tindra un marge de maniobra , pobablement sols haurem de redefinir els més petits */
+#form_comentaris .fila_form
+{
+  clear: both;
+  padding-top: 3px;
+  width:100%;
+  /*border:1px solid black;*/
+}
+
+#form_comentaris .fila_form .etiqueta 
+{
+  float: left;
+  width: 23%;
+  text-align: right;
+  padding-top:2px;
+  font-size:0.9em; 
+  color:#333333;
+}
+
+#form_comentaris .fila_form .informacio 
+{
+  float: right;
+  width: 76%;
+  text-align: left;
+} 
+
+
+#form_comentaris .informacio_gris .etiqueta 
+{
+  float: left;
+  width: 26%;
+  text-align: right;
+  padding-top:2px;
+  font-size:0.9em; 
+  color:#333333;
+}
+
+#form_comentaris .informacio_gris .informacio 
+{
+  float: right;
+  width: 83%;
+  color:#666666;
+  font-size:11px;  
+  text-align: left;
+} 
+
+
+.enviar_comentari
+{
+	text-align:right;
+	padding-right:20px;
+	margin-bottom:10px;	
+}
+
+/******************************************************************************************
+***
+***  FI Estils web 2.0
+***
+******************************************************************************************/
+

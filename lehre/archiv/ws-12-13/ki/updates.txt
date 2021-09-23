@@ -1,0 +1,30 @@
+Berechne Hidden Layer
+f_h(-0,40000)=-0,40000
+f_i(0,30000)=0,30000
+f_j(0,80000)=0,80000
+ 
+Berechne Output Layer
+f_a(-0,44000)=-0,44000 => Fehler = 0,24000
+f_b(0,46000)=0,46000 => Fehler = 0,44000
+ 
+Berechne Fehler Hidden Layer
+Fehler_h = 0,01600
+Fehler_i = -0,10400
+Fehler_j = 0,16800
+ 
+Berechne neue Gewichte (aka as learning)
+Input -> Hidden
+New weight x -> h: 0,30800
+New weight y -> h: 0,69200
+New weight x -> i: -0,15200
+New weight y -> i: -0,34800
+New weight x -> j: 0,28400
+New weight y -> j: -0,68400
+Hidden -> Output
+New weight h -> a: -0,34800
+New weight i -> a: -0,76400
+New weight j -> a: -0,30400
+New weight h -> b: 0,11200
+New weight i -> b: 0,26600
+New weight j -> b: 0,77600
+

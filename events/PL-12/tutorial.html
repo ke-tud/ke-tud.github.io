@@ -1,0 +1,225 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="robots" content="index, follow" />
+  <meta name="keywords" content="Preference Learning, PL-12" />
+  <title>Tutorial Preference Learning</title>
+  <script type="text/javascript" src="http://www.ke.tu-darmstadt.de/ecai2012/media/system/js/mootools.js"></script>
+  <script type="text/javascript" src="http://www.ke.tu-darmstadt.de/ecai2012/media/system/js/caption.js"></script>
+
+
+<link rel="stylesheet" href="http://www2.lirmm.fr/ecai2012/templates/system/css/system.css" type="text/css" />
+<link rel="stylesheet" href="http://www2.lirmm.fr/ecai2012/templates/system/css/general.css" type="text/css" />
+<link rel="stylesheet" href="http://www2.lirmm.fr/ecai2012/templates/ja_pur_mi/css/template.css" type="text/css" />
+
+<script language="javascript" type="text/javascript" src="http://www2.lirmm.fr/ecai2012/templates/ja_pur_mi/js/ja.script.js"></script>
+
+<script language="javascript" type="text/javascript">
+var rightCollapseDefault='show';
+var excludeModules='38';
+</script>
+<script language="javascript" type="text/javascript" src="http://www2.lirmm.fr/ecai2012/templates/ja_pur_mi/js/ja.rightcol.js"></script>
+
+<link rel="stylesheet" href="http://www2.lirmm.fr/ecai2012/templates/ja_pur_mi/css/menu.css" type="text/css" />
+
+
+<link rel="stylesheet" href="http://www2.lirmm.fr/ecai2012/templates/ja_pur_mi/styles/header/whiteblue/style.css" type="text/css" />
+<link rel="stylesheet" href="http://www2.lirmm.fr/ecai2012/templates/ja_pur_mi/styles/background/lighter/style.css" type="text/css" />
+<link rel="stylesheet" href="http://www2.lirmm.fr/ecai2012/templates/ja_pur_mi/styles/elements/blueRoyal/style.css" type="text/css" />
+
+<!--[if gte IE 7.0]>
+<style type="text/css">
+.clearfix {display: inline-block;}
+</style>
+<![endif]-->
+
+<style type="text/css">
+#ja-header,#ja-mainnav,#ja-container,#ja-botsl,#ja-footer {width: 97%;margin: 0 auto;}
+#ja-wrapper {min-width: 100%;}
+</style>
+</head>
+
+<body id="bd" class="fs4 Moz" >
+<a name="Top" id="Top"></a>
+<ul class="accessibility">
+	<li><a href="tutorial.html#ja-content" title="Skip to content">Skip to content</a></li>
+	<li><a href="tutorial.html#ja-mainnav" title="Skip to main navigation">Skip to main navigation</a></li>
+	<li><a href="tutorial.html#ja-col1" title="Skip to 1st column">Skip to 1st column</a></li>
+	<li><a href="tutorial.html#ja-col2" title="Skip to 2nd column">Skip to 2nd column</a></li>
+</ul>
+
+<div id="ja-wrapper">
+
+<!-- BEGIN: HEADER -->
+<div id="ja-headerwrap">
+	<div id="ja-header" class="clearfix" style="background: url(http://www2.lirmm.fr/ecai2012/templates/ja_pur_mi/images/header/Cathedrale.jpg) no-repeat top right;">
+
+	<div class="ja-headermask">&nbsp;</div>
+
+			<h1 class="logo">
+			<a href="http://www2.lirmm.fr/ecai2012/" title="Ecai2012"><span>Ecai2012</span></a>
+		</h1>
+	
+	</div>
+</div>
+<!-- END: HEADER -->
+
+<!-- BEGIN: MAIN NAVIGATION -->
+<!-- END: MAIN NAVIGATION -->
+
+<div id="ja-containerwrap-fr">
+<div id="ja-containerwrap2">
+	<div id="ja-container">
+	<div id="ja-container2" class="clearfix">
+
+		<div id="ja-mainbody-fr" class="clearfix">
+
+		<!-- BEGIN: CONTENT -->
+		<div id="ja-contentwrap">
+		<div id="ja-content">
+
+			
+
+						<div id="ja-pathway">
+				<span class="breadcrumbs pathway">
+</span>
+
+			</div>
+			
+			
+			<center>
+<h2>
+			Preference Learning	</h2>
+			
+			<h3>Tutorial at ECAI-12, Montpellier</h3>
+</center>
+
+<div class="article-content">
+<h2><a name="background">Background</a></h2>
+<p>
+The primary goal of this tutorial is to survey the field of
+preference learning in its current stage of development. The
+presentation will focus on a systematic overview of different types of
+preference learning problems, methods and algorithms to tackle these
+problems, and metrics for evaluating the performance of preference
+models induced from data.</p>
+
+<h2><a name="topics">Outline</a></h2>
+<p>
+We will cover the following topics
+</p>
+
+<ol>
+<li> <a href="slides/PL-Tutorial-1.pdf">Preference Learning Tasks</a>
+<ul>
+<li> Introduction to Preference Learning</li>
+<li> Object Ranking</li>
+<li> Instance Ranking</li>
+<li> Label Ranking</li>
+</ul>
+</li>
+<li> <a href="slides/PL-Tutorial-2.pdf">Performance Assessment and Loss Functions</a>
+<ul>
+<li> ranking errors (Spearman, Kendall's tau, ...)</li>
+<li> multipartite ranking measures (AUC, C-index, ...)</li>
+<li> information retrieval measures (precision@k, NCDG, ...)</li>
+</ul>
+</li>
+<li> <a href="slides/PL-Tutorial-3.pdf">Preference Learning Techniques</a>
+<ul>
+<li> learning utility functions</li>
+<li> learning preference relations</li>
+<li> model-based preference learning</li>
+<li> local aggregation of preferences</li>
+</ul>
+<li> <a href="slides/PL-Tutorial-4.pdf">Complexity of Preference Learning</a>
+<ul>
+<li> training complexity
+<li> prediction complexity
+</ul>
+<li> <a href="slides/PL-Tutorial-5.pdf">Conclusions</a>
+</ol>
+
+<h2><a name="material">Materials</a></h2>
+<ul>
+<p>
+Slides of the tutorials will be made available at this site.
+</p>
+<p>
+The above outline essentially follows the introductory chapter of the following book on preference learning.
+</p>
+<li>
+J. F&uuml;rnkranz and E. H&uuml;llermeier, <a
+		    href="http://www.ke.informatik.tu-darmstadt.de/publications/papers/PLBook-Introduction.pdf">Preference Learning: An
+Introduction</a>. In F&uuml;rnkranz & H&uuml;llermeier (eds.) <em>Preference
+		    Learning</em>, Springer-Verlag, 2010.
+		  </em>
+</li>
+</ul>
+
+<h2><a name="organizers">Presenters</a></h2>
+
+    
+<ul>
+<li><a href="mailto:eyke@mathematik.uni-marburg.de">Eyke H&uuml;llermeier</a> (Universit&auml;t Marburg)
+<li><a href="mailto:juffi@ke.informatik.tu-darmstadt.de">Johannes F&uuml;rnkranz </a>(TU Darmstadt) </li>
+</ul>
+
+<h2><a name="dates">Related Events</a></h2>
+
+There will be several events related to preferences and preferences learning at ECAI-12:
+<ul>
+<li> The presenters of this tutorial are also organizing a <a href="workshop.html">Workshop on Preference Learning: Problems and Applications in AI</a></li>
+<li> There will be a <a href="http://mpref2012.lip6.fr/welcome.html">Workshop on Advances in Preference Handling</a> at ECAI. We aim at co-ordinating the program of both workshops.</li>
+<ul>
+
+</div>
+
+
+<span class="article_separator">&nbsp;</span>
+
+
+			
+		</div>
+		</div>
+		<!-- END: CONTENT -->
+
+				<!-- BEGIN: LEFT COLUMN -->
+		<div id="ja-col1">
+					<div class="moduletable_menu">
+					<h3>PL-12</h3>
+					<ul class="menu">
+					<li class="item61"><a href="tutorial.html#topics"><span>Outline</span></a></li>
+					<li class="item61"><a href="tutorial.html#topics"><span>Materials</span></a></li>
+					<li class="item86"><a href="tutorial.html#organizers"><span>Presenters</span></a></li>
+					</ul>		</div>
+			<div class="moduletable">
+					<h3>RELATED EVENTS</h3>
+					<ul class="menu">
+					<li class="item75"><a href="http://www2.lirmm.fr/ecai2012/"><span>ECAI-12 Conference</span></a></li>
+					<li id="current" class="active item84"><a href="tutorial.html"><span>Tutorial Preference Learning</span></a></li>
+					<li class="item84"><a href="workshop.html"><span>WS Preference Learning</span></a></li>
+					<li class="item84"><a href="http://mpref2012.lip6.fr"><span>WS Preference Handling</span></a></li>
+					</ul>		</div>
+</div>
+</div>
+
+
+<!-- BEGIN: FOOTER -->
+<div id="ja-footerwrap">
+<div id="ja-footer" class="clearfix">
+</div>
+</div>
+<!-- END: FOOTER -->
+
+</div>
+
+
+
+</body>
+
+</html>

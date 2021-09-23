@@ -1,0 +1,28 @@
+frequents(achim, herkules).
+frequents(karin, herkules).
+frequents(achim, bockshaut).
+frequents(joseph, bockshaut).
+frequents(lena, bockshaut).
+serves(herkules, becks).
+serves(bockshaut, grohe).
+serves(bockshaut, paulaner).
+likes(karin,grohe).
+likes(achim,grohe).
+likes(joseph,grohe).
+
+
+happy(D)              :- frequents(D,P), serves(P, B),
+                         likes(D,B).
+
+should_visit(D,P)     :- serves(P,B), likes(D,B).
+
+not_should_visit(D,B) :- frequents(D,_), serves(B,_), not( should_visit(D,B) ).
+
+not_very_happy(D)     :- frequents(D,P), not_should_visit(D,P) .
+
+very_happy(D)         :- frequents(D,_), not( not_very_happy(D) ).
+
+sad(D)                :- frequents(D,_), not( happy(D) ).
+
+
+

@@ -1,0 +1,218 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY Ontology1322641790990 "http://www.semanticweb.org/ontologies/2011/10/Ontology1322641790990.owl#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/ontologies/2011/10/Ontology1322641790990.owl#"
+     xml:base="http://www.semanticweb.org/ontologies/2011/10/Ontology1322641790990.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:Ontology1322641790990="http://www.semanticweb.org/ontologies/2011/10/Ontology1322641790990.owl#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ontologies/2011/10/Ontology1322641790990.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/Ontology1322641790990.owl#hatZubehör -->
+
+    <owl:ObjectProperty rdf:about="&Ontology1322641790990;hatZubehör">
+        <rdfs:domain rdf:resource="&Ontology1322641790990;Auto"/>
+        <rdfs:range rdf:resource="&Ontology1322641790990;Zubehör"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/Ontology1322641790990.owl#hergestelltVon -->
+
+    <owl:ObjectProperty rdf:about="&Ontology1322641790990;hergestelltVon">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="&Ontology1322641790990;Auto"/>
+        <rdfs:range rdf:resource="&Ontology1322641790990;Firma"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/Ontology1322641790990.owl#hatBeschleunigung -->
+
+    <owl:DatatypeProperty rdf:about="&Ontology1322641790990;hatBeschleunigung">
+        <rdfs:domain rdf:resource="&Ontology1322641790990;Auto"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/Ontology1322641790990.owl#hatGeschwindigkeit -->
+
+    <owl:DatatypeProperty rdf:about="&Ontology1322641790990;hatGeschwindigkeit">
+        <rdfs:domain rdf:resource="&Ontology1322641790990;Auto"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/Ontology1322641790990.owl#hatVerbrauch -->
+
+    <owl:DatatypeProperty rdf:about="&Ontology1322641790990;hatVerbrauch">
+        <rdfs:domain rdf:resource="&Ontology1322641790990;Auto"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/Ontology1322641790990.owl#Anhängekupplung -->
+
+    <owl:Class rdf:about="&Ontology1322641790990;Anhängekupplung">
+        <rdfs:subClassOf rdf:resource="&Ontology1322641790990;Zubehör"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/Ontology1322641790990.owl#Auto -->
+
+    <owl:Class rdf:about="&Ontology1322641790990;Auto">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Ontology1322641790990;hergestelltVon"/>
+                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Ontology1322641790990;hatVerbrauch"/>
+                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Ontology1322641790990;hatBeschleunigung"/>
+                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Ontology1322641790990;hatGeschwindigkeit"/>
+                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/Ontology1322641790990.owl#Dachgepäckträger -->
+
+    <owl:Class rdf:about="&Ontology1322641790990;Dachgepäckträger">
+        <rdfs:subClassOf rdf:resource="&Ontology1322641790990;Zubehör"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/Ontology1322641790990.owl#Familienauto -->
+
+    <owl:Class rdf:about="&Ontology1322641790990;Familienauto">
+        <rdfs:subClassOf rdf:resource="&Ontology1322641790990;Auto"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Ontology1322641790990;hatZubehör"/>
+                <owl:someValuesFrom rdf:resource="&Ontology1322641790990;Kindersitz"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/Ontology1322641790990.owl#Firma -->
+
+    <owl:Class rdf:about="&Ontology1322641790990;Firma"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/Ontology1322641790990.owl#Kindersitz -->
+
+    <owl:Class rdf:about="&Ontology1322641790990;Kindersitz">
+        <rdfs:subClassOf rdf:resource="&Ontology1322641790990;Zubehör"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/Ontology1322641790990.owl#Kombi -->
+
+    <owl:Class rdf:about="&Ontology1322641790990;Kombi">
+        <rdfs:subClassOf rdf:resource="&Ontology1322641790990;Auto"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Ontology1322641790990;hatZubehör"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&Ontology1322641790990;Anhängekupplung"/>
+                            <rdf:Description rdf:about="&Ontology1322641790990;Dachgepäckträger"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/10/Ontology1322641790990.owl#Zubehör -->
+
+    <owl:Class rdf:about="&Ontology1322641790990;Zubehör"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.22702) http://owlapi.sourceforge.net -->
+

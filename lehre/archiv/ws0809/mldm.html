@@ -1,0 +1,2074 @@
+
+
+
+<!DOCTYPE html PUBLIC
+  "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+  
+    
+    
+    
+    
+
+
+  <head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <meta name="generator" content="Plone - http://plone.org" />
+
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    
+      <base href="" /><!--[if lt IE 7]></base><![endif]-->
+    
+
+    
+        <meta content="Einführung in maschinelles Lernen und Data Mining mit Schwerpunkt auf Lernen in logisch/symbolischen Repräsentationssprachen. " name="description" />
+
+  
+    <link rel="stylesheet" type="text/css" media="screen" href="../../../portal_css/KE-Design/reset-cachekey-925e503538eefe397b99ef02d65af339.css" />
+    <style type="text/css" media="screen">@import url(../../../portal_css/KE-Design/base-cachekey-03153797b47b0a3cc7f99250afe8cedd.css);</style>
+    <link rel="stylesheet" type="text/css" media="screen" href="../../../portal_css/KE-Design/resourcetinymce.stylesheetstinymce-cachekey-5af329a435a47b3692ec346792a15c82.css" />
+    <style type="text/css">@import url(../../../portal_css/KE-Design/print-cachekey-121643ccca6586bc2ccc938612dbcdbe.css);</style>
+    <link rel="stylesheet" type="text/css" media="screen" href="../../../portal_css/KE-Design/resourceplone.app.discussion.stylesheetsdiscussion-cachekey-a142adb07f80a3c80d0ffe3bd11c391d.css" />
+    <style type="text/css" media="screen">@import url(../../../portal_css/KE-Design/kedesign-cachekey-abe6dfb415b2c424ca38859c1cfa69ee.css);</style>
+    <style type="text/css" media="screen">@import url(../../../portal_css/KE-Design/JabRef.css);</style>
+    <style type="text/css" media="all">@import url(../../../portal_css/KE-Design/ploneCustom-cachekey-aba490f43e054b2e05eaab28d192fa09.css);</style>
+
+  
+  
+    <script type="text/javascript" src="../../../portal_javascripts/KE-Design/resourceplone.app.jquery-cachekey-0778f482fb7d0bbb4d2ec9c3b82f9e81.js"></script>
+    <script type="text/javascript" src="../../../portal_javascripts/KE-Design/cookie_manager-cachekey-4a290db816043754c78ba3a906f4556e.js"></script>
+    <script type="text/javascript" src="../../../portal_javascripts/KE-Design/Hyphenator-cachekey-671ea5ad93b7c7d3d115abde3ce0b6bb.js"></script>
+    <script type="text/javascript" src="../../../portal_javascripts/KE-Design/JabRef-cachekey-0a9b33f3f54aff6df349afab5dcd9f03.js"></script>
+
+
+<title>Maschinelles Lernen: Symbolische Ansätze - WS 08/09 &mdash; </title>
+
+        
+    <link rel="canonical" href="mldm.html" />
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../../favicon.ico" />
+    <link rel="apple-touch-icon" href="../../../touch_icon.png" />
+
+
+
+
+
+
+    <link rel="search" href="http://www.ke.tu-darmstadt.de/@@search" title="Search this site" />
+
+
+
+        <!-- Disable IE6 image toolbar -->
+        <meta http-equiv="imagetoolbar" content="no" />
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+    
+
+  </head>
+
+  <body onload="setzeInitialeFontgroesse();" class="template-document_view portaltype-document site-Plone section-lehre subsection-archiv subsection-archiv-ws0809 subsection-archiv-ws0809-mldm userrole-anonymous" dir="ltr">
+    <div id="seiten_container">
+    <div id="visual-portal-wrapper">
+
+      <div id="header">
+        <a name="top"></a>
+        <div id="topnavigation">
+
+         
+   
+
+    
+        
+            <a href="http://www.ke.tu-darmstadt.de/login" class="visualIconPadding">
+               Log in
+            </a>
+        
+    
+
+
+</div>
+
+<p class="hiddenStructure">
+  <a accesskey="2" href="mldm.html#content">Skip to content.</a> |
+
+  <a accesskey="6" href="mldm.html#portal-globalnav">Skip to navigation</a>
+</p>
+
+<div id="portal-header">
+    <div id="portal-searchbox">
+    <form name="searDDchform" action="../../../search.html">
+
+        <label for="searchGadget" class="hiddenStructure">Search Site</label>
+        <div class="LSBox">
+        <input name="SearchableText" type="text" title="Search Site" class="inputLabel" id="searchGadget" />
+        <input class="searchButton" type="submit" value="»" />
+       <div class="LSResult" id="LSResult" style=""><div class="LSShadow" id="LSShadow"></div></div>
+        </div>
+    </form>
+</div>
+
+
+  <div id="hauptnavigation">
+    <ul>
+      
+        <li>
+          <a href="../../../index.html" class="" title="">Home</a> | 
+        </li>
+      
+      
+        <li>
+          <a href="../../../staff.html" class="" title="Knowledge Engineering Group Members and Jobs">Staff</a> | 
+        </li>
+      
+      
+        <li>
+          <a href="../../../jobs.html" class="" title="">Jobs</a> | 
+        </li>
+      
+      
+        <li>
+          <a href="../../../news.html" class="" title="Latest news from the Knowledge Engineering Group">News</a> | 
+        </li>
+      
+      
+        <li>
+          <a href="../../../termine.html" class="" title="Upcoming events from the Knowledge Engineering Group">Termine</a> | 
+        </li>
+      
+      
+        <li>
+          <a href="../../../publications.html" class="" title="">Publications</a> | 
+        </li>
+      
+      
+        <li>
+          <a href="../../../projects.html" class="" title="Projects with participation of our group">Projects</a> | 
+        </li>
+      
+      
+        <li>
+          <a href="../../../research.html" class="" title="">Research</a> | 
+        </li>
+      
+      
+        <li>
+          <a href="../../../resources.html" class="" title="Datasets, applications, tools and other resources publicly provided by the KE Group.">Resources</a> | 
+        </li>
+      
+      
+        <li>
+          <a href="../../../lehre.html" class="aktiv" title="Lehrveranstaltungen und studentische Arbeiten">Lehre</a> | 
+        </li>
+      
+      
+        <li>
+          <a href="mldm/lehre/arbeiten.html" class="" title="Link auf https://www.ke.tu-darmstadt.de/lehre/arbeiten">Thesis Topics</a> | 
+        </li>
+      
+      
+        <li>
+          <a href="http://www.informatik.tu-darmstadt.de" class="" title="Fachbereich Informatik, TU Darmstadt">FB20</a> | 
+        </li>
+      
+    </ul>
+  </div>    
+  <div class="clear"></div>
+
+
+
+
+</div>
+
+
+<div id="headerbild_container">	
+	<div id="logo">
+		<div id="bildschirm">
+			<a href="http://www.tu-darmstadt.de" title="Zur TU Darmstadt Startseite">
+                              <img src="../../../tu_darmstadt_web.png" alt="Logo der TU Darmstadt" />
+                        </a>
+		</div>	
+	</div>
+		<div id="headerbild"> <img src="../../../ke_site_header.jpg" alt="" /> </div>
+</div>
+
+
+<div id="portal-breadcrumbs">
+    <a href="../../../index.html">Home
+    </a>
+    
+      <span class="breadcrumbSeparator navi_pfeil">&raquo;</span>
+        
+            <a href="../../../lehre.html">Lehre</a>
+            
+         
+    
+    
+      <span class="breadcrumbSeparator navi_pfeil">&raquo;</span>
+        
+            <a href="../../archiv.html">Vergangene Semester</a>
+            
+         
+    
+    
+      <span class="breadcrumbSeparator navi_pfeil">&raquo;</span>
+        
+            <a href="../ws0809.html">WS 08/09</a>
+            
+         
+    
+    
+      <span class="breadcrumbSeparator navi_pfeil">&raquo;</span>
+        
+            
+            <span class="aktiv">Maschinelles Lernen: Symbolische Ansätze</span>
+         
+    
+
+</div>
+
+      </div>
+
+      <div id="portal-columns">
+            
+                
+                <div id="portal-column-one">
+                    
+                      
+<div class="portletWrapper" data-portlethash="706c6f6e652e6c656674636f6c756d6e0a636f6e746578740a2f506c6f6e650a6e617669676174696f6e" id="portletwrapper-706c6f6e652e6c656674636f6c756d6e0a636f6e746578740a2f506c6f6e650a6e617669676174696f6e">
+<div id="navigationsspalte" class="portlet portletNavigationTree">    
+    <dl style="margin-bottom:0em">
+    <dt class="portletHeader">
+    <!--<span class="portletHeader">-->
+    <span class="portletTopLeft"></span>
+        
+        <span class="portletTopRight"></span>
+   <!-- </span> -->
+    </dt>
+    </dl>
+    <ul>
+      
+            
+
+
+
+<li>
+
+    
+
+      
+
+        <a href="../../../staff.html" class=" ebene1" title="Knowledge Engineering Group Members and Jobs">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="../../../untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            Staff
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../../../jobs.html" class=" ebene1" title="">
+            
+
+            
+
+            
+           
+            Jobs
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../../../news.html" class=" ebene1" title="Latest news from the Knowledge Engineering Group">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="../../../untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            News
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../../../termine.html" class=" ebene1" title="Upcoming events from the Knowledge Engineering Group">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="../../../untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            Termine
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../../../publications.html" class=" ebene1" title="">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="../../../untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            Publications
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../../../projects.html" class=" ebene1" title="Projects with participation of our group">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="../../../untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            Projects
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../../../research.html" class=" ebene1" title="">
+            
+
+            
+
+            
+           
+            Research
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../../../resources.html" class=" ebene1" title="Datasets, applications, tools and other resources publicly provided by the KE Group.">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="../../../untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            Resources
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../../../lehre.html" class=" aktiv ebene1" title="Lehrveranstaltungen und studentische Arbeiten">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="../../../untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            Lehre
+        </a>
+        
+    
+
+    <ul>  
+        
+
+
+
+<li>
+
+    
+
+      
+
+        <a href="../../Klausuren.html" class=" ebene2" title="Im Rahmen jeder Vorlesung findet am Ende des Semesters eine schriftliche Klausur statt. Die folgenden Informationen gelten im wesentlichen für alle Klasuuren, die Sie bei der KE-Gruppe schreiben.">
+            
+
+            
+
+            
+           
+            Klausuren
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../../../theses.html" class=" ebene2" title="">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="../../../untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            Studentische Arbeiten
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../../oberseminar.html" class=" ebene2" title="">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="../../../untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            Oberseminar
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../../archiv.html" class=" aktiv ebene2" title="Archiv">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="../../../untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            Vergangene Semester
+        </a>
+        
+    
+
+    <ul>  
+        
+
+
+
+<li>
+
+    
+
+      
+
+        <a href="../ws-18-19.html" class=" ebene3" title="">
+            
+
+            
+
+            
+           
+            WS 18/19
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../ss18.html" class=" ebene3" title="Lehrangebot Sommersemester 2018">
+            
+
+            
+
+            
+           
+            SS 18
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../ws-17-18.html" class=" ebene3" title="Lehrangebot Wintersemester 2017/18">
+            
+
+            
+
+            
+           
+            WS 17/18
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../ss17.html" class=" ebene3" title="">
+            
+
+            
+
+            
+           
+            SS 17
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../ws-16-17.html" class=" ebene3" title="">
+            
+
+            
+
+            
+           
+            WS 16/17
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../ss16.html" class=" ebene3" title="Lehrangebot Sommersemester 2016">
+            
+
+            
+
+            
+           
+            SS 16
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../ws-15-16.html" class=" ebene3" title="">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="../../../untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            WS 15/16
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../ss15.html" class=" ebene3" title="Lehre Sommersemester 2015">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="../../../untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            SS 15
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../ws-14-15.html" class=" ebene3" title="Lehrangebot WS 2014/15 ">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="../../../untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            WS 14/15
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../ss14.html" class=" ebene3" title="Lehre Sommersemester 2014">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="../../../untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            SS 14
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../ws-13-14.html" class=" ebene3" title="WS 13/14">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="../../../untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            WS 13/14
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../ss13.html" class=" ebene3" title="Sommersemester 2013">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="../../../untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            SS 13
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../ws-12-13.html" class=" ebene3" title="WS 12/13">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="../../../untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            WS 12/13
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../ss12.html" class=" ebene3" title="">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="../../../untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            SS 12
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../ws-11-12.html" class=" ebene3" title="WS 11/12">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="../../../untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            WS 11/12
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../ss11.html" class=" ebene3" title="">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="../../../untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            SS 11
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../ws1011.html" class=" ebene3" title="Veranstaltungen im Wintersemester 2010/11">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="../../../untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            WS 10/11
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../ss10.html" class=" ebene3" title="Sommersemester 2010">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="../../../untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            SS 10
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../ws0910.html" class=" ebene3" title="">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="../../../untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            WS 09/10
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../ss09.html" class=" ebene3" title="">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="../../../untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            SS 09
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../ws0809.html" class=" aktiv ebene3" title="">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="../../../untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            WS 08/09
+        </a>
+        
+    
+
+    <ul>  
+        
+
+
+
+<li>
+
+    
+
+      
+
+        <a href="ml-sem.html" class=" ebene4" title="Seminar aus maschinellem Lernen">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="../../../untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            Seminar aus maschinellem Lernen
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="mldm.html" class=" aktiv ebene4" title="Einführung in maschinelles Lernen und Data Mining mit Schwerpunkt auf Lernen in logisch/symbolischen Repräsentationssprachen. ">
+            
+
+            <span class="navi_pfeil">
+                  &raquo;
+            </span>
+
+            
+           
+            Maschinelles Lernen: Symbolische Ansätze
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="http://www.ke.informatik.tu-darmstadt.de/ai1/" class=" ebene4" title="">
+            
+
+            
+
+            
+           
+            Allgemeine Informatik I
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+
+
+    </ul>
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../ss08.html" class=" ebene3" title="">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="../../../untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            SS 08
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../ws0708.html" class=" ebene3" title="">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="../../../untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            WS 07/08
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../ss07.html" class=" ebene3" title="">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="../../../untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            SS 07
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../ws0607.html" class=" ebene3" title="">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="../../../untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            WS 06/07
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../ss06.html" class=" ebene3" title="">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="../../../untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            SS 06
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../ws0506.html" class=" ebene3" title="">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="../../../untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            WS 05/06
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../ss05.html" class=" ebene3" title="">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="../../../untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            SS 05
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../ws0405.html" class=" ebene3" title="">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="../../../untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            WS 04/05
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../ss04.html" class=" ebene3" title="">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="../../../untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            SS 04
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../ws0304.html" class=" ebene3" title="">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="../../../untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            WS 03/04
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+
+
+    </ul>
+    
+</li>
+
+
+
+
+    </ul>
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="mldm/lehre/arbeiten.html" class=" ebene1" title="Link auf https://www.ke.tu-darmstadt.de/lehre/arbeiten">
+            
+
+            
+
+            
+           
+            Thesis Topics
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="http://www.informatik.tu-darmstadt.de" class=" ebene1" title="Fachbereich Informatik, TU Darmstadt">
+            
+
+            
+
+            
+           
+            FB20
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+
+
+        </ul>
+
+</div>
+
+</div>
+
+<div class="portletWrapper" data-portlethash="706c6f6e652e6c656674636f6c756d6e0a636f6e746578740a2f506c6f6e650a6e657773" id="portletwrapper-706c6f6e652e6c656674636f6c756d6e0a636f6e746578740a2f506c6f6e650a6e657773">
+<dl class="portlet portletNews">
+
+    <dt class="portletHeader">
+        <span class="portletTopLeft"></span>
+        <a href="../../../news.html" class="tile">News</a>
+        <span class="portletTopRight"></span>
+    </dt>
+
+    
+    <dd class="portletItem odd">
+
+        <a href="../../../news/thesis-dang.html" class="tile" title="">
+            
+            The­sis on adaptive driver assistance systems de­fend­ed 
+         </a>
+            <span class="portletItemDetails">Feb 21, 2020</span>
+
+    </dd>
+    
+    
+    <dd class="portletItem even">
+
+        <a href="../../../news/DS2019.html" class="tile" title="">
+            
+            Best paper award at Discovery Science 2019
+         </a>
+            <span class="portletItemDetails">Oct 28, 2019</span>
+
+    </dd>
+    
+    
+    <dd class="portletItem odd">
+
+        <a href="../../../news/leaving.html" class="tile" title="">
+            
+            Leaving
+         </a>
+            <span class="portletItemDetails">Sep 23, 2019</span>
+
+    </dd>
+    
+    
+    <dd class="portletItem even">
+
+        <a href="../../../news/eseg-in-tv.html" class="tile" title="">
+            
+            Our project ESEG in the TV news
+         </a>
+            <span class="portletItemDetails">Jan 14, 2019</span>
+
+    </dd>
+    
+    
+    <dd class="portletItem odd">
+
+        <a href="../../../news/student-bot-beats-crazyhouse-champion.html" class="tile" title="">
+            
+            Student Bot beats Crazyhouse World Champion
+         </a>
+            <span class="portletItemDetails">Dec 27, 2018</span>
+
+    </dd>
+    
+
+    <dd class="portletFooter">
+        <span class="portletBottomLeft"></span>
+        <a href="../../../news.html">
+          More news&hellip;
+        </a>
+        <span class="portletBottomRight"></span>
+    </dd>
+    
+</dl>
+
+</div>
+
+
+
+
+                    
+                    &nbsp;
+                </div>
+                
+            
+
+            
+            <div id="portal-column-content" class="hyphenate">
+
+              <div id="viewlet-above-content3"></div>
+	      <div class="eine_spalte">
+              
+                <div class="">
+
+                    
+
+                    <span id="contentTopLeft3"></span>
+                    <span id="contentTopRight3"></span>
+
+                    
+
+    <dl class="portalMessage info" id="kssPortalMessage" style="display:none">
+        <dt>Info</dt>
+        <dd></dd>
+    </dl>
+
+
+
+                    
+                    <div id="content">
+                      
+                      
+
+                        
+                            
+                            
+                                
+                                
+            
+                <h1 id="parent-fieldname-title" class="documentFirstHeading">
+                    Maschinelles Lernen: Symbolische Ansätze - WS 08/09
+                </h1>
+            
+            
+        
+                            
+                            
+
+
+                            
+                                
+                                
+            
+                <div id="parent-fieldname-description" class="documentDescription">
+                   Einführung in maschinelles Lernen und Data Mining mit Schwerpunkt auf Lernen in logisch/symbolischen Repräsentationssprachen. 
+                </div>
+            
+            
+        
+                            
+
+                            
+
+
+                            <div id="content-core">
+                                
+    
+        
+        <div class="" id="parent-fieldname-text-6ff078e1b48499c35cc0fef2ce9236b8">
+            <!-- use-template -->
+<div id="pagenav"><a href="mldm/index.html#news">Ankündigungen</a> | <a href="mldm/index.html#klausur">Klausur</a> | <a href="mldm/index.html#project">Projekt</a> | <a href="mldm/index.html#topics">Inhalt</a> | <a href="mldm/index.html#exercise">Übungen</a> | <a href="http://www.fachschaft.informatik.tu-darmstadt.de/forum/viewforum.php?f=225">Forum</a> | <a href="mldm/index.html#links">Materialien</a></div>
+<p id="veranstalter"><a href="http://www.ke.informatik.tu-darmstadt.de/%7Ejuffi/"> Prof. Dr. J. Fürnkranz</a></p>
+<p><a href="https://qis.pvw.tu-darmstadt.de/qisserver/rds?state=verpublish&amp;status=init&amp;vmfile=no&amp;publishid=32820&amp;moduleCall=webInfo&amp;publishConfFile=webInfo&amp;publishSubDir=veranstaltung"> Die Veranstaltung</a> im Vorlesungsverzeichnis.</p>
+<table id="timetable">
+<tbody>
+<tr>
+<th><br /></th> <th>Tag</th> <th>Zeit</th> <th>Raum</th> <th>Start</th>
+</tr>
+<tr>
+<th>Vorlesung</th>
+<td>Donnerstag</td>
+<td>09:50-11:30</td>
+<td>S202/C110</td>
+<td>16.10.</td>
+</tr>
+<tr>
+<th>Übung</th>
+<td>Dienstag</td>
+<td>09:50-11:30</td>
+<td>S202/C110</td>
+<td>21.10.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="news">Ankündigungen</h2>
+<p class="news">Die Ergebnisse der Klausur hängen nun an der KE-Pinwand aus.</p>
+<p class="news">Die Klausureinsicht findet am Di, 10.3.09 von 10 - 12 Uhr in Raum E302 statt.</p>
+<!--
+<p class="news">Die Klausur findet am 28.1.2008 von <b>20:00 - 22:00 Uhr</b> (die Zeiten auf den Seiten des <a href="http://www.informatik.tu-darmstadt.de/Dekanat/Lehre/Studium/Pr_uefungstermine_1im_1Haupt-_1und_1Masterstudium/Termine_Fruehjahr2008.html" mce_href="http://www.informatik.tu-darmstadt.de/Dekanat/Lehre/Studium/Pr_uefungstermine_1im_1Haupt-_1und_1Masterstudium/Termine_Fruehjahr2008.html">Pr&uuml;fungssekretariats</a> stimmen NICHT) im Raum S202|C205 statt.</p>
+<p class="news">Für die Klausur wird eine Anmeldung ben&ouml;tigt (<font color="red">auch, wenn Sie sich bereits im Sekretariat angemeldet haben</font>).  Bitte melden Sie sich bis sp&auml;testens <font color="red">23.01.2008</font> &uuml;ber das <a href="https://www.dekanat.informatik.tu-darmstadt.de/webreg/index.php?sessionid=&lva=20.174.1&semester=07W" mce_href="https://www.dekanat.informatik.tu-darmstadt.de/webreg/index.php?sessionid=&amp;lva=20.174.1&amp;semester=07W">WebReg-System</a> an. Au&szlig;erdem darf EIN beidseitig handbeschriebenes <font color="red">DIN A4 Blatt</font> verwendet werden.</p>
+-->  <!--
+<p class="news">Die <b>Ergebnisse</b> der Klausur im WS 07/08 h&auml;ngen ab sofort am Brett neben Raum E 304 aus und sind au&szlig;erdem &uuml;ber das <a href="https://www.dekanat.informatik.tu-darmstadt.de/webreg/index.php?sessionid=&lva=20.174.1&semester=07W" mce_href="https://www.dekanat.informatik.tu-darmstadt.de/webreg/index.php?sessionid=&amp;lva=20.174.1&amp;semester=07W">WebReg-System</a> einsehbar. Die <b>Klausureinsicht</b> findet am Freitag, den <b>7.3.08</b> von 10:00-11:00 Uhr in Raum E302 statt.</p>
+-->
+<h2 id="news"><a name="klausur"></a>Klausur</h2>
+<dt>Klausurtermin</dt> <dd> 16.2.09 von 15-18 Uhr (90 Minuten), Raum S202/C205 </dd> <!-- <span style="font-weight: bold;" mce_style="font-weight: bold;">Termin:</span> <dd><span style="font-weight: bold;" mce_style="font-weight: bold;">14.02.2007, Beginn: 10:00 Uhr, Dauer: 120 Minuten &nbsp;&nbsp;&nbsp;</span><br> </dd> <dt>Ort:</dt> <dd>Anfangsbuchstabe A - O in Raum S206/030 <br> --> <!--  <dt>Anmeldung:</dt> <dd> falls Sie sich nicht beim Zentralen Pr&uuml;fungssekretariat  Informatik anmelden mu&szlig;ten, melden Sie sich bitte <a   href="https://www.dekanat.informatik.tu-darmstadt.de/webreg/index.php?lva=20.174.1&amp;semester=05W"> hier</a> an. </dd> --> <dl> <dt>Erlaubte Unterlagen:</dt> <dd>Sie dürfen ein von Ihnen selbst doppelseitig handbeschriebenes Din A4-Blatt zur Klausur mitbringen. Alle anderen Unterlagen, insbesondere Elektronische Hilfsmittel (Taschenrechner, Handy, elektronisches Wörterbuch, etc.) sind <i>nicht</i> erlaubt.</dd> <dt>Alte Klausuren:</dt> <dd> 
+<ul>
+<li><a href="mldm/klausur-0304.pdf">WS 03/04</a></li>
+<li><a href="mldm/klausur-0405.pdf">WS 04/05</a></li>
+<li><a href="mldm/klausur-0506.pdf">WS 05/06</a> <a href="mldm/klausur-0506-muloe.pdf">(Musterlösung)</a> </li>
+<li><a href="mldm/klausur-0607.pdf">WS 06/07</a></li>
+</ul>
+</dd></dl>
+<h2 id="topics">Inhalt</h2>
+<p>Durch die Entwicklung der Informationstechnologie sind immer größere Datenmengen verfügbar. Diese enthalten oft implizites Wissen, das, wenn es bekannt wäre, große wirtschaftliche oder wissenschaftliche Bedeutung hätte. Data Mining ist ein Forschungsgebiet, das sich mit der Suche nach potentiell nützlichem Wissen in großen Datenmengen beschäftigt, und Maschinelles Lernverfahren gehören zu den Schlüsseltechnologien innerhalb dieses Gebiets.</p>
+<p>Die Vorlesung bietet eine Einführung in das Gebiet des Maschinellen Lernens unter dem besonderen Aspekt des Data Minings. Es werden Verfahren aus verschiedenen Paradigmen des Maschinellen Lernens mit exemplarischen Anwendungen vorgestellt. Um das Wissen zu operationalisieren, werden in den Übungen praktische Erfahrungen mit Lernalgorithmen gesammelt.</p>
+<ul>
+<li> <a href="mldm/organisatorisches.pdf">Organisatorisches</a></li>
+<li> <a href="mldm/introduction.pdf">Einführung</a> (Grundbegriffe, Lernprobleme, Konzepte, Beispiele, Repräsentation) </li>
+<li> Regel-Lernen 
+<ul>
+<li> <a href="mldm/single-rules.pdf">Lernen einzelner Regeln</a> (Generalisierung und Spezialisierung, Strukturierte Hypothesenräume, Version Spaces)</li>
+<li> <a href="mldm/rule-learning.pdf">Lernen von Regel-Mengen</a> (Covering Strategie, Evaluierungsmaße für Regeln, Pruning, Mehr-Klassenprobleme) (V1.1, 13.11.; ein paar neue Folien)</li>
+</ul>
+</li>
+<li><a href="mldm/evaluation.pdf">Evaluierung und kosten-sensitives Lernen</a> (Accuracy,X-Val,ROC-Kurven,Cost-Sensitive Learning)</li>
+<li><a href="mldm/ibl.pdf">Instanzenbasiertes Lernen</a> (Neue Folien)</li>
+<li> Entscheidungsbaum-Lernen (neue Folien) 
+<ul>
+<li><a href="mldm/dt.pdf">Entscheidungsbaum-Lernen</a> (ID3, C4.5, etc.) (V1.1, 14.01.; neue Folie zu C4.5 Pruning)</li>
+<!--
+<li><a href="dt-incremental.pdf" mce_href="dt-incremental.pdf">Inkrementelles Lernen &amp; Konzept-Drift</a></li>
+-->
+</ul>
+</li>
+<!--
+<li><a href="bayes.pdf" mce_href="bayes.pdf">Naive Bayes</a></li>
+-->
+<li> <a href="mldm/ensembles.pdf">Ensemble-Methoden</a> (Bagging, Boosting, Stacking) </li>
+<li> <a href="mldm/association-rules.pdf">Clustering und Lernen von Assoziationsregeln</a></li>
+<li> <a href="mldm/pre-processing.pdf">Pre-Processing</a> (Feature Subset Selection, Diskretisierung, Sampling)</li>
+<!--
+<li> <a href="rl.pdf" mce_href="rl.pdf">Clustering und Reinforcement Learning</a></li>
+<li> <a href="rl.pdf" mce_href="rl.pdf">Reinforcement Learning</a> (Q-learning, Game Playing)</li>
+<li> Neuronale Netze </li>
+<li> <a href="svm.pdf" mce_href="svm.pdf">Support Vector Machines </a> </li>
+<li> <a href="data-mining.pdf" mce_href="data-mining.pdf">Data Mining</a> (Proze&#129; odell) </li>
+<li> Lerntheorie (Lernszenarios, prinzipielle Lernbarkeitsergebnisse, Induktive Inferenz, PAC-Lernen) </li>
+<li> <a href="clustering.pdf" mce_href="clustering.pdf">Clustering</a> (k-means, aggl. hier. Clustering) </li>
+-->
+</ul>
+<h2 id="exercise">Übungen</h2>
+<p>In den Übungen erhalten Sie Aufgaben über den Vorlesungsstoff, oft alte Klausur-Aufgaben, die Sie selbst lösen sollen, und die dann in der folgenden Übungsstunde durchbesprochen werden.</p>
+<ol>
+<li>Übung, 28. 10. 08: <a href="mldm/uebungen/uebung-intro.pdf">Klassifikationsprobleme</a> <a href="mldm/uebungen/uebung-intro-muloe.pdf">(Musterlösung)</a></li>
+<li>Übung, 04. 11. 08: <a href="mldm/uebungen/uebung-single-rule.pdf">Hypothesenraum, Generalisierung</a> <a href="mldm/uebungen/uebung-single-rule-muloe.pdf">(Musterlösung)</a></li>
+<li>Übung, 11. 11. 08: <a href="mldm/uebungen/uebung-version-spaces.pdf">Version Spaces</a> <a href="mldm/uebungen/uebung-version-spaces-muloe.pdf"> (Musterlösung)</a></li>
+<li>Übung, 18. 11. 08: <a href="mldm/uebungen/uebung-rule-learning.pdf">Regellernen</a> <a href="mldm/uebungen/uebung-rule-learning-muloe.pdf"> (Musterlösung)</a></li>
+<li>Übung, 25. 11. 08: <a href="mldm/uebungen/uebung-rule-learning2.pdf">Regellernen 2</a> <a href="mldm/uebungen/uebung-rule-learning2-muloe.pdf"> (Musterlösung)</a></li>
+<li>Übung, 04. 12. 08: <a href="mldm/uebungen/uebung-evaluation.pdf">Evaluation</a> <a href="mldm/uebungen/uebung-evaluation-muloe.pdf"> (Musterlösung)</a></li>
+<li>Übung, 16. 12. 08: <a href="mldm/uebungen/uebung-evaluation2.pdf">Evaluation 2</a> <a href="mldm/uebungen/uebung-evaluation2-muloe.pdf"> (Musterlösung)</a></li>
+<li>Übung, 13. 01. 09: <a href="mldm/uebungen/uebung-trees.pdf">Bäume</a> <a href="mldm/uebungen/uebung-trees-muloe.pdf"> (Musterlösung - Update 2)</a></li>
+<li>Übung, 20. 01. 09: <a href="mldm/uebungen/uebung-trees2.pdf">Regressionsbäume (Update)</a> <a href="mldm/uebungen/uebung-trees2-muloe.pdf"> (Musterlösung - Update)</a></li>
+<li>Übung, 27. 01. 09: <a href="mldm/uebungen/uebung-ensembles.pdf">Ensemble-Methoden</a> <a href="mldm/uebungen/uebung-ensembles-muloe.pdf"> (Musterlösung - Update 2)</a></li>
+<li>Übung, 03. 02. 09: <a href="mldm/uebungen/uebung-ar.pdf">Assoziationsregeln</a> <a href="mldm/uebungen/uebung-ar-muloe.pdf"> (Musterlösung)</a></li>
+<li>Übung, 12. 02. 09: <a href="mldm/uebungen/uebung-preprocessing.pdf">Pre-Processing</a> <a href="mldm/uebungen/uebung-preprocessing-muloe.pdf"> (Musterlösung)</a></li>
+<!-- 	<a href="uebungen/introduction-muloe.pdf" mce_href="uebungen/introduction-muloe.pdf">(Musterl&ouml;sung)</a>
+<li>31. 10. 06: <a href="uebungen/uebung-single-rule.pdf" mce_href="uebungen/uebung-single-rule.pdf">Hypothesenraum, Generalisierung</a> <a href="uebungen/uebung-single-rule-muloe.pdf" mce_href="uebungen/uebung-single-rule-muloe.pdf">(Musterl&ouml;sung)</a></li>
+<li>07. 11. 06: <a href="uebungen/ue-version-spaces.pdf" mce_href="uebungen/ue-version-spaces.pdf">Version Spaces</a> <a href="uebungen/ue-version-spaces-muloe.pdf" mce_href="uebungen/ue-version-spaces-muloe.pdf">(Musterl&ouml;sung)</a></li>
+<li>14. 11. 06: <a href="uebungen/ue-rule-learning.pdf" mce_href="uebungen/ue-rule-learning.pdf">Rule Learning</a> <a href="uebungen/ue-rule-learning-muloe.pdf" mce_href="uebungen/ue-rule-learning-muloe.pdf">(Musterl&ouml;sung)</a></li>
+<li>21. 11. 06: <a href="uebungen/uebung-rule-learning2.pdf" mce_href="uebungen/uebung-rule-learning2.pdf">Rule Learning 2</a> <a href="uebungen/uebung-rule-learning2-muloe.pdf" mce_href="uebungen/uebung-rule-learning2-muloe.pdf">(Musterl&ouml;sung - Update)</a></li>
+<li>28. 11. 06: <a href="uebungen/uebung-dt.pdf" mce_href="uebungen/uebung-dt.pdf">Entscheidungsb&auml;ume </a><a href="uebungen/uebung-dt-muloe.pdf" mce_href="uebungen/uebung-dt-muloe.pdf">(Musterl&ouml;sung - Update)</a></li>
+<li>05. 12. 06: <a href="uebungen/uebung-dt2.pdf" mce_href="uebungen/uebung-dt2.pdf">Entscheidungsb&auml;ume 2</a> <a href="uebungen/uebung-dt2-muloe.pdf" mce_href="uebungen/uebung-dt2-muloe.pdf">(Musterl&ouml;sung - zweites Update)</a></li>
+<li>12. 12. 06: <a href="uebungen/uebung-incr.pdf" mce_href="uebungen/uebung-incr.pdf">Inkrementelles Lernen &amp; Konzept-Drift</a> <a href="uebungen/uebung-incr-muloe.pdf" mce_href="uebungen/uebung-incr-muloe.pdf">(Musterl&ouml;sung)</a></li>
+<li>19. 12. 06: <a href="uebungen/uebung-bayes.pdf" mce_href="uebungen/uebung-bayes.pdf">Naive Bayes</a> <a href="uebungen/uebung-bayes-muloe.pdf" mce_href="uebungen/uebung-bayes-muloe.pdf">(Musterl&ouml;sung - Update)</a></li>
+<li>16. 01. 07: <a href="uebungen/ue-evaluation.pdf" mce_href="uebungen/ue-evaluation.pdf">Evaluierung</a> <a href="uebungen/ue-evaluation-muloe.pdf" mce_href="uebungen/ue-evaluation-muloe.pdf">(Musterl&ouml;sung)</a></li>
+<li>23. 01. 07: <a href="uebungen/ue-preprocessing.pdf" mce_href="uebungen/ue-preprocessing.pdf">Pre-Processing</a> <a href="uebungen/ue-preprocessing-muloe.pdf" mce_href="uebungen/ue-preprocessing-muloe.pdf">(Musterl&ouml;sung - Update)</a></li>
+<li>02. 02. 06: <a href="uebungen/ue-ensembles.pdf" mce_href="uebungen/ue-ensembles.pdf">Ensemble Learning</a> <a href="uebungen/ue-ensembles-muloe.pdf" mce_href="uebungen/ue-ensembles-muloe.pdf">(Musterl&ouml;sung - Update)</a></li>
+<li>09. 02. 06: <a href="uebungen/ue-association-rules.pdf" mce_href="uebungen/ue-association-rules.pdf">Assoziationsregeln</a> <a href="uebungen/ue-ar-muloe.pdf" mce_href="uebungen/ue-ar-muloe.pdf">(Musterl&ouml;sung)</a></li>
+--></ol>
+<h2 id="project">Projekt</h2>
+<p>Das Projekt wird dieses Mal in einzelne Aufgaben aufgeteilt. Durch eine erfolgreiche Bearbeitung der Aufgaben bekommt man Klausurpunkte angerechnet, sofern die Klausur bestanden ist. Die genaue Aufteilung der Punkte wird im Laufe des Projektes bekannt gegeben. Maximal kann man sich nun um eine Note (3 Notenstufen) verbessern. Gegebenenfalls orientiert sich die Maximalpunktzahl pro Aufgabe an dem Umfang der Aufgabe.</p>
+<h4>Ablauf</h4>
+<p>Die Projektaufgaben werden immer Dienstags ausgegeben, sofern es zu der aktuellen Vorlesung eine Projektaufgabe gibt. Diese soll dann in Gruppen von bis zu 3 Personen bis zum nächsten Montag bearbeitet werden. Die Aufgaben sollen als Präsentation eingereicht werden, da jede Gruppe im Laufe der Veranstaltung ihre Lösung mit Hilfe des Beamers präsentieren sollte. Die Aufgaben sollten bis spätestens Montag Abend per eMail unter dieser <a href="mailto:ml-project08@ke.informatik.tu-darmstadt.de">Mailadresse</a></p>
+<p>eingereicht werden. Es sollte auf den abgegebenen Lösungen erkenntlich sein, welche Personen an dieser Abgabe beteiligt waren.</p>
+<p>Die Aufgaben sollen mit Hilfe der Data Mining Software <a href="http://www.cs.waikato.ac.nz/ml/weka/">Weka</a> bearbeitet werden.</p>
+<h4>Mailingliste</h4>
+<p>Auf die Mailingliste, über die neue Übungen und Projektaufgaben angekündigt werden, kann man sich <a href="../../../cgi-bin/mailman/listinfo/ml0809.html">hier</a> eintragen.</p>
+<h4>Aufgaben</h4>
+<ul>
+<li>25.11.08: <a href="mldm/projekt/projekt1.pdf">Aufgabe 1</a> </li>
+<li>04.12.08: <a href="mldm/projekt/projekt2.pdf">Aufgabe 2</a> <a href="mldm/projekt/datasets.zip">(benötigte Datensätze)</a></li>
+<li>16.12.08: <a href="mldm/projekt/projekt3.pdf">Aufgabe 3</a></li>
+<li>13.01.09: <a href="mldm/projekt/projekt4.pdf">Aufgabe 4</a> <a href="mldm/projekt/datasets-wm.zip">(benötigte Datensätze)</a></li>
+<li>20.01.09: <a href="mldm/projekt/projekt5.pdf">Aufgabe 5</a> <a href="mldm/projekt/datasets-regr.zip">(benötigte Datensätze)</a></li>
+<li>27.01.09: <a href="mldm/projekt/projekt6.pdf">Aufgabe 6</a> <a href="mldm/projekt/datasets.zip">(benötigte Datensätze)</a></li>
+<li>03.02.09: <a href="mldm/projekt/projekt7.pdf">Aufgabe 7</a> <a href="mldm/projekt/adult.arff.html">(benötigter Datensatz)</a></li>
+<li>12.02.09: <a href="mldm/projekt/projekt8.pdf">Aufgabe 8</a> <a href="mldm/projekt/datasets-preprocessing.zip">(benötigte Datensätze)</a></li>
+</ul>
+<!--
+<p>Zus&auml;tzlich erhalten Sie in der Mitte des Semesters eine praktische Aufgabe, die Sie mit Hilfe der Data Mining Software <a  href="http://www.cs.waikato.ac.nz/ml/weka/">Weka</a> bearbeiten sollen.</p>
+<p>Ein erfolgreiche Bearbeitung der Aufgaben f&uuml;hrt zu einer Notenverbesserung um eine Notenabstufung (0.3), allerdings nur bei bestandener Klausur.</p>
+--> <!--
+<p>Informationen zum Projekt finden Sie <a  href="projekt/projekt.pdf">hier</a>. Die Folien zum Projekt stehen nun   <a href="projekt/projekt-summary-0607.pdf" mce_href="projekt/projekt-summary-0607.pdf">hier</a> zum Download zur Verf&uuml;gung.</p>
+-->  <!--
+<p>Der <a href="#project" mce_href="#project">Wettbewerb</a> ist abgeschlossen. Es haben sich 36 Studenten in 22 Gruppen beteiligt und enorm viel Aufwand und Zeit investiert. Ganz vielen Dank an alle. <br> Wir haben die gelernten Modelle auf einem separaten Testset evaluiert und so die reale Genauigkeit abgesch&auml;tzt. Die Gewinner sind: <br> <b>1. Platz</b> (97,9% Genauigkeit): <b>Stefan Appel</b>, <b>Sandra Ebert</b>, <b>Nina Sandholm</b>, <b>Aleksander Velikov</b> und <b>Yanje Wu</b> <br> <b>2. Platz</b> (97,7% Genauigkeit): <b>Claus Brech</b>, <b>Simon Kulessa</b>, <b>Patrick Sona</b> und <b>Marc Weber</b> <br> <b> 3. Platz</b> (97,2% Genauigkeit): <b>Paul Arndt</b> <br> Ganz herzlichen Gl&uuml;ckwunsch!</p>
+-->  <!--
+<p>Das Machine Learning Tool WEKA ist auf den Rechnern der RBG   installiert. Zur Verwendung ist die Variable CLASSPATH um <span   class="code">/usr/local/lib/java/weka-3-4/weka.jar</span> zu   erg&auml;nzen. WEKA ben&ouml;tigt Java 1.4, welches im Pool z.B.   unter <span class="code">/opt/gnome/java/j2sdk1.4.2/bin/java</span> zu finden ist. Zum Starten des Explorers eignen sich folgende Zeilen:</p>
+<pre>
+  export CLASSPATH="/usr/local/lib/java/weka-3-4/weka.jar:$CLASSPATH"/opt/gnome/java/j2sdk1.4.2/bin/java weka.gui.explorer.Explorer</pre>
+<p>Die Experimenter GUI starten Sie mit:</p>
+<pre>
+  export CLASSPATH="/usr/local/lib/java/weka-3-4/weka.jar:$CLASSPATH"/opt/gnome/java/j2sdk1.4.2/bin/java weka.gui.experiment.Experimenter</pre>
+-->
+<p> </p>
+<h2 id="forum">Forum</h2>
+<p>Das Diskussionsforum zur Lehrveranstaltung finden Sie <a href="http://www.fachschaft.informatik.tu-darmstadt.de/forum/viewforum.php?f=225">hier</a>.</p>
+<h2 id="links">Materialien</h2>
+<h3>Literatur</h3>
+<p>Die folgenden beiden Lehrbücher behandeln einen Großteil des Stoffes:</p>
+<ul>
+<li>Tom Mitchell, <a href="http://www-2.cs.cmu.edu/%7Etom/mlbook.html">Machine Learning</a>, McGraw Hill 1997.</li>
+<li>Ian H. Witten, Eibe Frank, <a href="http://www.cs.waikato.ac.nz/%7Eml/weka/book.html">Data Mining: Practical Machine Learning Tools and Techniques with Java Implementations</a>, Morgan Kaufmann, 2nd edition 2005. (Die zweite Ausgabe ist um einiges umfangreicher als die erste).</li>
+</ul>
+<p>Während die Lehrbücher den Stoff im Großen und Ganzen behandeln, und in vielen Punkten auch noch tiefer gehen, werden in der Vorlesung zum Teil andere Schwerpunkte gesetzt. Als ergänzende Literatur empfehlen wir im Wesentlichen die folgenden Arbeiten (bitte auf Updates achten):</p>
+<ul>
+<li>Einführung 
+<ul>
+<li>Mitchell, ch. 1</li>
+<li>Witten &amp; Frank, ch. 1</li>
+</ul>
+</li>
+<li>Regel-Lernen 
+<ul>
+<li>Mitchell, ch.3, ch. 10</li>
+<li>Witten &amp; Frank, 3.3, 4.4, 6.2</li>
+<li> Johannes Fürnkranz and Peter Flach. <a href="http://www.cs.bris.ac.uk/%7Eflach/papers/furnkranz-flach-mlj.pdf">ROC 'n' rule learning -- towards a better understanding of covering algorithms.</a> <i>Machine Learning</i>, 58(1):39-77, 2005. </li>
+</ul>
+</li>
+<li>Entscheidungsbaum-Lernen 
+<ul>
+<li>Mitchell, ch.3</li>
+<li>Witten &amp; Frank, 3.2, 4.3, 6.1</li>
+<li>J. R. Quinlan. Induction of decision trees. Machine Learning, 1:81-106, 1986. </li>
+</ul>
+</li>
+<li>Inkrementelles Lernen 
+<ul>
+<li>Utgoff, P.E. <a href="http://www.cs.umass.edu/%7Eutgoff/papers/mlj-id5r.pdf">Incremental induction of decision trees.</a> <i>Machine Learning</i>, 4, 161-186, 1989.</li>
+</ul>
+</li>
+<li>Naive Bayes 
+<ul>
+<li>Mitchell, 6.1-6.9</li>
+<li>Witten &amp; Frank, 4.2</li>
+</ul>
+</li>
+<li>Instance-Based Learning 
+<ul>
+<li>Mitchell, 8.1, 8.2, 8.5, 8.6</li>
+<li>Witten &amp; Frank, 3.8, 4.7, 6.4</li>
+</ul>
+</li>
+<li>Evaluation and Cost-Sensitive Learning 
+<ul>
+<li>Witten &amp; Frank, 5.1-5.5, 5.7</li>
+<li>Tom Fawcett: <a href="http://www.csee.usf.edu/%7Ecandamo/site/papers/ROCintro.pdf"> An Introduction to ROC Analysis</a>, <i>Pattern Recognition Letters</i> 27(8): 861-874 (2006).</li>
+<li>Peter Flach: <a href="http://www.cs.bris.ac.uk/%7Eflach/ICML04tutorial/">The many faces of ROC analysis in machine learning</a>, Tutorial held at ICML-04.</li>
+<li>Charles Elkan: <a href="http://www-cse.ucsd.edu/users/elkan/rescale.pdf">The Foundations of Cost-Sensitive Learning</a>. In Proceedings of the 17th International Joint Conference on Artificial Intelligence (IJCAI-01), pp. 973-978.</li>
+</ul>
+</li>
+<li>Association Rules 
+<ul>
+<li> Witten &amp; Frank, 3.4, 4.5</li>
+<li> Bart Goethals. <a href="http://www.adrem.ua.ac.be/%7Egoethals/publications/survey.pdf">Survey on Frequent Pattern Mining</a>. Manuscript, 2003. </li>
+</ul>
+</li>
+<li>Ensemble Methods 
+<ul>
+<li> Thomas G. Dietterich. <a>Ensemble methods in machine learning.</a> In J. Kittler and F. Roli (Ed.) First International Workshop on Multiple Classifier Systems, Lecture Notes in Computer Science (pp. 1-15). New York: Springer Verlag. </li>
+<li><a href="http://www.cse.ucsd.edu/%7Eyfreund/adaboost/">Boosting animiert</a></li>
+</ul>
+</li>
+</ul>
+<p>Papers zu vielen Themen finden Sie oft auch mit <a href="http://citeseer.ist.psu.edu/cs">CiteSeer</a>, DER Suchmaschine für wissenschaftliche Texte der Informatik</p>
+<!--
+<h3>Data Mining Tutor</h3>
+<ul>
+<li><a href="http://neumann.dfki.uni-sb.de/damit/" mce_href="http://neumann.dfki.uni-sb.de/damit/">Das Tutor-System</a></li>
+<li> <a href="http://damit.dfki.de/" mce_href="http://damit.dfki.de/">Projekt-Homepage</a></li>
+</ul>
+-->
+<h3>Machine-Learning-Werkzeuge</h3>
+<ul>
+<li><a href="http://www.cs.waikato.ac.nz/ml/weka/">Weka</a></li>
+<li><a href="http://kirk.intellektik.informatik.tu-darmstadt.de/%7Equda"> QDA (Qualitative Data Analysis)</a></li>
+<li><a href="http://www.rapidminer.com"> Rapid Miner</a> (formerly YALE - Yet Another Learning Environment)</li>
+</ul>
+<h3>Beispiel-Datensätze</h3>
+<ul>
+<li><a href="http://www.cs.waikato.ac.nz/ml/weka/">Weka</a> stellt auch einige Datensätze bereit</li>
+<li><a href="http://www.ics.uci.edu/%7Emlearn/MLRepository.html">UCI Machine Learning Repository</a></li>
+</ul>
+<!--
+<h3>Demos</h3>
+<ul>
+<li><a href="http://www-anw.cs.umass.edu/rlr/" mce_href="http://www-anw.cs.umass.edu/rlr/">Reinforcement Learning Repository</a> mit vielen Demos zu diesem Thema. </li>
+</ul>
+-->
+<h3>Data Mining-Wettbewerbe</h3>
+<!-- Wenn Sie Interesse haben, am Data Mining Cup 2007 teilzunehmen, besuchen Sie das Praktikum aus Maschinellem Lernen im Sommersemester 2007! (voraussichtlicher Beginn bereits unmittelbar nach Ende der Vorlesung!!) --> 
+<ul>
+<li> <a href="http://www.data-mining-cup.de/">Data Mining-Cup</a> 
+<ul>
+<li><a href="http://www.data-mining-cup.com/2008/"> Data Mining-Cup 2008</a></li>
+<li><a href="http://www.data-mining-cup.com/2007/"> Data Mining-Cup 2007</a></li>
+<li><a href="http://www.data-mining-cup.com/2006/"> Data Mining-Cup 2006</a></li>
+<li><a href="http://www.data-mining-cup.com/2005/"> Data Mining-Cup 2005</a></li>
+<li><a href="http://www.data-mining-cup.com/2004/"> Data Mining-Cup 2004</a></li>
+<li><a href="http://www.dfki.de/%7Edamit/DMC2003/"> Data Mining-Cup 2003</a></li>
+<li><a href="http://www.dfki.de/%7Edamit/DMC2002/"> Data Mining-Cup 2002</a></li>
+<li><a href="http://www.dfki.de/%7Edamit/DMC2001/index.html">Data Mining-Cup 2001</a></li>
+<li><a href="http://www.dfki.de/%7Edamit/DMC2000/index.html">Data Mining-Cup 2000</a></li>
+</ul>
+</li>
+<li> <a href="http://www.kdnuggets.com/datasets/kddcup.html">KDD-Cup</a> 
+<ul>
+<li><a href="http://kdd05.lac.uic.edu/kddcup.html"> KDD-Cup 2005</a></li>
+<li><a href="http://kodiak.cs.cornell.edu/kddcup/"> KDD-Cup 2004</a></li>
+<li><a href="http://www.acm.org/sigkdd/kdd2003/kddcup.html">KDD-Cup 2003</a></li>
+<li><a href="http://www.biostat.wisc.edu/%7Ecraven/kddcup/">KDD-Cup 2002</a></li>
+<li><a href="http://www.cs.wisc.edu/%7Edpage/kddcup2001/">KDD-Cup 2001</a></li>
+<li><a href="http://www.ecn.purdue.edu/KDDCUP/"> KDD-Cup 2000</a></li>
+</ul>
+</li>
+</ul>
+            
+        </div>
+    
+    
+
+                            </div>
+                            
+
+
+
+    <div class="visualClear"><!-- --></div>
+
+    <div class="documentActions">
+        
+
+        
+
+    </div>
+
+
+                        
+
+                      
+                    </div>
+                    
+
+                    
+
+                    <span id="contentBottomLeft3"></span>
+                    <span id="contentBottomRight3"></span>
+
+                </div>
+              
+	      
+              <div id="viewlet-below-content">
+
+
+
+
+
+</div>
+
+            </div>
+            </div>
+            
+
+            
+                
+                <div id="portal-column-two">
+                  <div class="visualPadding">
+                    
+                      
+<div class="portletWrapper" data-portlethash="706c6f6e652e7269676874636f6c756d6e0a636f6e746578740a2f506c6f6e650a6b6f6e7461636b74" id="portletwrapper-706c6f6e652e7269676874636f6c756d6e0a636f6e746578740a2f506c6f6e650a6b6f6e7461636b74">
+<dl class="portlet portletStaticText portlet-static-kontakt">
+
+    <dt class="portletHeader">
+        <span class="portletTopLeft"></span>
+        <span>
+           Kontakt
+        </span>
+        <span class="portletTopRight"></span>
+    </dt>
+
+    <dd class="portletItem odd">
+        
+<dl class="portlet portletStaticText portlet-static-kontakt"><dd class="portletItem odd">
+<p><img src="../../../images/keicon.png" alt="small ke-icon" class="image-inline" title="keicon.png" /></p>
+<p>
+  Knowledge Engineering Group</p>
+<p>
+  <a class="external-link" href="http://www.informatik.tu-darmstadt.de">Fachbereich
+  Informatik</a><br />
+  <a class="external-link" href="http://www.tu-darmstadt.de">TU Darmstadt</a></p>
+<p>
+  <a href="../../../anfahrt.html">S2|02 D203<br />
+  Hochschulstrasse 10</a><br />
+  D-64289 Darmstadt</p>
+<p>
+  Sekretariat:<br />
+<img src="../../../images/telefon.png" alt="Telefon-Symbol" class="image-inline" title="telefon.png" />+49 6151 16-21811<br />
+
+  <img src="../../../images/fax.png" alt="Fax-Symbol" class="image-inline" title="fax.png" /> +49 6151 16-<span style="text-align: justify;">21812</span><br />
+
+  <img src="../../../images/email.png" alt="E-Mail-Symbol" class="image-inline" title="email.png" /> <a href="mailto:info@ke.tu-darmstadt.de">info@ke.tu-darmstadt.de</a></p>
+</dd></dl>
+
+        
+            <span class="portletBottomLeft"></span>
+            <span class="portletBottomRight"></span>
+        
+    </dd>
+    
+    
+
+</dl>
+</div>
+
+<div class="portletWrapper" data-portlethash="706c6f6e652e7269676874636f6c756d6e0a636f6e746578740a2f506c6f6e650a6b652d7075626c69632d6b616c656e646572" id="portletwrapper-706c6f6e652e7269676874636f6c756d6e0a636f6e746578740a2f506c6f6e650a6b652d7075626c69632d6b616c656e646572">
+<dl class="portlet portletStaticText portlet-static-ke-public-kalender">
+
+    <dt class="portletHeader">
+        <span class="portletTopLeft"></span>
+        <span>
+           KE Public Kalender
+        </span>
+        <span class="portletTopRight"></span>
+    </dt>
+
+    <dd class="portletItem odd">
+        <a href="../../../termine.html" class="external-link">Click here to see upcoming appointments.</a>
+<p>&nbsp;</p>
+
+        
+            <span class="portletBottomLeft"></span>
+            <span class="portletBottomRight"></span>
+        
+    </dd>
+    
+    
+
+</dl>
+</div>
+
+
+
+
+                    
+                    &nbsp;
+                  </div>
+                </div>
+                
+            
+          </div>
+      
+
+      <div class="visualClear" id="clear-space-before-footer"><!-- --></div>
+
+    </div>
+   </div>
+<div id="kss-spinner"><img alt="" src="http://www.ke.tu-darmstadt.de/spinner.png" /></div>
+<div id="fussbereich_container">
+<div id="schatten_unten"></div>
+
+<div id="fussbereich">
+<a id="schrift_kleiner" href="javascript:fontsize('dekrement')" title="Schrift verkleinern">A</a>
+<a id="schrift_normal" href="javascript:fontsize('reset')" title="Schriftgröße zurücksetzen">A</a>
+<a id="schrift_groesser" href="javascript:fontsize('inkrement')" title="Schrift vergrößern">A</a> |
+<a href="javascript:this.print()"><img src="../../../drucken1.png" alt="" /> Drucken</a>
+| <a accesskey="8" title="Alt(+Shift)+8" href="../../../impressum.html"><img src="../../../impressum.png" alt="" /> Impressum</a>
+| <a accesskey="3" title="Alt(+Shift)+3" href="../../../sitemap.html"><img src="../../../sitemap2.png" alt="" /> Sitemap</a>
+| <a href="../../../search.html"><img src="../../../suche.png" alt="" /> Suche</a>
+| <a href="http://www.ke.tu-darmstadt.de/m/">Mobile Version</a>
+</div><!-- fussbereich -->
+<div id="nach_oben"><div class="nach_oben"><a href="mldm/index.html#top" title="zum Seitenanfang"><img id="png" src="../../../zum_seitenanfang.png" alt="zum Seitenanfang" /><img id="gif" src="../../../zum_seitenanfang_ie6.gif" alt="zum Seitenanfang" /></a></div></div><!-- nach_oben -->
+</div><!-- fussbereich_container -->
+</body>
+</html>
+
+

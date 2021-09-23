@@ -1,0 +1,391 @@
+<!doctype html>  
+
+<!--[if lt IE 7]><html lang="en-US" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html lang="en-US" class="no-js lt-ie9 lt-ie8"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html lang="en-US" class="no-js lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en-US" class="no-js"><!--<![endif]-->
+	
+	<head>
+		<meta charset="utf-8">
+		
+		<title>ECML/PKDD-13 WS on Reinforcement Learning from Generalized Feedback: Beyond Numeric Rewards</title>
+		
+		<!-- Google Chrome Frame for IE -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		
+		<!-- mobile meta (hooray!) -->
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		
+		<!-- icons & favicons (for more: http://themble.com/support/adding-icons-favicons/) -->
+		<link rel="shortcut icon" type="image/x-icon" href="http://www.ecmlpkdd2013.org/wp-content/themes/ecmlpkdd/library/images/ikona16.ico">
+
+		<!-- For third-generation iPad with high-resolution Retina display: -->
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://www.ecmlpkdd2013.org/wp-content/themes/ecmlpkdd/library/images/ikona144.png">
+		<!-- For iPhone with high-resolution Retina display: -->
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://www.ecmlpkdd2013.org/wp-content/themes/ecmlpkdd/library/images/ikona114.png">
+		<!-- For first- and second-generation iPad: -->
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://www.ecmlpkdd2013.org/wp-content/themes/ecmlpkdd/library/images/ikona72.png">
+		<!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+		<link rel="apple-touch-icon-precomposed" href="http://www.ecmlpkdd2013.org/wp-content/themes/ecmlpkdd/library/images/ikona144.png">
+
+		<link rel="pingback" href="http://www.ecmlpkdd2013.org/xmlrpc.php">
+		
+		<!-- wordpress head functions -->
+		<link rel="alternate" type="application/rss+xml" title="ECML/PKDD 2013 &raquo; Feed" href="http://www.ecmlpkdd2013.org/feed/" />
+<link rel="alternate" type="application/rss+xml" title="ECML/PKDD 2013 &raquo; Comments Feed" href="http://www.ecmlpkdd2013.org/comments/feed/" />
+<link rel='stylesheet' id='bones-stylesheet-css'  href='http://www.ecmlpkdd2013.org/wp-content/themes/ecmlpkdd/library/css/style.css' type='text/css' media='all' />
+<!--[if lte IE 9]>
+<link rel='stylesheet' id='bones-ie-only-css'  href='http://www.ecmlpkdd2013.org/wp-content/themes/ecmlpkdd/library/css/ie.css' type='text/css' media='all' />
+<![endif]-->
+<script type='text/javascript' src='http://www.ecmlpkdd2013.org/wp-content/themes/ecmlpkdd/library/js/libs/modernizr.custom.min.js'></script>
+<script type='text/javascript' src='http://www.ecmlpkdd2013.org/wp-includes/js/jquery/jquery.js'></script>
+<script type='text/javascript' src='http://www.ecmlpkdd2013.org/wp-content/plugins/google-analyticator/external-tracking.min.js'></script>
+<link rel='canonical' href='http://www.ecmlpkdd2013.org/' />
+<!-- Google Analytics Tracking by Google Analyticator 6.4.3: http://www.videousermanuals.com/google-analyticator/ -->
+<script type="text/javascript">
+	var analyticsFileTypes = ['pdf'];
+	var analyticsEventTracking = 'enabled';
+</script>
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-33026482-1']);
+        _gaq.push(['_addDevId', 'i9k95']); // Google Analyticator App ID with Google 
+        
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+		<!-- end of wordpress head -->
+			
+		<!-- drop Google Analytics Here -->
+		<!-- end analytics -->
+		
+	</head>
+	
+	<body class="home page page-id-2 page-template-default">
+	
+		<div id="container">
+			
+			<header class="header" role="banner">
+
+				<div id="inner-header" class="wrap clearfix">
+					<div id="logo" class="h1"><a href="http://www.ecmlpkdd2013.org" rel="nofollow">
+						<div class="title">ECML PKDD</div>
+						<div class="details">
+							<div class="venue">Prague</div>
+							<div class="date">23-27 September</div>
+							<div class="year">2013</div>
+						</div>
+					</a></div>
+
+					<div class="images five">
+						<div class="box first"></div>
+						<div class="box second"></div>
+						<div class="box third"></div> 
+						<div class="box fourth"></div>
+					</div>
+					
+					<!-- if you'd like to use the site description you can un-comment it below -->
+										
+				</div> <!-- end #inner-header -->
+			
+				<div class="description wrap"><div class='smart-line'><div class='smart-line'>European Conference on</div> <div class='smart-line'>Machine Learning and</div></div> <div class='smart-line'><div class='smart-line'>Principles and Practice of</div> <div class='smart-line'>Knowledge Discovery in Databases</div></div></div>
+				
+			</header> <!-- end header -->
+			
+			<div id="content">
+			
+				<div id="inner-content" class="wrap clearfix">
+			
+				    <div id="main" class="eightcol first clearfix" role="main">
+
+					    					
+					    <article id="post-2" class="post-2 page type-page status-publish hentry clearfix" role="article" itemscope itemtype="http://schema.org/BlogPosting">
+						
+						    <header class="article-header">
+							
+							    <h1 class="page-title" itemprop="headline"></h1>
+							
+							    <p class="byline vcard">Posted <time class="updated" datetime="2013-04-08" pubdate>April 8th, 2013</time> by <span class="author"><a href="../../staff/juffi.html" title="Johannes Fürnkranz" rel="author">Johannes Fürnkranz</a></span>.</p>
+						
+						    </header> <!-- end article header -->
+					
+						    <section class="entry-content clearfix" itemprop="articleBody">
+
+<center>
+<h1>Reinforcement Learning with Generalized
+Feedback: Beyond Numeric Rewards
+</h1>
+</center>
+
+<p>
+This <b>workshop</b> will be held on <b>Monday, September 23rd 2013</b>, as part of the <a href="http://www.ecmlpkdd2013.org/">ECML/PKDD 2013</a> conference.
+</p>
+<p>
+Please note that the submission deadline has been extended to <b>July 5th, 2013!</b>
+</p>
+<h2><a name="background"></a>Background</h2>
+
+<h3><a name="motivation"></a>Motivation</h3>
+<p>
+Reinforcement learning
+is traditionally formalized  within the <em>Markov Decision Process</em> (MDP) framework: By taking
+actions in a stochastic and possibly unknown environment, an agent moves between states in this environment; moreover, after each action, it receives a
+numeric, possibly delayed reward signal. The agent's learning task then consists of developing a strategy
+that allows it to act optimally, that is, to devise a policy (mapping states to actions) that maximizes its long-term (cumulative) reward.
+</p>
+
+<p>
+In recent years, different generalizations of the standard setting of reinforcement learning have emerged; in particular, several attempts have been made to relax the quite restrictive requirement for numeric feedback and to learn from different types of more flexible training information. Examples of generalized settings of that kind include 
+</p>
+
+<dl>
+<dt>Learning from Expert Demonstration:</dt>
+<dd>The training information consists of the action traces of an expert demonstrating the task, and the learner is supposed to devise a policy so as to imitate the
+  expert. A specific instantiation of this setting is <em>apprenticeship learning</em>, which can be realized, for example, through <em>inverse reinforcement learning}</em>.
+</dd>
+
+<dt>Learning from Qualitative Feedback:</dt> 
+<dd>In this setting, the agent
+  is not (necessarily) provided with a numeric reward signal.
+  Instead, it is
+  supposed to learn from more general
+  types of feedback, such as ordinal rewards \cite{Weng11}
+  or qualitative comparisons between trajectories or policies, like in <em>preference-based reinforcement learning</em>.
+</dd>
+
+<dt>Learning from Multiple Feedback Signals:</dt>
+<dd> Here, feedback is
+  provided in the form of multiple, possibly conflicting reward
+  signals. The task of <em>multi-objective reinforcement learning</em>
+  is to learn a policy that optimizes all of them at the same time, or
+  at least finds a good compromise solution.
+</dd>
+</dl>
+
+<p>
+Learning in generalized frameworks like those mentioned above can be considerably harder than learning
+in MDPs. In qualitative settings, for example, where rewards cannot be easily aggregated over different states, policy evaluation becomes a non-trivial task.
+Many approaches assume a <em>hidden</em> numeric reward function and interpret qualitative feedback as indirect or implicit information about that function. This assumption is already quite restrictive, however, and immediately imposes a total order on trajectories, which is not very natural in the settings of preference-based and multi-objective reinforcement learning. Purely qualitative approaches, on the other hand, completely give up the assumption of an underlying numeric reward function. This makes them more general but comes with a loss of properties that are crucial for standard reinforcement learning techniques (such as policy and value iteration). 
+</p>
+
+<p>
+The above extensions and variants of reinforcement learning are closely connected and largely intersecting with <em>preference learning</em>, a new subfield of machine learning that deals with the learning of (predictive) preference models from observed/revealed or automatically extracted preference information. For example, inverse reinforcement learning and apprenticeship learning can be seen as a specific type of preference learning in dynamic environments. Likewise, preference-based and multi-objective reinforcement learning make use of generalized formalisms for representing preferences as well as learning techniques from the field of preference learning and <em>learning-to-rank</em>. 
+</p>
+
+
+<h3><a name="goals"></a>Goals and Objectives</h3>
+
+<p>
+The 
+most important goal of this workshop is to help in 
+unifying and streamlining research on 
+generalizations of standard reinforcement learning, which, for the time being, seem to be pursued in a rather disconnected manner.
+Indeed, many of the extensions and generalizations discussed above are still lacking a sound theoretical foundation, let alone a generally accepted underlying framework comparable to Markov Decision Processes for conventional reinforcement learning. Besides, many of the commonalities shared by these generalizations have apparently not been recognized or explored so far. 
+A formalization in terms of preferences may provide such a theoretical underpinning.
+Ideally, the workshop will help the participants to identify some common ground of their work, thereby helping the field move toward a theoretical foundation of reinforcement learning with generalized feedback.  
+</p>
+
+<p>
+Apart from fostering theoretical developments of that kind, we are also interested in identifying and exchanging interesting applications and problems that may serve as benchmarks for qualitative or preference-based reinforcement learning (such as cart-pole balancing or the mountain car for classical reinforcement learning).  
+</p>
+
+<h3><a name="topics"></a>Topics of Interest</h3>
+Topics of interest include but are not limited to
+<ul>
+<li>novel frameworks for reinforcement learning beyond MDPs</li>
+<li>algorithms for learning from preferences and non-numeric, qualitative, or
+  structured feedback</li>
+<li>theoretical results on the learnability of optimal policies, convergence of algorithms in qualitative settings, etc.</li>
+<li>applications and benchmark problems for reinforcement learning in non-standard settings.
+</li>
+</ul>
+
+<h2><a name="submissions"></a>Program</h2>
+
+<h3>9:30  - 10:30 Session 1</h3>
+
+<table>
+<tr><td WIDTH=125>9:30 - 9:40</td><td>Eyke H&uuml;llermeier, Johannes F&uuml;rnkranz: Opening Remarks</td><tr>
+<tr><td WIDTH=125>9:40 - 10:30</td><td>Invited Talk by Michele Sebag</td>
+		</table>
+
+<h3>10:30 - 11:00 Coffee break</h3>
+
+<h3>11:00 - 12:40 Session 2: Interactive Reinforcement Learning</h3>
+
+<table CELLSPACING=2>
+<tr><td WIDTH=125>11:00 - 11:25</td><td> L. Adrian Leon, Ana C. Tenorio, Eduardo F. Morales: <a href="papers/04-Morales.pdf">Human Interaction for Effective                        Reinforcement Learning</a></td></tr>
+<tr><td WIDTH=125>11:25 - 11:50</td><td> Riad Akrour, Marc Schoenauer, and Michele Sebag: <a href="papers/01-Akrour.pdf">Interactive Robot Education</a></td></tr>
+<tr><td WIDTH=125>11:50 - 12:15</td><td> Paul Weng, Robert Busa-Fekete and Eyke H&uuml;llermeier: <a href="papers/09-Weng.pdf">Interactive Q-Learning with Ordinal                       Rewards and Unreliable Tutor</a></td></tr>
+<tr><td WIDTH=125>12:15 - 12:40</td><td> Omar Zia Khan, Pascal Poupart, and John Mark Agosta: <a href="papers/06-ZhiaKhan.pdf">Iterative Model Refinement of                        Recommender MDPs based on Expert Feedback</a></td></tr>
+</table>
+
+<h3>12:40 - 14:00 Lunch break</h3>
+
+<h3>14:00 - 15:30 Session 3: RL with Non-numerical Feedback</h3>
+
+<table>
+<tr><td WIDTH=125>14:00 - 14:25</td><td> Christian Wirth, Johannes F&uuml;rnkranz: <a href="papers/10-Wirth.pdf">Preference-Based Reinforcement Learning                A Preliminary Survey</a></td></tr>
+<tr><td WIDTH=125>14:25 - 14:50</td><td> Robert Busa-Fekete, Balazs Szörenyi, Paul Weng, Weiwei Cheng and Eyke H&uuml;llermeier:                       <a href="papers/08-BusaFekete.pdf">Preference-based Evolutionary Direct Policy Search</a></td></tr>
+<tr><td WIDTH=125>14:50 - 15:15</td><td> Daniel Bengs, Ulf Brefeld: <a href="papers/03-Bengs.pdf">A Learning Agent for Parameter Estimation in Speeded Tests</a></td></tr>
+<tr><td WIDTH=125>15.15 - 15.30</td><td>      Discussion</td></tr>
+</table>
+
+<h3>15:30 - 16:00 Coffee break</h3>
+
+<h3>16:00 - 17:15 Session 4: Inverse RL and Multi-Dimensional Feedback</h3>
+
+<table>
+<tr><td WIDTH=125>16:00 - 16:25</td><td> Hideki Asoh, Masanori Shiro, Shotaro Akaho, Toshihiro Kamishima,Koiti Hasida, Eiji                       Aramaki, and Takahide Kohro: <a href="papers/02-Asoh.pdf">Applying Inverse Reinforcement Learning to Medical                     Records of Diabetes</a></td></tr>
+<tr><td WIDTH=125>16:25 - 16:50</td><td> Mohamed Oubbati, Timo Oess, Christian Fischer, and G&uuml;nther Palm: <a href="papers/07-Oubbati.pdf">Multiobjective Reinforcement Learning Using Adaptive Dynamic Programming And Reservoir Computing</a></td></tr>
+<tr><td WIDTH=125>16:50 - 17:15</td><td> Petar Kormushev, Darwin G. Caldwell: <a href="papers/05-Kormushev.pdf">Comparative Evaluation of Reinforcement Learning                       with Scalar Rewards and Linear Regression with Multidimensional Feedback</a></td></tr>
+<tr><td WIDTH=125>17:15 - 17.30</td><td> Discussion</td></tr>
+</table>
+
+<!--
+<h2><a name="submissions"></a>Submissions</h2>
+
+<p>Please e-mail submissions in Springer LNCS format to both workshop chairs.
+There is no strict page limit, but we encourage authors to stay within 
+the page limits of the main conference (16 pages). We particularly
+encourage short papers (8 pages or less).
+</p>
+
+<p>Should there be a high turnout in papers with high quality, we will
+also consider a post-workshop publication, such as a special issue or
+a book. However, the key motivation for this workshop is not to
+attract high-quality papers, but to provide a forum of exchange for
+researchers that work on similar problems.
+</p>
+
+<h3><a name="format"></a>Workshop Format</h3>
+
+<p>
+The final format of the workshop will of
+course depend on the number of participants, but ideally we plan to
+have around 10 full presentations, with ample time for discussion.
+</p>
+
+<p>
+In order to facilitate discussions in-between (which we believe are of uttermost
+importance for a workshop), we are considering special measures, such
+as nominating "discussants" for each paper, i.e., persons
+different from the authors who have carefully read the paper and
+prepared a few questions.
+</p>
+
+<h3><a name="dates"></a>Important Dates</h3>
+
+<table>
+    <tr><td>Paper deadline:</td><td><b>July 5, 2013</b></td></tr>
+    <tr><td>Notifications:</td><td><em>July 19, 2013</em></td></tr>
+    <tr><td>Final versions:</td><td><em>August 2, 2013</em></td></tr>
+    <tr><td>Workshop date:</td><td><em>September 23, 2013</em></td></tr>
+</table>
+-->
+
+<h2><a name="organization"></a>Organization</h2>
+
+<h3><a name="chairs"></a>Workshop Chairs</h3>
+
+<ul>
+<li><a href="mailto:juffi@ke.informatik.tu-darmstadt.de">Johannes F&uuml;rnkranz </a>(TU Darmstadt) </li>
+<li><a href="mailto:eyke@mathematik.uni-marburg.de">Eyke H&uuml;llermeier</a> (Universit&auml;t Marburg)
+		  </ul>
+
+<h3><a name="pc"></a>Programme Committee</h3>
+
+<ul>
+<li>Riad Akrour, INRIA Saclay</li>
+<li>Robert Busa-Fekete, University Marburg</li>
+<li>Damien Ernst, University of Li&eacute;ge</li>
+<li>Raphael Fonteneau, INRIA Lille</li>
+<li>Levente Kocsis, Hungarian Academy of Sciences</li>
+<li>Francis Maes, K.U. Leuven</li>
+<li>Jan Peters, TU Darmstadt</li>
+<li>Constantin Rothkopf, Frankfurt Institute for Advanced Studies</li>
+<li>Csaba Szepesv&agrave;ri, University of Alberta</li>
+<li>Christian Wirth, TU Darmstadt</li>
+<li>Paul Weng, Universit&eacute; Pierre et Marie Curie, Paris</li>
+<li>Bruno Zanuttini, Universit&eacute; de Caen</li>
+</ul>
+
+<!-------------------------------------------------------------->
+
+
+							</section> <!-- end article section -->
+						
+						    <footer class="article-footer">
+			
+							    							
+						    </footer> <!-- end article footer -->
+						    
+						    
+<!-- You can start editing here. -->
+
+
+		
+	<!-- If comments are closed. -->
+	<p class="nocomments">Comments are closed.</p>
+
+	
+
+
+					
+					    </article> <!-- end article -->
+					
+					    			
+    				</div> <!-- end #main -->
+    
+				    				<div id="sidebar1" class="sidebar threecol last clearfix" role="complementary">
+
+					
+<div class="widget widget_nav_menu"><h4 class="widgettitle">Background</h4><div class="menu-info-container"><ul id="menu-info" class="menu">
+<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="index.html#motivation">Motivation</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="index.html#goals">Goals and Objectives</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="index.html#topics">Topics of Interest</a></li>
+</ul></div></div>
+
+<div class="widget widget_nav_menu"><h4 class="widgettitle">Program</h4><div class="menu-submission-container"><ul id="menu-submission" class="menu">
+<!--<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="#format">Format</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="#dates">Important Dates</a></li>-->
+</ul></div></div>
+
+<div class="widget widget_nav_menu"><h4 class="widgettitle">Organization</h4><div class="menu-submission-container"><ul id="menu-submission" class="menu">
+<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="index.html#chairs">Workshop Chairs</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="index.html#pc">Programme Committee</a></li>
+</ul></div></div>
+					
+				</div>				    
+				</div> <!-- end #inner-content -->
+    
+			</div> <!-- end #content -->
+
+			<footer class="footer wrap" role="contentinfo">
+			
+				<div id="inner-footer" class="clearfix">
+					
+					<nav role="navigation">
+    						                </nav>
+	                		
+					<p class="source-org copyright">&copy; 2013 ECML/PKDD 2013.</p>
+				
+				</div> <!-- end #inner-footer -->
+				
+			</footer> <!-- end footer -->
+		
+		</div> <!-- end #container -->
+		
+		<!-- all js scripts are loaded in library/bones.php -->
+		<script type='text/javascript' src='http://www.ecmlpkdd2013.org/wp-content/themes/ecmlpkdd/library/js/scripts.js'></script>
+
+	</body>
+
+</html> <!-- end page. what a ride! -->

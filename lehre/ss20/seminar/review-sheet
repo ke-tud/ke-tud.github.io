@@ -1,0 +1,96 @@
+Review Sheet
+============
+Please address the following questions/tasks. Please be concise. Most questions can/should be answered with a few (about 2-4) sentences. Please provide proper references in the 'References' section in case you want to refer to other publications. Some questions might be difficult to answer, for example, because the paper is not clear or requires extensive background knowledge. In this case, you can indicate in your answer that you are not confident. Some questions might overlap, depending on the paper. In this case, feel free to reuse phrases. Reusing specific (e.g. technical) terms or expressions multiple times is perfectly okay.
+
+
+Some Background Information on Reviewing
+========================================
+Scientific conferences and journals use a process called peer-reviewing to assess the quality of scientific manuscripts that have been submitted for publication. During this process, other scientists read the manuscript and create reviews. The reviews contain a recommendation on whether the manuscript should be accepted for publication and a justification for the recommendation. The decision of whether a manuscript will be published is made by yet another person who is usually a more experienced scientist. Since this person has to make decisions for many manuscripts, he/she cannot read all the manuscripts. Instead, this person only reads the reviews and makes a decision based on the content in the reviews.
+
+In the seminar, you play the role of a reviewer and we play the role of the person who needs to read the reviews to make a decision. Hence, the review is supposed to inform us sufficiently well such that we are able to get a good idea of what the paper is about and are able to make a decision without reading the paper. This means for you that you can assume that the audience of the review is an experienced scientist who knows a lot about the topic of the paper and relevant prior works but does not know the content of the manuscript itself. Hence, the review should not explain basic machine learning terms. Instead, it should be very specific to the paper. However, using simpler terms is not bad and it might be necessary to condense the information you want to express in the review sufficiently.
+
+We did not include the part in which you make a recommendation since many of the papers that we discuss in the seminar have already been published and are assumed to be rather good. However, please keep in mind that basically no paper is without weak spots. Your task as a reviewer is also to find weak spots in overall good papers. Furthermore, it is difficult to make a reasonable recommendation without having a good idea about the expected level of quality. We hope that you learn to critically assess the content of a paper also without giving an overall recommendation.
+
+
+Question/Tasks
+==============
+
+Question/Task 1: Paper Summary
+Please provide a short (about 2-4 sentences) summary of the paper.
+
+Answer:
+YOUR ANSWER HERE
+
+
+Question/Task 2: Section Summaries
+Please provide a short summary of each section. Each section summary can be a short paragraph (about 2-4 sentences).
+
+Answer:
+YOUR ANSWER HERE
+
+
+Question/Task 3: Addressed Question/Problem
+Please state the question/problem addressed by the paper.
+
+Answer:
+YOUR ANSWER HERE
+
+
+Question/Task 4: Question/Problem Relevance
+Please explain why the addressed question/problem is relevant/interesting.
+
+Answer:
+YOUR ANSWER HERE
+
+
+Question/Task 5: Key Hypothesis/Idea
+Please explain the paper's hypothesis/idea. What are the claims that the paper makes?
+
+Answer:
+YOUR ANSWER HERE
+
+
+Question/Task 6: Novelty/Unique Selling Point
+How is the idea / this work different from prior/related works?
+
+Answer:
+YOUR ANSWER HERE
+
+
+Question/Task 7: Experimental setup
+Please explain the experiments. What is evaluated? How are claims evaluated? You can describe each experiment in a short paragraph.
+
+Answer:
+YOUR ANSWER HERE
+
+
+Question/Task 8: Validity of experimental setup
+Are the experiments reasonable? I.e. do they provide insights about the hypothesis/idea? Could the paper conduct simpler experiments to test the hypothesis/idea? Are experiments missing?
+
+Answer:
+YOUR ANSWER HERE
+
+
+Question/Task 9: Experiment Output
+What is the outcome of the experiments? Do the experiments validate the claims?
+
+Answer:
+YOUR ANSWER HERE
+
+
+Question/Task 10: Scientific Contribution
+What is the scientific contribution of the paper? I.e. What can an expert in the area learn from the paper? What new, previously unknown knowledge does the paper contribute? Keep in mind that some papers may claim more than it actually contributes.
+
+Answer:
+YOUR ANSWER HERE
+
+
+Question/Task 11: (Potential) Impact
+What (potential) impact did/does the paper have? What are interesting follow-up questions/papers? Are there follow-up publications, tools/web pages created based on the paper, applications beyond academia, etc.?
+
+Answer:
+YOUR ANSWER HERE
+
+
+References:
+ADD REFERENCES HERE

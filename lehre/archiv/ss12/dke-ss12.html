@@ -1,0 +1,504 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head xmlns="">
+    <title>DVS - Introduction Data and Knowledge Engineering</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="language" content="en" />
+    <meta http-equiv="content-language" content="en" />
+    <meta name="language" content="en" />
+    <meta name="date" content="" />
+    <meta http-equiv="expires" content="3600" />
+    <meta name="robots" content="index,follow" />
+    <link rel="canonical" href="http://www.dvs.tu-darmstadt.de/teaching/dke/index.html" />
+    <link rel="shortcut icon" type="image/x-icon" href="http://www.dvs.tu-darmstadt.de/favicon.ico" />
+    <link rel="stylesheet" type="text/css" media="all" href="http://www.dvs.tu-darmstadt.de/css/page.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="http://www.dvs.tu-darmstadt.de/css/klappbox.css" />
+    <script type="text/javascript" src="http://www.dvs.tu-darmstadt.de/js/jquery.js"></script>
+    <script type="text/javascript" src="http://www.dvs.tu-darmstadt.de/js/jquerytimers.js"></script>
+    <script type="text/javascript" src="http://www.dvs.tu-darmstadt.de/js/jquerycookie.js"></script>
+    <script type="text/javascript" src="http://www.dvs.tu-darmstadt.de/js/global.js"></script>
+    <script type="text/javascript" src="http://www.dvs.tu-darmstadt.de/js/mootools-1.2.5-core-yc.js"></script>
+    <script type="text/javascript" src="http://www.dvs.tu-darmstadt.de/js/mootools.1.2.4.2.more.js"></script>
+    <script type="text/javascript" src="http://www.dvs.tu-darmstadt.de/js/mail_crypt.js"></script>
+  </head>
+  <body xmlns="" style="background-color: #F1F1F1;" onload="clearSearch()">
+    <div id="seiten_container">
+      <div id="seite">
+        <div id="header">
+          <a name="top" id="top"></a>
+          <div id="topnavigation"><a href="http://www.dvs.tu-darmstadt.de/login.html"><img src="http://www.dvs.tu-darmstadt.de/corporate_files/anmelden.png" alt="Anmelden" /></a><a href="http://www.dvs.tu-darmstadt.de/login.html">Login</a></div>
+          <div id="hauptnavigation_container">
+            <div id="suche">
+              <form id="suchformular" action="http://www.tu-darmstadt.de/suche/index.de.jsp" onsubmit="return checkSearch()" method="get">
+                <fieldset>
+                  <input type="text" id="query_top" name="query" value="site:dvs.tu-darmstadt.de" />
+                  <input id="query_abschicken" type="image" alt="Submit" title="Submit" src="http://www.dvs.tu-darmstadt.de/corporate_files/arrowdouble.gif" />
+                </fieldset>
+              </form>
+            </div>
+            <div id="hauptnavigation">
+<ul class="hauptmenue">
+  <li class="hauptmenuepunkt">
+    <a href="https://www.tu-darmstadt.de/">TU</a>
+  </li>
+  <li class="delimiter hauptmenuepunkt">|</li>
+  <li class="hauptmenuepunkt">
+    <a href="https://www.informatik.tu-darmstadt.de/">Informatik</a>
+  </li>
+  <li class="delimiter hauptmenuepunkt">|</li>
+  <li class="hauptmenuepunkt">
+    <a href="http://www.dvs.tu-darmstadt.de/index.html">DVS</a>
+    <ul class="klappbox">
+      <li>
+        <a href="http://www.dvs.tu-darmstadt.de/staff/index.html">People</a>
+      </li>
+      <li>
+        <a href="http://www.dvs.tu-darmstadt.de/staff/alumni/index.html">Alumni</a>
+      </li>
+      <li>
+        <a href="http://www.dvs.tu-darmstadt.de/contact/floorplan.html">Floor Plan</a>
+      </li>
+      <li>
+        <a href="http://www.dvs.tu-darmstadt.de/contact/location.html">Location</a>
+      </li>
+      <li>
+        <a href="http://www.dvs.tu-darmstadt.de/contact/index.html">Contact</a>
+      </li>
+    </ul>
+  </li>
+  <li class="delimiter hauptmenuepunkt">|</li>
+  <li class="hauptmenuepunkt">
+    <a href="http://www.dvs.tu-darmstadt.de/teaching/index.html">Teaching</a>
+    <ul class="klappbox">
+      <li>
+        <a href="http://www.dvs.tu-darmstadt.de/teaching/inf2/index.html">Introduction to Computer Science II</a>
+      </li>
+      <li>
+        <a href="http://www.dvs.tu-darmstadt.de/teaching/dke/index.html">Introduction to Data and Knowledge Engineering</a>
+      </li>
+      <li>
+        <a href="http://www.dvs.tu-darmstadt.de/teaching/bidw/2011/index.html">Business Intelligence and Data Warehousing</a>
+      </li>
+      <li>
+        <a href="http://www.dvs.tu-darmstadt.de/teaching/db2/index.html">Database Systems II</a>
+      </li>
+      <li>
+        <a href="http://www.dvs.tu-darmstadt.de/teaching/ep/index.html">Event Processing</a>
+      </li>
+      <li>
+        <a href="http://www.dvs.tu-darmstadt.de/teaching/iose/index.html">Innovative Operating System Elements</a>
+      </li>
+      <li>
+        <a href="http://www.dvs.tu-darmstadt.de/teaching/cs/index.html">Middleware</a>
+      </li>
+      <li>
+        <a href="http://www.dvs.tu-darmstadt.de/teaching/perf/index.html">Performance and Scaling in E-Commerce Systems</a>
+      </li>
+      <li>
+        <a href="http://www.dvs.tu-darmstadt.de/teaching/storage/index.html">Persistent Storage</a>
+      </li>
+      <li>
+        <a href="http://www.dvs.tu-darmstadt.de/teaching/p2plab/index.html">Peer-to-Peer Middleware (Lab)</a>
+      </li>
+      <li>
+        <a href="http://www.dvs.tu-darmstadt.de/teaching/wsnlab/index.html">Wireless Sensor Networks (Lab)</a>
+      </li>
+      <li>
+        <a href="http://www.dvs.tu-darmstadt.de/teaching/dbed/index.html">Database Engine Development (Lab)</a>
+      </li>
+      <li>
+        <a href="http://www.dvs.tu-darmstadt.de/teaching/wsnsem/index.html">Wireless Sensor Networks (Seminar)</a>
+      </li>
+    </ul>
+  </li>
+  <li class="delimiter hauptmenuepunkt">|</li>
+  <li class="hauptmenuepunkt">
+    <a href="http://www.dvs.tu-darmstadt.de/research/index.html">Research</a>
+    <ul class="klappbox">
+      <li>
+        <a href="http://www.dvs.tu-darmstadt.de/research/databases/index.html">Databases on Modern Hardware</a>
+      </li>
+      <li>
+        <a href="http://www.dvs.tu-darmstadt.de/research/events/index.html">Event-Driven Computing</a>
+      </li>
+      <li>
+        <a href="http://www.dvs.tu-darmstadt.de/research/p2p/index.html">Peer-to-Peer and Online Gaming</a>
+      </li>
+      <li>
+        <a href="http://www.dvs.tu-darmstadt.de/research/performance/index.html">Performance Engineering</a>
+      </li>
+      <li>
+        <a href="http://www.dvs.tu-darmstadt.de/research/pervasive/index.html">Pervasive Computing and Wireless Sensor Networks</a>
+      </li>
+      <li>
+        <a href="http://www.dvs.tu-darmstadt.de/research/industrypartners/index.html">Industry Partners</a>
+      </li>
+    </ul>
+  </li>
+  <li class="delimiter hauptmenuepunkt">|</li>
+  <li class="hauptmenuepunkt">
+    <a href="http://www.dvs.tu-darmstadt.de/publications/index.html">Publications</a>
+    <ul class="klappbox">
+      <li>
+        <a href="http://www.dvs.tu-darmstadt.de/publications/theses/index.html">Completed Theses</a>
+      </li>
+      <li>
+        <a href="http://www.dvs.tu-darmstadt.de/publications/posters/index.html">Posters</a>
+      </li>
+    </ul>
+  </li>
+  <li class="delimiter hauptmenuepunkt">|</li>
+  <li class="hauptmenuepunkt">
+    <a href="http://www.dvs.tu-darmstadt.de/jobtheses/index.html">Jobs and Theses</a>
+    <ul class="klappbox">
+      <li>
+        <a href="http://www.dvs.tu-darmstadt.de/jobtheses/jobs/index.html">Jobs</a>
+      </li>
+      <li>
+        <a href="http://www.dvs.tu-darmstadt.de/jobtheses/theses/index.html">Open Theses</a>
+      </li>
+    </ul>
+  </li>
+  </ul>
+            </div>
+            <div class="clear"></div>
+          </div>
+          <div id="headerimage_container">
+            <div id="logo">
+              <div id="bildschirm">
+                <a href="http://www.tu-darmstadt.de" target="blank" title="Zur TU Darmstadt">
+                  <img src="http://www.dvs.tu-darmstadt.de/corporate_files/tu_darmstadt_web.png" alt="Logo der TU Darmstadt" />
+                </a>
+              </div>
+              <div id="druck">
+                <img src="http://www.dvs.tu-darmstadt.de/corporate_files/tud_logo_web_druck.png" alt="Logo der TU Darmstadt" />
+              </div>
+            </div>
+            <div id="headerimg">
+              <img id="headerimage" src="http://www.dvs.tu-darmstadt.de/scripts/random_image.php" alt="DVS Headerbild" />
+            </div>
+          </div>
+          <div id="breadcrumbs">
+<ol>
+  <li>
+    <a href="http://www.dvs.tu-darmstadt.de/index.html">
+					DVS
+				</a>
+  </li>
+  <li>
+    <img width="5" height="6" alt="/" src="http://www.dvs.tu-darmstadt.de/corporate_files/arrowdouble.gif"/>
+    <a href="http://www.dvs.tu-darmstadt.de/teaching/index.html">Teaching</a>
+  </li>
+  <li>
+    <img width="5" height="6" alt="/" src="http://www.dvs.tu-darmstadt.de/corporate_files/arrowdouble.gif"/>
+    <a href="http://www.dvs.tu-darmstadt.de/teaching/dke/index.html">Introduction to Data and Knowledge Engineering</a>
+  </li>
+  <li>
+    <span class="aktiv"/>
+  </li>
+</ol>
+          </div>
+        </div>
+        <div id="spalten_container">
+          <div id="navigationsspalte">
+<h1>
+  <a href="http://www.dvs.tu-darmstadt.de/teaching/index.html">Teaching</a>
+</h1><ul>
+  <li>
+    <a href="http://www.dvs.tu-darmstadt.de/teaching/inf2/index.html" class="ebene1">Introduction to Computer Science II</a>
+  </li>
+  <li>
+    <a href="http://www.dvs.tu-darmstadt.de/teaching/dke/index.html" class="ebene1 aktiv">Introduction to Data and Knowledge Engineering</a>
+  </li>
+  <li>
+    <a href="http://www.dvs.tu-darmstadt.de/teaching/bidw/2011/index.html" class="ebene1">Business Intelligence and Data Warehousing</a>
+  </li>
+  <li>
+    <a href="http://www.dvs.tu-darmstadt.de/teaching/db2/index.html" class="ebene1">Database Systems II</a>
+  </li>
+  <li>
+    <a href="http://www.dvs.tu-darmstadt.de/teaching/ep/index.html" class="ebene1">Event Processing</a>
+  </li>
+  <li>
+    <a href="http://www.dvs.tu-darmstadt.de/teaching/iose/index.html" class="ebene1">Innovative Operating System Elements</a>
+  </li>
+  <li>
+    <a href="http://www.dvs.tu-darmstadt.de/teaching/cs/index.html" class="ebene1">Middleware</a>
+  </li>
+  <li>
+    <a href="http://www.dvs.tu-darmstadt.de/teaching/perf/index.html" class="ebene1">Performance and Scaling in E-Commerce Systems</a>
+  </li>
+  <li>
+    <a href="http://www.dvs.tu-darmstadt.de/teaching/storage/index.html" class="ebene1">Persistent Storage</a>
+  </li>
+  <li>
+    <a href="http://www.dvs.tu-darmstadt.de/teaching/p2plab/index.html" class="ebene1">Peer-to-Peer Middleware (Lab)</a>
+  </li>
+  <li>
+    <a href="http://www.dvs.tu-darmstadt.de/teaching/wsnlab/index.html" class="ebene1">Wireless Sensor Networks (Lab)</a>
+  </li>
+  <li>
+    <a href="http://www.dvs.tu-darmstadt.de/teaching/dbed/index.html" class="ebene1">Database Engine Development (Lab)</a>
+  </li>
+  <li>
+    <a href="http://www.dvs.tu-darmstadt.de/teaching/wsnsem/index.html" class="ebene1">Wireless Sensor Networks (Seminar)</a>
+  </li>
+</ul>
+          </div>
+          <div id="zentrale_spalte">
+            <div class="eine_spalte">
+              <div class="text_mit_bild">
+                <h1 id="maincontent_title">Introduction Data and Knowledge Engineering</h1>
+                <div id="maincontent">
+		﻿<h2>Ankündigungen</h2>
+
+
+<p class="news"><b>Noten und Klausureinsicht zur Klausur SoSe 2016</b><br>
+	Die Klausuren sind korrigiert und die Noten sind ab Anfang nächster Woche (KW 26) in TUCaN abrufbar.<br><br>
+
+	Die Klausureinsicht findet am Freitag, den 01.07.2016 von 13:30-14:30 Uhr in Raum S202/A213 statt. <br><br>
+	
+	Sie müssen sich ausweisen um ihre Klausur einsehen zu dürfen (Studentenausweis sowie Personalausweis, Reisepass o.Ä.)
+</p>
+
+
+<p class="news"><b>Informationen zur Klausur Sommersemester 2016:</b><br>
+	Die Klausur findet am <b>Do, 19. Mai 2016 vom 18:00 - 20:30 Uhr in Raum S101/A1 (Audimax)</b> statt.<br><br>
+	
+	<b>Diese Klausur ist unwiderruflich die letzte Prüfungsmöglichkeit für DKE mit den "alten" Inhalten</b><br>
+Da sich der Bachelor Studiengang geändert hat, wird es zukünftig keine DKE Vorlesung von Buchmann/Fürnkranz mehr geben. Damit ist die letzte Prüfungsmöglichkeit für DKE mit den bisherigen Inhalten die Klausur am 19.05.2016. Sollten Sie DKE bisher noch garnicht gehört haben, so gilt für Sie schon die neue Regelung.
+
+Mit Fragen bezüglich der Änderungen am Bachelor Studiengang wenden Sie sich bitte an die Studienberatung oder an das Prüfungssekretariat.
+	<br><br>
+	Der Anmeldezeitraum für die Klausur ist 01.04.16 - 19.04.16.
+	<br><br>
+	
+	Die Bearbeitungszeit der Klausur wird 120 Minuten betragen und es sind keine Hilfsmittel zugelassen.
+	Beachten Sie auch das Blatt mit den Hinweisen zur Klausur welches sich auch am Anfang der Klausur befinden wird: <br>
+	<a href="http://download.dvs.informatik.tu-darmstadt.de/dke/Klausurhinweise.pdf">Klausurhinweise (pdf)</a>.
+</p>
+
+<p class="news">Diese Vorlesung wird im Sommersemester 2015 zum letzten mal von Prof. Buchmann und Prof. Fürnkranz gehalten! Die Prüfung wird noch insgesammt drei mal angeboten werden: SoSe 2015, WiSe 2015/16 und SoSe 2016. <br>
+Durch Änderungen im Bachelor wird die Vorlesung DKE in Zukunft nicht mehr angeboten bzw. umbenannt. Genaue Informationen entnehmen Sie bitte den 
+<a href="https://www.informatik.tu-darmstadt.de/de/studierende/studiengaenge/die-informatik-ordnungen-ab-wintersemester-201516/">Webseiten der Studienberatung</a>.
+</p>
+
+
+<h2>Vorlesungsfolien</h2>
+<table class="fancy nolinkwrap">
+	<tr>
+		<th style="width:15px;">&nbsp;</th>
+		<th>Thema</th>
+		<th>Folien</th>
+	</tr>
+	<tr>
+		<td style="padding-right: 3px;">1
+		</td>
+		<td>Datenbanken</td>
+		<td><a href="http://download.dvs.informatik.tu-darmstadt.de/dke/Vorlesung_DKE_SoSe2015.pdf">Folien (pdf)</a> Stand: 
+			12.06.2015				
+		</td>
+	</tr>
+	<tr>
+		<td style="padding-right: 3px;"></td>
+		<td>PostgreSQL DB zum Üben</td>
+		<td><a href="http://download.dvs.informatik.tu-darmstadt.de/dke/pg/postgres-demo-db.zip">download</a> <a href="http://download.dvs.informatik.tu-darmstadt.de/dke/pg/PostgreSQL-Sample-Database.png">ER-Modell</a> <a href="http://www.postgresqltutorial.com/postgresql-server-and-database-objects/" target="new">Tutorial 1</a> <a href="http://www.tutorialspoint.com/postgresql/index.htm" target="new">Tutorial 2</a> <a href="http://www.w3resource.com/PostgreSQL/tutorial.php" target="new">Tutorial 3</a></td>
+	</tr>
+	<tr>
+		<td style="padding-right: 3px;"></td>
+		<td>Alternatives</td>
+		<td><a href="http://www.turnkeylinux.org/lapp" target="new">LAPP Live ISO + VM images</a> <a href="https://bitnami.com/stack/mapp" target="new">MAPP for Mac</a></td>
+	</tr>		
+	<tr>
+		<td style="padding-right: 3px;">2</td>
+		<td>Datalog</td>
+		<td><a href="http://download.dvs.informatik.tu-darmstadt.de/dke/datalog.pdf">Folien (pdf)</a></td>
+	</tr>
+	<tr>
+		<td style="padding-right: 3px;">3</td>
+		<td>Explanation-Based Learning</td>
+		<td><a href="http://download.dvs.informatik.tu-darmstadt.de/dke/ebl.pdf">Folien (pdf)</a></td>
+	</tr>
+	<tr>
+		<td style="padding-right: 3px;">4</td>
+		<td>Inductive Learning</td>
+		<td><a href="http://download.dvs.informatik.tu-darmstadt.de/dke/ilp.pdf">Folien (pdf)</a></td>
+	</tr>
+	<tr>
+		<td style="padding-right: 3px;">5</td>
+		<td>Data Mining</td>
+		<td><a href="http://download.dvs.informatik.tu-darmstadt.de/dke/data-mining.pdf">Folien (pdf)</a></td>
+	</tr>
+	<tr>
+		<td style="padding-right: 3px;">6</td>
+		<td>Semantic Web</td>
+		<td><a href="http://download.dvs.informatik.tu-darmstadt.de/dke/semantic-web.pdf">Folien (pdf)</a></td>
+	</tr>
+</table>
+	
+<h3>Aufzeichnungen der Knowledge Engineering Vorlesungen</h3>
+Hier werden wir Aufzeichnungen der KE Vorlesungen zur Verfügung zu stellen. Das ist ein zusätzliches Angebot, das aus unserer Sicht den Besuch der Veranstaltung nicht ersetzt. Insbesondere sollten Sie sich nicht darauf verlassen, dass die Aufzeichnung immer problemlos klappt.
+<ul>
+	<li><a href="http://www.ke.tu-darmstadt.de/files/lehre/ss15/dke-ss15/dke_2015_06_02.mp4">Vorlesung 02.06.2015</a></li>
+	<li><a href="http://www.ke.tu-darmstadt.de/files/lehre/ss15/dke-ss15/dke_2015_06_09.mp4">Vorlesung 09.06.2015</a></li>
+	<li><a href="http://www.ke.tu-darmstadt.de/files/lehre/ss15/dke-ss15/dke_2015_06_16.mp4">Vorlesung 16.06.2015</a></li>
+	<li><a href="http://www.ke.tu-darmstadt.de/files/lehre/ss15/dke-ss15/dke_2015_06_23.mp4">Vorlesung 23.06.2015</a></li>
+	<li><a href="http://www.ke.tu-darmstadt.de/files/lehre/ss15/dke-ss15/dke_2015_06_30.mp4">Vorlesung 30.06.2015</a></li>
+	<li><a href="http://www.ke.tu-darmstadt.de/files/lehre/ss15/dke-ss15/dke_2015_07_07.mp4">Vorlesung 07.07.2015</a></li>
+	<li><a href="http://www.ke.tu-darmstadt.de/files/lehre/ss15/dke-ss15/dke_2015_07_14.mp4">Vorlesung 14.07.2015</a></li>
+</ul>
+		
+<h2>Übungen: Freitag 8:00-8:45 Uhr in S202/C205 </h2>
+<table class="fancy nolinkwrap">
+	<tr>
+		<th> </th> <th>Datum</th> <th style="width:40%;">Thema</th> <th style="width:40%;">Übung</th>
+	</tr>
+	<tr><td>	</td><td>17.04.2015</td><td>Vorlesung! </td>					<td>    </td></tr>
+	<tr><td>1	</td><td>24.04.2015</td><td>ER-Model </td>						<td><a href="http://download.dvs.informatik.tu-darmstadt.de/dke/Uebung01.pdf">Aufgaben</a> <a href="http://download.dvs.informatik.tu-darmstadt.de/dke/Uebung01-lsg.pdf">Lösungsvorschlag</a> </td></tr>
+	<tr><td>	</td><td>01.05.2015</td><td>Fällt aus: Tag der Arbeit   </td>	<td></td></tr>
+	<tr><td>2	</td><td>08.05.2015</td><td>Relationale Algebra </td>			<td><a href="http://download.dvs.informatik.tu-darmstadt.de/dke/Uebung02.pdf">Aufgaben</a> <a href="http://download.dvs.informatik.tu-darmstadt.de/dke/Uebung02-lsg.pdf">Lösungsvorschlag</a></td></tr>
+	<tr><td>3	</td><td>15.05.2015</td><td>Relationales Modell </td>			<td><a href="http://download.dvs.informatik.tu-darmstadt.de/dke/Uebung03.pdf">Aufgaben</a> <a href="http://download.dvs.informatik.tu-darmstadt.de/dke/Uebung03-lsg.pdf">Lösungsvorschlag</a></td></tr>
+	<tr><td>4	</td><td>22.05.2015</td><td>Normalformen </td>					<td><a href="http://download.dvs.informatik.tu-darmstadt.de/dke/Uebung04.pdf">Aufgaben</a> <a href="http://download.dvs.informatik.tu-darmstadt.de/dke/Uebung04-lsg.pdf">Lösungsvorschlag</a></td></tr>
+	<tr><td>5	</td><td>29.05.2015</td><td>Syntheseverfahren </td>				<td><a href="http://download.dvs.informatik.tu-darmstadt.de/dke/Uebung05.pdf">Aufgaben</a> <a href="http://download.dvs.informatik.tu-darmstadt.de/dke/Uebung05-lsg.pdf">Lösungsvorschlag</a></td></tr>
+	<tr><td>6	</td><td>05.06.2015</td><td>SQL</td>							<td><a href="http://download.dvs.informatik.tu-darmstadt.de/dke/Uebung06.pdf">Aufgaben</a> <a href="http://download.dvs.informatik.tu-darmstadt.de/dke/Uebung06-lsg.pdf">Lösungsvorschlag</a></td></tr>
+	<tr><td>7	</td><td>12.06.2015</td><td>Datalog</td>						<td><a href="http://download.dvs.informatik.tu-darmstadt.de/dke/Uebung07.pdf">Aufgaben</a> <a href="http://download.dvs.informatik.tu-darmstadt.de/dke/Uebung07-lsg.pdf">Lösungsvorschlag</a></td></tr>
+	<tr><td>8	</td><td>19.06.2015</td><td>Prolog</td>							<td><a href="http://download.dvs.informatik.tu-darmstadt.de/dke/Uebung08.pdf">Aufgaben</a> <a href="http://download.dvs.informatik.tu-darmstadt.de/dke/Uebung08-lsg.pdf">Lösungsvorschlag</a></td></tr>
+	<tr><td>	</td><td>26.06.2015</td><td>Fällt aus!</td>						<td>  </td></tr>
+	<tr><td>9	</td><td>03.07.2015</td><td>EBL</td>							<td><a href="http://download.dvs.informatik.tu-darmstadt.de/dke/Uebung09.pdf">Aufgaben</a> <a href="http://download.dvs.informatik.tu-darmstadt.de/dke/Uebung09-lsg.pdf">Lösungsvorschlag</a></td></tr>
+	<tr><td>10	</td><td>10.07.2015</td><td>ILP</td>							<td><a href="http://download.dvs.informatik.tu-darmstadt.de/dke/Uebung10.pdf">Aufgaben</a> <a href="http://download.dvs.informatik.tu-darmstadt.de/dke/Uebung10-lsg.pdf">Lösungsvorschlag</a></td></tr>
+	<tr><td>11	</td><td>17.07.2015</td><td>Fällt aus!</td>						<td>  </td></tr>
+</table>	
+
+<h2>Tutorien: Montag 09:50-11:30 Uhr in S103/25</h2>
+Tutor: Michael Staab
+		
+<table class="fancy nolinkwrap">
+	<tr>
+		<th> </th> <th>Datum</th> <th style="width:40%;">Thema</th> <th style="width:40%;">Tutorium</th>
+	</tr>
+	<tr><td>0</td>	<td>20.04.2015</td><td></td><td></td><td></td></tr>
+	<tr><td>1</td>	<td>27.04.2015</td><td>ER-Model</td>					<td><a href="http://download.dvs.informatik.tu-darmstadt.de/dke/Tutorium01.pdf">Aufgaben</a> <a href="http://download.dvs.informatik.tu-darmstadt.de/dke/Tutorium01-lsg.pdf">Lösungsvorschlag</a></td></tr>
+	<tr><td>2</td>	<td>04.05.2015</td><td>Relationale Algebra</td>			<td><a href="http://download.dvs.informatik.tu-darmstadt.de/dke/Tutorium02.pdf">Aufgaben</a> <a href="http://download.dvs.informatik.tu-darmstadt.de/dke/Tutorium02-lsg.pdf">Lösungsvorschlag</a></td></tr>
+	<tr><td>3</td>	<td>11.05.2015</td><td>Relationenschemata</td>			<td><a href="http://download.dvs.informatik.tu-darmstadt.de/dke/Tutorium03.pdf">Aufgaben</a> <a href="http://download.dvs.informatik.tu-darmstadt.de/dke/Tutorium03-lsg.pdf">Lösungsvorschlag</a></td></tr>
+	<tr><td>4</td>	<td>18.05.2015</td><td>Schlüssel und Normalformen</td>	<td><a href="http://download.dvs.informatik.tu-darmstadt.de/dke/Tutorium04.pdf">Aufgaben</a> <a href="http://download.dvs.informatik.tu-darmstadt.de/dke/Tutorium04-lsg.pdf">Lösungsvorschlag</a></td></tr>
+	<tr><td></td>	<td>25.05.2015</td><td>Fällt aus: Pfingsten</td>		<td></td></tr>
+	<tr><td>5</td>	<td>01.06.2015</td><td>Syntheseverfahren</td>			<td><a href="http://download.dvs.informatik.tu-darmstadt.de/dke/Tutorium05.pdf">Aufgaben</a> <a href="http://download.dvs.informatik.tu-darmstadt.de/dke/Tutorium05-lsg.pdf">Lösungsvorschlag</a></td></tr>
+	<tr><td>6</td>	<td>08.06.2015</td><td>SQL</td>							<td><a href="http://download.dvs.informatik.tu-darmstadt.de/dke/Tutorium06.pdf">Aufgaben</a> <a href="http://download.dvs.informatik.tu-darmstadt.de/dke/Tutorium06-lsg.pdf">Lösungsvorschlag</a></td></tr>
+	<tr><td>7</td>	<td>15.06.2015</td><td>Datalog</td>						<td><a href="http://download.dvs.informatik.tu-darmstadt.de/dke/Tutorium07.pdf">Aufgaben</a> <a href="http://download.dvs.informatik.tu-darmstadt.de/dke/Tutorium07-lsg.pdf">Lösungsvorschlag</a></td></tr>
+	<tr><td>8</td>	<td>22.06.2015</td><td>Prolog</td>						<td><a href="http://download.dvs.informatik.tu-darmstadt.de/dke/Tutorium08.pdf">Aufgaben</a> <a href="http://download.dvs.informatik.tu-darmstadt.de/dke/Tutorium08-lsg.pdf">Lösungsvorschlag</a></td></tr>
+	<tr><td></td>	<td>29.06.2015</td><td>Fällt aus!</td>					<td></td></tr>
+	<tr><td>9</td>	<td>06.07.2015</td><td>EBL</td>							<td><a href="http://download.dvs.informatik.tu-darmstadt.de/dke/Tutorium09.pdf">Aufgaben</a> <a href="http://download.dvs.informatik.tu-darmstadt.de/dke/Tutorium09-lsg.pdf">Lösungsvorschlag</a></td></tr>
+	<tr><td>10</td>	<td>13.07.2015</td><td>ILP</td>							<td><a href="http://download.dvs.informatik.tu-darmstadt.de/dke/Tutorium10.pdf">Aufgaben</a> <a href="http://download.dvs.informatik.tu-darmstadt.de/dke/Tutorium10-lsg.pdf">Lösungsvorschlag</a></td></tr>
+</table>                               
+
+<h2>Weblinks</h2>
+<ul>
+	<li>
+		<a href="http://www.postgresql.org/" target="new">PostgreSQL (open source database system)</a></li>
+	<li>
+		<a href="http://developer.mimer.se/validator/parser99/" target="new">SQL-99 Validator <b>(Ohne Gew&auml;hr)</b></a></li>
+</ul>
+	</div>
+              </div>
+            </div>
+          </div>
+          <div id="rechte_marginalienspalte">
+            <div id="institutionslogo"><a href="http://www.dvs.tu-darmstadt.de/index.html"><img src="http://www.dvs.tu-darmstadt.de/corporate_files/dvs-logo.png" alt="DVS Startseite" /></a><br />
+						   Databases and Distributed Systems
+						  </div>
+            <div class="inhalt">
+              <div class="">
+	
+		<h2>Informationen</h2>
+		
+		<table class="courseinfo">
+			<tr>
+				<td>TUCaN-Link</td>
+				<td>
+					<a href="https://www.tucan.tu-darmstadt.de/scripts/mgrqcgi?APPNAME=CampusNet&PRGNAME=COURSEDETAILS&ARGUMENTS=-N000000000000001,-N000505,-N0,-N355214252619761,-N355214252659762,-N0,-N0,-N0">20-00-0015-iv</a>
+				</td>
+			</tr>
+			<tr>
+				<td>Vorlesung</td>
+				<td>
+					Di 9:50-11:30<br />in S202/C205
+				</td>
+			</tr>
+			<tr>
+				<td>Übung</td>
+				<td>
+					Fr 8:00-8:45<br />in S202/C205 
+				</td>
+			</tr>
+			<tr>
+				<td>CP (SWS)</td>
+				<td>5 (2+1)</td>
+			</tr>
+			<tr>
+				<td>Sprache</td>
+				<td>
+					Deutsch
+				</td>
+			</tr>
+			<tr>
+				<td>Prüfung</td>
+				<td>schriftlich</td>
+			</tr>
+			<tr>
+				<td>Sprechstunden</td>
+				<td>nach Vereinbarung</td>
+			</tr>
+			<tr>
+				<td>Forum</td>
+				<td><a href="http://www.d120.de/forum/viewforum.php?f=194">Link</a></td>
+			</tr>
+		</table>
+	
+		<h2>Veranstalter</h2>
+		
+		<a href="http://www.dvs.tu-darmstadt.de/staff/buchmann/index.html" class="contact">
+		<img src="http://www.dvs.tu-darmstadt.de/staff/buchmann/icon.jpg" alt="" />
+		<span>Prof. Alejandro Buchmann</span></a>
+		
+		<a href="../../../staff/juffi.html" class="contact">
+		<img src="http://www.dvs.tu-darmstadt.de/teaching/dke/images/jf.jpeg" alt="" />
+		<span>Prof. Johannes Fürnkranz</span></a>
+		
+		<a href="http://www.dvs.tu-darmstadt.de/staff/rehner/index.html" class="contact">
+		<img src="http://www.dvs.tu-darmstadt.de/staff/rehner/icon.jpg" alt="" />
+		<span>Robert Rehner</span></a>
+		
+		<p>
+		Bei <strong>administrativen Fragen</strong> (Klausuranmeldung, Bescheiningungen, etc.) wenden Sie sich bitte an <br />
+		Gabriele Ploch <br />
+		<span class="email icon">gploch@informatik.tu-...</span>
+		</p>
+		
+		<h2>Frühere Semester</h2>
+		<ul>
+			<li><a href="https://donar.bib.informatik.tu-darmstadt.de/FB20/elzi/dke/index.html" target="new">Sammlung alter Materialien im ELZI</a></li>
+			<li><a href="http://www.dvs.tu-darmstadt.de/teaching/dke/ss2014.html" target="new">SoSe 2014</a></li>
+		</ul>
+	</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="clear:both"></div>
+    </div>
+    <div id="fussbereich_container">
+      <div id="schatten_unten"></div>
+      <div id="fussbereich"><a id="schrift_kleiner" href="javascript:fontsize('dekrement')" title="Smaller Font">A </a><a id="schrift_normal" href="javascript:fontsize('reset')" title="Reset Font">A </a><a id="schrift_groesser" href="javascript:fontsize('inkrement')" title="Bigger Font">A </a> |
+					
+					<a href="javascript:this.print()"><img src="http://www.dvs.tu-darmstadt.de/corporate_files/drucken1.png" alt="" /> Print</a>
+					| <a href="http://www.dvs.tu-darmstadt.de/contact/index.html"><img src="http://www.dvs.tu-darmstadt.de/corporate_files/kontakt.png" alt="" /> Contact</a>
+					| <a href="http://www.tu-darmstadt.de/impressum/"><img src="http://www.dvs.tu-darmstadt.de/corporate_files/impressum.png" alt="" /> Legal note</a>
+					
+					| <a href="http://www.tu-darmstadt.de/suche/index.de.jsp?query=site:dvs.tu-darmstadt.de"><img src="http://www.dvs.tu-darmstadt.de/corporate_files/suche.png" alt="" /> Search</a></div>
+    </div>
+    <script src="http://www.dvs.tu-darmstadt.de/corporate_files/klappboxen.js" type="text/javascript"></script>
+    <script src="http://www.dvs.tu-darmstadt.de/corporate_files/cookie_manager.js" type="text/javascript"></script>
+    <script src="http://www.dvs.tu-darmstadt.de/corporate_files/fontsize.js" type="text/javascript"></script>
+    <script src="http://www.dvs.tu-darmstadt.de/corporate_files/oeffne_fenster.js" type="text/javascript"></script>
+  </body>
+</html>

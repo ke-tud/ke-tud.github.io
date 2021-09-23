@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  </head>        
+  <body>
+    <pre>
+TY  - THES
+ID  - loza2012diss
+T1  - Efficient Pairwise Multilabel Classification
+A1  - Loza Mencía, Eneldo
+Y1  - 2012
+M1  - Dissertation
+T2  - Technische Universität Darmstadt, Knowledge Engineering Group
+N1  - submitted on 2012-06-10, defended on 2012-07-24
+UR  - http://tuprints.ulb.tu-darmstadt.de/3226/7/loza12diss.pdf
+KW  - efficiency
+KW  - multilabel classification
+KW  - pairwise classification
+KW  - scalability
+N2  - Multilabel classification learning is the task of learning a mapping between objects and sets of possibly overlapping classes and has gained increasing attention in recent times. A prototypical application scenario for multilabel classification is the assignment of a set of keywords to a document, a frequently encountered problem in the text classification domain. With upcoming Web 2.0 technologies, this domain is extended by a wide range of tag suggestion tasks and the trend definitely is moving towards more data points and more labels. This work provides an extended introduction into the topic of multilabel classification, a detailed formalization and a comprehensive overview of the present state-of-the-art approaches.
+
+A commonly used solution for solving multilabel tasks is to decompose the original problem into several subproblems. These subtasks are usually easy to solve with conventional techniques. In contrast to the straightforward approach of training one classifier for independently predicting the relevance of each class (binary relevance), this work focuses particularly on the pairwise decomposition of the original problem in which a decision function is learned for each possible pair of classes. The main advantage of this approach, the improvement of the predictive quality, comes at the cost of its main disadvantage, the quadratic number of classifiers needed (with respect to the number of labels). This thesis presents a framework of efficient and scalable solutions for handling hundreds or thousands of labels despite the quadratic dependency.
+
+As it turns out, training such a pairwise ensemble of classifiers can be accomplished in linear time and only differs from the straightforward binary relevance approach (BR) by a factor relative to the average number of labels associated to an object, which is usually small. Furthermore, the integration of a smart scheduling technique inspired from sports tournaments safely reduces the quadratic number of base classifier evaluations to log-linear in practice. Combined with a simple yet fast and powerful learning algorithm for linear classifiers, data with a huge number of high dimensional points, which was not amenable to pairwise learning before, can be processed even under real-time conditions.
+
+The remaining bottleneck, the exploding memory requirements, is coped by taking advantage of an interesting property of linear classifiers, namely the possibility of dual reformulation as a linear combination of the training examples. The suitability is demonstrated on the novel EUR-Lex text collection, which particularly puts the main scalability issue of pairwise learning to test. With its almost 4,000 labels and 20,000 documents it is one of the most challenging test beds in multilabel learning to date. The dual formulation allows to maintain the mathematical equivalent to 8 million base learners needed for conventionally solving EUR-Lex in almost the same amount of space as binary relevance. Moreover, BR was clearly beaten in the experiments.
+
+A further contribution based on hierarchical decomposition and arrangement of the original problem allows to reduce the dependency on the number of labels to even sub-linearity. This approach opens the door to a wide range of new challenges and applications but simultaneously maintains the advantages of pairwise learning, namely the excellent predictive quality. It was even shown in comparison to the flat variant that it has a particularly positive effect on balancing recall and precision on datasets with a large number of labels.
+
+The improved scalability and efficiency allowed to apply pairwise classification to a set of large multilabel problems with a parallel base of data points but different domains of labels. A first attempt was made in this parallel tasks setting in order to investigate the exploitation of label dependencies by pairwise learning, with first encouraging results. The usage of multilabel learning techniques for the automatic annotation of texts constitutes a further obvious but so far missing connection to multi-task and multi-target learning. The presented solution considers the simultaneous tagging of words with different but possibly overlapping annotation schemes as a multilabel problem. This solution is expected to particularly benefit from approaches which exploit label dependencies. The ability of pairwise learning for this purpose is obviously restricted to pairwise relations, therefore a technique is investigated which explores label constellations that only exist locally for a subgroup of data points. In addition to the positive effect of the supplemental information, the experimental evaluation demonstrates an interesting insight with regards to the different behavior of several state-of-the-art approaches with respect to the optimization of particular multilabel measures, a controversial topic in multilabel classification.
+M1  - urn={urn:nbn:de:tuda-tuprints-32260}
+M1  -  tuprints-url={http://tuprints.ulb.tu-darmstadt.de/3226/}
+ER  -
+    </pre>
+  </body>
+</html>

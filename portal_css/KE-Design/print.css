@@ -1,0 +1,40 @@
+
+/* - print.css - */
+@media print {
+/* portal_css/print.css?original=1 */
+/* */
+body {
+font-family: Tahoma, Arial, Helvetica, sans-serif;
+font-size: 11px;
+line-height: 1.6em;
+}
+div#header {
+display: none;
+}
+div#portal-column-one {
+display: none;
+}
+div#portal-column-two {
+display: none;
+}
+div#fussbereich_container {
+display: none;
+}
+.documentActions {
+display: none;
+}
+#document-toc {
+display: none;
+}
+#kss-spinner {
+display: none;
+}
+#HyphenatorToggleBox {
+display: none;
+}
+/* */
+/* */
+/* */
+
+}
+

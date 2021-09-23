@@ -1,0 +1,2236 @@
+
+
+
+<!DOCTYPE html PUBLIC
+  "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+  
+    
+    
+    
+    
+
+
+  <head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <meta name="generator" content="Plone - http://plone.org" />
+
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    
+      <base href="" /><!--[if lt IE 7]></base><![endif]-->
+    
+
+    
+        
+
+  
+    <link rel="stylesheet" type="text/css" media="screen" href="../../../portal_css/KE-Design/reset-cachekey-925e503538eefe397b99ef02d65af339.css" />
+    <style type="text/css" media="screen">@import url(../../../portal_css/KE-Design/base-cachekey-03153797b47b0a3cc7f99250afe8cedd.css);</style>
+    <link rel="stylesheet" type="text/css" media="screen" href="../../../portal_css/KE-Design/resourcetinymce.stylesheetstinymce-cachekey-5af329a435a47b3692ec346792a15c82.css" />
+    <style type="text/css">@import url(../../../portal_css/KE-Design/print-cachekey-121643ccca6586bc2ccc938612dbcdbe.css);</style>
+    <link rel="stylesheet" type="text/css" media="screen" href="../../../portal_css/KE-Design/resourceplone.app.discussion.stylesheetsdiscussion-cachekey-a142adb07f80a3c80d0ffe3bd11c391d.css" />
+    <style type="text/css" media="screen">@import url(../../../portal_css/KE-Design/kedesign-cachekey-abe6dfb415b2c424ca38859c1cfa69ee.css);</style>
+    <style type="text/css" media="screen">@import url(../../../portal_css/KE-Design/JabRef.css);</style>
+    <style type="text/css" media="all">@import url(../../../portal_css/KE-Design/ploneCustom-cachekey-aba490f43e054b2e05eaab28d192fa09.css);</style>
+
+  
+  
+    <script type="text/javascript" src="../../../portal_javascripts/KE-Design/resourceplone.app.jquery-cachekey-0778f482fb7d0bbb4d2ec9c3b82f9e81.js"></script>
+    <script type="text/javascript" src="../../../portal_javascripts/KE-Design/cookie_manager-cachekey-4a290db816043754c78ba3a906f4556e.js"></script>
+    <script type="text/javascript" src="../../../portal_javascripts/KE-Design/Hyphenator-cachekey-671ea5ad93b7c7d3d115abde3ce0b6bb.js"></script>
+    <script type="text/javascript" src="../../../portal_javascripts/KE-Design/JabRef-cachekey-0a9b33f3f54aff6df349afab5dcd9f03.js"></script>
+
+
+<title>Seminar on Spam Filtering - SS 05 &mdash; </title>
+
+        
+    <link rel="canonical" href="spam-filtering.html" />
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../../favicon.ico" />
+    <link rel="apple-touch-icon" href="../../../touch_icon.png" />
+
+
+
+
+
+
+    <link rel="search" href="http://www.ke.tu-darmstadt.de/@@search" title="Search this site" />
+
+
+
+        <!-- Disable IE6 image toolbar -->
+        <meta http-equiv="imagetoolbar" content="no" />
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+    
+
+  </head>
+
+  <body onload="setzeInitialeFontgroesse();" class="template-document_view portaltype-document site-Plone section-lehre subsection-archiv subsection-archiv-ss05 subsection-archiv-ss05-spam-filtering userrole-anonymous" dir="ltr">
+    <div id="seiten_container">
+    <div id="visual-portal-wrapper">
+
+      <div id="header">
+        <a name="top"></a>
+        <div id="topnavigation">
+
+         
+   
+
+    
+        
+            <a href="http://www.ke.tu-darmstadt.de/login" class="visualIconPadding">
+               Log in
+            </a>
+        
+    
+
+
+</div>
+
+<p class="hiddenStructure">
+  <a accesskey="2" href="spam-filtering.html#content">Skip to content.</a> |
+
+  <a accesskey="6" href="spam-filtering.html#portal-globalnav">Skip to navigation</a>
+</p>
+
+<div id="portal-header">
+    <div id="portal-searchbox">
+    <form name="searDDchform" action="../../../search.html">
+
+        <label for="searchGadget" class="hiddenStructure">Search Site</label>
+        <div class="LSBox">
+        <input name="SearchableText" type="text" title="Search Site" class="inputLabel" id="searchGadget" />
+        <input class="searchButton" type="submit" value="»" />
+       <div class="LSResult" id="LSResult" style=""><div class="LSShadow" id="LSShadow"></div></div>
+        </div>
+    </form>
+</div>
+
+
+  <div id="hauptnavigation">
+    <ul>
+      
+        <li>
+          <a href="../../../index.html" class="" title="">Home</a> | 
+        </li>
+      
+      
+        <li>
+          <a href="../../../staff.html" class="" title="Knowledge Engineering Group Members and Jobs">Staff</a> | 
+        </li>
+      
+      
+        <li>
+          <a href="../../../jobs.html" class="" title="">Jobs</a> | 
+        </li>
+      
+      
+        <li>
+          <a href="../../../news.html" class="" title="Latest news from the Knowledge Engineering Group">News</a> | 
+        </li>
+      
+      
+        <li>
+          <a href="../../../termine.html" class="" title="Upcoming events from the Knowledge Engineering Group">Termine</a> | 
+        </li>
+      
+      
+        <li>
+          <a href="../../../publications.html" class="" title="">Publications</a> | 
+        </li>
+      
+      
+        <li>
+          <a href="../../../projects.html" class="" title="Projects with participation of our group">Projects</a> | 
+        </li>
+      
+      
+        <li>
+          <a href="../../../research.html" class="" title="">Research</a> | 
+        </li>
+      
+      
+        <li>
+          <a href="../../../resources.html" class="" title="Datasets, applications, tools and other resources publicly provided by the KE Group.">Resources</a> | 
+        </li>
+      
+      
+        <li>
+          <a href="../../../lehre.html" class="aktiv" title="Lehrveranstaltungen und studentische Arbeiten">Lehre</a> | 
+        </li>
+      
+      
+        <li>
+          <a href="spam-filtering/lehre/arbeiten.html" class="" title="Link auf https://www.ke.tu-darmstadt.de/lehre/arbeiten">Thesis Topics</a> | 
+        </li>
+      
+      
+        <li>
+          <a href="http://www.informatik.tu-darmstadt.de" class="" title="Fachbereich Informatik, TU Darmstadt">FB20</a> | 
+        </li>
+      
+    </ul>
+  </div>    
+  <div class="clear"></div>
+
+
+
+
+</div>
+
+
+<div id="headerbild_container">	
+	<div id="logo">
+		<div id="bildschirm">
+			<a href="http://www.tu-darmstadt.de" title="Zur TU Darmstadt Startseite">
+                              <img src="../../../tu_darmstadt_web.png" alt="Logo der TU Darmstadt" />
+                        </a>
+		</div>	
+	</div>
+		<div id="headerbild"> <img src="../../../ke_site_header.jpg" alt="" /> </div>
+</div>
+
+
+<div id="portal-breadcrumbs">
+    <a href="../../../index.html">Home
+    </a>
+    
+      <span class="breadcrumbSeparator navi_pfeil">&raquo;</span>
+        
+            <a href="../../../lehre.html">Lehre</a>
+            
+         
+    
+    
+      <span class="breadcrumbSeparator navi_pfeil">&raquo;</span>
+        
+            <a href="../../archiv.html">Vergangene Semester</a>
+            
+         
+    
+    
+      <span class="breadcrumbSeparator navi_pfeil">&raquo;</span>
+        
+            <a href="../ss05.html">SS 05</a>
+            
+         
+    
+    
+      <span class="breadcrumbSeparator navi_pfeil">&raquo;</span>
+        
+            
+            <span class="aktiv">Seminar on Spam Filtering</span>
+         
+    
+
+</div>
+
+      </div>
+
+      <div id="portal-columns">
+            
+                
+                <div id="portal-column-one">
+                    
+                      
+<div class="portletWrapper" data-portlethash="706c6f6e652e6c656674636f6c756d6e0a636f6e746578740a2f506c6f6e650a6e617669676174696f6e" id="portletwrapper-706c6f6e652e6c656674636f6c756d6e0a636f6e746578740a2f506c6f6e650a6e617669676174696f6e">
+<div id="navigationsspalte" class="portlet portletNavigationTree">    
+    <dl style="margin-bottom:0em">
+    <dt class="portletHeader">
+    <!--<span class="portletHeader">-->
+    <span class="portletTopLeft"></span>
+        
+        <span class="portletTopRight"></span>
+   <!-- </span> -->
+    </dt>
+    </dl>
+    <ul>
+      
+            
+
+
+
+<li>
+
+    
+
+      
+
+        <a href="../../../staff.html" class=" ebene1" title="Knowledge Engineering Group Members and Jobs">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="../../../untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            Staff
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../../../jobs.html" class=" ebene1" title="">
+            
+
+            
+
+            
+           
+            Jobs
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../../../news.html" class=" ebene1" title="Latest news from the Knowledge Engineering Group">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="../../../untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            News
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../../../termine.html" class=" ebene1" title="Upcoming events from the Knowledge Engineering Group">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="../../../untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            Termine
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../../../publications.html" class=" ebene1" title="">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="../../../untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            Publications
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../../../projects.html" class=" ebene1" title="Projects with participation of our group">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="../../../untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            Projects
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../../../research.html" class=" ebene1" title="">
+            
+
+            
+
+            
+           
+            Research
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../../../resources.html" class=" ebene1" title="Datasets, applications, tools and other resources publicly provided by the KE Group.">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="../../../untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            Resources
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../../../lehre.html" class=" aktiv ebene1" title="Lehrveranstaltungen und studentische Arbeiten">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="../../../untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            Lehre
+        </a>
+        
+    
+
+    <ul>  
+        
+
+
+
+<li>
+
+    
+
+      
+
+        <a href="../../Klausuren.html" class=" ebene2" title="Im Rahmen jeder Vorlesung findet am Ende des Semesters eine schriftliche Klausur statt. Die folgenden Informationen gelten im wesentlichen für alle Klasuuren, die Sie bei der KE-Gruppe schreiben.">
+            
+
+            
+
+            
+           
+            Klausuren
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../../../theses.html" class=" ebene2" title="">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="../../../untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            Studentische Arbeiten
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../../oberseminar.html" class=" ebene2" title="">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="../../../untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            Oberseminar
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../../archiv.html" class=" aktiv ebene2" title="Archiv">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="../../../untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            Vergangene Semester
+        </a>
+        
+    
+
+    <ul>  
+        
+
+
+
+<li>
+
+    
+
+      
+
+        <a href="../ws-18-19.html" class=" ebene3" title="">
+            
+
+            
+
+            
+           
+            WS 18/19
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../ss18.html" class=" ebene3" title="Lehrangebot Sommersemester 2018">
+            
+
+            
+
+            
+           
+            SS 18
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../ws-17-18.html" class=" ebene3" title="Lehrangebot Wintersemester 2017/18">
+            
+
+            
+
+            
+           
+            WS 17/18
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../ss17.html" class=" ebene3" title="">
+            
+
+            
+
+            
+           
+            SS 17
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../ws-16-17.html" class=" ebene3" title="">
+            
+
+            
+
+            
+           
+            WS 16/17
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../ss16.html" class=" ebene3" title="Lehrangebot Sommersemester 2016">
+            
+
+            
+
+            
+           
+            SS 16
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../ws-15-16.html" class=" ebene3" title="">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="../../../untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            WS 15/16
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../ss15.html" class=" ebene3" title="Lehre Sommersemester 2015">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="../../../untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            SS 15
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../ws-14-15.html" class=" ebene3" title="Lehrangebot WS 2014/15 ">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="../../../untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            WS 14/15
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../ss14.html" class=" ebene3" title="Lehre Sommersemester 2014">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="../../../untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            SS 14
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../ws-13-14.html" class=" ebene3" title="WS 13/14">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="../../../untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            WS 13/14
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../ss13.html" class=" ebene3" title="Sommersemester 2013">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="../../../untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            SS 13
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../ws-12-13.html" class=" ebene3" title="WS 12/13">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="../../../untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            WS 12/13
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../ss12.html" class=" ebene3" title="">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="../../../untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            SS 12
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../ws-11-12.html" class=" ebene3" title="WS 11/12">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="../../../untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            WS 11/12
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../ss11.html" class=" ebene3" title="">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="../../../untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            SS 11
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../ws1011.html" class=" ebene3" title="Veranstaltungen im Wintersemester 2010/11">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="../../../untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            WS 10/11
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../ss10.html" class=" ebene3" title="Sommersemester 2010">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="../../../untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            SS 10
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../ws0910.html" class=" ebene3" title="">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="../../../untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            WS 09/10
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../ss09.html" class=" ebene3" title="">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="../../../untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            SS 09
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../ws0809.html" class=" ebene3" title="">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="../../../untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            WS 08/09
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../ss08.html" class=" ebene3" title="">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="../../../untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            SS 08
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../ws0708.html" class=" ebene3" title="">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="../../../untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            WS 07/08
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../ss07.html" class=" ebene3" title="">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="../../../untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            SS 07
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../ws0607.html" class=" ebene3" title="">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="../../../untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            WS 06/07
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../ss06.html" class=" ebene3" title="">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="../../../untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            SS 06
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../ws0506.html" class=" ebene3" title="">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="../../../untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            WS 05/06
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../ss05.html" class=" aktiv ebene3" title="">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="../../../untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            SS 05
+        </a>
+        
+    
+
+    <ul>  
+        
+
+
+
+<li>
+
+    
+
+      
+
+        <a href="praktikum.html" class=" ebene4" title="">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="../../../untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            Praktikum aus maschinellem Lernen und Data Mining
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="spam-filtering.html" class=" aktiv ebene4" title="">
+            
+
+            <span class="navi_pfeil">
+                  &raquo;
+            </span>
+
+            
+           
+            Seminar on Spam Filtering
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="web-mining.html" class=" ebene4" title="">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="../../../untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            Web Mining - Data Mining im Internet
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="http://www.ke.informatik.tu-darmstadt.de/%7Egunter/LEHRE/ALG-LERNEN-SS05/" class=" ebene4" title="">
+            
+
+            
+
+            
+           
+            Theorie des Algorithmischen Lernens
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="http://www.dvs1.informatik.tu-darmstadt.de/lectures/ss05/dke/index.html" class=" ebene4" title="">
+            
+
+            
+
+            
+           
+            Einführung in Data and Knowledge Engineering
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="http://www.tu-darmstadt.de/vv/comments/20.113.tud" class=" ebene4" title="">
+            
+
+            
+
+            
+           
+            Grundzüge der Informatik IV
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="http://www.algo.informatik.tu-darmstadt.de/lehre/2005ws/AI2/" class=" ebene4" title="">
+            
+
+            
+
+            
+           
+            Allgemeine Informatik II
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+
+
+    </ul>
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../ws0405.html" class=" ebene3" title="">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="../../../untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            WS 04/05
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../ss04.html" class=" ebene3" title="">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="../../../untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            SS 04
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="../ws0304.html" class=" ebene3" title="">
+            
+
+            
+
+            <span class="hat_untermenue">
+                  <img src="../../../untermenue.gif" alt="Untermenue" /> 
+            </span>
+           
+            WS 03/04
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+
+
+    </ul>
+    
+</li>
+
+
+
+
+    </ul>
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="spam-filtering/lehre/arbeiten.html" class=" ebene1" title="Link auf https://www.ke.tu-darmstadt.de/lehre/arbeiten">
+            
+
+            
+
+            
+           
+            Thesis Topics
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+<li>
+
+    
+
+      
+
+        <a href="http://www.informatik.tu-darmstadt.de" class=" ebene1" title="Fachbereich Informatik, TU Darmstadt">
+            
+
+            
+
+            
+           
+            FB20
+        </a>
+        
+    
+
+    
+    
+</li>
+
+
+
+
+        </ul>
+
+</div>
+
+</div>
+
+<div class="portletWrapper" data-portlethash="706c6f6e652e6c656674636f6c756d6e0a636f6e746578740a2f506c6f6e650a6e657773" id="portletwrapper-706c6f6e652e6c656674636f6c756d6e0a636f6e746578740a2f506c6f6e650a6e657773">
+<dl class="portlet portletNews">
+
+    <dt class="portletHeader">
+        <span class="portletTopLeft"></span>
+        <a href="../../../news.html" class="tile">News</a>
+        <span class="portletTopRight"></span>
+    </dt>
+
+    
+    <dd class="portletItem odd">
+
+        <a href="../../../news/thesis-dang.html" class="tile" title="">
+            
+            The­sis on adaptive driver assistance systems de­fend­ed 
+         </a>
+            <span class="portletItemDetails">Feb 21, 2020</span>
+
+    </dd>
+    
+    
+    <dd class="portletItem even">
+
+        <a href="../../../news/DS2019.html" class="tile" title="">
+            
+            Best paper award at Discovery Science 2019
+         </a>
+            <span class="portletItemDetails">Oct 28, 2019</span>
+
+    </dd>
+    
+    
+    <dd class="portletItem odd">
+
+        <a href="../../../news/leaving.html" class="tile" title="">
+            
+            Leaving
+         </a>
+            <span class="portletItemDetails">Sep 23, 2019</span>
+
+    </dd>
+    
+    
+    <dd class="portletItem even">
+
+        <a href="../../../news/eseg-in-tv.html" class="tile" title="">
+            
+            Our project ESEG in the TV news
+         </a>
+            <span class="portletItemDetails">Jan 14, 2019</span>
+
+    </dd>
+    
+    
+    <dd class="portletItem odd">
+
+        <a href="../../../news/student-bot-beats-crazyhouse-champion.html" class="tile" title="">
+            
+            Student Bot beats Crazyhouse World Champion
+         </a>
+            <span class="portletItemDetails">Dec 27, 2018</span>
+
+    </dd>
+    
+
+    <dd class="portletFooter">
+        <span class="portletBottomLeft"></span>
+        <a href="../../../news.html">
+          More news&hellip;
+        </a>
+        <span class="portletBottomRight"></span>
+    </dd>
+    
+</dl>
+
+</div>
+
+
+
+
+                    
+                    &nbsp;
+                </div>
+                
+            
+
+            
+            <div id="portal-column-content" class="hyphenate">
+
+              <div id="viewlet-above-content3"></div>
+	      <div class="eine_spalte">
+              
+                <div class="">
+
+                    
+
+                    <span id="contentTopLeft3"></span>
+                    <span id="contentTopRight3"></span>
+
+                    
+
+    <dl class="portalMessage info" id="kssPortalMessage" style="display:none">
+        <dt>Info</dt>
+        <dd></dd>
+    </dl>
+
+
+
+                    
+                    <div id="content">
+                      
+                      
+
+                        
+                            
+                            
+                                
+                                
+            
+                <h1 id="parent-fieldname-title" class="documentFirstHeading">
+                    Seminar on Spam Filtering - SS 05
+                </h1>
+            
+            
+        
+                            
+                            
+
+
+                            
+                                
+                                
+            
+                
+            
+            
+        
+                            
+
+                            
+
+
+                            <div id="content-core">
+                                
+    
+        
+        <div class="" id="parent-fieldname-text-d20749e4ef34d830f364564a47fbf791">
+            <!-- use-template -->
+  
+
+
+<!--
+<blink><b>Benotung:</b></blink> Die Noten f&uuml;r das Seminar sind
+vergeben und k&ouml;nnen ab 26.7. jeweils vormittags im
+Sekretariat erfragt werden (E304). Allerdings habe ich festgestellt,
+da&szlig; ich von den meisten von Ihnen keine Matrikelnummer habe, die
+ich aber f&uuml;r einen Aushang der Noten brauche! Bitte diese
+umgehend an <a href="mailto:gploch@informatik.tu-darmstadt.de">Frau
+Ploch</a> schicken!
+-->
+Lehrveranstaltung 20.410.4 im <a href="http://www.tu-darmstadt.de/vv/comments/20.179.tud">TUD
+Vorlesungsvorzeichnis</a>
+<p class="news">
+Die Seminar-Noten hängen - soweit ich die Ausarbeitungen bereits erhalten habe - vor E304 aus.</p>
+<h2>Inhalt</h2>
+<p>
+In diesem Seminar werden verschiedene Aspekte im Zusammenhang mit Spam
+Mail Filtering besprochen. Das Spektrum wird dabei Bereiche wie
+Spamming-Techniken, adaptiven Spam-Filter, bekannte Spam-Filter
+Pakete, Evaluierung von Spam-Filtern, rechtliche Aspekte usw. abdecken.</p>
+<p>
+Die einzelnen Themenbereiche werden von den Teilnehmern aufbereitet,
+in einem ca. 45-minütigen Kurz-Vortrag (30 min Vortrag, 15 min
+Diskussion) präsentiert und schriftlich ausgearbeitet.</p>
+<p>
+Es wird erwartet, daß Sie die
+Vorträge mit Slides begleiten. Falls Sie keinen Laptop haben,
+bitte mir
+die Slides rechtzeitig zu senden, damit ich sie auf meinem Laptop
+einspielen bzw. testen kann. Die Vorträge und/oder Slides
+können
+wahlweise auf Deutsch oder Englisch
+gehalten werden.</p>
+<h2>Benotung</h2>
+<p>
+In die Gesamtnote fließen die Ausarbeitung des Vortrags (Folien
+und
+schriftliche Ausarbeitung), die Präsentation, die Beantwortung
+von Fragen zum Vortrag, sowie die aktive Teilnahme an der Diskussion
+bei den Vorträgen anderer ein.</p>
+<h2>Vorbereitungsgespräche:</h2>
+<p>
+Falls Sie das wünschen, können wir uns in der Woche vor
+Ihrem Vortrag (Montag vor Ihrem Vortrag ist zu spät) über
+Ihre Präsentation unterhalten. Dazu sollten Sie mit einem mehr
+oder weniger fertig ausgearbeiteten Vortrag
+kommen, den wir dann kurz durchbesprechen, bzw. versuchen eventuelle
+Fragen zu klären.</p>
+<p>
+Termine können wir frei vereinbaren, düblicherweise
+freitags.</p>
+<h2>Hardware:</h2>
+<p>
+Falls Sie die Folien von meinem Laptop aus präsentieren wollen,
+ist das kein Problem, aber Sie sollten mir die Folien rechtzeitig
+schicken (ansonsten gehe ich davon aus, daß sie Ihr eigenes
+Gerät mitbringen). Open Office, Powerpoint, und PDF sind kein
+Problem, alles andere nach Rücksprache.</p>
+<h2>Termine</h2>
+<p>jeweils Dienstag, 16:15 - 17:55, Raum S2/02|A102.</p>
+<ul>
+  <li>19.4. <strong>Vorbesprechung</strong></li>
+  <li> 3.5. <strong>Einführung</strong><br />
+Einführung in das Problem <br />
+Spamming Techniques (Sebastian Blume) </li>
+  <li>10.5 <strong>Machine Learning Ansätze 1: Bayesian Filtering</strong> <br />
+Graham's filter, bogofilter (Charles Wijaya)<br />
+Spam Bayes (Arne Pottharst) </li>
+  <li>17.5. <strong>Machine Learning Ansätze 2</strong><br />
+CRM 114 (Maryam Zadmajid) <br />
+Memory-Based and Other Machine Learning Techniques (Christian
+Stöhr)<br />
+  </li>
+  <li>24.5.<strong> Kollaborative Ansätze 1</strong> <br />
+Peer-to-Peer Spam filtering (Gregor Mitsch)<br />
+Social Networks (Christian Zimmer) </li>
+  <li>31.5.<strong> Kollaborative Ansätze 2</strong> <br />
+Detecting Near-Duplicate Messages (Simon Kulessa)<br />
+DCC, Razor, Pyzor (Andreas Göb) </li>
+  <li> 7.6. <strong>Integrative Ansätze</strong> <br />
+Multi-faceted Systems (Jens Liebau) <br />
+Spam Assassin (Christian Hett) </li>
+  <li>14.6. <strong>Juristische und wirtschaftliche Aspekte</strong><br />
+Legal Aspects (Daniel Szallies) <br />
+Economic Approaches (Jacqueline Vogel) </li>
+  <li>21.6. <strong>Ökonomische Ansätze</strong></li>
+Pricing via Processing (Thomas Jajeh)<br />
+The Penny Black Project (Andreas Kothe) <li>28.6.<strong>Erkennen beim
+Sender</strong><br />
+Stopping Outgoing Spam (Darius Gasiorek) <br />
+Sender Identification (Oliver Staudt) </li>
+  <li> 5.7. <strong>Evaluierung von Spam Mail Filtern</strong><br />
+Spam Mail and E-mail Corpora (Sebastian Frischbier) <br />
+Evaluating Spam Filters (Thomas Widjaja) </li></ul>
+<h2>Materialien</h2>
+Die unten angegebenen Artikel und Web-links dienen als erste
+Anhaltspunkte, jedoch wird erwartet, daß sich die Vortragenden
+auch weiterführende Referenzen und Informationsquellen ansehen.
+<h4>Überblick</h4>
+Grundlegende Materialen, die sich alle ansehen sollten.
+<ul>
+  <li> Geoff Hulten and J. Goodman: <a href="http://research.microsoft.com/%7Ejoshuago/ICMLTutorialAnnounce.htm">ICML-04
+Tutorial on Junk E-mail Filtering</a> </li>
+  <li>José María Gómez Hidalgo's <a href="http://www.esi.uem.es/%7Ejmgomez/spam/MLSpamBibliography.html">Spam
+Bibliography</a> and <a href="http://www.esi.uem.es/%7Ejmgomez/spam/index.html">Spam Detection
+Resources</a> </li></ul>
+<h4>Understanding the Problem</h4>
+Erste Einführung in das Problem, mit Schwerpunkt auf die
+Herausforderung für KDD.
+<ul>
+  <li>Lorrie Faith Cranor and Brian A. LaMacchia.<a href="http://lorrie.cranor.org/pubs/spam/">Spam!</a> Communications of
+the ACM. Vol. 41, No. 8 (Aug. 1998), Pages 74-83.</li>
+  <li> Tom Fawcett: <a href="http://www.acm.org/sigs/sigkdd/explorations/issues/5-2-2003-12/fawcett.pdf">"In
+vivo" spam filtering: a challenge problem for KDD</a>. SIGKDD
+Explorations 5(2): 140-148 (2003)</li>
+  <li>B. Reinhard <a href="http://www.go4emarketing.de/seiten/email/e37.html">Spam-Schutz -
+mangelhafte Filter und eingeschränkte Benutzerfreundlichkeit</a></li></ul>
+<h4>Spamming Techniques</h4>
+Welche Tricks verwenden Spammer eigentlich?
+<ul>
+  <li><a href="http://www.jgc.org/tsc/">The Spammer's Compendium</a></li>
+  <li>Gregory L. Wittel and S. Felix Wu: <a href="http://www.ceas.cc/papers-2004/170.pdf">On Attacking Statistical
+Spam Filters</a>, CEAS 2004.</li>
+  <li>Christine E. Drake, Jonathan J. Oliver, and Eugene J. Koontz <a href="http://www.ceas.cc/papers-2004/114.pdf"> Anatomy of a Phishing
+Email</a>, CEAS 2004</li>
+  <li>Geoff Hulten, Anthony Penta, Gopalakrishnan Seshadrinathan, Manav
+Mishra: <a href="http://www.ceas.cc/papers-2004/165.pdf">Trends in
+Spam Products and Methods</a>, CEAS, 2004.</li></ul>
+<h4>Paul Graham's Filter</h4>
+Ein einfacher adaptiver Spam-Filter, der auf Ideen aus Bayes'schen
+Filtern basiert, und bei vielen Open Source Projekten (insbesondere
+Mozilla und Thunderbird) als Basis verwendet wird.
+<ul>
+  <li>P. Graham: <a href="http://www.paulgraham.com/falsepositives.html">Filters vs.
+Blacklists</a></li>
+  <li>P. Graham: <a href="http://www.paulgraham.com/spam.html">A Plan
+for Spam</a></li>
+  <li>P. Graham: <a href="http://www.paulgraham.com/better.html">Better
+Bayesian Filtering</a></li>
+  <li><a href="http://bogofilter.sourceforge.net/">bogofilter</a> </li></ul>
+<h4>Spam Bayes</h4>
+Spam Bayes ist eine Bayesian Spam Filtering System, das auf Graham's
+Algorithmus basiert, aber etliche Verbesserungen von Gary Robinson und
+anderen enthält.
+<ul>
+  <li> <a href="http://www.spambayes.org">http://www.spambayes.org</a></li>
+  <li> T.A Meyer and B Whateley: <a href="http://ceas.cc/papers-2004/136.pdf">SpamBayes: Effective
+open-source, Bayesian based, email classification system.</a>, CEAS
+2004.</li>
+  <li>Gary Robinson: <a href="http://radio.weblogs.com/0101454/stories/2002/09/16/spamDetection.html">Spam
+Detection</a></li>
+  <li>Gary Robinson: <a href="http://www.linuxjournal.com/article/6467">A
+Statistical Approach to the Spam Problem</a> Linux Journal. </li></ul>
+<h4>CRM 114</h4>
+CRM114 basiert auf einer Technik namens Sparse Binary Polynomial
+Matching und nimmt für sich ausgesprochen hohe Genauigkeiten in
+Anspruch.
+<ul>
+  <li><a href="http://crm114.sourceforge.net/">http://crm114.sourceforge.net/</a></li>
+  <li>William S. Yerazunis, <a href="http://crm114.sourceforge.net/Plateau_Paper.pdf">The
+Spam-Filtering Accuracy Plateau at 99.9% Accuracy and How to Get Past
+It.</a> 2004 MIT Spam Conference.</li>
+  <li>William S. Yerazunis, <a href="http://crm114.sourceforge.net/CRM114_paper.sxw"> Sparse Binary
+Polynomial Hashing and the CRM114 Discriminator</a>, 2003 MIT Spam
+Conference</li></ul>
+<h4>Machine Learning Techniques</h4>
+Verschiedenste Maschinelle Lern-Techniken wurden bereits für diese
+Aufgabe untersucht. Die folgenden beiden Arbeiten sind nur eine kleine
+Auswahl.
+<ul>
+  <li>Georgios Sakkis, Ion Androutsopoulos, Georgios Paliouras,
+Vangelis Karkaletsis, Constantine D. Spyropoulos, Panagiotis
+Stamatopoulos: <a href="http://www.aueb.gr/users/ion/docs/ir_memory_based_antispam_filtering.pdf">A
+Memory-Based Approach to Anti-Spam Filtering for Mailing Lists</a>.
+Information Retrieval 6(1): 49-73 (2003).</li>
+  <li>Gómez Hidalgo, J.M. <a href="http://www.esi.uem.es/%7Ejmgomez/papers/report01a.pdf">Evaluating
+Cost-Sensitive Unsolicited Bulk Email Categorization.</a> ACM Symposium
+on Applied Computing, 2002. </li></ul>
+<h4>Peer-to-Peer Spam Filtering</h4>
+Ansätze zum verteilten E-mail Filtering.
+<ul>
+  <li>Alan Gray, Mads Haahr, <a href="http://www.ceas.cc/papers-2004/132.pdf">Personalised,
+Collaborative Spam Filtering</a> </li>
+  <li>Feng Zhou, Li Zhuang, Ben Zhao, Ling Huang, Anthony D. Joseph,
+and John Kubiatowicz, <a href="http://www.cs.berkeley.edu/%7Eadj/publications/paper-files/ata_middleware.pdf">Approximate
+Object Location and Spam Filtering on Peer-to-Peer Systems</a>, In the
+Proceedings of ACM/IFIP/USENIX International Middleware Conference
+(Middleware 2003), Rio de Janeiro, Brazil, June, 2003 </li></ul>
+<h4>Social Networks</h4>
+Die folgenden Arbeiten konzentrieren sich auf soziale Netzwerke, die
+durch das Senden und Empfangen von E-mails entstehen.
+<ul>
+  <li> P. Oscar Boykin and Vwani Roychowdhury: <a href="http://arxiv.org/abs/cond-mat/0402143"> Personal Email Networks:
+An Effective Anti-Spam Tool</a></li>
+  <li>Jennifer Golbeck, James Hendler: <a href="http://www.ceas.cc/papers-2004/177.pdf">Reputation Network
+Analysis for Email Filtering</a></li></ul>
+<h4>Detecting Near-Duplicate Messages</h4>
+Kollaborative Ansätze müssen sich darauf verlassen, daß
+man Duplikate (also identische oder in wesentlichen Punkten identische)
+Nachrichten erkennen kann. Das ist ein nicht triviales Problem.
+<ul>
+  <li>A. Chowdhury, O. Frieder, D. A. Grossman, and M. C. McCabe. <a href="http://portal.acm.org/citation.cfm?doid=506309.506311">
+Collection statistics for fast duplicate document detection.</a> ACM
+Transactions on Information Systems, 20(2):171-191, 2002.</li>
+  <li>Aleksander Kolez, Abdur Chowdhury, and Joshua Alspector: <a href="http://www.ceas.cc/papers-2004/147.pdf">The Impact of Feature
+Selection on Signature-Driven Spam Detection</a></li>
+, CEAS 2004.</ul>
+<h4>Collaborative Spam Filtering Systems</h4>
+Ein Kurzüberblick über die wichtigsten Systeme, die auf einen
+kollaborativen Ansatz setzen.
+<ul>
+  <li><a href="http://www.rhyolite.com/anti-spam/dcc/">Distributed
+Checksum Clearinghouse</a></li>
+  <li><a href="http://razor.sourceforge.net">http://razor.sourceforge.net</a></li>
+  <li><a href="http://pyzor.sourceforge.net">http://pyzor.sourceforge.net</a></li></ul>
+<h4>Multifaceted Systems</h4>
+Viele Systeme setzen auf eine offene Architektur, und die Integration
+vieler verschiedener Komponenten.
+<ul>
+  <li>Richard Segal, Jason Crawford, Jeffrey Kephart, Barry Leiba <a href="http://www.ceas.cc/papers-2004/126.pdf">SpamGuru: An Enterprise
+Anti-Spam Filtering System</a>, CEAS 2004.</li>
+  <li>Barry Leiba, Nathaniel Borenstein <a href="http://www.ceas.cc/papers-2004/127.pdf">A Multifaceted Approach
+to Spam Reduction</a>, CEAS 2004.</li>
+  <li>Joshua Goodman, Robert Rounthwaite <a href="http://research.microsoft.com/%7Ejoshuago/smartproof.pdf">SmartProof</a></li></ul>
+<h4>Spam Assassin</h4>
+Spam Assassin ist eine offenes Spam-Bekämpfungs-System, das
+verschiedene Techniken miteinander zu integrieren versucht. Geben Sie
+einen Überblick über dieses System in allen seinen
+Komponenten.
+<ul>
+  <li><a href="http://spamassassin.apache.org/">http://spamassassin.apache.org/</a></li>
+  <li>Alexander K. Seewald <a href="http://www.oefai.at/cgi-bin/get-tr?paper=oefai-tr-2004-11.pdf">Combining
+Bayesian and Rule Score Learning: Automated Tuning for SpamAssassin</a></li></ul>
+<h4>Legal Aspects of Spam Filtering</h4>
+Erarbeiten Sie eine kurze Präsentation über die Anti-Spam
+Gesetze verschiedener Länder, insbesondere natürlich EU und
+USA.
+<ul>
+  <li><a href="http://www.spamlaws.com/">http://www.spamlaws.com</a> </li>
+  <li>Nicola Lugaresi <a href="http://www.ceas.cc/papers-2004/145.pdf">
+European Union vs. Spam: A Legal Response</a>, CEAS 2004. </li></ul>
+<h4>Economic Solutions</h4>
+Eine Grundvoraussetzung für Spamming ist, daß das Senden vom
+Spam Mails billig ist. Könnte man die Kosten dafür
+erhöhen, wäre Spamming nicht mehr rentabel.
+<ul>
+  <li>Sam Vaknin: <a href="http://articles.iaswww.com/Spam/the-economics-of-spam.html">The
+Economics of Spam</a> </li>
+  <li> S. E. Fahlman. <a href="http://www.research.ibm.com/journal/sj/414/forum.pdf"> Selling
+interrupt rights: A way to control unwanted email and telephone calls.</a>
+IBM Systems Journal, 41(4):759--766, 2002.</li>
+  <li>Kang Li, Calton Pu, Mustaque Ahamad <a href="http://www.ceas.cc/papers-2004/191.pdf">Resisting SPAM Delivery
+by TCP Damping</a>, CEAC 2004.</li>
+<!--
+      <li>Rui Dai, Kang Li, <a
+          href="http://www.ceas.cc/papers-2004/189.pdf">Shall We Stop
+          All Unsolicited Email Messages?</a>
+        CEAS 2004.</li>
+--></ul>
+<h4>Pricing via Processing</h4>
+Hier wird dem Sender Rechenzeit zur Lösung einfacher
+kombinatorischer Aufgaben abverlangt, mit der Idee, daß das
+für einzelne Sender ein vertretbarer Aufwand ist, für
+Spammers aber nicht.
+<ul>
+  <li>Dwork and Naor: <a href="http://research.microsoft.com/research/sv/PennyBlack/junk1.pdf">Pricing
+via Processing or Combatting Junk Mail</a>. Proceedings of the 12th
+Annual International Cryptology Conference on Advances in Cryptology.
+pp. 139 - 147, 1992.</li>
+  <li>Cynthia Dwork, Andrew Goldberg and Moni Naor, <a href="http://www.wisdom.weizmann.ac.il/%7Enaor/PAPERS/mem.ps">On
+Memory-Bound Functions for Fighting Spam</a>, Proc. Crypto 2003.</li>
+  <li>Moni Naor, <a href="http://www.wisdom.weizmann.ac.il/%7Enaor/PAPERS/human.ps">Verification
+of a human in the loop or Identification via the Turing Test</a></li></ul>
+<h4>The Penny Black Project</h4>
+Ein Microsoft Projekt, das der Idee Pricing via Processing gewidmet
+ist.
+<ul>
+  <li><a href="http://research.microsoft.com/research/sv/PennyBlack/">Project
+Home-Page</a> </li>
+  <li>M. Abadi, A. Birrell, M. Burrows, F. Dabek, and T. Wobber. <a href="http://research.microsoft.com/copyright/accept.asp?path=/research/sv/pennyblack/demo/ticketserver.pdf&amp;pub=SV">
+Bankable Postage for Network Services</a> Proceedings of the 8th Asian
+Computing Science Conference, Mumbai, India, December 2003</li>
+  <li> M. Abadi, M. Burrows, M. Manasse, and T. Wobber.<a href="http://research.microsoft.com/copyright/accept.asp?path=/research/sv/pennyblack/demo/memory-final-ndss.ps&amp;pub=ISOC">
+Moderately Hard, Memory-bound Functions</a>, Proceedings of the 10th
+Annual Network and Distributed System Security Symposium, February 2003.</li></ul>
+<h4>Stopping Outgoing Spam</h4>
+Während die meisten Ansätze darauf abzielen, Spam Mails beim
+Empfänger zu erkennen, gibt es einige Ansätze, die versuchen,
+das Problem auf der Seite des ISPs zu lösen.
+<ul>
+  <li> Richard Clayton, <a href="http://www.ceas.cc/papers-2004/172.pdf">Stopping Spam by
+Extrusion Detection</a>, CEAS 2004.</li>
+  <li> Joshua Goodman, Robert Rounthwaite.<a href="http://research.microsoft.com/%7Ejoshuago/outgoingspam-final-submit.pdf">
+Stopping Outgoing Spam</a> ACM Conference on E-Commerce, May 2004.</li></ul>
+<h4>Sender Identification</h4>
+Es gibt verschiedene Vorschläge, die eine verläßliche
+Identifizierung des Absenders von E-mails zum Ziel haben.
+<ul>
+  <li><a href="http://www.microsoft.com/mscorp/safety/technologies/senderid/default.mspx">Microsoft
+Sender ID</a> </li>
+  <li><a href="http://www.cobb.com/spam/teos/">TEOS: The Trusted Email
+Open Standard</a></li>
+  <li>Brett Watson: <a href="http://www.ceas.cc/papers-2004/140.pdf">Beyond
+Identity: Addressing Problems that Persist in an Electronic Mail System
+with Reliable Sender Identification</a>, CEAS 2004</li></ul>
+<h4>Spam Mail and Other E-mail Corpora</h4>
+Beschreiben Sie existierende Spam-Mail Corpora, wie sie erstellt
+wurden, ihre Charakteristika, Vergleiche anstellen, etc.
+<ul>
+  <li>J. Goodman, G. Hulten, R. Rouhthwaite: <a href="http://research.microsoft.com/%7Ejoshuago/www2004-submission.pdf">
+Filtering Spam E-mail on a Global Scale</a> Proceedings WWW 2004. </li>
+  <li>B. Klimt, Y. Yang: <a href="http://www.ceas.cc/papers-2004/168.pdf">Introducing the Enron
+Corpus</a>, Proc. CSEAS, 2004</li>
+  <li><a href="http://www.spamarchive.org">http://www.spamarchive.org</a></li>
+  <li>links zu weiteren Corpora finden Sie <a href="http://www.esi.uem.es/%7Ejmgomez/spam/index.html">hier</a></li></ul>
+<h4>Evaluating Spam Filters</h4>
+Wie sollen Spam Filter evaluiert werden?
+<ul>
+  <li>Gordon Cormack and Thomas Lynam <a href="http://plg.uwaterloo.ca/%7Egvcormac/spamcormack.pdf">A Study of
+Supervised Spam Detection Applied to Eight Months of Personal Email</a></li>
+  <li>Ion Androutsopoulos, John Koutsias, Konstantinos Chandrinos,
+Constantine D. Spyropoulos: <a href="http://arxiv.org/abs/cs/0008019">An
+experimental comparison of naive bayesian and keyword-based anti-spam
+filtering with personal e-mail messages</a>. SIGIR 2000: 160-167</li>
+  <li>F. D. Garcia, J.-H. Hoepman, and J. van Nieuwenhuizen, <a href="http://citeseer.ist.psu.edu/644060.html">Spam Filter Analysis</a>,
+Proceedings of 19th IFIP International Information Security Conference,
+WCC2004-SEC, 2004.</li></ul>
+<hr />
+<address><a href="mailto:juffi@ke.informatik.tu-darmstadt.de">Johannes
+Fuernkranz</a></address>
+<!-- Created: Thu Apr  7 11:55:19 CEST 2005 -->
+<!-- hhmts start -->Last modified: Thu Apr 28 21:44:17 CEST 2005
+<!-- hhmts end -->
+            
+        </div>
+    
+    
+
+                            </div>
+                            
+
+
+
+    <div class="visualClear"><!-- --></div>
+
+    <div class="documentActions">
+        
+
+        
+
+    </div>
+
+
+                        
+
+                      
+                    </div>
+                    
+
+                    
+
+                    <span id="contentBottomLeft3"></span>
+                    <span id="contentBottomRight3"></span>
+
+                </div>
+              
+	      
+              <div id="viewlet-below-content">
+
+
+
+
+
+</div>
+
+            </div>
+            </div>
+            
+
+            
+                
+                <div id="portal-column-two">
+                  <div class="visualPadding">
+                    
+                      
+<div class="portletWrapper" data-portlethash="706c6f6e652e7269676874636f6c756d6e0a636f6e746578740a2f506c6f6e650a6b6f6e7461636b74" id="portletwrapper-706c6f6e652e7269676874636f6c756d6e0a636f6e746578740a2f506c6f6e650a6b6f6e7461636b74">
+<dl class="portlet portletStaticText portlet-static-kontakt">
+
+    <dt class="portletHeader">
+        <span class="portletTopLeft"></span>
+        <span>
+           Kontakt
+        </span>
+        <span class="portletTopRight"></span>
+    </dt>
+
+    <dd class="portletItem odd">
+        
+<dl class="portlet portletStaticText portlet-static-kontakt"><dd class="portletItem odd">
+<p><img src="../../../images/keicon.png" alt="small ke-icon" class="image-inline" title="keicon.png" /></p>
+<p>
+  Knowledge Engineering Group</p>
+<p>
+  <a class="external-link" href="http://www.informatik.tu-darmstadt.de">Fachbereich
+  Informatik</a><br />
+  <a class="external-link" href="http://www.tu-darmstadt.de">TU Darmstadt</a></p>
+<p>
+  <a href="../../../anfahrt.html">S2|02 D203<br />
+  Hochschulstrasse 10</a><br />
+  D-64289 Darmstadt</p>
+<p>
+  Sekretariat:<br />
+<img src="../../../images/telefon.png" alt="Telefon-Symbol" class="image-inline" title="telefon.png" />+49 6151 16-21811<br />
+
+  <img src="../../../images/fax.png" alt="Fax-Symbol" class="image-inline" title="fax.png" /> +49 6151 16-<span style="text-align: justify;">21812</span><br />
+
+  <img src="../../../images/email.png" alt="E-Mail-Symbol" class="image-inline" title="email.png" /> <a href="mailto:info@ke.tu-darmstadt.de">info@ke.tu-darmstadt.de</a></p>
+</dd></dl>
+
+        
+            <span class="portletBottomLeft"></span>
+            <span class="portletBottomRight"></span>
+        
+    </dd>
+    
+    
+
+</dl>
+</div>
+
+<div class="portletWrapper" data-portlethash="706c6f6e652e7269676874636f6c756d6e0a636f6e746578740a2f506c6f6e650a6b652d7075626c69632d6b616c656e646572" id="portletwrapper-706c6f6e652e7269676874636f6c756d6e0a636f6e746578740a2f506c6f6e650a6b652d7075626c69632d6b616c656e646572">
+<dl class="portlet portletStaticText portlet-static-ke-public-kalender">
+
+    <dt class="portletHeader">
+        <span class="portletTopLeft"></span>
+        <span>
+           KE Public Kalender
+        </span>
+        <span class="portletTopRight"></span>
+    </dt>
+
+    <dd class="portletItem odd">
+        <a href="../../../termine.html" class="external-link">Click here to see upcoming appointments.</a>
+<p>&nbsp;</p>
+
+        
+            <span class="portletBottomLeft"></span>
+            <span class="portletBottomRight"></span>
+        
+    </dd>
+    
+    
+
+</dl>
+</div>
+
+
+
+
+                    
+                    &nbsp;
+                  </div>
+                </div>
+                
+            
+          </div>
+      
+
+      <div class="visualClear" id="clear-space-before-footer"><!-- --></div>
+
+    </div>
+   </div>
+<div id="kss-spinner"><img alt="" src="http://www.ke.tu-darmstadt.de/spinner.png" /></div>
+<div id="fussbereich_container">
+<div id="schatten_unten"></div>
+
+<div id="fussbereich">
+<a id="schrift_kleiner" href="javascript:fontsize('dekrement')" title="Schrift verkleinern">A</a>
+<a id="schrift_normal" href="javascript:fontsize('reset')" title="Schriftgröße zurücksetzen">A</a>
+<a id="schrift_groesser" href="javascript:fontsize('inkrement')" title="Schrift vergrößern">A</a> |
+<a href="javascript:this.print()"><img src="../../../drucken1.png" alt="" /> Drucken</a>
+| <a accesskey="8" title="Alt(+Shift)+8" href="../../../impressum.html"><img src="../../../impressum.png" alt="" /> Impressum</a>
+| <a accesskey="3" title="Alt(+Shift)+3" href="../../../sitemap.html"><img src="../../../sitemap2.png" alt="" /> Sitemap</a>
+| <a href="../../../search.html"><img src="../../../suche.png" alt="" /> Suche</a>
+| <a href="http://www.ke.tu-darmstadt.de/m/">Mobile Version</a>
+</div><!-- fussbereich -->
+<div id="nach_oben"><div class="nach_oben"><a href="spam-filtering/index.html#top" title="zum Seitenanfang"><img id="png" src="../../../zum_seitenanfang.png" alt="zum Seitenanfang" /><img id="gif" src="../../../zum_seitenanfang_ie6.gif" alt="zum Seitenanfang" /></a></div></div><!-- nach_oben -->
+</div><!-- fussbereich_container -->
+</body>
+</html>
+
+

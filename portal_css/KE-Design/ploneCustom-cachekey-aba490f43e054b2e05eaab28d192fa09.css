@@ -1,0 +1,36 @@
+
+/* - ploneCustom.css - */
+@media all {
+/* http://www.ke.tu-darmstadt.de/portal_css/ploneCustom.css?original=1 */
+p {
+margin: 0 0 1.6em 0;
+line-height: 1.5em;
+}
+#portal-column-two .visualPadding {
+padding : 0 0 0 0 ;
+}
+a {
+text-decoration : underline;
+}
+ul {
+list-style-type: disc;
+}
+#content ul {
+list-style-image: none ;
+list-style-type : disc;
+}
+pre {
+font-family: Monaco, "Courier New", Courier, monospace;
+font-size: 100%;
+padding: 1em;
+border: 1px solid #CCCCCC;
+color: #333333;
+background-color: #dee7ec;
+overflow: auto;
+}
+dd {
+line-height: 1.5em;
+}
+
+}
+
