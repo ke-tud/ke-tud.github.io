@@ -1,0 +1,429 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html> 
+<head> 
+<meta http-equiv="content-type" content="text/html; charset=utf-8"> 
+    <style type="text/css" media="screen">@import url(../../portal_css/KE-Design/member.css);</style> 
+    <style type="text/css" media="screen">@import url(../../portal_css/KE-Design/base.css);</style> 
+    <link rel="stylesheet" type="text/css" media="screen" href="../../portal_css/++resource++tinymce.stylesheets/tinymce.css" /> 
+    <style type="text/css">@import url(../../portal_css/KE-Design/print.css);</style> 
+    <style type="text/css" media="screen">@import url(../../portal_css/KE-Design/kedesign.css);</style> 
+   <!-- <script type="text/javascript" src="https://www.ke.tu-darmstadt.de/bibtex/aigaionengine/javascript/iframeresize.js"></script> -->
+        <!--[if lt IE 8]>    
+    
+    <link rel="stylesheet" type="text/css" media="screen" href="https://www.ke.tu-darmstadt.de/portal_css/KE-Design/IEFixes-cachekey6505.css" />
+        <![endif]--> 
+    
+    <link rel="stylesheet" type="text/css" media="screen" href="../../portal_css/KE-Design/kupustyles.css" /> 
+    <style type="text/css">@import url(../../portal_css/++resource++gomobile.mobile/simulator.css);</style> 
+ 
+  
+    <link rel="kinetic-stylesheet" type="text/css" href="https://www.ke.tu-darmstadt.de/portal_kss/KE-Design/resourcetinymce.ksstinymce.kss" /> 
+    <link rel="kinetic-stylesheet" type="text/css" href="https://www.ke.tu-darmstadt.de/portal_kss/KE-Design/at.kss" /> 
+
+<title>Google Calendar Include</title> 
+<script type="text/javascript" src="jquery-2.1.4.min.js"></script>
+<script type="text/javascript">
+//
+//code zusammenkopiert aus https://www.rgagnon.com/jsdetails/js-0050.html und https://gdata-javascript-client.googlecode.com/svn/trunk/samples/calendar/simple_sample/simple_sample.html
+
+
+/**
+ * Adds a leading zero to a single-digit number.  Used for displaying dates.
+ */
+function padNumber(num) {
+  if (num <= 9) {
+    return "0" + num;
+  }
+  return num;
+}
+
+//currently not used!!
+/**
+ * Determines the full calendarUrl based upon the calendarAddress
+ * argument and calls loadCalendar with the calendarUrl value.
+ *
+ * @param {string} calendarAddress is the email-style address for the calendar
+ */ 
+function loadCalendarByAddress(calendarAddress,startTime,endTime,searchText) {
+  var calendarUrl = 'https://www.google.com/calendar/feeds/' +
+                    calendarAddress + 
+//                    '/public/full';
+                    '/public/basic';
+  loadCalendar(calendarUrl,startTime,endTime,searchText);
+}
+
+//uimrbq33ukhfsoohvs1bpps220@group.calendar.google.com
+//https://www.google.com/calendar/feeds/uimrbq33ukhfsoohvs1bpps220%40group.calendar.google.com/public/basic
+//https://www.google.com/calendar/feeds/uimrbq33ukhfsoohvs1bpps220%40group.calendar.google.com/public/basic?orderBy=startTime&start-min=2013-11-01&start-max=2013-11-30
+
+
+
+function htmlAlert(text){
+//  text='Error loading calendar: '+text;
+  text='Sorry, error loading calendar. ';
+  var calendarTitle=document.getElementById('calendarTitle');
+  if(typeof(calendarTitle) != 'undefined' && calendarTitle != null){
+     calendarTitle.innerHTML = text;
+  }
+  var eventDiv = document.getElementById('events');
+  if(typeof(eventDiv) != 'undefined' && calendarTitle != eventDiv){
+     eventDiv.innerHTML = text;
+  }	  
+}
+
+var qmode=null;
+var q=null;
+var sr=null;
+var sr1=null;
+var sr2=null;
+var sr3=null;
+var sr4=null;
+var sr5=null;
+//use year, shortdayname, dayname, day, month, hours, minutes, eventname as replacement patterns
+var displayPattern='shortdayname day.month. eventname';
+//var displayPattern='shortdayname day.month. hours:minutes eventname';
+
+var d_names = new Array("Sonntag", "Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag");
+var d_names_short = new Array("So", "Mo", "Di", "Mi", "Do", "Fr", "Sa");
+var month_to_number_de = {'Jan': 1, 'Feb': 2, 'M&auml;r': 3, 'Apr':4, 'Mai':5, 'Jun':6, 'Jul':7, 'Aug':8, 'Sep':9, 'Okt':10, 'Nov':11, 'Dez':12};
+var month_to_number_en = {'Jan': 1, 'Feb': 2, 'Mar': 3, 'Apr':4, 'May':5, 'Jun':6, 'Jul':7, 'Aug':8, 'Sep':9, 'Oct':10, 'Nov':11, 'Dec':12};
+
+/**
+ * Callback function for the Google data JS client library to call with a feed 
+ * of events retrieved.
+ *
+ * Creates an unordered list of events in a human-readable form.  This list of
+ * events is added into a div called 'events'.  The title for the calendar is
+ * placed in a div called 'calendarTitle'
+ *
+ * @param {json} feedRoot is the root of the feed, containing all entries 
+ */ 
+function listEvents(feedRoot) {
+
+//  alert(JSON.stringify(feedRoot));
+//  console.log(feedRoot);
+  /* set the calendarTitle div with the name of the calendar */
+  var calendarTitle=document.getElementById('calendarTitle');
+  if(typeof(calendarTitle) != 'undefined' && calendarTitle != null){
+     calendarTitle.innerHTML = feedRoot.feed.title.$t;
+  }
+
+  
+  /* loop through each event in the feed */
+  
+  var eventDiv = document.getElementById('events');
+  if(typeof(eventDiv) != 'undefined' && calendarTitle != eventDiv){
+
+	var previousNumChildren=eventDiv.childNodes.length;
+    /* create a new unordered list */
+    var ul = document.createElement('ul');
+    jQuery.each(feedRoot.items, function(i, item){
+      var title = item.summary;
+	  if(!(q!==null && qmode=='phrase' && title.toLowerCase().indexOf(q.toLowerCase())<0)){ //if search phrase is not found, then skip rest and jump to next event
+	  if(sr!=null){
+		title=parseSearchReplace(sr,title);
+	  }
+	  if(sr1!=null){
+		title=parseSearchReplace(sr1,title);
+	  }
+	  if(sr2!=null){
+		title=parseSearchReplace(sr2,title);
+	  }
+	  if(sr3!=null){
+		title=parseSearchReplace(sr3,title);
+	  }
+	  if(sr4!=null){
+		title=parseSearchReplace(sr4,title);
+	  }
+	  if(sr5!=null){
+		title=parseSearchReplace(sr5,title);
+	  }
+      var startDateTime = null;
+      var startJSDate = null;
+    	
+//		if(typeof item.gd$when !== 'undefined'){
+		if(typeof item.start !== 'undefined'){
+//			startDateTime = item.gd$when[0].startTime;
+			startDateTime = item.start.dateTime;
+	startJSDate = new Date(startDateTime);
+		}else{
+		return; //replacement for continue in jQuery.each
+//		console.log(item)
+//	  var summaryText=item.summary.$t;
+	  var summaryText=item.summary;
+	  //match something like "When: Tue Nov 26, 2013 5:10pm to 6:50pm&amp;nbsp;"
+	  //or "Wann: Di 10. Feb. 2015 11:40 bis 13:20&nbsp;"
+//	  summaryText.match(/When:\s+\S+\s+(\S+)\s+(\d+),\s(\d+)\s+(\d{2}):(\d{2})([ap])m.*nbsp/);
+//	  summaryText=summaryText.match(/(When):\s+\w\s+(\w)\s+(\d+),\s(\d+)\s+(\d{2}):(\d{2})([ap])m.*nbsp/);
+//	  var test=summaryText.split("\s");
+//	  var test=summaryText.match(/(Wann: )\S\.\s+(\d+)\./);
+//	  var test=summaryText.match(/Wann:\s(\S+)\.\s/);
+	  var split=summaryText.split(/\s/);
+//	  var split="When: Tue Nov 26, 2013 5:10pm ".split(/\s/);
+	  if(split[0]=="Wann:"){
+	     var day=split[2].split(/\./)[0];
+		 var monthstring=split[3].split(/\./)[0];
+		 var month=month_to_number_de[monthstring]-1;
+
+		 var year=split[4];
+		 var hourminutes=split[5].split(/:/);
+		 var hours=hourminutes[0];
+		 var minutes=hourminutes[1];
+		var startJSDate=new Date(Number(year),month,Number(day),Number(hours),Number(minutes),0);
+//	  console.log("--------");
+//	  console.log(summaryText);
+	  //console.log(test);
+		//console.log(day);
+//		console.log(monthstring);
+		//console.log(month);
+		//console.log(year);
+		//console.log(hours);
+		//console.log(minutes);
+		//console.log(startJSDate);
+		
+//	  console.log(split[0]);
+//	  console.log(split[1]);
+  //	  console.log(split[2]);
+  	//  console.log(split[3]);
+  	  //console.log(split[4]);
+  	  //console.log(split[5]);
+	  }else if(split[0]=="When:"){
+	     var day=split[3].split(/,/)[0];
+		 var monthstring=split[2];
+		 var month=month_to_number_en[monthstring]-1;
+
+		 var year=split[4];
+		 var hourminutes=split[5].split(/:/);
+		 var hours=hourminutes[0];
+		 var minutes=hourminutes[1].split(/(a|p)/)[0];
+		 if(hourminutes[1].search(/p/))
+			hours=Number(hours)+12;
+		var startJSDate=new Date(Number(year),month,Number(day),Number(hours),Number(minutes),0);
+	  //console.log("--------");
+	  //console.log(summaryText);
+	  //console.log(test);
+		//console.log(day);
+		//console.log(monthstring);
+		//console.log(month);
+		//console.log(year);
+		//console.log(hourminutes);
+		//console.log(hours);
+		//console.log(minutes);
+		//console.log(startJSDate);
+	  }
+			
+	}
+
+      
+//      var dateString = startJSDate.getDate()+ '.' +(startJSDate.getMonth() + 1) + '.';
+		var dateString=displayPattern;
+		dateString=dateString.replace(/year/,startJSDate.getFullYear());
+		var month=startJSDate.getMonth()+1;
+		dateString=dateString.replace(/month/,month);
+		dateString=dateString.replace(/hours/,startJSDate.getHours());
+		dateString=dateString.replace(/minutes/,padNumber(startJSDate.getMinutes()));
+		dateString=dateString.replace(/shortdayname/,d_names_short[startJSDate.getDay()]); //first this, otherwise "dayname" is also matches for "shortdayname"
+		dateString=dateString.replace(/dayname/,d_names[startJSDate.getDay()]);
+		dateString=dateString.replace(/day/,startJSDate.getDate());
+      var li = document.createElement('li');
+
+      /* if we have a link to the event, create an 'a' element */
+//      var entryLinkHref = item.link[0].href;
+      var entryLinkHref = item.htmlLink;
+      if (entryLinkHref != null) {
+		var m=dateString.match(/(.*)eventname(.*)/);
+		if(m[1]!='')
+			li.appendChild(document.createTextNode(m[1]));
+		var entryLink = document.createElement('a');
+	//	entryLink.setAttribute('href', entryLinkHref);
+		entryLink.setAttribute('href', entryLinkHref+'&ctz=Europe/Berlin'); // for displaying right time zone
+		entryLink.setAttribute('target', '_top');
+		entryLink.appendChild(document.createTextNode(title));
+		li.appendChild(entryLink);
+		if(m[2]!='')
+			li.appendChild(document.createTextNode(m[2]));
+      } else {
+		li.appendChild(document.createTextNode(dateString.replace(/eventname/,title)));
+      }	    
+      /* append the list item onto the unordered list */
+      ul.appendChild(li);
+    }
+	});
+    eventDiv.appendChild(ul);
+    if (eventDiv.childNodes.length != previousNumChildren && previousNumChildren> 0) {
+      eventDiv.removeChild(eventDiv.childNodes[0]); //TODO: delete all chilren
+    }	  
+  } //otherwise do nothing
+}
+
+
+function parseSearchReplace(searchReplaceString,inputString){
+	var sep=searchReplaceString.substring(0,1);
+	var re = new RegExp('^'+sep+'([^'+sep+']*)'+sep+'([^'+sep+']*)'+sep+'([igm]*)$');
+	var m=searchReplaceString.match(re);
+	if(m==null || typeof(m[1]) == 'undefined' || typeof(m[2]) == 'undefined')
+		return inputString;
+	var modifiers='';
+	if(typeof(m[3]) != 'undefined')
+		modifiers=m[3];
+	re=new RegExp(m[1],modifiers);
+//	return inputString.replace(re,m[2]);
+	inputString=inputString.replace(re,m[2]);
+	return inputString.replace("$","&");
+}
+
+function getParameter(p) {
+// returns NULL if the parameter p is not found
+ var re = new RegExp('&'+p+'=([^&]*)','i');
+ var c = window.location.search; 
+ var s= (c=c.replace(/^\?/,'&').match(re)) ?c=c[1] :c=null;
+ if(s==null)
+	return null;
+else
+ return unescape(s);
+};
+
+//parent iframe must have the id gcal-include
+function resizeParentFrame() {
+	var height=getDocHeight();
+	if(height !=0){
+//		alert(parent.window.document.getElementById("gcal-include").height);
+		parent.window.document.getElementById('gcal-include').height = height + 0; //small bias because there is often a scrollbar with the correct size
+//		parent.document.getElementById("gcal-include").height = height + 10; //small bias  because there is often a scrollbar with the correct size
+//		window.parent.document.getElementById("gcal-include").height = height + 10; //small bias  because there is often a scrollbar with the correct size
+
+//		window.parent.getElementById("gcal-include").height = height*1.03; //small bias  because there is often a scrollbar with the correct size
+//		alert(parent.window.document.getElementById("gcal-include").height);
+	}
+}
+
+function resizeParentiFrame(name) {
+	var height=getDocHeight();
+	if(height !=0 && parent.window.document.getElementById(name) !== null){
+		parent.window.document.getElementById(name).height = height+0; //small offset of 10px because there is often a scrollbar with the correct size
+	}
+}
+
+//from https://james.padolsey.com/javascript/get-document-height-cross-browser/
+function getDocHeight() {
+	var db = document.body;
+	var dde = document.documentElement;
+ 
+	var docHeight = Math.max(db.scrollHeight, dde.scrollHeight, db.offsetHeight, dde.offsetHeight, db.clientHeight, dde.clientHeight)
+	return docHeight;
+}
+
+//--></script> 
+<script type="text/javascript" charset="utf-8">
+
+
+</script>
+</head>
+<!-- <body onload="resizeParentFrame()" style="background-color:transparent"> -->
+<!-- <body onLoad="resizeParentiFrame('gcal-include')" style="background-color:transparent"> -->
+<body style="background-color:transparent">
+
+<!--
+<div id="calendarTitle"></div>
+-->
+<div id="content">
+<div id="events">loading events from calendar ...</div>
+</div>
+<script type="text/javascript">
+qmode=getParameter('qmode');
+q=getParameter('q');
+sr=getParameter('sr');
+sr1=getParameter('sr1');
+sr2=getParameter('sr2');
+sr3=getParameter('sr3');
+sr4=getParameter('sr4');
+sr5=getParameter('sr5');
+var temp=getParameter('displaypattern');
+if(temp!=null)
+	displayPattern=temp;
+// Testing:
+//loadCalendar('https://www.google.com/calendar/feeds/uimrbq33ukhfsoohvs1bpps220@group.calendar.google.com/public/full','2011-04-01','2011-07-31','"web');
+var gcal=getParameter('gcal');
+if(gcal == null){
+  var mess="Error! No calendar ID given.";
+  var calendarTitle=document.getElementById('calendarTitle');
+  if(typeof(calendarTitle) != 'undefined' && calendarTitle != null){
+     calendarTitle.innerHTML = mess;
+  }
+  var eventDiv = document.getElementById('events');
+  if(typeof(eventDiv) != 'undefined' && calendarTitle != eventDiv){
+     eventDiv.innerHTML = mess;
+  }
+}else{
+    var eventDiv = document.getElementById('events');
+	var entryLink = document.createElement('a');
+//	entryLink.setAttribute('href', entryLinkHref);
+	entryLink.setAttribute('href', 'https://www.google.com/calendar/embed?src='+gcal+'&ctz=Europe/Berlin'); // for displaying right time zone
+	entryLink.setAttribute('target', '_top');
+	entryLink.appendChild(document.createTextNode('https://www.google.com/calendar/embed?src='+gcal+'&ctz=Europe/Berlin'));
+	if (eventDiv.childNodes.length > 0) {
+      eventDiv.removeChild(eventDiv.childNodes[0]);
+    }
+	eventDiv.appendChild(entryLink);
+	//loadCalendarByAddress(gcal,getParameter('start-min'),getParameter('start-max'),q);
+//  var startMin = getParameter('start-min')+ 'T00:00Z';
+      jQuery(function(){
+        // Get list of upcoming iCal events formatted in JSON
+//        jQuery.getJSON("https://www.google.com/calendar/feeds/uimrbq33ukhfsoohvs1bpps220@group.calendar.google.com/public/full?orderBy=startTime&q=web&singleEvents=true&timeMax=2011-07-31T00:00.000+00:00&timeMin=2011-04-01T00:00Z&timeZone=GMT&singleevents=true&orderby=starttime&sortorder=ascending&alt=json", function(data){
+//        jQuery.getJSON("https://www.google.com/calendar/feeds/uimrbq33ukhfsoohvs1bpps220@group.calendar.google.com/public/full?orderBy=startTime&q=KI&singleevents=true&sortorder=ascending&alt=json&start-min=2012-10-01T00:00:00Z", function(data){
+var gcalUrl = 'https://www.googleapis.com/calendar/v3/calendars/' +
+                    gcal + 
+//                    '/public/full';
+//                    '/public/basic';
+                		'/events';
+  var startMin = getParameter('start-min')+ "T00:00:00Z";
+  var startMax = getParameter('start-max')+ 'T00:00:00Z';
+/*
+
+///////VARIANTE 1
+//        jQuery.getJSON(gcalUrl,{orderBy: "startTime",q: "KI", singleevents: "true", sortorder: "ascending", alt: "json", "start-min": startMin}, function(data){
+///////VARIANTE 2
+/*  gcalUrl+= "?orderBy=startTime";
+  gcalUrl+= "&q="+q;
+  gcalUrl+= "&singleevents=true";
+  gcalUrl+= "&sortorder=ascending";
+  gcalUrl+= "&alt=json";
+  gcalUrl+= "&start-min="+startMin;
+  gcalUrl+= "&start-max="+startMax;
+  gcalUrl+= "&max-results=250"
+  alert(gcalUrl);
+jQuery.getJSON(gcalUrl, function(data){
+*/
+
+
+
+//zum testen: file:///gcal-include.html?gcal=uimrbq33ukhfsoohvs1bpps220@group.calendar.google.com&start-min=2015-09-01&start-max=2016-05-01&q=Data%20Mining%20and%20Machine%20Learning&qmode=phrase&sr=/Data%20Mining%20and%20Machine%20Learning//gi&sr1=/UE/%DCbung/g&sr2=/VO/Vorlesung/g&displaypattern=shortdayname%20day.month.%20eventname
+//https://www.googleapis.com/calendar/v3/calendars/uimrbq33ukhfsoohvs1bpps220@group.calendar.google.com/events?orderBy=startTime&singleEvents=true&maxResults=5&alt=json&key=AIzaSyBNlYH01_9Hc5S1J9vuFmu2nUqBZJNAXxs
+///////VARIANTE 3
+//  alert(gcalUrl);
+console.log(startMin);
+  jQuery.getJSON(gcalUrl,
+//  jQuery.getJSON("https://www.googleapis.com/calendar/v3/calendars/uimrbq33ukhfsoohvs1bpps220@group.calendar.google.com/events",
+  {
+  "orderBy": "startTime", //diese schreibweise scheint zu funktionieren. mal sehen, wie lang. generell scheint kleine schreibweise zu funktionieren
+  //"calendarId": gcal,
+  "q": q, 
+  "singleEvents": "True", 
+  //"sortorder": "ascending", 
+  //"alt": "json", 
+  "timeMin": startMin,
+  "timeMax": startMax,
+  "showDeleted":"False",
+//  "maxResults": "250",
+  "key": "AIzaSyBNlYH01_9Hc5S1J9vuFmu2nUqBZJNAXxs"
+  }, 
+  function(data){listEvents(data);
+      resizeParentFrame();
+	  });
+    });
+}
+  
+  
+</script>
+</body>
+</html>
