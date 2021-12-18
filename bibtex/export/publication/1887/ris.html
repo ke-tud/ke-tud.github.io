@@ -14,7 +14,7 @@ A1  - Fürnkranz, Johannes
 Y1  - 2010
 IS  - TUD-KE-2010-06
 T2  - TU Darmstadt
-UR  - http://www.ke.tu-darmstadt.de/publications/reports/tud-ke-2010-06.pdf
+UR  - /publications/reports/tud-ke-2010-06.pdf
 N2  - We study an approach for speeding up the training of error-correcting output codes (ECOC) classifiers. 
 The key idea is to avoid unnecessary computations by exploiting the overlap of the different training sets in the ECOC ensemble. Instead of re-training each classifier from scratch, classifiers that have been trained for one task can be adapted to related tasks in the ensemble. The crucial issue is the identification of a schedule for training the classifiers, which maximizes the exploitation of the overlap. For solving this problem, we construct a classifier graph in which the nodes correspond to the classifiers, and the edges represent the training complexity for moving from one classifier to the next in terms of the number of added training examples. The solution of the Steiner Tree problem is an arborescence in this graph, which describes the learning scheme with the minimal total training complexity. We experimentally evaluate the algorithm with Hoeffding trees, as an example for incremental learners, where the classifier adaptation is trivial, and with SVMs, where we employ an adaptation strategy based on adapted caching and weight re-use, which guarantees that the learned model is the same as per batch learning.
 ER  -

@@ -84,17 +84,17 @@ h6 {
 /* redefinim llistes no ordenades */
 ul li
 {
-	list-style-image: url(http://www.ke.tu-darmstadt.de/events/PL-10/img/comu/punt_llistes_generals.gif); 
+	list-style-image: url(/events/PL-10/img/comu/punt_llistes_generals.gif); 
 }
 
 ul li li
 {
-	list-style-image: url(http://www.ke.tu-darmstadt.de/events/PL-10/img/comu/punt_llistes_generals2.gif); 
+	list-style-image: url(/events/PL-10/img/comu/punt_llistes_generals2.gif); 
 }
 
 ul li li li
 {
-	list-style-image: url(http://www.ke.tu-darmstadt.de/events/PL-10/img/comu/punt_llistes_generals3.gif); 
+	list-style-image: url(/events/PL-10/img/comu/punt_llistes_generals3.gif); 
 }
 	
 /* fi redefinim llistes no ordenades */
@@ -343,7 +343,7 @@ div.wrapper br
 
 #mapa li
 {
-	list-style-image: url(http://www.ke.tu-darmstadt.de/events/PL-10/img/comu/punt_contingut_mapa.gif); 
+	list-style-image: url(/events/PL-10/img/comu/punt_contingut_mapa.gif); 
 	padding:1px;
 }
 .invisible {
@@ -437,7 +437,7 @@ div.wrapper br
 	text-decoration: none;
 	font-size:0.75em;	
 	color: #000000;
-	background:url(http://www.ke.tu-darmstadt.de/events/PL-10/img/comu/fons_imprimir.gif);
+	background:url(/events/PL-10/img/comu/fons_imprimir.gif);
 }
 
 
@@ -517,7 +517,7 @@ FORM {
 
 #contenidor_cap
 {
-	background:url(http://www.ke.tu-darmstadt.de/events/PL-10/img/caps/fons_cap.jpg) left;
+	background:url(/events/PL-10/img/caps/fons_cap.jpg) left;
 }
 
 #cap
@@ -683,7 +683,7 @@ FORM {
 	width:43px;
 	height:43px;
 	margin-top:5px;
-	background:url(http://www.ke.tu-darmstadt.de/events/PL-10/img/comu/fons_full_llibreta.gif);
+	background:url(/events/PL-10/img/comu/fons_full_llibreta.gif);
 	font-size:0.9em;
 }
 
@@ -797,7 +797,7 @@ a.titol_portada:hover
 	text-align:left;	
 	width:100%;	
 	height:53px;
-	background:url(http://www.ke.tu-darmstadt.de/events/PL-10/img/comu/fons_peu.jpg);
+	background:url(/events/PL-10/img/comu/fons_peu.jpg);
 	font-size:0.9em;
 	color:#ffffff;
 }
@@ -893,7 +893,7 @@ a.titol_portada:hover
 	color:#0099cd;
 	font-weight:bold;
 	padding:1px 8px 0px 8px;
-	background:url(http://www.ke.tu-darmstadt.de/events/PL-10/img/comu/fons_cos_boto_menu_seleccionat.gif);
+	background:url(/events/PL-10/img/comu/fons_cos_boto_menu_seleccionat.gif);
 }
 
 .h1_menu_seleccionat  a:hover
@@ -909,7 +909,7 @@ a.titol_portada:hover
 	display:block;
 	color:#ffffff;	
 	font-weight:bold;
-	background:url(http://www.ke.tu-darmstadt.de/events/PL-10/img/comu/fons_cos_boto_menu.gif);
+	background:url(/events/PL-10/img/comu/fons_cos_boto_menu.gif);
 	padding:1px 8px 0px 8px;
 }
 
@@ -922,25 +922,25 @@ a.titol_portada:hover
 
 .peu_boto_menu
 {
-	background:url(http://www.ke.tu-darmstadt.de/events/PL-10/img/comu/fons_peu_boto_menu.gif);
+	background:url(/events/PL-10/img/comu/fons_peu_boto_menu.gif);
 	height:7px;
 }
 
 .peu_boto_menu_seleccionat
 {
-	background:url(http://www.ke.tu-darmstadt.de/events/PL-10/img/comu/fons_peu_boto_menu_seleccionat.gif);
+	background:url(/events/PL-10/img/comu/fons_peu_boto_menu_seleccionat.gif);
 	height:7px;
 }
 
 .item_menu_principal:hover .peu_boto_menu
 {
-	background:url(http://www.ke.tu-darmstadt.de/events/PL-10/img/comu/fons_peu_boto_menu_seleccionat.gif);
+	background:url(/events/PL-10/img/comu/fons_peu_boto_menu_seleccionat.gif);
 	height:7px;
 }
 
 .item_menu_principal:hover .h1_menu  a
 {
-	background:url(http://www.ke.tu-darmstadt.de/events/PL-10/img/comu/fons_cos_boto_menu_seleccionat.gif);
+	background:url(/events/PL-10/img/comu/fons_cos_boto_menu_seleccionat.gif);
 	color:#0099cd;
 }
 
@@ -1596,7 +1596,7 @@ div.fila_form_entitats .informacio
 #contenidor_cercador_esquerre
 {
 	float:left;
-	background:url(http://www.ke.tu-darmstadt.de/events/PL-10/img/comu/fons_cercador_esquerre.gif);
+	background:url(/events/PL-10/img/comu/fons_cercador_esquerre.gif);
 	width:13px;
 	height:32px;
 }
@@ -1604,7 +1604,7 @@ div.fila_form_entitats .informacio
 #contenidor_cercador_dret
 {
 	float:left;
-	background:url(http://www.ke.tu-darmstadt.de/events/PL-10/img/comu/fons_cercador_dret.gif);
+	background:url(/events/PL-10/img/comu/fons_cercador_dret.gif);
 	width:13px;
 	height:32px;
 }
@@ -1615,7 +1615,7 @@ div.fila_form_entitats .informacio
 	text-align:left;
 	float:left;
 	height:32px;
-	background:url(http://www.ke.tu-darmstadt.de/events/PL-10/img/comu/fons_cercador_centre.gif);
+	background:url(/events/PL-10/img/comu/fons_cercador_centre.gif);
 }
 
 .contenidor_cercador form
@@ -2194,7 +2194,7 @@ table.taula_titol_blanc th {
 	padding:2px;
 	height:20px;
 	border:1px solid #ebebeb;
-	background: url(http://www.ke.tu-darmstadt.de/events/PL-10/img/admin/general/fons_taules_titol.gif) bottom right no-repeat;			
+	background: url(/events/PL-10/img/admin/general/fons_taules_titol.gif) bottom right no-repeat;			
 }
 
 .llistat_administracio_final_dret
@@ -2524,7 +2524,7 @@ ul.tabbernav li a
 }
 
 ul.tabbernav li a:link { 
-color: #999999;background: url(http://www.ke.tu-darmstadt.de/events/PL-10/img/comu/fons_pestanyes.gif);font-weight:bold;	 }
+color: #999999;background: url(/events/PL-10/img/comu/fons_pestanyes.gif);font-weight:bold;	 }
 ul.tabbernav li a:visited { color: #a5bc00; }
 
 ul.tabbernav li a:hover
@@ -2762,7 +2762,7 @@ ul.tabbernav li.tabberactive a:hover
 
 .comentari
 {
-	background:url(http://www.ke.tu-darmstadt.de/events/PL-10/img/comu/web2.0/fons_opinions_sup.gif) no-repeat;	
+	background:url(/events/PL-10/img/comu/web2.0/fons_opinions_sup.gif) no-repeat;	
 	padding:5px 20px 0px 20px;
 	width:640px;
 }
@@ -2796,7 +2796,7 @@ ul.tabbernav li.tabberactive a:hover
 
 .comentari_fi
 {
-	background:url(http://www.ke.tu-darmstadt.de/events/PL-10/img/comu/web2.0/fons_opinions_inf.gif) left bottom no-repeat;	
+	background:url(/events/PL-10/img/comu/web2.0/fons_opinions_inf.gif) left bottom no-repeat;	
 	height:10px;
 	margin-bottom: 10px;
 }
@@ -2830,7 +2830,7 @@ ul.tabbernav li.tabberactive a:hover
 {
 	float:left;
 	padding: 10px 0px 5px 38px;	
-	background:url(http://www.ke.tu-darmstadt.de/events/PL-10/img/comu/web2.0/globus_comentaris.gif) no-repeat;	
+	background:url(/events/PL-10/img/comu/web2.0/globus_comentaris.gif) no-repeat;	
 	font-size:0.8em;
 	color:#666666;	
 }

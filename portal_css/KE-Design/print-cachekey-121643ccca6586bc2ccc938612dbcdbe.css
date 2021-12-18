@@ -1,7 +1,7 @@
 
 /* - print.css - */
 @media print {
-/* http://www.ke.tu-darmstadt.de/portal_css/print.css?original=1 */
+/* /portal_css/print.css?original=1 */
 /* */
 body {
 font-family: Tahoma, Arial, Helvetica, sans-serif;
@@ -41,7 +41,7 @@ display: none;
 
 /* - deprecated.css - */
 @media screen {
-/* http://www.ke.tu-darmstadt.de/portal_css/deprecated.css?original=1 */
+/* /portal_css/deprecated.css?original=1 */
 /* */
 /* */
 /* */
@@ -52,7 +52,7 @@ display: none;
 
 /* - navtree.css - */
 @media screen {
-/* http://www.ke.tu-darmstadt.de/portal_css/navtree.css?original=1 */
+/* /portal_css/navtree.css?original=1 */
 /* */
 /* */
 /* */
@@ -125,7 +125,7 @@ height: 1.6em;
 
 /* - invisibles.css - */
 @media screen {
-/* http://www.ke.tu-darmstadt.de/portal_css/invisibles.css?original=1 */
+/* /portal_css/invisibles.css?original=1 */
 /* */
 /* */
 /* */
@@ -203,7 +203,7 @@ cursor: move;
 
 /* - forms.css - */
 @media screen {
-/* http://www.ke.tu-darmstadt.de/portal_css/forms.css?original=1 */
+/* /portal_css/forms.css?original=1 */
 /* */
 /* */
 textarea {

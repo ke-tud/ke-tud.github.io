@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <?xml-stylesheet href="atom.css" type="text/css"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://www.ke.tu-darmstadt.de" xml:lang="en">
-  <link rel="self" href="http://www.ke.tu-darmstadt.de/atom.xml" type="application/atom+xml"/>
+  <link rel="self" href="/atom.xml" type="application/atom+xml"/>
   <title type="html"></title>
   
-  <updated>2009-11-23T02:09:11+02:00</updated>
-  <link href="atom.xml" rel="alternate" type="text/html" xml:base="http://www.ke.tu-darmstadt.de/"/>
+  <updated>2009-11-23T01:09:11+01:00</updated>
+  <link href="atom.xml" rel="alternate" type="text/html" xml:base="/"/>
   <id>urn:syndication:None</id>
-  <logo>http://www.ke.tu-darmstadt.de/logo.png</logo>
-  <icon>http://www.ke.tu-darmstadt.de/favicon.ico</icon>
+  <logo>/logo.png</logo>
+  <icon>/favicon.ico</icon>
   <generator uri="http://www.plone.org" version="1.0">plone</generator>
   
   
@@ -16,7 +16,7 @@
   
     <entry>
       <title>2020</title>
-      <link rel="alternate" type="text/html" href="http://www.ke.tu-darmstadt.de/lehre/arbeiten/bachelor/2020"/>
+      <link rel="alternate" type="text/html" href="/lehre/arbeiten/bachelor/2020"/>
       
       <id>urn:syndication:ee126bbcf0e14ce68fe626acdfbb65eb</id>
       
@@ -28,9 +28,9 @@
         
       </author>
 
-      <published>2020-07-07T13:44:14+02:00</published>
+      <published>2020-07-07T12:44:14+01:00</published>
 
-      <updated>2020-07-07T13:44:14+02:00</updated>
+      <updated>2020-07-07T12:44:14+01:00</updated>
 
 
     </entry>
@@ -39,7 +39,7 @@
   
     <entry>
       <title>SS 20</title>
-      <link rel="alternate" type="text/html" href="http://www.ke.tu-darmstadt.de/lehre/ss20"/>
+      <link rel="alternate" type="text/html" href="/lehre/ss20"/>
       
       <id>urn:syndication:80d43f6c3df64d2bae806dcb7140ddf7</id>
       <summary>Lehrangebot Sommersemester 2020</summary>
@@ -51,9 +51,9 @@
         
       </author>
 
-      <published>2020-03-31T14:55:00+02:00</published>
+      <published>2020-03-31T13:55:00+01:00</published>
 
-      <updated>2020-10-14T15:41:01+02:00</updated>
+      <updated>2020-10-14T14:41:01+01:00</updated>
 
 
     </entry>
@@ -62,7 +62,7 @@
   
     <entry>
       <title>The­sis on adaptive driver assistance systems de­fend­ed </title>
-      <link rel="alternate" type="text/html" href="http://www.ke.tu-darmstadt.de/news/thesis-dang"/>
+      <link rel="alternate" type="text/html" href="/news/thesis-dang"/>
       
       <id>urn:syndication:8958e4f7300646969ddbbe60bf372c1a</id>
       
@@ -74,9 +74,9 @@
         
       </author>
 
-      <published>2020-02-21T16:35:00+02:00</published>
+      <published>2020-02-21T15:35:00+01:00</published>
 
-      <updated>2020-02-25T10:56:00+02:00</updated>
+      <updated>2020-02-25T09:56:00+01:00</updated>
 
 
     </entry>
@@ -85,7 +85,7 @@
   
     <entry>
       <title>Michael Rapp</title>
-      <link rel="alternate" type="text/html" href="http://www.ke.tu-darmstadt.de/staff/mrapp"/>
+      <link rel="alternate" type="text/html" href="/staff/mrapp"/>
       
       <id>urn:syndication:40fe77ff928b47a79f33a881bafe007a</id>
       
@@ -97,9 +97,9 @@
         
       </author>
 
-      <published>2019-11-12T14:45:00+02:00</published>
+      <published>2019-11-12T13:45:00+01:00</published>
 
-      <updated>2019-11-13T14:09:13+02:00</updated>
+      <updated>2019-11-13T13:09:13+01:00</updated>
 
 
     </entry>
@@ -108,7 +108,7 @@
   
     <entry>
       <title>Michael Rapp</title>
-      <link rel="alternate" type="text/html" href="http://www.ke.tu-darmstadt.de/staff/mrapp/index.html"/>
+      <link rel="alternate" type="text/html" href="/staff/mrapp/index.html"/>
       
       <id>urn:syndication:1530fd98adf849d193a5864055451088</id>
       
@@ -120,9 +120,9 @@
         
       </author>
 
-      <published>2019-11-12T14:43:40+02:00</published>
+      <published>2019-11-12T13:43:40+01:00</published>
 
-      <updated>2019-11-12T14:43:40+02:00</updated>
+      <updated>2019-11-12T13:43:40+01:00</updated>
 
 
     </entry>
@@ -131,7 +131,7 @@
   
     <entry>
       <title>Best paper award at Discovery Science 2019</title>
-      <link rel="alternate" type="text/html" href="http://www.ke.tu-darmstadt.de/news/DS2019"/>
+      <link rel="alternate" type="text/html" href="/news/DS2019"/>
       
       <id>urn:syndication:e186392bdd7849e09f56d80d76035539</id>
       
@@ -143,9 +143,9 @@
         
       </author>
 
-      <published>2019-10-28T17:05:19+02:00</published>
+      <published>2019-10-28T16:05:19+01:00</published>
 
-      <updated>2019-10-28T17:05:19+02:00</updated>
+      <updated>2019-10-28T16:05:19+01:00</updated>
 
 
     </entry>
@@ -154,7 +154,7 @@
   
     <entry>
       <title>Moritz Kulessa</title>
-      <link rel="alternate" type="text/html" href="http://www.ke.tu-darmstadt.de/staff/kulessa/index.html"/>
+      <link rel="alternate" type="text/html" href="/staff/kulessa/index.html"/>
       
       <id>urn:syndication:3a66bd4afc15440e87bb46550134bfc3</id>
       
@@ -166,9 +166,9 @@
         
       </author>
 
-      <published>2019-09-25T13:30:00+02:00</published>
+      <published>2019-09-25T12:30:00+01:00</published>
 
-      <updated>2019-09-25T13:41:53+02:00</updated>
+      <updated>2019-09-25T12:41:53+01:00</updated>
 
 
     </entry>
@@ -177,7 +177,7 @@
   
     <entry>
       <title>kulessa</title>
-      <link rel="alternate" type="text/html" href="http://www.ke.tu-darmstadt.de/staff/kulessa"/>
+      <link rel="alternate" type="text/html" href="/staff/kulessa"/>
       
       <id>urn:syndication:6723c063881146a692c14e4f0644b6f0</id>
       
@@ -189,9 +189,9 @@
         
       </author>
 
-      <published>2019-09-25T13:30:00+02:00</published>
+      <published>2019-09-25T12:30:00+01:00</published>
 
-      <updated>2019-09-25T14:15:34+02:00</updated>
+      <updated>2019-09-25T13:15:34+01:00</updated>
 
 
     </entry>
@@ -200,7 +200,7 @@
   
     <entry>
       <title>Leaving</title>
-      <link rel="alternate" type="text/html" href="http://www.ke.tu-darmstadt.de/news/leaving"/>
+      <link rel="alternate" type="text/html" href="/news/leaving"/>
       
       <id>urn:syndication:96233dc56b764c1eb023f199934c70f4</id>
       
@@ -212,9 +212,9 @@
         
       </author>
 
-      <published>2019-09-23T14:02:03+02:00</published>
+      <published>2019-09-23T13:02:03+01:00</published>
 
-      <updated>2019-09-23T14:02:03+02:00</updated>
+      <updated>2019-09-23T13:02:03+01:00</updated>
 
 
     </entry>
@@ -223,7 +223,7 @@
   
     <entry>
       <title>2019</title>
-      <link rel="alternate" type="text/html" href="http://www.ke.tu-darmstadt.de/lehre/arbeiten/master/2019"/>
+      <link rel="alternate" type="text/html" href="/lehre/arbeiten/master/2019"/>
       
       <id>urn:syndication:eb6cd8206481405dbf1a06c4133749cf</id>
       
@@ -235,9 +235,9 @@
         
       </author>
 
-      <published>2019-06-27T15:44:31+02:00</published>
+      <published>2019-06-27T14:44:31+01:00</published>
 
-      <updated>2019-06-27T15:44:31+02:00</updated>
+      <updated>2019-06-27T14:44:31+01:00</updated>
 
 
     </entry>
@@ -246,7 +246,7 @@
   
     <entry>
       <title>TUD Poker Framework</title>
-      <link rel="alternate" type="text/html" href="http://www.ke.tu-darmstadt.de/resources/poker/pokerframework19"/>
+      <link rel="alternate" type="text/html" href="/resources/poker/pokerframework19"/>
       
       <id>urn:syndication:99d9da2dcd3e43dab4dbe21c41a9e009</id>
       <summary>Version 1.91</summary>
@@ -258,9 +258,9 @@
         
       </author>
 
-      <published>2019-06-14T17:55:00+02:00</published>
+      <published>2019-06-14T16:55:00+01:00</published>
 
-      <updated>2019-06-14T17:54:38+02:00</updated>
+      <updated>2019-06-14T16:54:38+01:00</updated>
 
 
     </entry>
@@ -269,7 +269,7 @@
   
     <entry>
       <title></title>
-      <link rel="alternate" type="text/html" href="http://www.ke.tu-darmstadt.de/lehre/arbeiten/bachelor/2019"/>
+      <link rel="alternate" type="text/html" href="/lehre/arbeiten/bachelor/2019"/>
       
       <id>urn:syndication:dbf6829c1c6445b9adff078059e757dc</id>
       
@@ -281,9 +281,9 @@
         
       </author>
 
-      <published>2019-06-13T02:17:26+02:00</published>
+      <published>2019-06-13T01:17:26+01:00</published>
 
-      <updated>2019-06-13T02:17:26+02:00</updated>
+      <updated>2019-06-13T01:17:26+01:00</updated>
 
 
     </entry>
@@ -292,7 +292,7 @@
   
     <entry>
       <title>Praktikum aus Künstlicher Intelligenz</title>
-      <link rel="alternate" type="text/html" href="http://www.ke.tu-darmstadt.de/lehre/ss20/pr-ki"/>
+      <link rel="alternate" type="text/html" href="/lehre/ss20/pr-ki"/>
       
       <id>urn:syndication:95d45a2956b04f5d901faa3db1d124fc</id>
       
@@ -304,9 +304,9 @@
         
       </author>
 
-      <published>2019-04-12T11:48:37+02:00</published>
+      <published>2019-04-12T10:48:37+01:00</published>
 
-      <updated>2020-03-31T15:34:47+02:00</updated>
+      <updated>2020-03-31T14:34:47+01:00</updated>
 
 
     </entry>
@@ -315,7 +315,7 @@
   
     <entry>
       <title>Praktikum aus Künstlicher Intelligenz</title>
-      <link rel="alternate" type="text/html" href="http://www.ke.tu-darmstadt.de/lehre/ss19/pr-ki"/>
+      <link rel="alternate" type="text/html" href="/lehre/ss19/pr-ki"/>
       
       <id>urn:syndication:db44fbef79a64f08a005e8c78e975ccb</id>
       
@@ -327,9 +327,9 @@
         
       </author>
 
-      <published>2019-04-12T11:48:37+02:00</published>
+      <published>2019-04-12T10:48:37+01:00</published>
 
-      <updated>2019-04-13T16:16:26+02:00</updated>
+      <updated>2019-04-13T15:16:26+01:00</updated>
 
 
     </entry>
@@ -338,7 +338,7 @@
   
     <entry>
       <title>SS 18</title>
-      <link rel="alternate" type="text/html" href="http://www.ke.tu-darmstadt.de/lehre/archiv/ss18"/>
+      <link rel="alternate" type="text/html" href="/lehre/archiv/ss18"/>
       
       <id>urn:syndication:e850bf84a9ed479a9bc376b342a794bf</id>
       <summary>Lehrangebot Sommersemester 2018</summary>
@@ -350,9 +350,9 @@
         
       </author>
 
-      <published>2019-03-28T20:06:01+02:00</published>
+      <published>2019-03-28T19:06:01+01:00</published>
 
-      <updated>2019-03-28T20:06:01+02:00</updated>
+      <updated>2019-03-28T19:06:01+01:00</updated>
 
 
     </entry>

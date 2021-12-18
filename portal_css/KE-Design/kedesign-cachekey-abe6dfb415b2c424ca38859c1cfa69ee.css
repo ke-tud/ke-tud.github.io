@@ -1,7 +1,7 @@
 
 /* - kedesign.css - */
 @media screen {
-/* http://www.ke.tu-darmstadt.de/portal_css/kedesign.css?original=1 */
+/* /portal_css/kedesign.css?original=1 */
 /* */
 /* */
 body {
@@ -207,7 +207,7 @@ margin-left: -5px;
 margin-right: -5px;
 padding-left: 4px;
 padding-right: 4px;
-background: #FDEBED url(http://www.ke.tu-darmstadt.de/portal_css/KE-Design/uploads/tf/schleier_40.png);
+background: #FDEBED url(/portal_css/KE-Design/uploads/tf/schleier_40.png);
 }
 div.code {
 margin-bottom:1.6em;
@@ -891,7 +891,7 @@ padding-bottom: 10px;
 
 /* - ++resource++gomobile.mobile/simulator.css - */
 @media screen {
-/* http://www.ke.tu-darmstadt.de/portal_css/++resource++gomobile.mobile/simulator.css?original=1 */
+/* /portal_css/++resource++gomobile.mobile/simulator.css?original=1 */
 #mobile-preview-wrapper
 {
 position: absolute;

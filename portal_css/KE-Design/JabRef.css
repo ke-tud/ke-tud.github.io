@@ -1,7 +1,7 @@
 
 /* - JabRef.css - */
 @media screen {
-/* http://www.ke.tu-darmstadt.de/portal_css/JabRef.css?original=1 */
+/* /portal_css/JabRef.css?original=1 */
 #pubs { width: 524px; }
 div.pubs th, td { border-width: 0px 0px; border-color: gray; border-style: solid; padding: 0px; vertical-align: top;  }
 div.pubs td { text-align: justify; vertical-align: top; }

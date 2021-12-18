@@ -3,9 +3,9 @@
 <ShortName>Poodle</ShortName>
 <Description>a personalized and privacy-preserving web search</Description>
 <InputEncoding>UTF-8</InputEncoding>
-<Url type="text/html" method="get" template="https://www.ke.tu-darmstadt.de/resources/Poodle/do">
+<Url type="text/html" method="get" template="/resources/Poodle/do">
 <Param name="q" value="{searchTerms}"/>
 </Url>
-<Url type="application/x-moz-keywordsearch" method="get" template="https://www.ke.tu-darmstadt.de/resources/Poodle/do?q={searchTerms}"/>
-<Image height="48" width="48" type="image/x-icon">https://www.ke.tu-darmstadt.de/resources/Poodle/favicon.ico</Image>
+<Url type="application/x-moz-keywordsearch" method="get" template="/resources/Poodle/do?q={searchTerms}"/>
+<Image height="48" width="48" type="image/x-icon">/resources/Poodle/favicon.ico</Image>
 </OpenSearchDescription>

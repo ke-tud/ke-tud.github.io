@@ -2,12 +2,12 @@
   <service>
     <engineName>WordPress</engineName>
     <engineLink>http://wordpress.org/</engineLink>
-    <homePageLink>http://www.ke.tu-darmstadt.de/know-a-lod-2013</homePageLink>
+    <homePageLink>/know-a-lod-2013</homePageLink>
     <apis>
-      <api name="WordPress" blogID="1" preferred="true" apiLink="http://www.ke.tu-darmstadt.de/know-a-lod-2013/xmlrpc.php" />
-      <api name="Movable Type" blogID="1" preferred="false" apiLink="http://www.ke.tu-darmstadt.de/know-a-lod-2013/xmlrpc.php" />
-      <api name="MetaWeblog" blogID="1" preferred="false" apiLink="http://www.ke.tu-darmstadt.de/know-a-lod-2013/xmlrpc.php" />
-      <api name="Blogger" blogID="1" preferred="false" apiLink="http://www.ke.tu-darmstadt.de/know-a-lod-2013/xmlrpc.php" />
+      <api name="WordPress" blogID="1" preferred="true" apiLink="/know-a-lod-2013/xmlrpc.php" />
+      <api name="Movable Type" blogID="1" preferred="false" apiLink="/know-a-lod-2013/xmlrpc.php" />
+      <api name="MetaWeblog" blogID="1" preferred="false" apiLink="/know-a-lod-2013/xmlrpc.php" />
+      <api name="Blogger" blogID="1" preferred="false" apiLink="/know-a-lod-2013/xmlrpc.php" />
           </apis>
   </service>
 </rsd>

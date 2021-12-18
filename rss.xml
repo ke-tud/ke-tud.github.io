@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
-    <atom:link rel="self" type="application/rss+xml" href="http://www.ke.tu-darmstadt.de/rss.xml"/>
+    <atom:link rel="self" type="application/rss+xml" href="/rss.xml"/>
     <title></title>
     <link>http://www.ke.tu-darmstadt.de</link>
     <description></description>
@@ -13,106 +13,106 @@
       <title>2020</title>
       <description></description>
       
-      <pubDate>Tue, 07 Jul 2020 13:44:14 +0200</pubDate>
-      <guid>http://www.ke.tu-darmstadt.de/lehre/arbeiten/bachelor/2020</guid>
+      <pubDate>Tue, 07 Jul 2020 12:44:14 +0100</pubDate>
+      <guid>/lehre/arbeiten/bachelor/2020</guid>
     </item>
     <item>
       <title>SS 20</title>
       <description>Lehrangebot Sommersemester 2020</description>
       
-      <pubDate>Tue, 31 Mar 2020 14:55:00 +0200</pubDate>
-      <guid>http://www.ke.tu-darmstadt.de/lehre/ss20</guid>
+      <pubDate>Tue, 31 Mar 2020 13:55:00 +0100</pubDate>
+      <guid>/lehre/ss20</guid>
     </item>
     <item>
       <title>The­sis on adaptive driver assistance systems de­fend­ed </title>
       <description></description>
       
-      <pubDate>Fri, 21 Feb 2020 16:35:00 +0200</pubDate>
-      <guid>http://www.ke.tu-darmstadt.de/news/thesis-dang</guid>
+      <pubDate>Fri, 21 Feb 2020 15:35:00 +0100</pubDate>
+      <guid>/news/thesis-dang</guid>
     </item>
     <item>
       <title>Michael Rapp</title>
       <description></description>
       
-      <pubDate>Tue, 12 Nov 2019 14:45:00 +0200</pubDate>
-      <guid>http://www.ke.tu-darmstadt.de/staff/mrapp</guid>
+      <pubDate>Tue, 12 Nov 2019 13:45:00 +0100</pubDate>
+      <guid>/staff/mrapp</guid>
     </item>
     <item>
       <title>Michael Rapp</title>
       <description></description>
       
-      <pubDate>Tue, 12 Nov 2019 14:43:40 +0200</pubDate>
-      <guid>http://www.ke.tu-darmstadt.de/staff/mrapp/index.html</guid>
+      <pubDate>Tue, 12 Nov 2019 13:43:40 +0100</pubDate>
+      <guid>/staff/mrapp/index.html</guid>
     </item>
     <item>
       <title>Best paper award at Discovery Science 2019</title>
       <description></description>
       
-      <pubDate>Mon, 28 Oct 2019 17:05:19 +0200</pubDate>
-      <guid>http://www.ke.tu-darmstadt.de/news/DS2019</guid>
+      <pubDate>Mon, 28 Oct 2019 16:05:19 +0100</pubDate>
+      <guid>/news/DS2019</guid>
     </item>
     <item>
       <title>Moritz Kulessa</title>
       <description></description>
       
-      <pubDate>Wed, 25 Sep 2019 13:30:00 +0200</pubDate>
-      <guid>http://www.ke.tu-darmstadt.de/staff/kulessa/index.html</guid>
+      <pubDate>Wed, 25 Sep 2019 12:30:00 +0100</pubDate>
+      <guid>/staff/kulessa/index.html</guid>
     </item>
     <item>
       <title>kulessa</title>
       <description></description>
       
-      <pubDate>Wed, 25 Sep 2019 13:30:00 +0200</pubDate>
-      <guid>http://www.ke.tu-darmstadt.de/staff/kulessa</guid>
+      <pubDate>Wed, 25 Sep 2019 12:30:00 +0100</pubDate>
+      <guid>/staff/kulessa</guid>
     </item>
     <item>
       <title>Leaving</title>
       <description></description>
       
-      <pubDate>Mon, 23 Sep 2019 14:02:03 +0200</pubDate>
-      <guid>http://www.ke.tu-darmstadt.de/news/leaving</guid>
+      <pubDate>Mon, 23 Sep 2019 13:02:03 +0100</pubDate>
+      <guid>/news/leaving</guid>
     </item>
     <item>
       <title>2019</title>
       <description></description>
       
-      <pubDate>Thu, 27 Jun 2019 15:44:31 +0200</pubDate>
-      <guid>http://www.ke.tu-darmstadt.de/lehre/arbeiten/master/2019</guid>
+      <pubDate>Thu, 27 Jun 2019 14:44:31 +0100</pubDate>
+      <guid>/lehre/arbeiten/master/2019</guid>
     </item>
     <item>
       <title>TUD Poker Framework</title>
       <description>Version 1.91</description>
       
-      <pubDate>Fri, 14 Jun 2019 17:55:00 +0200</pubDate>
-      <guid>http://www.ke.tu-darmstadt.de/resources/poker/pokerframework19</guid>
+      <pubDate>Fri, 14 Jun 2019 16:55:00 +0100</pubDate>
+      <guid>/resources/poker/pokerframework19</guid>
     </item>
     <item>
       <title></title>
       <description></description>
       
-      <pubDate>Thu, 13 Jun 2019 02:17:26 +0200</pubDate>
-      <guid>http://www.ke.tu-darmstadt.de/lehre/arbeiten/bachelor/2019</guid>
+      <pubDate>Thu, 13 Jun 2019 01:17:26 +0100</pubDate>
+      <guid>/lehre/arbeiten/bachelor/2019</guid>
     </item>
     <item>
       <title>Praktikum aus Künstlicher Intelligenz</title>
       <description></description>
       
-      <pubDate>Fri, 12 Apr 2019 11:48:37 +0200</pubDate>
-      <guid>http://www.ke.tu-darmstadt.de/lehre/ss20/pr-ki</guid>
+      <pubDate>Fri, 12 Apr 2019 10:48:37 +0100</pubDate>
+      <guid>/lehre/ss20/pr-ki</guid>
     </item>
     <item>
       <title>Praktikum aus Künstlicher Intelligenz</title>
       <description></description>
       
-      <pubDate>Fri, 12 Apr 2019 11:48:37 +0200</pubDate>
-      <guid>http://www.ke.tu-darmstadt.de/lehre/ss19/pr-ki</guid>
+      <pubDate>Fri, 12 Apr 2019 10:48:37 +0100</pubDate>
+      <guid>/lehre/ss19/pr-ki</guid>
     </item>
     <item>
       <title>SS 18</title>
       <description>Lehrangebot Sommersemester 2018</description>
       
-      <pubDate>Thu, 28 Mar 2019 20:06:01 +0200</pubDate>
-      <guid>http://www.ke.tu-darmstadt.de/lehre/archiv/ss18</guid>
+      <pubDate>Thu, 28 Mar 2019 19:06:01 +0100</pubDate>
+      <guid>/lehre/archiv/ss18</guid>
     </item>
   </channel>
 </rss>

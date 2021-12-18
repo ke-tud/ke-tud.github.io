@@ -61,7 +61,7 @@
 
 
 
-    <link rel="search" href="http://www.ke.tu-darmstadt.de/@@search" title="Search this site" />
+    <link rel="search" href="/@@search" title="Search this site" />
 
 
 
@@ -96,7 +96,7 @@
 
     
         
-            <a href="http://www.ke.tu-darmstadt.de/login" class="visualIconPadding">
+            <a href="/login" class="visualIconPadding">
                Log in
             </a>
         
@@ -139,22 +139,12 @@
       
       
         <li>
-          <a href="../../../jobs.html" class="" title="">Jobs</a> | 
-        </li>
-      
-      
-        <li>
           <a href="../../../news.html" class="" title="Latest news from the Knowledge Engineering Group">News</a> | 
         </li>
       
       
         <li>
-          <a href="../../../termine.html" class="" title="Upcoming events from the Knowledge Engineering Group">Termine</a> | 
-        </li>
-      
-      
-        <li>
-          <a href="../../../publications.html" class="" title="">Publications</a> | 
+          <a href="../../../publications/publication.html" class="" title="">Publications</a> | 
         </li>
       
       
@@ -179,7 +169,7 @@
       
       
         <li>
-          <a href="lehre/arbeiten.html" class="" title="Link auf https://www.ke.tu-darmstadt.de/lehre/arbeiten">Thesis Topics</a> | 
+          <a href="lehre/arbeiten.html" class="" title="Link auf /lehre/arbeiten">Thesis Topics</a> | 
         </li>
       
       
@@ -299,29 +289,6 @@
 
       
 
-        <a href="../../../jobs.html" class=" ebene1" title="">
-            
-
-            
-
-            
-           
-            Jobs
-        </a>
-        
-    
-
-    
-    
-</li>
-
-
-<li>
-
-    
-
-      
-
         <a href="../../../news.html" class=" ebene1" title="Latest news from the Knowledge Engineering Group">
             
 
@@ -347,32 +314,7 @@
 
       
 
-        <a href="../../../termine.html" class=" ebene1" title="Upcoming events from the Knowledge Engineering Group">
-            
-
-            
-
-            <span class="hat_untermenue">
-                  <img src="../../../untermenue.gif" alt="Untermenue" /> 
-            </span>
-           
-            Termine
-        </a>
-        
-    
-
-    
-    
-</li>
-
-
-<li>
-
-    
-
-      
-
-        <a href="../../../publications.html" class=" ebene1" title="">
+        <a href="../../../publications/publication.html" class=" ebene1" title="">
             
 
             
@@ -879,7 +821,7 @@
 
       
 
-        <a href="lehre/arbeiten.html" class=" ebene1" title="Link auf https://www.ke.tu-darmstadt.de/lehre/arbeiten">
+        <a href="lehre/arbeiten.html" class=" ebene1" title="Link auf /lehre/arbeiten">
             
 
             
@@ -1079,7 +1021,7 @@
             
 <p class="news">Zu den technischen Herausforderungen beim Aufbau einer relativ großen, globalen Suchmaschine gab es auf dem <a class="external-link" href="http://www.searchstudies.org/de/suma2015.html">SUMA 2015 Kongress</a> einen interessanten Vortrag: <a class="external-link" href="https://www.youtube.com/watch?v=Yt6bIl0ZQ2g">https://www.youtube.com/watch?v=Yt6bIl0ZQ2g</a></p>
 <ol style="text-align: left;"><li>(3 Punkte) Entwickeln Sie auf der Basis der in Übungsblatt 1, Aufgabe 4 herausgefundenen Statistiken über Sprachen ein einfaches Verfahren, mit dem es möglich ist, die Sprache eines Textes anhand der Häufigkeiten von Buchstaben und Buchstabenpaaren vorherzusagen.&nbsp;<br />Implementieren Sie ein Programm, das durch Verwendung Ihres Verfahrens in der Lage ist, die Sprache (Deutsch - Englisch - Spanisch) einer Web-Seite zu ermitteln. Das Programm soll dabei nicht fähig sein, zu lernen. Sie sollen Ihr&nbsp;<em>Sprachenmodell</em>&nbsp;sozusagen in die Funktion hardcoden.
-<ol><li>Erklären Sie kurz ihr Verfahren z.B. auch mittels Pseudocode. <br /></li><li>Gehen Sie auf&nbsp;<a href="u2languagechallenge.html" target="_top" class="internal-link" title="Übung 2 - Language Challenge">http://www.ke.tu-darmstadt.de/lehre/ss17/web-mining/u2languagechallenge.html</a>&nbsp; und ermitteln Sie die Sprache der 10 dort erhältlichen Webseiten. Die ersten Fünf erhalten nur eine Liste von Buchstaben, die letzten 5 Buchstabenpaare. Schreiben für jeden Text das Ergebnis zeilenweise in eine Datei namens&nbsp;<code>challenge.txt</code>&nbsp;im Format "Seitennummer Sprache\n". Bedenken Sie für die ersten 5 Seiten, daß Ihr Verfahren auch funktionieren soll, falls nur Buchstaben und keine Buchstabenpaare vorliegen.</li></ol>
+<ol><li>Erklären Sie kurz ihr Verfahren z.B. auch mittels Pseudocode. <br /></li><li>Gehen Sie auf&nbsp;<a href="u2languagechallenge.html" target="_top" class="internal-link" title="Übung 2 - Language Challenge">/lehre/ss17/web-mining/u2languagechallenge.html</a>&nbsp; und ermitteln Sie die Sprache der 10 dort erhältlichen Webseiten. Die ersten Fünf erhalten nur eine Liste von Buchstaben, die letzten 5 Buchstabenpaare. Schreiben für jeden Text das Ergebnis zeilenweise in eine Datei namens&nbsp;<code>challenge.txt</code>&nbsp;im Format "Seitennummer Sprache\n". Bedenken Sie für die ersten 5 Seiten, daß Ihr Verfahren auch funktionieren soll, falls nur Buchstaben und keine Buchstabenpaare vorliegen.</li></ol>
 </li><li>(5 Punkte) Schreiben Sie einen ein­fachen Crawler. Die in der Vor­lesung be­han­del­ten Ver­fahren zur Op­ti­mierung brauchen Sie dabei nicht zu berücksichtigen. Der Crawler sollte
 <ul><li>keine URLs dop­pelt be­suchen, d.h. Sie soll­ten URLs kanon­isieren,</li><li>eine randomisierte Such-Strategie verfolgen, d.h. neue Links werden hinten in die Queue einsortiert, aber der nächste anzusteuernde Host und Link wird zufällig gewählt,</li><li>Zähler führen, die die Auf­stel­lung der im Folgenden notwendigen Statis­tiken er­lauben.</li></ul>
 Starten Sie den Crawler an einer Seite Ihrer Wahl, lassen Sie ihn eine 
@@ -1101,7 +1043,7 @@ ungewöhnlich, daß Sie z.B. aufgrund von Problemen und
 Fehlerbereinigungen mehrere Anläufe benötigen. Starten Sie deshalb Ihren
  ersten Crawl rechtzeitig.</li><li>Einige Seiten blockieren zu häufige Anfragen. Wenn Sie auf solche Probleme stoßen, könnten Sie probieren, den Bot 
 nach jedem Re­quest auf dem gleichen Host eine kurze Pause machen 
-lassen.</li><li>Stellen sie sicher, dass Sie aus ihren beigefügten Daten (Logs, Stats etc.) herausfinden können, welchen Verlauf der Crawl genommen hat und welche URLs für beliebige punkte in den Diagrammen verantwortlich sind.<br /></li><li>Beispiele für Duplikate aufgrund von Datenbank-generierter Seiten sind z.B.&nbsp;<a href="../../../theses.html" target="_top">http://www.ke.tu-darmstadt.de/lehre/arbeiten</a>&nbsp;vs.&nbsp;<a href="../../../resources/eurlex/lehre/arbeiten.html" class="external-link">http://www.ke.tu-darmstadt.de/resources/eurlex/lehre/arbeiten</a>&nbsp;und Aufrufe von&nbsp;<a href="../../../publications/index.html" target="_top">http://www.ke.tu-darmstadt.de/bibtex/topics/single/31</a>&nbsp;oder auch&nbsp;<a href="../../../bibtex/authors/show/711.html" target="_top">http://www.ke.tu-darmstadt.de/bibtex/topics</a>&nbsp;zu unterschiedlichen Zeitpunkten (unterschiedliche&nbsp;<em>processing time</em>).&nbsp;<a href="http://www.ke.tu-darmstadt.de/bibtex/topics/single/173" target="_top">http://www.ke.tu-darmstadt.de/bibtex/topics/single/173</a>&nbsp;und&nbsp;<a href="http://www.ke.tu-darmstadt.de/bibtex/authors/show/3259" target="_top">http://www.ke.tu-darmstadt.de/bibtex/authors/show/3259</a>&nbsp;sind allerdings keine Duplikate mehr. Bedenken Sie bei Ihrem Verfahren auch, daß Sie im schlimmsten Fall mit allen bereits gecrawlten Seiten vergleichen müssen.</li><li>Bei den gängigsten Suchmaschinen können Sie üblicherweise die Sprache für die retournierten Webseiten festlegen. <br /></li></ul>
+lassen.</li><li>Stellen sie sicher, dass Sie aus ihren beigefügten Daten (Logs, Stats etc.) herausfinden können, welchen Verlauf der Crawl genommen hat und welche URLs für beliebige punkte in den Diagrammen verantwortlich sind.<br /></li><li>Beispiele für Duplikate aufgrund von Datenbank-generierter Seiten sind z.B.&nbsp;<a href="../../../theses.html" target="_top">/lehre/arbeiten</a>&nbsp;vs.&nbsp;<a href="../../../resources/eurlex/lehre/arbeiten.html" class="external-link">/resources/eurlex/lehre/arbeiten</a>&nbsp;und Aufrufe von&nbsp;<a href="../../../publications/index.html" target="_top">/bibtex/topics/single/31</a>&nbsp;oder auch&nbsp;<a href="../../../bibtex/authors/show/711.html" target="_top">/bibtex/topics</a>&nbsp;zu unterschiedlichen Zeitpunkten (unterschiedliche&nbsp;<em>processing time</em>).&nbsp;<a href="../../../bibtex/topics/single/173.html" target="_top">/bibtex/topics/single/173</a>&nbsp;und&nbsp;<a href="/bibtex/authors/show/3259" target="_top">/bibtex/authors/show/3259</a>&nbsp;sind allerdings keine Duplikate mehr. Bedenken Sie bei Ihrem Verfahren auch, daß Sie im schlimmsten Fall mit allen bereits gecrawlten Seiten vergleichen müssen.</li><li>Bei den gängigsten Suchmaschinen können Sie üblicherweise die Sprache für die retournierten Webseiten festlegen. <br /></li></ul>
 <p style="text-align: left;">&nbsp;</p>
 <h2 style="text-align: left;"><a name="Hil_fre_iche_Mod_ule"></a><a name="Hil_fre_iche_Mod_ule_"></a>Hil­fre­iche Mod­ule:</h2>
 <p>Hilfreiche Module oder Programme zum Laden von Web-Seiten sind z.B. LWP::Sim­ple (Perl), urllib (Python), zum Extrahieren von Hyperlinks HTML::LinkEx­tor (Perl), SGML­Pars­er (<a href="../../archiv/ss08/web-mining/ancor_extracor.py.html" target="_top">Beispiel</a>),&nbsp;<a href="http://www.connellybarnes.com/code/htmldata/" target="_top">html­da­ta</a> (Python), Kanonisieren von URLs URI (Perl), urlparser (Python), und generell zum Parsen von Web-Seiten und Extrahieren von Text  <a href="http://www.crummy.com/software/BeautifulSoup/" target="_top">BeautifulSoup</a>, <a href="http://www.aaronsw.com/2002/html2text/" target="_top">html2text</a> (Python), <a href="http://download.oracle.com/javase/6/docs/api/javax/swing/text/html/HTMLDocument.html" target="_top">HTMLDocument.getText()</a>, <a href="http://htmlparser.sourceforge.net/" target="_top">html parser</a>, <a class="external-link" href="https://github.com/lobobrowser">Cobra</a> (Java),  <a href="http://search.cpan.org/%7Eawrigley/html2text-0.003/html2text.pl" target="_top">html2text.pl</a> (Perl). Sollten Sie mit diesen Tools oder mit selbst erstellten Parsern Schwierigkeiten haben, an den Text zu kommen, so können Sie auch etwas robustere externe Programme versuchen wie <a href="http://www.mbayer.de/html2text/" target="_top">html2text</a> oder die textbasierten Webbrowser <a class="external-link" href="http://www.jikos.cz/~mikulas/links/">links</a>, <a class="external-link" href="http://lynx.browser.org/">lynx</a> und <a href="http://w3m.sourceforge.net/" target="_top">w3m</a>, die Sie zum Rendern verwenden können um anschließend die generierte rohe Textausgabe zu  parsen.</p>
@@ -1245,7 +1187,7 @@ lassen.</li><li>Stellen sie sicher, dass Sie aus ihren beigefügten Daten (Logs,
 
     </div>
    </div>
-<div id="kss-spinner"><img alt="" src="http://www.ke.tu-darmstadt.de/spinner.png" /></div>
+<div id="kss-spinner"><img alt="" src="/spinner.png" /></div>
 <div id="fussbereich_container">
 <div id="schatten_unten"></div>
 
@@ -1257,7 +1199,7 @@ lassen.</li><li>Stellen sie sicher, dass Sie aus ihren beigefügten Daten (Logs,
 | <a accesskey="8" title="Alt(+Shift)+8" href="../../../impressum.html"><img src="../../../impressum.png" alt="" /> Impressum</a>
 | <a accesskey="3" title="Alt(+Shift)+3" href="../../../sitemap.html"><img src="../../../sitemap2.png" alt="" /> Sitemap</a>
 | <a href="../../../search.html"><img src="../../../suche.png" alt="" /> Suche</a>
-| <a href="http://www.ke.tu-darmstadt.de/m/">Mobile Version</a>
+| <a href="/m/">Mobile Version</a>
 </div><!-- fussbereich -->
 <div id="nach_oben"><div class="nach_oben"><a href="uebung2.html#top" title="zum Seitenanfang"><img id="png" src="../../../zum_seitenanfang.png" alt="zum Seitenanfang" /><img id="gif" src="../../../zum_seitenanfang_ie6.gif" alt="zum Seitenanfang" /></a></div></div><!-- nach_oben -->
 </div><!-- fussbereich_container -->

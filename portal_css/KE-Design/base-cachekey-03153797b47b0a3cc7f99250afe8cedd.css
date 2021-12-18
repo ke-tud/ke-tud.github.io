@@ -1,7 +1,7 @@
 
 /* - base.css - */
 @media screen {
-/* http://www.ke.tu-darmstadt.de/portal_css/base.css?original=1 */
+/* /portal_css/base.css?original=1 */
 /* */
 /* */
 body {
@@ -146,7 +146,7 @@ text-decoration: line-through;
 
 /* - public.css - */
 @media screen {
-/* http://www.ke.tu-darmstadt.de/portal_css/public.css?original=1 */
+/* /portal_css/public.css?original=1 */
 /* */
 /* */
 /* */
@@ -1287,7 +1287,7 @@ padding-left: 20px !important;
 
 /* - columns.css - */
 @media screen {
-/* http://www.ke.tu-darmstadt.de/portal_css/columns.css?original=1 */
+/* /portal_css/columns.css?original=1 */
 /* */
 #portal-columns {
 width: 100% !important;
@@ -1393,7 +1393,7 @@ div.position-2\3a 3 {margin-left: -32.205%;} /* */
 
 /* - authoring.css - */
 @media screen {
-/* http://www.ke.tu-darmstadt.de/portal_css/authoring.css?original=1 */
+/* /portal_css/authoring.css?original=1 */
 /* */
 /* */
 /* */
@@ -2020,7 +2020,7 @@ float: right;
 
 /* - portlets.css - */
 @media screen {
-/* http://www.ke.tu-darmstadt.de/portal_css/portlets.css?original=1 */
+/* /portal_css/portlets.css?original=1 */
 /* */
 /* */
 /* */
@@ -2232,7 +2232,7 @@ top: 1.5em !important;
 
 /* - controlpanel.css - */
 @media screen {
-/* http://www.ke.tu-darmstadt.de/portal_css/controlpanel.css?original=1 */
+/* /portal_css/controlpanel.css?original=1 */
 /* */
 .inlineDisplay {
 display:inline

@@ -61,7 +61,7 @@
 
 
 
-    <link rel="search" href="http://www.ke.tu-darmstadt.de/@@search" title="Search this site" />
+    <link rel="search" href="/@@search" title="Search this site" />
 
 
 
@@ -96,7 +96,7 @@
 
     
         
-            <a href="http://www.ke.tu-darmstadt.de/login" class="visualIconPadding">
+            <a href="/login" class="visualIconPadding">
                Log in
             </a>
         
@@ -139,22 +139,12 @@
       
       
         <li>
-          <a href="../../../../jobs.html" class="" title="">Jobs</a> | 
-        </li>
-      
-      
-        <li>
           <a href="../../../../news.html" class="" title="Latest news from the Knowledge Engineering Group">News</a> | 
         </li>
       
       
         <li>
-          <a href="../../../../termine.html" class="" title="Upcoming events from the Knowledge Engineering Group">Termine</a> | 
-        </li>
-      
-      
-        <li>
-          <a href="../../../../publications.html" class="" title="">Publications</a> | 
+          <a href="../../../../publications/publication.html" class="" title="">Publications</a> | 
         </li>
       
       
@@ -179,7 +169,7 @@
       
       
         <li>
-          <a href="lehre/arbeiten.html" class="" title="Link auf https://www.ke.tu-darmstadt.de/lehre/arbeiten">Thesis Topics</a> | 
+          <a href="lehre/arbeiten.html" class="" title="Link auf /lehre/arbeiten">Thesis Topics</a> | 
         </li>
       
       
@@ -306,29 +296,6 @@
 
       
 
-        <a href="../../../../jobs.html" class=" ebene1" title="">
-            
-
-            
-
-            
-           
-            Jobs
-        </a>
-        
-    
-
-    
-    
-</li>
-
-
-<li>
-
-    
-
-      
-
         <a href="../../../../news.html" class=" ebene1" title="Latest news from the Knowledge Engineering Group">
             
 
@@ -354,32 +321,7 @@
 
       
 
-        <a href="../../../../termine.html" class=" ebene1" title="Upcoming events from the Knowledge Engineering Group">
-            
-
-            
-
-            <span class="hat_untermenue">
-                  <img src="../../../../untermenue.gif" alt="Untermenue" /> 
-            </span>
-           
-            Termine
-        </a>
-        
-    
-
-    
-    
-</li>
-
-
-<li>
-
-    
-
-      
-
-        <a href="../../../../publications.html" class=" ebene1" title="">
+        <a href="../../../../publications/publication.html" class=" ebene1" title="">
             
 
             
@@ -1675,7 +1617,7 @@
 
       
 
-        <a href="lehre/arbeiten.html" class=" ebene1" title="Link auf https://www.ke.tu-darmstadt.de/lehre/arbeiten">
+        <a href="lehre/arbeiten.html" class=" ebene1" title="Link auf /lehre/arbeiten">
             
 
             
@@ -1877,7 +1819,7 @@
 <ul><li>Ver­gle­ichen Sie die 30 am häufig­sten vork­om­menden Worte in zwei oder mehreren längeren Tex­ten der gle­ichen Sprache (z. B. E-books, Pro­jekt Guten­berg, etc. ). Sind diese Worte als Merk­male für Text-Klas­si­fizierungs-Auf­gaben geeignet? Warum?</li><li>Modifizieren Sie Ihr Programm dahingehend, daß es eine Liste von Stoppwörtern erhalten kann, die ignoriert werden.&nbsp;<span class="Apple-style-span">Wiederholen Sie die vorherige Aufgabe, indem Sie jedoch diesmal die Stoppwörter der jeweiligen Sprache ignorieren (eine Auswahl finden Sie unter&nbsp;<a href="http://nltk.googlecode.com/svn/trunk/nltk_data/packages/corpora/stopwords.zip" target="_top">http://nltk.googlecode.com/svn/trunk/nltk_data/packages/corpora/stopwords.zip</a>). Wie würden Sie nun die Eignung der 30 häufigsten Wörter einschätzen?</span></li></ul>
 </li><li>Die Auftrittswahrschein­lichkeit­en von Worten in Tex­ten fol­gen einer so­ge­nan­nten Zipf-Verteilung, d. h. einer Verteilung, die dop­pelt log­a­rith­misch ist. Überprüfen Sie das an­hand der gewählten Texte.
 <ul><li>Plot­ten Sie die Häufigkeit­en (y-Achse) über den Rang (x-Achse), also die An­zahl der Vorkomm­nisse des häufig­sten Worts zuerst, dann die An­zahl des zwei­thäufig­sten Worts, etc. Betra­cht­en Sie sowohl eine ab­so­lute als auch eine log­a­rith­mis­che Skalierung bei­der Achsen.</li><li>Bes­tim­men Sie die An­zahl der Worte, die mit einer gegebe­nen Häufigkeit vorkom­men (also, wie viele Wörter gibt es, die mit Häufigkeit 1 vorkom­men, wie viele mit Häufigkeit 2, etc. ). Pro­duzieren Sie ähn­liche Grafiken (An­zahl der Worte mit einer gewis­sen Häufigkeit über die Häufigkeit).</li></ul>
-</li><li>Mod­i­fizieren Sie das Pro­gramm, so daß es nicht Worte son­dern Buch­staben und Buch­staben­paare zählt. Vergle­ichen Sie deren Häufigkeitsverteilung sowohl zweier in der gleichen Sprache verfassten Texte als auch zweier in ver­schiede­nen Sprachen abge­fasster Texte.</li><li>Laden Sie sich unser kleines Firefox-Plugin (<a href="keaddon1.zip" class="external-link">http://www.ke.tu-darmstadt.de/lehre/ss11/web-mining/keaddon1.zip</a>) herunter und machen Sie sich damit und den Entwicklungstools vertraut. Weiter unten finden Sie Hinweise zur Verwendung.&nbsp;<span class="Apple-style-span">Erweitern Sie die Funktion&nbsp;<code>student(text)</code>&nbsp;in der Datei&nbsp;<code>lib/student.js</code>&nbsp;dahingehend, daß es drei Sprachen erkennen kann. Die Liste der bisher unterstützten Sprachen können Sie gerne in&nbsp;<code>languages.js</code>&nbsp;nach Belieben erweitern. Verwenden Sie für die Spracherkennung eine einfache Heuristik, die z.B. auf den in der vorherigen Aufgabe vorgestellten Stoppwörtern basiert. Browsen Sie dann ein wenig im Web herum und berichten uns von Ihren Ergebnissen und Erfahrungen mit dem Plugin.</span><span class="Apple-style-span">&nbsp;</span></li></ol>
+</li><li>Mod­i­fizieren Sie das Pro­gramm, so daß es nicht Worte son­dern Buch­staben und Buch­staben­paare zählt. Vergle­ichen Sie deren Häufigkeitsverteilung sowohl zweier in der gleichen Sprache verfassten Texte als auch zweier in ver­schiede­nen Sprachen abge­fasster Texte.</li><li>Laden Sie sich unser kleines Firefox-Plugin (<a href="keaddon1.zip" class="external-link">/lehre/ss11/web-mining/keaddon1.zip</a>) herunter und machen Sie sich damit und den Entwicklungstools vertraut. Weiter unten finden Sie Hinweise zur Verwendung.&nbsp;<span class="Apple-style-span">Erweitern Sie die Funktion&nbsp;<code>student(text)</code>&nbsp;in der Datei&nbsp;<code>lib/student.js</code>&nbsp;dahingehend, daß es drei Sprachen erkennen kann. Die Liste der bisher unterstützten Sprachen können Sie gerne in&nbsp;<code>languages.js</code>&nbsp;nach Belieben erweitern. Verwenden Sie für die Spracherkennung eine einfache Heuristik, die z.B. auf den in der vorherigen Aufgabe vorgestellten Stoppwörtern basiert. Browsen Sie dann ein wenig im Web herum und berichten uns von Ihren Ergebnissen und Erfahrungen mit dem Plugin.</span><span class="Apple-style-span">&nbsp;</span></li></ol>
 <h2><a name="Hinweise_zum_Firefox_Plugin"></a>Hinweise zum Firefox-Plugin</h2>
 <p><span class="Apple-style-span">Das Firefox-Plugin ist ein kleines Tool, welches in der Lage ist, abhängig von der gerade angezeigten Seite ein kleines Symbol, in unserem Falle eine Fahne, in der rechten Ecke der unteren Statusleiste im Firefox anzuzeigen. Das Tool ist bereits in der Lage, den Text einer Web-Seite (technisch gesehen nur Text innerhalb eines Paragraphen, also z.B. keine Überschriften) zu extrahieren und zu verarbeiten. Die Verarbeitung findet in der Funktion&nbsp;<code>student(text)</code>&nbsp;in<code>lib/student.js</code>&nbsp;statt. Diese gibt momentan statisch eine Sprache zurück, die dann als Fahne dargestellt wird. Hierum kümmert sich auch das Firefox-Plugin selbständig.
 </span></p>
@@ -1888,7 +1830,7 @@ Entpacken sie den Inhalt der Zip-Datei in ein Verzeichnis, das Projektverzeichni
 <p><strong>Anmerkungen:</strong></p>
 <ul><li>Es ist nicht unbedingt notwendig, die SDK zu installieren. Sie können auch die xpi Datei mit einem Zip-Programm entpacken, die Änderungen vornehmen und wieder neu zippen. Das Plugin selbst laden Sie, indem Sie die xpi Datei in Firefox öffnen.</li><li><span class="Apple-style-span">Falls Sie nicht die aktuellste Firefox Version installiert haben, kann es Ihnen passieren, daß Sie entweder das Plugin über die xpi Datei nicht installieren können oder es in den Erweiterung als deaktiviert markiert wird. Installieren Sie bitte in diesem Fall die aktuellste Firefox Version, oder ändern Sie die Standard-Einstellung diesbezüglich im SDK. Ändern Sie hierfür im SDK-Verzeichnis in der Datei&nbsp;<code>python-lib/cuddlefish/app-extension/install.rdf</code>&nbsp;die Versionsangabe in der Zeile&nbsp;<code>&lt;em:minVersion&gt;4.0b7&lt;/em:minVersion&gt;</code>&nbsp;auf z.B.&nbsp;<code>3.0</code>. Alternativ können Sie diese Zeile in der&nbsp;<code>install.rdf</code>&nbsp;Datei im xpi Packet ändern.</span></li></ul>
 <h3><a name="Tools_und_Links"></a>Tools und Links</h3>
-<ul><li><a href="keaddon1.zip" target="_top">http://www.ke.tu-darmstadt.de/lehre/ss11/web-mining/keaddon1.zip</a></li><li><a href="https://addons.mozilla.org/en-US/developers/" target="_top">https://addons.mozilla.org/en-US/developers/</a></li><li><a href="http://www.w3schools.com/js/default.asp" target="_top">http://www.w3schools.com/js/default.asp</a></li></ul>
+<ul><li><a href="keaddon1.zip" target="_top">/lehre/ss11/web-mining/keaddon1.zip</a></li><li><a href="https://addons.mozilla.org/en-US/developers/" target="_top">https://addons.mozilla.org/en-US/developers/</a></li><li><a href="http://www.w3schools.com/js/default.asp" target="_top">http://www.w3schools.com/js/default.asp</a></li></ul>
 &nbsp;
 <p>&nbsp;</p>
 
@@ -2031,7 +1973,7 @@ Entpacken sie den Inhalt der Zip-Datei in ein Verzeichnis, das Projektverzeichni
 
     </div>
    </div>
-<div id="kss-spinner"><img alt="" src="http://www.ke.tu-darmstadt.de/spinner.png" /></div>
+<div id="kss-spinner"><img alt="" src="/spinner.png" /></div>
 <div id="fussbereich_container">
 <div id="schatten_unten"></div>
 
@@ -2043,7 +1985,7 @@ Entpacken sie den Inhalt der Zip-Datei in ein Verzeichnis, das Projektverzeichni
 | <a accesskey="8" title="Alt(+Shift)+8" href="../../../../impressum.html"><img src="../../../../impressum.png" alt="" /> Impressum</a>
 | <a accesskey="3" title="Alt(+Shift)+3" href="../../../../sitemap.html"><img src="../../../../sitemap2.png" alt="" /> Sitemap</a>
 | <a href="../../../../search.html"><img src="../../../../suche.png" alt="" /> Suche</a>
-| <a href="http://www.ke.tu-darmstadt.de/m/">Mobile Version</a>
+| <a href="/m/">Mobile Version</a>
 </div><!-- fussbereich -->
 <div id="nach_oben"><div class="nach_oben"><a href="uebung1.html#top" title="zum Seitenanfang"><img id="png" src="../../../../zum_seitenanfang.png" alt="zum Seitenanfang" /><img id="gif" src="../../../../zum_seitenanfang_ie6.gif" alt="zum Seitenanfang" /></a></div></div><!-- nach_oben -->
 </div><!-- fussbereich_container -->

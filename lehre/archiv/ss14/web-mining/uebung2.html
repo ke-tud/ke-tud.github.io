@@ -61,7 +61,7 @@
 
 
 
-    <link rel="search" href="http://www.ke.tu-darmstadt.de/@@search" title="Search this site" />
+    <link rel="search" href="/@@search" title="Search this site" />
 
 
 
@@ -96,7 +96,7 @@
 
     
         
-            <a href="http://www.ke.tu-darmstadt.de/login" class="visualIconPadding">
+            <a href="/login" class="visualIconPadding">
                Log in
             </a>
         
@@ -139,22 +139,12 @@
       
       
         <li>
-          <a href="../../../../jobs.html" class="" title="">Jobs</a> | 
-        </li>
-      
-      
-        <li>
           <a href="../../../../news.html" class="" title="Latest news from the Knowledge Engineering Group">News</a> | 
         </li>
       
       
         <li>
-          <a href="../../../../termine.html" class="" title="Upcoming events from the Knowledge Engineering Group">Termine</a> | 
-        </li>
-      
-      
-        <li>
-          <a href="../../../../publications.html" class="" title="">Publications</a> | 
+          <a href="../../../../publications/publication.html" class="" title="">Publications</a> | 
         </li>
       
       
@@ -179,7 +169,7 @@
       
       
         <li>
-          <a href="lehre/arbeiten.html" class="" title="Link auf https://www.ke.tu-darmstadt.de/lehre/arbeiten">Thesis Topics</a> | 
+          <a href="lehre/arbeiten.html" class="" title="Link auf /lehre/arbeiten">Thesis Topics</a> | 
         </li>
       
       
@@ -306,29 +296,6 @@
 
       
 
-        <a href="../../../../jobs.html" class=" ebene1" title="">
-            
-
-            
-
-            
-           
-            Jobs
-        </a>
-        
-    
-
-    
-    
-</li>
-
-
-<li>
-
-    
-
-      
-
         <a href="../../../../news.html" class=" ebene1" title="Latest news from the Knowledge Engineering Group">
             
 
@@ -354,32 +321,7 @@
 
       
 
-        <a href="../../../../termine.html" class=" ebene1" title="Upcoming events from the Knowledge Engineering Group">
-            
-
-            
-
-            <span class="hat_untermenue">
-                  <img src="../../../../untermenue.gif" alt="Untermenue" /> 
-            </span>
-           
-            Termine
-        </a>
-        
-    
-
-    
-    
-</li>
-
-
-<li>
-
-    
-
-      
-
-        <a href="../../../../publications.html" class=" ebene1" title="">
+        <a href="../../../../publications/publication.html" class=" ebene1" title="">
             
 
             
@@ -1606,7 +1548,7 @@
 
       
 
-        <a href="lehre/arbeiten.html" class=" ebene1" title="Link auf https://www.ke.tu-darmstadt.de/lehre/arbeiten">
+        <a href="lehre/arbeiten.html" class=" ebene1" title="Link auf /lehre/arbeiten">
             
 
             
@@ -1805,8 +1747,8 @@
         <div class="" id="parent-fieldname-text-09ea2685177342eaa5c0526aa2d27494">
             
 <p class="news">Das KE-Plugin wurde aktualisiert, so daß das darin enthaltene .xpi nun auch unter dem atkuellen Firefox 29.0.1 funktioniert. Bitte auch den entsprechenden <a class="external-link" href="https://www.fachschaft.informatik.tu-darmstadt.de/forum/viewtopic.php?f=419&amp;t=30491">Forumseintrag</a> dazu beachten.</p>
-<ol style="text-align: left;"><li>(3 Punkte) Entwickeln Sie auf der Basis der in Übungsblatt 1, Aufgabe 4 herausgefundenen Statistiken über Sprachen ein einfaches Verfahren, mit dem es möglich ist, die Sprache eines Textes anhand der Häufigkeiten von Buchstaben und Buchstabenpaaren vorherzusagen.&nbsp;<br />Erweitern Sie unser kleines KE-Firefox-Plugin aus Aufgabe 5 dahingehend, daß es mithilfe Ihres Verfahrens in der Lage ist, die Sprache (Deutsch - Englisch - Spanisch) einer Web-Seite zu ermitteln. Hierfür müssen sie wieder die Funktion&nbsp;<code>student(text)</code>&nbsp;in der Datei&nbsp;<code>lib/student.js</code>&nbsp;in Ihrem Sinne erweitern. Beachten Sie dabei die zusätzlichen nützlichen Funktionen in&nbsp;<code>lib/utility.js</code>&nbsp;in der aktualisierten Version des Plugins (<a href="keaddon2.zip" target="_top" class="internal-link" title="keaddon2.zip">http://www.ke.tu-darmstadt.de/lehre/ss14/web-mining/keaddon2.zip</a>). Das Plugin soll dabei nicht fähig sein, zu lernen. Sie sollen Ihr&nbsp;<em>Sprachenmodell</em>&nbsp;sozusagen in die Funktion hardcoden.
-<ol><li>Erklären Sie kurz ihr Verfahren z.B. auch mittels Pseudocode. Denken Sie daran, Ihrer Abgabe ein funktionsfähiges Plugin (.xpi-Datei) beizufügen.<br /></li><li>Gehen Sie auf&nbsp;<a href="u2languagechallenge.html" target="_top">http://www.ke.tu-darmstadt.de/lehre/ss14/web-mining/u2languagechallenge.html</a>&nbsp; und ermitteln Sie die Sprache der 10 dort erhältlichen Webseiten. Die ersten Fünf erhalten nur eine Liste von Buchstaben, die letzten 5 Buchstabenpaare. Schreiben für jeden Text das Ergebnis zeilenweise in eine Datei namens&nbsp;<code>challenge.txt</code>&nbsp;im Format "Seitennummer Sprache\n". Bedenken Sie für die ersten 5 Seiten, daß Ihr Verfahren auch funktionieren soll, falls nur Buchstaben und keine Buchstabenpaare vorliegen.</li></ol>
+<ol style="text-align: left;"><li>(3 Punkte) Entwickeln Sie auf der Basis der in Übungsblatt 1, Aufgabe 4 herausgefundenen Statistiken über Sprachen ein einfaches Verfahren, mit dem es möglich ist, die Sprache eines Textes anhand der Häufigkeiten von Buchstaben und Buchstabenpaaren vorherzusagen.&nbsp;<br />Erweitern Sie unser kleines KE-Firefox-Plugin aus Aufgabe 5 dahingehend, daß es mithilfe Ihres Verfahrens in der Lage ist, die Sprache (Deutsch - Englisch - Spanisch) einer Web-Seite zu ermitteln. Hierfür müssen sie wieder die Funktion&nbsp;<code>student(text)</code>&nbsp;in der Datei&nbsp;<code>lib/student.js</code>&nbsp;in Ihrem Sinne erweitern. Beachten Sie dabei die zusätzlichen nützlichen Funktionen in&nbsp;<code>lib/utility.js</code>&nbsp;in der aktualisierten Version des Plugins (<a href="keaddon2.zip" target="_top" class="internal-link" title="keaddon2.zip">/lehre/ss14/web-mining/keaddon2.zip</a>). Das Plugin soll dabei nicht fähig sein, zu lernen. Sie sollen Ihr&nbsp;<em>Sprachenmodell</em>&nbsp;sozusagen in die Funktion hardcoden.
+<ol><li>Erklären Sie kurz ihr Verfahren z.B. auch mittels Pseudocode. Denken Sie daran, Ihrer Abgabe ein funktionsfähiges Plugin (.xpi-Datei) beizufügen.<br /></li><li>Gehen Sie auf&nbsp;<a href="u2languagechallenge.html" target="_top">/lehre/ss14/web-mining/u2languagechallenge.html</a>&nbsp; und ermitteln Sie die Sprache der 10 dort erhältlichen Webseiten. Die ersten Fünf erhalten nur eine Liste von Buchstaben, die letzten 5 Buchstabenpaare. Schreiben für jeden Text das Ergebnis zeilenweise in eine Datei namens&nbsp;<code>challenge.txt</code>&nbsp;im Format "Seitennummer Sprache\n". Bedenken Sie für die ersten 5 Seiten, daß Ihr Verfahren auch funktionieren soll, falls nur Buchstaben und keine Buchstabenpaare vorliegen.</li></ol>
 </li><li>(5 Punkte) Schreiben Sie einen ein­fachen Crawler. Die in der Vor­lesung be­han­del­ten Ver­fahren zur Op­ti­mierung brauchen Sie dabei nicht zu berücksichtigen. Der Crawler sollte
 <ul><li>keine URLs dop­pelt be­suchen, d.h. Sie soll­ten URLs kanon­isieren,</li><li>die Serv­er nicht zu sehr in Anspruch nehmen, z.B. könnten Sie den Bot nach jedem Re­quest auf dem gleichen Host eine kurze Pause machen lassen,</li><li>eine randomisierte Breadth-First-Strategie verfolgen, d.h. neue Links werden hinten in die Queue einsortiert, aber der nächste anzusteuernde Link wird zufällig gewählt,</li><li>Zähler führen, die die Auf­stel­lung fol­gen­der Statis­tiken er­lauben:</li></ul>
 <ol><li>Er­stellen Sie ein His­togramm über die An­zahl der URLs pro Seite (wie beim er­sten Übungs­blatt mit den Worthäufigkeit­en, auch log­a­rith­misch).</li><li>Er­stellen Sie ein His­togramm mit den Häufigkeit­en des Auftretens von Hy­per­links (d.h., wie viele Links treten 1-mal auf, wie viele 2-mal, ...).</li><li>Überlegen Sie sich ein einfaches Verfahren, um Duplikate festzustellen, und beschreiben Sie es. Das Verfahren sollte dabei z.B. Datenbank-generierte Seiten, bei der sich nur kurze Passagen wie Zeitangaben, Navigationsleisten, Werbeeinblendungen unterscheiden, als Duplikate erkennen. Wenden Sie ihr Verfahren nachträglich auf die heruntergeladenen Seiten an und ermitteln Sie die Anzahl der gefundenen Duplikate. Verifizieren Sie Ihr Verfahren stichprobenartig und zeigen Sie ein repräsentatives Beispiel auf.</li><li>Verwenden Sie Ihr Verfahren aus der ersten Aufgabe, um die Sprache der heruntergeladenen Seiten zu ermitteln. Geben Sie die Verteilung über die gefundenen Sprachen an.</li><li>Schreiben Sie auch eine kurze Zusam­men­fas­sung über Ihre Er­fahrun­gen bzw. etwaige Prob­leme mit dieser Auf­gabe.</li></ol>
@@ -1815,15 +1757,15 @@
 <p style="text-align: left;">3. (2 Punkte) Wenden Sie Ihren Crawler ein weiteres Mal an, diesmal von einer Seite innerhalb der TU Darmstadt startend und springen Sie auch nur auf Links innerhalb der TU (*.tu-darmstadt.de). Lassen Sie sich wieder die Histogramme wie in Teilaufgabe 2.1 und 2.2 ausgeben und vergleichen Sie mit diesen.&nbsp;</p>
 <p style="text-align: left;">Bedenken Sie, daß ein Crawl eine beträchliche Zeit in Anspruch nehmen kann, die Sie auch nicht direkt beeinflussen können. Es ist auch nicht ungewöhnlich, daß Sie z.B. aufgrund von Problemen und Fehlerbereinigungen mehrere Anläufe benötigen. Starten Sie deshalb Ihren ersten Crawl rechtzeitig.</p>
 <h2 style="text-align: left;"><a name="Hinweise"></a>Hinweise</h2>
-<ul style="text-align: left;"><li>Beispiele für Duplikate aufgrund von Datenbank-generierter Seiten sind z.B.&nbsp;<a href="../../arbeiten.html" target="_top">http://www.ke.tu-darmstadt.de/lehre/arbeiten</a>&nbsp;vs.&nbsp;<a href="../../../resources/eurlex/lehre/arbeiten.html" target="_top">http://www.ke.tu-darmstadt.de/resources/eurlex/lehre/arbeiten</a>&nbsp;und Aufrufe von&nbsp;<a href="http://www.ke.tu-darmstadt.de/lehre/bibtex/topics/single/31" target="_top">http://www.ke.tu-darmstadt.de/bibtex/topics/single/31</a>&nbsp;oder auch&nbsp;<a href="http://www.ke.tu-darmstadt.de/lehre/bibtex/topics" target="_top">http://www.ke.tu-darmstadt.de/bibtex/topics</a>&nbsp;zu unterschiedlichen Zeitpunkten (unterschiedliche&nbsp;<em>processing time</em>).&nbsp;<a href="http://www.ke.tu-darmstadt.de/lehre/bibtex/topics/single/173" target="_top">http://www.ke.tu-darmstadt.de/bibtex/topics/single/173</a>&nbsp;und&nbsp;<a href="http://www.ke.tu-darmstadt.de/lehre/bibtex/authors/show/3259" target="_top">http://www.ke.tu-darmstadt.de/bibtex/authors/show/3259</a>&nbsp;sind allerdings keine Duplikate mehr. Bedenken Sie bei Ihrem Verfahren auch, daß Sie im schlimmsten Fall mit allen bereits gecrawlten Seiten vergleichen müssen.</li></ul>
+<ul style="text-align: left;"><li>Beispiele für Duplikate aufgrund von Datenbank-generierter Seiten sind z.B.&nbsp;<a href="../../arbeiten.html" target="_top">/lehre/arbeiten</a>&nbsp;vs.&nbsp;<a href="../../../resources/eurlex/lehre/arbeiten.html" target="_top">/resources/eurlex/lehre/arbeiten</a>&nbsp;und Aufrufe von&nbsp;<a href="/lehre/bibtex/topics/single/31" target="_top">/bibtex/topics/single/31</a>&nbsp;oder auch&nbsp;<a href="/lehre/bibtex/topics" target="_top">/bibtex/topics</a>&nbsp;zu unterschiedlichen Zeitpunkten (unterschiedliche&nbsp;<em>processing time</em>).&nbsp;<a href="/lehre/bibtex/topics/single/173" target="_top">/bibtex/topics/single/173</a>&nbsp;und&nbsp;<a href="/lehre/bibtex/authors/show/3259" target="_top">/bibtex/authors/show/3259</a>&nbsp;sind allerdings keine Duplikate mehr. Bedenken Sie bei Ihrem Verfahren auch, daß Sie im schlimmsten Fall mit allen bereits gecrawlten Seiten vergleichen müssen.</li></ul>
 <p style="text-align: left;">&nbsp;</p>
 <h2 style="text-align: left;"><a name="Hil_fre_iche_Mod_ule"></a><a name="Hil_fre_iche_Mod_ule_"></a>Hil­fre­iche Mod­ule:</h2>
 <table id="table1" class="twikiTable">
 <thead>
 <tr class="twikiTableOdd twikiTableRowdataBgSorted0 twikiTableRowdataBg0">
-<th><a title="Sort by this column" href="https://www.ke.tu-darmstadt.de/projects/projects-wiki/bin/view/WebMining/UCrawler?skin=clean.nat%2Cnat;sortcol=0;table=1;up=0#sorted_table" rel="nofollow"><span class="visualHighlight">Zweck</span></a></th>
-<th><a title="Sort by this column" href="https://www.ke.tu-darmstadt.de/projects/projects-wiki/bin/view/WebMining/UCrawler?skin=clean.nat%2Cnat;sortcol=1;table=1;up=0#sorted_table" rel="nofollow"></a><br /></th>
-<th><a title="Sort by this column" href="https://www.ke.tu-darmstadt.de/projects/projects-wiki/bin/view/WebMining/UCrawler?skin=clean.nat%2Cnat;sortcol=2;table=1;up=0#sorted_table" rel="nofollow"><span class="visualHighlight">Python</span></a></th>
+<th><a title="Sort by this column" href="/projects/projects-wiki/bin/view/WebMining/UCrawler?skin=clean.nat%2Cnat;sortcol=0;table=1;up=0#sorted_table" rel="nofollow"><span class="visualHighlight">Zweck</span></a></th>
+<th><a title="Sort by this column" href="/projects/projects-wiki/bin/view/WebMining/UCrawler?skin=clean.nat%2Cnat;sortcol=1;table=1;up=0#sorted_table" rel="nofollow"></a><br /></th>
+<th><a title="Sort by this column" href="/projects/projects-wiki/bin/view/WebMining/UCrawler?skin=clean.nat%2Cnat;sortcol=2;table=1;up=0#sorted_table" rel="nofollow"><span class="visualHighlight">Python</span></a></th>
 </tr>
 </thead>
 <tbody>
@@ -1989,7 +1931,7 @@
 
     </div>
    </div>
-<div id="kss-spinner"><img alt="" src="http://www.ke.tu-darmstadt.de/spinner.png" /></div>
+<div id="kss-spinner"><img alt="" src="/spinner.png" /></div>
 <div id="fussbereich_container">
 <div id="schatten_unten"></div>
 
@@ -2001,7 +1943,7 @@
 | <a accesskey="8" title="Alt(+Shift)+8" href="../../../../impressum.html"><img src="../../../../impressum.png" alt="" /> Impressum</a>
 | <a accesskey="3" title="Alt(+Shift)+3" href="../../../../sitemap.html"><img src="../../../../sitemap2.png" alt="" /> Sitemap</a>
 | <a href="../../../../search.html"><img src="../../../../suche.png" alt="" /> Suche</a>
-| <a href="http://www.ke.tu-darmstadt.de/m/">Mobile Version</a>
+| <a href="/m/">Mobile Version</a>
 </div><!-- fussbereich -->
 <div id="nach_oben"><div class="nach_oben"><a href="uebung2.html#top" title="zum Seitenanfang"><img id="png" src="../../../../zum_seitenanfang.png" alt="zum Seitenanfang" /><img id="gif" src="../../../../zum_seitenanfang_ie6.gif" alt="zum Seitenanfang" /></a></div></div><!-- nach_oben -->
 </div><!-- fussbereich_container -->

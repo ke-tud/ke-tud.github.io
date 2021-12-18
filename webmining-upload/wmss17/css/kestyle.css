@@ -28,7 +28,7 @@ input.add {
     width: 25px;
     height: 25px;
     padding: 1px;
-    background: url('media/Add.png') no-repeat center transparent;
+    background: url('/media/Add.png') no-repeat center transparent;
 }
 
 input.delete {
@@ -36,7 +36,7 @@ input.delete {
     width: 25px;
     height: 25px;
     padding: 1px;
-    background: url('media/Delete.png') no-repeat center transparent;
+    background: url('/media/Delete.png') no-repeat center transparent;
 }
 
 td.abgegeben {

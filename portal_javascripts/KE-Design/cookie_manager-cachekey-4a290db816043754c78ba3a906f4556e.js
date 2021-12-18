@@ -8,7 +8,7 @@
  */
 
 /* - cookie_manager.js - */
-// http://www.ke.tu-darmstadt.de/portal_javascripts/cookie_manager.js?original=1
+// /portal_javascripts/cookie_manager.js?original=1
 function Cookiemanager(name,defaultExpiration,expirationUnits,defaultDomain,defaultPath){this.name=name;this.defaultExpiration=this.getExpiration(defaultExpiration,expirationUnits);this.defaultDomain='.ke.tu-darmstadt.de'
 this.defaultPath='/';this.cookies=new Object();this.expiration=new Object();this.domain=new Object();this.path=new Object();window.onunload=new Function(this.name+'.setDocumentCookies();');this.getDocumentCookies()}
 Cookiemanager.prototype.getExpiration=function(expiration,units){expiration=(expiration)?expiration:0;units=(units)?units:'days';var date=new Date();switch(units){case 'years':date.setFullYear(date.getFullYear()+expiration);break;case 'months':date.setMonth(date.getMonth()+expiration);break;case 'days':date.setTime(date.getTime()+(expiration*24*60*60*1000));break;case 'hours':date.setTime(date.getTime()+(expiration*60*60*1000));break;case 'minutes':date.setTime(date.getTime()+(expiration*60*1000));break;case 'seconds':date.setTime(date.getTime()+(expiration*1000));break;default:date.setTime(date.getTime()+expiration);break}
@@ -22,7 +22,7 @@ Cookiemanager.prototype.setCookie=function(cookieName,cookieValue,expiration,exp
 
 
 /* - fontsize.js - */
-// http://www.ke.tu-darmstadt.de/portal_javascripts/fontsize.js?original=1
+// /portal_javascripts/fontsize.js?original=1
 var cookieManager=new Cookiemanager('cookieManager',1,'years','.ke.tu-darmstadt.de','/');var initialeGroesse=11;var groessen=new Array();groessen[0]=10;groessen[1]=11;groessen[2]=12;groessen[3]=13;groessen[4]=14;
 function fontsize(modus){switch(modus){case 'inkrement':for(i=0;i<groessen.length;i++){if(groessen[i]==initialeGroesse){if(i<groessen.length-1){document.getElementsByTagName('body')[0].style.fontSize=groessen[i+1]+'px';cookieManager.setCookie('fontsize',groessen[i+1],1,'months','.ke.tu-darmstadt.de','/');initialeGroesse=groessen[i+1];break}}}
 break;case 'dekrement':for(i=groessen.length-1;i>=0;i--){if(groessen[i]==initialeGroesse){if(i>0){document.getElementsByTagName('body')[0].style.fontSize=groessen[i-1]+'px';cookieManager.setCookie('fontsize',groessen[i-1],1,'months','.ke.tu-darmstadt.de','/');initialeGroesse=groessen[i-1];break}}}
