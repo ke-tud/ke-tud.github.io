@@ -1,7 +1,7 @@
 
 /* - reset.css - */
 @media screen {
-/* http://www.ke.tu-darmstadt.de/portal_css/reset.css?original=1 */
+/* /portal_css/reset.css?original=1 */
 
 }
 
@@ -9,7 +9,7 @@
 
 /* - base.css - */
 @media screen {
-/* http://www.ke.tu-darmstadt.de/portal_css/base.css?original=1 */
+/* /portal_css/base.css?original=1 */
 /* */
 @media screen {
 /* */
@@ -158,7 +158,7 @@ text-decoration: line-through;
 
 /* - public.css - */
 @media screen {
-/* http://www.ke.tu-darmstadt.de/portal_css/public.css?original=1 */
+/* /portal_css/public.css?original=1 */
 /* */
 @media screen {
 /* */
@@ -1303,7 +1303,7 @@ padding-left: 20px !important;
 
 /* - columns.css - */
 @media screen {
-/* http://www.ke.tu-darmstadt.de/portal_css/columns.css?original=1 */
+/* /portal_css/columns.css?original=1 */
 /* */
 @media screen {
 /* */
@@ -1413,7 +1413,7 @@ div.position-2\3a 3 {margin-left: -32.205%;} /* */
 
 /* - authoring.css - */
 @media screen {
-/* http://www.ke.tu-darmstadt.de/portal_css/authoring.css?original=1 */
+/* /portal_css/authoring.css?original=1 */
 /* */
 @media screen {
 /* */
@@ -2044,7 +2044,7 @@ float: right;
 
 /* - portlets.css - */
 @media screen {
-/* http://www.ke.tu-darmstadt.de/portal_css/portlets.css?original=1 */
+/* /portal_css/portlets.css?original=1 */
 /* */
 @media screen {
 /* */
@@ -2260,7 +2260,7 @@ top: 1.5em !important;
 
 /* - controlpanel.css - */
 @media screen {
-/* http://www.ke.tu-darmstadt.de/portal_css/controlpanel.css?original=1 */
+/* /portal_css/controlpanel.css?original=1 */
 /* */
 @media screen {
 /* */
@@ -2321,7 +2321,7 @@ padding-top:0.8em;
 
 /* - ++resource++tinymce.stylesheets/tinymce.css - */
 @media screen {
-/* http://www.ke.tu-darmstadt.de/portal_css/++resource++tinymce.stylesheets/tinymce.css?original=1 */
+/* /portal_css/++resource++tinymce.stylesheets/tinymce.css?original=1 */
 #content ul.listTypeDisc {
 list-style-type: disc;
 list-style-image: none;
@@ -2361,7 +2361,7 @@ list-style-image: none;
 
 /* - print.css - */
 @media print {
-/* http://www.ke.tu-darmstadt.de/portal_css/print.css?original=1 */
+/* /portal_css/print.css?original=1 */
 /* */
 @media print {
 /* */
@@ -2405,7 +2405,7 @@ display: none;
 
 /* - deprecated.css - */
 @media screen {
-/* http://www.ke.tu-darmstadt.de/portal_css/deprecated.css?original=1 */
+/* /portal_css/deprecated.css?original=1 */
 /* */
 @media screen {
 /* */
@@ -2420,7 +2420,7 @@ display: none;
 
 /* - navtree.css - */
 @media screen {
-/* http://www.ke.tu-darmstadt.de/portal_css/navtree.css?original=1 */
+/* /portal_css/navtree.css?original=1 */
 /* */
 @media screen {
 /* */
@@ -2497,7 +2497,7 @@ height: 1.6em;
 
 /* - invisibles.css - */
 @media screen {
-/* http://www.ke.tu-darmstadt.de/portal_css/invisibles.css?original=1 */
+/* /portal_css/invisibles.css?original=1 */
 /* */
 @media screen {
 /* */
@@ -2580,7 +2580,7 @@ cursor: move;
 
 /* - forms.css - */
 @media screen {
-/* http://www.ke.tu-darmstadt.de/portal_css/forms.css?original=1 */
+/* /portal_css/forms.css?original=1 */
 /* */
 @media screen {
 /* */
@@ -2836,7 +2836,7 @@ z-index: 999;
 
 /* - ++resource++plone.app.discussion.stylesheets/discussion.css - */
 @media screen {
-/* http://www.ke.tu-darmstadt.de/portal_css/++resource++plone.app.discussion.stylesheets/discussion.css?original=1 */
+/* /portal_css/++resource++plone.app.discussion.stylesheets/discussion.css?original=1 */
 /* */
 .discussion .hide {
 display: none;
@@ -3014,7 +3014,7 @@ height: 10em;
 
 /* - kedesign.css - */
 @media screen {
-/* http://www.ke.tu-darmstadt.de/portal_css/kedesign.css?original=1 */
+/* /portal_css/kedesign.css?original=1 */
 /* */
 @media screen {
 /* */
@@ -3223,7 +3223,7 @@ margin-left: -5px;
 margin-right: -5px;
 padding-left: 4px;
 padding-right: 4px;
-background: #FDEBED url(http://www.ke.tu-darmstadt.de/portal_css/KE-Design/uploads/tf/schleier_40.png);
+background: #FDEBED url(/portal_css/KE-Design/uploads/tf/schleier_40.png);
 }
 div.code {
 margin-bottom:1.6em;
@@ -3908,7 +3908,7 @@ padding-bottom: 10px;
 
 /* - ++resource++gomobile.mobile/simulator.css - */
 @media screen {
-/* http://www.ke.tu-darmstadt.de/portal_css/++resource++gomobile.mobile/simulator.css?original=1 */
+/* /portal_css/++resource++gomobile.mobile/simulator.css?original=1 */
 #mobile-preview-wrapper
 {
 position: absolute;
@@ -3980,7 +3980,7 @@ display:none;
 
 /* - JabRef.css - */
 @media screen {
-/* http://www.ke.tu-darmstadt.de/portal_css/JabRef.css?original=1 */
+/* /portal_css/JabRef.css?original=1 */
 /* */
 @media screen {
 /* */
@@ -4007,7 +4007,7 @@ tr { page-break-inside: avoid; }
 
 /* - ploneCustom.css - */
 @media all {
-/* http://www.ke.tu-darmstadt.de/portal_css/ploneCustom.css?original=1 */
+/* /portal_css/ploneCustom.css?original=1 */
 /* */
 @media all {
 /* */
