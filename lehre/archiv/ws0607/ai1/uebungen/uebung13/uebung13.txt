@@ -1,0 +1,6 @@
+<!DOCTYPE html>
+<html>
+  <head><meta http-equiv="refresh" content="0; url=uebung13.txt.html" />
+  </head>
+<p><a href="uebung13.txt.html">Redirect</a></p>
+</html>
