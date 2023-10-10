@@ -10,14 +10,18 @@
 %Friday 17 December 2021 11:56:11 PM
 
 @INPROCEEDINGS{rapp2021labelbinning,
-     author = {Rapp, Michael and Loza Menc{\'{\i}}a, Eneldo and F{\"{u}}rnkranz, Johannes and Eyke, H{\"{u}}llermeier},
+     author = {Rapp, Michael and Loza Menc{\'{\i}}a, Eneldo and F{\"{u}}rnkranz, Johannes and  H{\"{u}}llermeier, Eyke},
+	 editor = {Nuria Oliver and Fernando P{\'{e}}rez{-}Cruz and Stefan Kramer and Jesse Read and Antonio Lozano, Jos{\'{e}}},
    keywords = {Gradient boosting, multilabel classification, Rule Learning},
       title = {Gradient-Based Label Binning in Multi-Label Classification},
-  booktitle = {Machine Learning and Knowledge Discovery in Databases (ECML-PKDD)},
-     series = {Lecture Notes in Computer Science},
+  booktitle = Machine Learning and Knowledge Discovery in Databases. Research Track - European Conference, {ECML} {PKDD} 2021, Bilbao, Spain, September 13-17, 2021, Proceedings, Part {III}},
+  booktitle_short = {Machine Learning and Knowledge Discovery in Databases (ECML-PKDD)},
        year = {2021},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {12977},
+  pages     = {462--477},
   publisher = {Springer},
-       note = {Accepted for publication. A preprint version is available at \url{https://arxiv.org/abs/2106.11690}},
+  doi          = {10.1007/978-3-030-86523-8\_28},
         url = {https://arxiv.org/abs/2106.11690},
    abstract = {In multi-label classification, where a single example may be associated with several class labels at the same time, the ability to model dependencies between labels is considered crucial to effectively optimize non-decomposable evaluation measures, such as the Subset 0/1 loss. The gradient boosting framework provides a well-studied foundation for learning models that are specifically tailored to such a loss function and recent research attests the ability to achieve high predictive accuracy in the multi-label setting. The utilization of second-order derivatives, as used by many recent boosting approaches, helps to guide the minimization of non-decomposable losses, due to the information about pairs of labels it incorporates into the optimization process. On the downside, this comes with high computational costs, even if the number of labels is small. In this work, we address the computational bottleneck of such approach -- the need to solve a system of linear equations -- by integrating a novel approximation technique into the boosting procedure. Based on the derivatives computed during training, we dynamically group the labels into a predefined number of bins to impose an upper bound on the dimensionality of the linear system. Our experiments, using an existing rule-based algorithm, suggest that this may boost the speed of training, without any significant loss in predictive performance.}
 }
